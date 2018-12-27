@@ -8,3 +8,4 @@ Frequently asked questions and support documentation for Pick-it (https://www.pi
   :caption: Contents:
 
   getting_started/index
+  web_interface/index
