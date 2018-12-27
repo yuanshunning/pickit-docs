@@ -1,5 +1,5 @@
-3. Connect the cables
-=====================
+Connect the cables
+==================
 
 In this step, we will connect all the cables to the Pick-it processor.
 Note that all the ports on the back of the Pick-it processor are
@@ -54,11 +54,6 @@ system <https://support.pickit3d.com/article/74-setting-up-your-pick-it-system>`
 .. raw:: html
 
    </div>
-
-+----------------------------------------------------------------------------------------+-------------------------+----------------------------------------------------------------------------------+
-| `< < Previous article <https://support.pickit3d.com/article/121-mount-the-camera>`__   | 3. Connect the cables   | `Next article > > <https://support.pickit3d.com/article/123-test-the-setup>`__   |
-+========================================================================================+=========================+==================================================================================+
-+----------------------------------------------------------------------------------------+-------------------------+----------------------------------------------------------------------------------+
 
 .. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5b4c9d180428631d7a88f042/file-UTq4Haukhq.png
 

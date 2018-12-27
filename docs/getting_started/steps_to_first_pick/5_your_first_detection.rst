@@ -1,5 +1,5 @@
-5. Your first detection
-=======================
+Your first detection
+====================
 
 Now that all connections are tested we can start our first detection.
 For this we'll use a soda can. Note that this is the final step of this
@@ -49,11 +49,6 @@ section.
 .. raw:: html
 
    </div>
-
-+--------------------------------------------------------------------------------------+---------------------------+--------------------------------------------------------------------------------------------+
-| `< < Previous article <https://support.pickit3d.com/article/123-test-the-setup>`__   | 5. Your first detection   | `Next article > > <https://support.pickit3d.com/article/126-robot-camera-calibration>`__   |
-+======================================================================================+===========================+============================================================================================+
-+--------------------------------------------------------------------------------------+---------------------------+--------------------------------------------------------------------------------------------+
 
 .. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5b4cac402c7d3a03f89c9c55/file-8Tp0RC4fu0.png
 .. |image1| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5b4cad902c7d3a03f89c9c64/file-y2BUtRcZO3.png

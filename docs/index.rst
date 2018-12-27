@@ -4,6 +4,7 @@ Frequently asked questions and support documentation for Pick-it (https://www.pi
 
 
 .. toctree::
-  :maxdepth: 1
+  :maxdepth: 2
   :caption: Contents:
 
+  getting_started/index

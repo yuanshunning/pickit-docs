@@ -1,5 +1,5 @@
-2. Mount the camera
-===================
+Mount the camera
+================
 
 In this step, we will mount the Pick-it camera. Thanks to the L-bracket
 and ball joints, the camera can be mounted on a wide variety of
@@ -31,11 +31,6 @@ camera <https://support.pickit3d.com/article/59-the-pick-it-camera>`__.
 .. raw:: html
 
    </div>
-
-+----------------------------------------------------------------------------------------+-----------------------+--------------------------------------------------------------------------------------+
-| `< < Previous article <https://support.pickit3d.com/article/120-whats-in-the-box>`__   | 2. Mount the camera   | `Next article > > <https://support.pickit3d.com/article/122-connect-the-cables>`__   |
-+========================================================================================+=======================+======================================================================================+
-+----------------------------------------------------------------------------------------+-----------------------+--------------------------------------------------------------------------------------+
 
 .. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5b4c97b70428631d7a88f000/file-xFwC3R1sMV.png
 

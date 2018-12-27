@@ -1,5 +1,5 @@
-6. Robot-camera calibration
-===========================
+Robot-camera calibration
+========================
 
 In this step we do a robot-camera calibration. In the previous chapter
 we saw that the Pick-it system is able to detect parts in its field of
@@ -35,11 +35,6 @@ article.
 .. raw:: html
 
    </div>
-
-+--------------------------------------------------------------------------------------------+-------------------------------+-----------------------------------------------------------------------------------+
-| `< < Previous article <https://support.pickit3d.com/article/124-your-first-detection>`__   | 6. Robot-camera calibration   | `Next article > > <https://support.pickit3d.com/article/127-your-first-pick>`__   |
-+============================================================================================+===============================+===================================================================================+
-+--------------------------------------------------------------------------------------------+-------------------------------+-----------------------------------------------------------------------------------+
 
 .. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/58b55d852c7d3a576d358fc5/file-y8piF579xc.jpg
 

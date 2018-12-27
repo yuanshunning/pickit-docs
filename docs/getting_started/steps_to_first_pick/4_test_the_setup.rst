@@ -1,5 +1,5 @@
-4. Test the setup
-=================
+Test the setup
+==============
 
 .. raw:: html
 
@@ -48,11 +48,6 @@ matches the tested one.
 .. raw:: html
 
    </div>
-
-+------------------------------------------------------------------------------------------+---------------------+------------------------------------------------------------------------------------+
-| `< < Previous article <https://support.pickit3d.com/article/122-connect-the-cables>`__   | 4. Test the setup   | `Next article <https://support.pickit3d.com/article/124-your-first-detection>`__   |
-+==========================================================================================+=====================+====================================================================================+
-+------------------------------------------------------------------------------------------+---------------------+------------------------------------------------------------------------------------+
 
 .. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5b4ca2fe2c7d3a03f89c9ad4/file-x2ruOUilAh.png
 .. |image1| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5b4ca37e2c7d3a03f89c9adb/file-ZN3FiA7k1T.png
