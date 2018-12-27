@@ -1,0 +1,38 @@
+Download Pick-it robot programs
+===============================
+
+| Pick-it provides robot programs for all supported robot brands.
+| For now, Pick-it supports **Universal Robots**, **Fanuc**, **ABB**,
+  **KUKA, Staubli,** and **Yaskawa**.
+
+Download robot programs for:
+
+-  **Universal Robots**
+
+   -  **URCap plugin:** 
+
+      -  `Pick-it URCap
+         1.3.0 <https://drive.google.com/uc?export=download&id=1CUFA_v4PJSS2X0ASLC9F7kH3Y2udnTSQ>`__
+         download (for Polyscope versions 3.4.x to 3.7.x, and 5.0.x to
+         5.1.x).
+      -  `Plugin
+         installation <https://support.pickit3d.com/article/75-getting-started-with-the-pick-it-urcap>`__
+         instructions.
+
+   -  **Non-URCap plugin:** `Legacy
+      examples <https://drive.google.com/uc?export=download&id=1VedZYjVvlcyiE4iuqUuF67DsT8545ojU>`__,
+      intended for Pick-it users predating the existence of the URCap
+      plugin.
+
+-  `Fanuc <https://drive.google.com/uc?export=download&id=0BzZKo0Mfhw0RMDNULWxxY0dvcG8>`__
+-  `ABB <https://drive.google.com/uc?export=download&id=1bNH8cDohba72nNhWHQwFAyvHcirv64JH>`__
+-  **KUKA**
+
+   -  `KR
+      C4 <https://drive.google.com/uc?export=download&id=0ByhqgEqwu5R8ZzdVa2JxUGl2YmM>`__
+   -  `KR
+      C2 <https://drive.google.com/uc?export=download&id=1Cp7KWtVswRYPFZ_oy9tgLmQ-kRtohCB5>`__
+   -  `Sunrise <https://drive.google.com/uc?export=download&id=0ByhqgEqwu5R8QTlvZy1YcEk1NDQ>`__
+
+-  `Staubli <https://drive.google.com/uc?export=download&id=0ByhqgEqwu5R8ZGRrZ1VlVkJkN1E>`__
+-  `Yaskawa <https://drive.google.com/uc?export=download&id=1Q_jWFodz9zKMNK2ZIEdAeAyntJ5fi4L9>`__
