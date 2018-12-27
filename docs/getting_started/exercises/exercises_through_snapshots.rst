@@ -12,19 +12,10 @@ followed:
 #. Optional: Take a snapshot of your solution and send to
    support@pickit3d.com to receive feedback
 
-.. raw:: html
-
-   <div class="callout-yellow">
-
-**Note** For the exercises through snapshot at least Pick-it software
-version 1.9.x is needed. If you have a older software version. Please
-read following
-`article <https://support.pickit3d.com/article/131-getting-ready-for-a-remote-software-update>`__
-and contact support@pickit3d.com to get an update.
-
-.. raw:: html
-
-   </div>
+.. attention:: For this exercise you need Pick-it version 1.9.x
+   If you have a older software version. Please read the following
+   `article <https://support.pickit3d.com/article/131-getting-ready-for-a-remote-software-update>`__
+   and contact support@pickit3d.com to get an update.
 
 Basic exercises
 ---------------

@@ -37,18 +37,10 @@ Follow the steps below to do your first detection with Pick-it:
 
 |image2|
 
-.. raw:: html
-
-   <div class="callout">
-
-More information about the possibilities of the Pick-it system can be
-found in the \ `Web
-interface <https://support.pickit3d.com/article/154-web-interface-an-extensive-overview>`__
-section.
-
-.. raw:: html
-
-   </div>
+.. tip:: More information about the possibilities of the Pick-it system can be
+   found in the \ `Web
+   interface <https://support.pickit3d.com/article/154-web-interface-an-extensive-overview>`__
+   section.
 
 .. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5b4cac402c7d3a03f89c9c55/file-8Tp0RC4fu0.png
 .. |image1| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5b4cad902c7d3a03f89c9c64/file-y2BUtRcZO3.png

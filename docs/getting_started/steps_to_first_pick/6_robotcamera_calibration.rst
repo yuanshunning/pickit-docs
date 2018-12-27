@@ -24,17 +24,9 @@ Follow the steps below to do a robot-camera calibration:
 -  Press Save in the Pick-it user interface.
 -  Robot-to-camera calibration plate can be dismounted from the robot.
 
-.. raw:: html
-
-   <div class="callout">
-
-   More details about robot-camera calibration can be found in
-the \ `Camera(s) <https://support.pickit3d.com/article/158-calibration>`__
-article.
-
-.. raw:: html
-
-   </div>
+.. tip:: More details about robot-camera calibration can be found in
+   the \ `Camera(s) <https://support.pickit3d.com/article/158-calibration>`__
+   article.
 
 .. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/58b55d852c7d3a576d358fc5/file-y8piF579xc.jpg
 

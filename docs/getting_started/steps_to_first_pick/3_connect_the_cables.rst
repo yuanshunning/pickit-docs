@@ -30,30 +30,15 @@ camera connection.
    robot or machine controller with the ROBOT labeled RJ45 port at the
    back side of the Pick-it processor.
 
-.. raw:: html
-
-   <div class="callout-yellow">
-
-**Note** The last step, the connection to a robot, is not necessary to
-already test the Pick-it system.
-
-.. raw:: html
-
-   </div>
+.. hint:: The last step, the connection to a robot, is not necessary to
+   already test the Pick-it system.
 
 |image0|
 
-.. raw:: html
 
-   <div class="callout">
-
-   More information about connecting all the hardware components can be
-found in  `Setting up your Pick-it
-system <https://support.pickit3d.com/article/74-setting-up-your-pick-it-system>`__.
-
-.. raw:: html
-
-   </div>
+.. tip:: More information about connecting all the hardware components can be
+   found in  `Setting up your Pick-it
+   system <https://support.pickit3d.com/article/74-setting-up-your-pick-it-system>`__.
 
 .. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5b4c9d180428631d7a88f042/file-UTq4Haukhq.png
 

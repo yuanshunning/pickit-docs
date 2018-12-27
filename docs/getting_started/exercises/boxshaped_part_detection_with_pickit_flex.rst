@@ -28,18 +28,10 @@ articles:
 -  `Explaining the Flex detection
    parameters <https://support.pickit3d.com/article/174-explaining-the-flex-detection-parameters>`__
 
-.. raw:: html
-
-   <div class="callout-yellow">
-
-**Note** For this exercise you need Pick-it version 1.10.x If you have a
-older software version. Please read following
-`article <https://support.pickit3d.com/article/131-getting-ready-for-a-remote-software-update>`__
-and contact support@pickit3d.com to get an update.
-
-.. raw:: html
-
-   </div>
+.. attention:: For this exercise you need Pick-it version 1.10.x
+   If you have a older software version. Please read the following
+   `article <https://support.pickit3d.com/article/131-getting-ready-for-a-remote-software-update>`__
+   and contact support@pickit3d.com to get an update.
 
 Task
 ----
