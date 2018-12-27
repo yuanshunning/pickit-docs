@@ -1,5 +1,5 @@
-Setting up Pick-it with KUKA KRC4
-=================================
+Setting up Pick-it with a KUKA robot
+====================================
 
 The setup of Pick-it with an KUKA robot consists of 4 steps:
 
@@ -13,7 +13,7 @@ The setup of Pick-it with an KUKA robot consists of 4 steps:
     `Starting and verifying the communication <#chapter03>`__
 
 Check controller and software compatibility
-===========================================
+-------------------------------------------
 
 Pick-it is compatible with controllers as of version **KR-C4** and the
 software module **KUKA Connect KRC** for socket communication is

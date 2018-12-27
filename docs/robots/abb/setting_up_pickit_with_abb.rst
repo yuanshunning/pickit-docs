@@ -9,7 +9,7 @@ The setup of Pick-it with an ABB robot consists of 4 steps:
 #. `Test communication <#chapter03>`__
 
 Check controller and software compatibility
-===========================================
+-------------------------------------------
 
 | Pick-it is compatible with controllers as of version IRC5 with
   RobotWare 5 or 6 and furthermore, Pick-it needs the following
@@ -29,7 +29,7 @@ If you don't have the right software version or module please contact
 your local ABB distributor.
 
 Setup the network connection
-============================
+----------------------------
 
 Hardware connection
 ~~~~~~~~~~~~~~~~~~~
@@ -64,13 +64,13 @@ write acces yet)
 |image5|
 
 Load the program files
-======================
+----------------------
 
 Download the right files
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 `All program files available for an ABB robot can be downloaded
-here <https://drive.google.com/uc?export=download&id=1-rLxMBKSnh-2JDbfjX3tPL-iYFBOLfoA>`__.
+here <https://drive.google.com/uc?export-download&id-1-rLxMBKSnh-2JDbfjX3tPL-iYFBOLfoA>`__.
 
 Upload the files to the robot
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -101,7 +101,7 @@ Restart the controller.
 |image10|
 
 Test robot connection on Pick-it
-================================
+--------------------------------
 
 Details on testing this connection can be found on:  `Test robot to
 Pick-it

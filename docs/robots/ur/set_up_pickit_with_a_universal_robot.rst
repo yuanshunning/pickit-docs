@@ -20,7 +20,7 @@ steps**:
 --------------
 
 Setup the network connection
-============================
+----------------------------
 
 Hardware connection
 ~~~~~~~~~~~~~~~~~~~
@@ -59,7 +59,7 @@ Pick-it.
 
 .. raw:: html
 
-   <div class="callout">
+   <div class-"callout">
 
 Default gateway and DNS servers can stay untouched. 
 
@@ -77,7 +77,7 @@ connection <http://support.pickit3d.com/article/19-test-robot-connection>`__
 --------------
 
 Load the program files
-======================
+----------------------
 
 Loading the program files for a Universal Robot consists of 2 steps:
 
@@ -88,7 +88,7 @@ Download the right files
 ------------------------
 
 `All program files available for Universal Robots can be downloaded
-here <https://drive.google.com/uc?export=download&id=1VedZYjVvlcyiE4iuqUuF67DsT8545ojU>`__.
+here <https://drive.google.com/uc?export-download&id-1VedZYjVvlcyiE4iuqUuF67DsT8545ojU>`__.
 
 Once unzipped, the UR\_Pick-it folder contains the following files:
 
@@ -109,7 +109,7 @@ robot programs that use the mentioned ASCII files.
 
 .. raw:: html
 
-   <div class="callout-yellow">
+   <div class-"callout-yellow">
 
 Modifying **pickit\_communication**, **pickit\_functions** or
 **Pickit\_transformations** should only be considered after talking to a
@@ -139,7 +139,7 @@ USB pendrive containing these files has to be used.
 --------------
 
 Start and verify communication
-==============================
+------------------------------
 
 Starting and verifying communication consists of 3 steps:
 

@@ -8,8 +8,8 @@ The TCP is defined by the exact translational and rotational difference
 between the robot flange frame and the tip of the end effector (e.g. a
 two finger gripper, a vacuum cup, a welding tool, ...).
 
-Example:
-========
+Example
+-------
 
 |image0|\ In this example there is a translation of 220 mm along the
 X-axis between the robot flange and the tip of the end effector and no

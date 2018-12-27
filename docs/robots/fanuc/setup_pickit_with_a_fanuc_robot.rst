@@ -14,11 +14,11 @@ setup of **Pick-it** with a **Fanuc** **robot** consists of **4 steps**:
     `Start and verify communication <#chapter04>`__
 
 Check controller and software compatibility
-===========================================
+-------------------------------------------
 
 .. raw:: html
 
-   <div class="callout-yellow">
+   <div class-"callout-yellow">
 
 Pick-it is compatible with controllers as of version **R-J3iB** and the
 software module **User Socket Msg** for socket communication is
@@ -52,7 +52,7 @@ To get you started as quickly as possible, Pick-it provides:
 
 .. raw:: html
 
-   <div class="callout-yellow">
+   <div class-"callout-yellow">
 
 Note that for the version R-J3iB itself, the program names have to be
 shortened to at maximum 8 characters.
@@ -64,7 +64,7 @@ shortened to at maximum 8 characters.
 --------------
 
 Setup the network connection
-============================
+----------------------------
 
 Setting up network connection for a Fanuc robot consists of 4 steps:
 
@@ -173,7 +173,7 @@ connection <http://support.pickit3d.com/article/19-test-robot-connection>`__
 --------------
 
 Load the program files
-======================
+----------------------
 
 Loading the program files for a Fanuc robot consists of 2 steps:
 
@@ -189,7 +189,7 @@ Download the right files
 ------------------------
 
 `All program files available for Fanuc robots can be downloaded
-here <https://drive.google.com/uc?export=download&id=0BzZKo0Mfhw0RMDNULWxxY0dvcG8>`__.
+here <https://drive.google.com/uc?export-download&id-0BzZKo0Mfhw0RMDNULWxxY0dvcG8>`__.
 
 The .zip folder contains the following ASCII files:
 
@@ -209,7 +209,7 @@ The .zip folder contains the following ASCII files:
 
 .. raw:: html
 
-   <div class="callout-blue">
+   <div class-"callout-blue">
 
 In case of using Fanuc software version v8.30, you can directly use the
 binaries available in the downloaded folder. In the other case, you
@@ -221,7 +221,7 @@ first have to compile the above files into binaries. 
 
 .. raw:: html
 
-   <div class="callout-yellow">
+   <div class-"callout-yellow">
 
 Modifying the pick\_it\_communication13\_C.kl file should only be
 considered after talking to a Pick-it support engineer.
@@ -276,7 +276,7 @@ communication to a Teach Pendant application program:
 
 .. raw:: html
 
-   <div class="callout-blue">
+   <div class-"callout-blue">
 
 To make the Karel programs visible on the Teach Pendant, you have to set
 the KAREL\_ENB value to 1 via ``MENU > NEXT > SYSTEM > Sysvars``
@@ -292,7 +292,7 @@ the KAREL\_ENB value to 1 via ``MENU > NEXT > SYSTEM > Sysvars``
 --------------
 
 Start and verify communication
-==============================
+------------------------------
 
 Starting and verifying communication for a Fanuc robot consists of 2
 steps:

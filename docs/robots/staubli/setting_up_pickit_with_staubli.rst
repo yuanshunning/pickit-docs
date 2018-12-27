@@ -13,7 +13,7 @@ The setup of **Pick-it** with a **Staubli** consists of **4 steps**:
 --------------
 
 Check Staubli software version
-==============================
+------------------------------
 
 The software version should be at least 7.
 
@@ -25,7 +25,7 @@ To verify this go to  
 |image1|
 
 Setup the network connection
-============================
+----------------------------
 
 Hardware connection
 ~~~~~~~~~~~~~~~~~~~
@@ -91,7 +91,7 @@ connection <http://support.pickit3d.com/article/19-test-robot-connection>`__
 --------------
 
 Load the program files
-======================
+----------------------
 
 Loading the program files consists of 2 steps:
 
@@ -102,7 +102,7 @@ Download the right files
 ------------------------
 
 `All program files available for Staubli can be downloaded
-here <https://drive.google.com/uc?export=download&id=0BzZKo0Mfhw0RcmJnWWE4LXM4M1k>`__.
+here <https://drive.google.com/uc?export-download&id-0BzZKo0Mfhw0RcmJnWWE4LXM4M1k>`__.
 
 Upload the files to the robot
 -----------------------------
@@ -114,7 +114,7 @@ Upload these files using SRS.
 --------------
 
 Start and verify communication
-==============================
+------------------------------
 
 Starting and verifying communication consists of 3 steps:
 
