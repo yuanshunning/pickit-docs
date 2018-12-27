@@ -10,3 +10,4 @@ Frequently asked questions and support documentation for Pick-it (https://www.pi
   getting_started/index
   web_interface/index
   robots/index
+  sample_cases/index
