@@ -1,19 +1,16 @@
+.. _exercise_detection_flex:
+
 Exercise detection with Pick-it Flex
 ====================================
 
 This exercise involves using Pick-it Flex. Different objects needs to be
 detected using simple shapes. 
 
-.. raw:: html
-
-   <div class="callout">
-
--  **Level:** Basic
--  **Duration:** < 15 min
-
-.. raw:: html
-
-   </div>
++--------------+------------+
+| **Level**    | Basic      |
++--------------+------------+
+| **Duration** | < 15 min   |
++--------------+------------+
 
 |image0|
 

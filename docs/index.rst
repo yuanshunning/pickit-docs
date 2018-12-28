@@ -7,6 +7,7 @@ Frequently asked questions and support documentation for Pick-it (https://www.pi
   :maxdepth: 1
   :caption: Contents
 
+  overview
   getting_started/index
   web_interface/index
   robots/index

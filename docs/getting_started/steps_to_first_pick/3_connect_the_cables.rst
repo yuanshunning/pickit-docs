@@ -12,16 +12,8 @@ connections. Follow the steps below to connect the processor:
    Pick-it processor. When the Pick-it camera is connected correctly, a
    continuous green light is lit on front of the Pick-it camera.
 
-.. raw:: html
-
-   <div class="callout-red">
-
-**Warning** A USB hub is not allowed between the Pick-it processor and
-camera connection.
-
-.. raw:: html
-
-   </div>
+.. warning:: A USB hub is not allowed between the Pick-it processor and
+   camera connection.
 
 -  Connect the gray/black 5m UTP network cable (CBL-CAT6-GRAY-5
    / CBL-CAT6-BLACK-5) from your computer to the YOUR PC labeled RJ45

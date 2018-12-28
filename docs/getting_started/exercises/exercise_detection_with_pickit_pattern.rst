@@ -1,19 +1,16 @@
+.. _exercise_detection_pattern:
+
 Exercise detection with Pick-it Pattern
 =======================================
 
 This exercise involves using the Pick-it flex detection engine.
 Different objects needs to be detected using fixed sized shapes.
 
-.. raw:: html
-
-   <div class="callout">
-
--  **Level:** Basic
--  **Duration:** < 15 min
-
-.. raw:: html
-
-   </div>
++--------------+------------+
+| **Level**    | Basic      |
++--------------+------------+
+| **Duration** | < 15 min   |
++--------------+------------+
 
 |image0|
 

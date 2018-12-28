@@ -1,3 +1,5 @@
+.. _exercise_detection_teach_flat_on_table:
+
 Exercise detection with Pick-it Teach of parts lying flat on a table
 ====================================================================
 
@@ -8,16 +10,11 @@ partially covered to the camera system. In this exercise the benefit of
 multiple steps are discussed. Also parameters to more robustly detect
 parts lying flat on a table are discussed.
 
-.. raw:: html
-
-   <div class="callout">
-
--  **Level:** Advanced
--  **Duration:** < 15 min
-
-.. raw:: html
-
-   </div>
++--------------+------------+
+| **Level**    | Advanced   |
++--------------+------------+
+| **Duration** | < 15 min   |
++--------------+------------+
 
 |image0|
 

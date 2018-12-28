@@ -1,19 +1,16 @@
+.. _exercise_detection_empty_bin:
+
 Exercise detection of an empty bin
 ==================================
 
 This exercise involves creating a detection strategy to detect an empty
 bin.
 
-.. raw:: html
-
-   <div class="callout">
-
--  **Level:** Advanced
--  **Duration:** < 15 min
-
-.. raw:: html
-
-   </div>
++--------------+------------+
+| **Level**    | Advanced   |
++--------------+------------+
+| **Duration** | < 15 min   |
++--------------+------------+
 
 |image0|
 
