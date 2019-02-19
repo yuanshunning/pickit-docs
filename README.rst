@@ -3,16 +3,25 @@ Pick-it docs
 
 Build html on Docker
 --------------------
-A Dockerfile is included to build the html with the ReadTheDocs Theme locally.
+A Dockerfile is included to build & host the html with the ReadTheDocs Theme locally. 
+The docker container runs `sphinx-autobuild` which automatically watches for changes 
+so you don't have to manually rebuild everytime you change something.
 
-Build the image: `docker build --tag=pickit-docs .`
-
-Build the documentation:
+Build the image:
 
 .. code-block:: bash
-    docker run --rm -v ~/pickit-docs:/docs -t pickit-docs:latest bash -c "\
-    mkdir -p /docs/_build/html && \
-    cd /docs/docs && \
-    mkdir _build && \sphinx-build -b html . ../_build/html"
+    docker build --tag=pickit-docs .
 
-The errors of the build process are printed on screen and the build is available in `_build/html`.
+Run the docker container:
+
+.. code-block:: bash
+    docker run -it --rm -p 8000:8000 --name pickit-docs -v $PWD/docs:/docs pickit-docs
+
+You can now access the documentation at http://localhost:8080.
+
+If you want to get the static html files, you can copy them from the running container:
+
+.. code-block:: bash
+    docker cp pickit-docs:/home/python/_build/html /tmp/
+
+The errors of the build process are printed on the screen.
