@@ -15,7 +15,7 @@ Build the image:
 Run the docker container:
 
 .. code-block:: bash
-    docker run -it --rm -p 8000:8000 --name pickit-docs -v $PWD/docs:/docs pickit-docs
+    docker run -it --rm -p 8800:8080 --name pickit-docs -v $PWD/docs:/docs pickit-docs
 
 You can now access the documentation at http://localhost:8080.
 
