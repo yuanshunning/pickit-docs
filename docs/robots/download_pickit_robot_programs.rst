@@ -25,7 +25,7 @@ Download robot programs for:
       plugin.
 
 -  `Fanuc <https://drive.google.com/uc?export=download&id=0BzZKo0Mfhw0RMDNULWxxY0dvcG8>`__
--  `ABB <https://drive.google.com/uc?export=download&id=1AJQ9HrJUrlpjKEIen5E5dUszNLp5_uf9>`__
+-  `ABB <https://drive.google.com/uc?export=download&id=1ukWkuIdN2-fLVfCHKOiPRlP0tDADPOcC>`__
 -  **KUKA**
 
    -  `KR
@@ -35,4 +35,4 @@ Download robot programs for:
    -  `Sunrise <https://drive.google.com/uc?export=download&id=0ByhqgEqwu5R8QTlvZy1YcEk1NDQ>`__
 
 -  `Staubli <https://drive.google.com/uc?export=download&id=0ByhqgEqwu5R8ZGRrZ1VlVkJkN1E>`__
--  `Yaskawa <https://drive.google.com/uc?export=download&id=1Q_jWFodz9zKMNK2ZIEdAeAyntJ5fi4L9>`__
+-  `Yaskawa <https://drive.google.com/uc?export=download&id=19KruepaGIRvPzL9BEdUXbChJE6WhgvVb>`__
