@@ -35,4 +35,4 @@ Download robot programs for:
    -  `Sunrise <https://drive.google.com/uc?export=download&id=0ByhqgEqwu5R8QTlvZy1YcEk1NDQ>`__
 
 -  `Staubli <https://drive.google.com/uc?export=download&id=0ByhqgEqwu5R8ZGRrZ1VlVkJkN1E>`__
--  `Yaskawa <https://drive.google.com/uc?export=download&id=19KruepaGIRvPzL9BEdUXbChJE6WhgvVb>`__
+-  `Yaskawa <https://drive.google.com/uc?export=download&id=1IsMGjSATTixB_r80MWdS2fu-hn1kKIRL>`__
