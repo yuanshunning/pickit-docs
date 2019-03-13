@@ -48,8 +48,7 @@ To install the Pick-it URCap plugin, follow these steps:
 
 #. `Download </downloads>`__ the Pick-it URCap plugin archive containing
    the latest version of the URCap.
-#. Unzip the archive and copy its contents to a USB drive. The contents
-   consist of a single folder named \ **``pickit_UR``**.
+#. Unzip the archive and copy its contents to an **empty** USB drive.
 #. Insert the drive into the USB port of either the robot controller or
    teach pendant while it is turned on.
 #. On the Polyscope home screen, press **Setup Robot**.
@@ -65,7 +64,7 @@ To install the Pick-it URCap plugin, follow these steps:
    |image3|
 #. In the \ **Setup Robot** menu, press **URCaps**, then **+
    |image4|**
-#. Navigate to the **``pickit_UR``** folder of the USB drive, and select
+#. Navigate to the USB drive, and select
    the **``pickit_urcap-[version].urcap``** file.
 #. | Polyscope will indicate that a restart is needed to apply the
      changes. Press the restart button to continue.
@@ -158,7 +157,7 @@ article.
    :name: example_programs
 
 The Pick-it URCap plugin installation makes available a few example
-programs under **``/programs/Pickit_UR/pickit_samples``** folder of the
+programs under **``/programs/pickit_samples``** folder of the
 robot. The can be also downloaded independently of the
 URCap \ `here <https://drive.google.com/open?id=1Gf63Y35NaVxbP4mwc5YUC5SU8u8RYvyO>`__.
 These programs are a great way to get familiar with the Pick-it URCap
