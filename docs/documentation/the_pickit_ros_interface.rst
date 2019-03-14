@@ -45,7 +45,7 @@ example, it corresponds to  **pickit-demo-002.**
 
 |image2|
 
-If the ping test fails, please check the network configuration fo your
+If the ping test fails, please check the network configuration for your
 local system and make sure that it's in the same network as the Pick-it
 system.
 
@@ -144,13 +144,9 @@ Available commands
 The following are valid strings that can be passed as payload to the
 /im/pickit/external\_cmds topic:
 
--  e\_do\_single\_test
+-  e\_look\_for\_object
 
    -  Pick-it performs one detection on the latest camera image.
-
--  e\_do\_continuous\_test
-
-   -  Pick-it continuously performs detections as fast as possible.
 
 -  e\_do\_stop
 
