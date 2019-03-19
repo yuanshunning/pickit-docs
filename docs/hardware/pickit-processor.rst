@@ -1,5 +1,5 @@
-The Pick-it processor
-=====================
+Pickit processor
+================
 
 The Pick-it processor is a rack mount computer on which the Pick-it
 software is installed. It is responsible for doing all calculations to
@@ -138,3 +138,11 @@ Pick-it processor 2.0:
 .. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5aa64e762c7d3a7549518cff/file-8TUd7YX6dk.jpg
 .. |image1| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5aa64e6504286374f708ca46/file-UCG7Moyt1M.jpg
 
+Environmental and operating conditions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  Temperature: -20ºC to 70ºC
+-  Vibrations: Operating, 5 Grms, 5-500 Hz, 3 axes
+-  IP rating: IP54
+-  Power supply: 9-32V DC 160W
+-  Humidity: ~95% @ 40°C (non-condensing)

@@ -1,5 +1,5 @@
-Pick-it M-HD
-============
+Pickit M-HD camera
+==================
 
 |image0|
 
@@ -54,15 +54,13 @@ Technical specifications
 -  **Conforms to**
    CE, CB, EN6950, FCC class A
 
-Camera power consumption
+Power consumption
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  Booting: 35W
 -  Idle: 16W
 -  Detecting: 35W
 
-Go to the overview of all Pick-it cameras: 
-https://support.pickit3d.com/camera
 
 .. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5bb3e60b2c7d3a04dd5b3836/file-ABeT0lGCGq.jpg
 
