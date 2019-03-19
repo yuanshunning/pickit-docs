@@ -100,7 +100,7 @@ to management mode before making these changes.
 | Before starting, the MotoPlus application should be placed on a USB
   dongle.
 | `Download the Pick-it MotoPlus application
-  here <https://drive.google.com/uc?export=download&id=1Q_jWFodz9zKMNK2ZIEdAeAyntJ5fi4L9>`__.
+  here <https://support.pickit3d.com/article/36-pick-it-robot-programs>`__.
 
 #. Load the correct USB device under \ **SYSTEM → MotoPlus APL. →
    DEVICE**.
