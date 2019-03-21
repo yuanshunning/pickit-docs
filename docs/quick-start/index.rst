@@ -9,4 +9,5 @@ Quick start
     connect-the-cables
     test-the-setup
     your-first-detection
+    robot-camera-calibration
     your-first-pick
