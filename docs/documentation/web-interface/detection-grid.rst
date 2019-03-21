@@ -1,5 +1,5 @@
-The Pick-it detection grid
-==========================
+Detection grid
+==============
 
 .. raw:: html
 

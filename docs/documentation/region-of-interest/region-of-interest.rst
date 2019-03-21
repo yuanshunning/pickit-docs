@@ -211,26 +211,6 @@ and  \ `Advanced Region of Interest
 filters <https://support.pickit3d.com/article/170-advanced-roi-filters>`__
 articles.
 
-Mentioned articles
-
-What to read next
-
-| `How to use the color
-  filter <https://support.pickit3d.com/article/171-how-to-use-the-color-filter>`__
-| `Advanced Region of Interest
-  filters <https://support.pickit3d.com/article/170-advanced-roi-filters>`__
-| `How can I get a better bin picking
-  experience <https://support.pickit3d.com/article/81-how-can-i-get-a-better-bin-picking-experience>`__
-| `Attach the ROI Box to the robot base for picking objects from a big
-  bin <https://support.pickit3d.com/article/41-attaching-the-roi-box-to-the-robot-base-for-binpicking-objects-from-a-big-bin>`__
-
-| `Detection: Pick-it
-  Flex <https://support.pickit3d.com/article/160-detection-pick-it-flex>`__
-| `Detection: Pick-it
-  Pattern <https://support.pickit3d.com/article/161-detection-pick-it-pattern>`__
-| `Detection: Pick-it
-  Teach <https://support.pickit3d.com/article/162-detection-pick-it-teach>`__
-
 .. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5acb66b22c7d3a0e93671fdc/file-ormnI6ZCCv.png
 .. |image1| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/58fdf1c80428634b4a328b69/file-3m1oc8lGI2.png
 .. |image2| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/58fe1a1f2c7d3a057f887f26/file-KwOsSJURle.png

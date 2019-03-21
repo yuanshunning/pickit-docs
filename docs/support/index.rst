@@ -6,3 +6,5 @@ Support
     :glob:
 
     *
+    safety-instructions
+    warranty

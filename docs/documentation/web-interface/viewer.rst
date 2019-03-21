@@ -1,5 +1,5 @@
-The Pick-it viewer
-==================
+Viewer
+======
 
 The Pick-it viewer is the main component of the Pick-it web interface
 for providing visual feedback on the camera view and detection results.

@@ -1,6 +1,9 @@
 Advanced ROI filters
 ====================
 
+There are a number of advanced Region of Interest filters used for
+excluding points \ **inside the ROI box**.
+
 -  `Flat/curved region filter <#flat-curved>`__
 -  `Dynamic Box-based ROI filter <#dynamic>`__
 -  `Point-based ROI filter <#point-based>`__
@@ -93,22 +96,9 @@ The initialization of the sphere-based filtering consists of capturing a
 reference image of the empty workspace and finding the dominant sphere
 through all points within the above-defined region of interest box.
 
-.. raw:: html
-
-   <div class="callout-yellow">
-
 **Note** This filter is only applied once when you press the **Teach
 workspace** button.
 
-.. raw:: html
-
-   </div>
-
-Mentioned articles
-
-What to read next
-
-| 
 
 | `Configuration <https://support.pickit3d.com/article/157-configuration>`__
 | `Region of

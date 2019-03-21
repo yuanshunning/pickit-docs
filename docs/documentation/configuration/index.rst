@@ -65,19 +65,6 @@ or loaded **before** starting to configure a Pick-it application.
 
    </div>
 
-Mentioned articles
-
-What to read next
-
-| `Region of
-  Interest <https://support.pickit3d.com/article/159-region-of-interest>`__
-| `Detection: Pick-it
-  Flex <https://support.pickit3d.com/article/160-detection-pick-it-flex>`__
-| `Detection:
-  Pick-it Pattern <https://support.pickit3d.com/article/161-detection-pick-it-pattern>`__
-| `Detection:
-  Pick-it Teach <https://support.pickit3d.com/article/162-detection-pick-it-teach>`__
-
 .. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5b5ed2140428631d7a897003/file-M6Fn0C7Lma.png
 .. |image1| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5b8ce5572c7d3a03f89e6172/file-iChLc0TC3i.png
 .. |image2| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5a8f29472c7d3a0806494a70/file-H15lAV7HIO.png

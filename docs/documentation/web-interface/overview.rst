@@ -1,5 +1,5 @@
-General layout
-==============
+Overview
+========
 
 -  `Top bar <#top>`__
 -  `Left side <#left>`__
@@ -107,31 +107,3 @@ each tab to have an extensive overview:
    Teach <https://support.pickit3d.com/article/162-detection-pick-it-teach>`__
 -  ` <https://support.pickit3d.com/article/162-detection-pick-it-teach>`__\ `Picking <https://support.pickit3d.com/article/163-picking>`__
 -  `Files <https://support.pickit3d.com/article/164-files>`__
-
-Mentioned articles
-
-What to read next
-
-| `Configuration <https://support.pickit3d.com/article/157-configuration>`__
-| `Settings <https://support.pickit3d.com/article/182-settings>`__
-| `Pick-it viewer <https://support.pickit3d.com/article/156-views>`__
-| `detection
-  grid <https://support.pickit3d.com/article/167-the-pick-it-detection-grid>`__
-| `Configuration <https://support.pickit3d.com/article/157-configuration>`__
-| `Camera(s) <https://support.pickit3d.com/article/158-calibration>`__
-| `Region of
-  Interest <https://support.pickit3d.com/article/159-region-of-interest>`__
-| `Detection: Pick-it
-  Flex <https://support.pickit3d.com/article/160-detection-pick-it-flex>`__
-| `Detection: Pick-it
-  Pattern <https://support.pickit3d.com/article/161-detection-pick-it-pattern>`__
-| `Detection: Pick-it
-  Teach <https://support.pickit3d.com/article/162-detection-pick-it-teach>`__
-| `Picking <https://support.pickit3d.com/article/163-picking>`__
-| `Files <https://support.pickit3d.com/article/164-files>`__
-
-| `Configuration <https://support.pickit3d.com/article/157-configuration>`__
-| `Pick-it viewer <https://support.pickit3d.com/article/156-views>`__
-
-.. |image0| image:: https://d33v4339jhl8k0.cloudfront.net/docs/assets/583bf3f79033600698173725/images/5b4ca2fe2c7d3a03f89c9ad4/file-x2ruOUilAh.png
-

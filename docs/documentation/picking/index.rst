@@ -1,24 +1,25 @@
 Picking
 =======
 
-.. raw:: html
-
-   <div>
-
 Pick-it comes with a set of options that allows configuring how detected
 objects should be picked by a robot. These options, that can be found in
-the Picking tab of the Pick-it web interface, are grouped in the
-following categories:
-
--  `Note on frames <#frames%22>`__
--  `Object ordering <#object_ordering%22>`__
--  `Pick strategy <#pick_strategy%22>`__
--  `Collision prevention <#collision_prevention%22>`__
+the Picking tab of the Pick-it web interface.
 
 This article explains how to use all settings to get the most out of
 your application. You will learn how to align object frames for picking,
 prevent collisions with a bin or other objects and choose the pick
 order.
+
+.. toctree::
+    :maxdepth: 1
+    :glob:
+
+    object-ordering
+    pick-strategy
+    collision-prevention
+    maximum-angles
+    check-collisions-with
+    *
 
 .. rubric:: Note on frames
    :name: frames
@@ -97,26 +98,6 @@ to be modeled. And second you have to define with what you want to check
 collision with: bin and/or other objects. More detailed information on
 how to use this feature can be found in this article, `check collision
 with <https://support.pickit3d.com/article/218-check-collisions-with>`__.
-
-.. raw:: html
-
-   </div>
-
-Mentioned articles
-
-What to read next
-
-| `Pick-it detection
-  grid <https://support.pickit3d.com/article/167-the-pick-it-detection-grid>`__
-
-| `Region of
-  Interest <https://support.pickit3d.com/article/159-region-of-interest>`__
-| `Detection: Pick-it
-  Flex <https://support.pickit3d.com/article/160-detection-pick-it-flex>`__
-| `Detection:
-  Pick-it Pattern <https://support.pickit3d.com/article/161-detection-pick-it-pattern>`__
-| `Detection:
-  Pick-it Teach <https://support.pickit3d.com/article/162-detection-pick-it-teach>`__
 
 .. |image0| image:: https://lh3.googleusercontent.com/dBxTCKnpjv0hkRZSyIAHbTDp_6YQaFpnw-6dwml-t-rCCV-yD_KRG-ZKohoV4ukdOoWU8_DJcMVOjPjcdK87nzGnEirZSMwfx0otkzH7MwR5bFFLh-WuiKXE0RkucEH44Ap93cBW
    :width: 624px

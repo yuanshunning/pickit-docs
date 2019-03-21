@@ -17,12 +17,18 @@ assembly tasks with a robot or machine.
   :caption: Documentation
   :maxdepth: 1
 
-  web-interface/index
-  detection-engines/index
+  Web interface <documentation/web-interface/index>
+  Configuration <documentation/configuration/index>
+  Calibration <documentation/calibration/index>
+  Region of Interest <documentation/region-of-interest/index>
+  Flex <documentation/flex/index>
+  Pattern <documentation/pattern/index>
+  Teach <documentation/teach/index>
+  Picking <documentation/picking/index>
+  Files <documentation/files/index>
+
   faq/index
   support/index
-  safety-instructions
-  warranty
 
 .. toctree::
   :caption: Robot integrations
@@ -41,6 +47,7 @@ assembly tasks with a robot or machine.
 
 .. toctree::
   :caption: Hardware
+  :maxdepth: 1
 
   Processor <hardware/pickit-processor>
   M camera <hardware/pickit-m-camera>
@@ -48,7 +55,7 @@ assembly tasks with a robot or machine.
   L camera <hardware/pickit-l-camera>
 
 .. toctree::
-  :maxdepth: 1
   :caption: Examples
+  :maxdepth: 1
 
   examples/index
