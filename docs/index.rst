@@ -60,6 +60,14 @@ assembly tasks with a robot or machine.
 
 .. toctree::
   :maxdepth: 1
+  :caption: FAQ
+
+  General <faq/general/index>
+  Web interface <faq/web-interface/index>
+  Robot programming <faq/robot-programming/index>
+
+.. toctree::
+  :maxdepth: 1
   :caption: Sample cases
 
   sample_cases/index

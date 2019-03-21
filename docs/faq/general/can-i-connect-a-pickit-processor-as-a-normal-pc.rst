@@ -20,4 +20,3 @@ After setup and configuration the external PC/laptop can be removed.
 |image0|
 
 .. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/592549520428634b4a33659c/file-Kj7MxzMb03.png
-
