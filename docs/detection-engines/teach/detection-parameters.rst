@@ -1,5 +1,5 @@
-Explaining the Teach detection parameters
-=========================================
+Detection parameters
+====================
 
 The Pick-it Teach vision engine is designed to detect complex
 3D shapes. This article explains its detection parameters. For details

@@ -7,14 +7,14 @@ Overview
 .. toctree::
   :maxdepth: 1
 
-  basic/general_layout
-  basic/the_pickit_viewer
+  basic/general-layout
+  basic/the-pickit-viewer
   basic/configuration
   basic/cameras
-  basic/region_of_interest
-  basic/detection_pickit_flex
-  basic/detection_pickit_pattern
-  basic/detection_pickit_teach
+  basic/region-of-interest
+  basic/detection-pickit-flex
+  basic/detection-pickit-pattern
+  basic/detection-pickit-teach
   basic/picking
   basic/files
 
@@ -25,22 +25,22 @@ Advanced
 .. toctree::
   :maxdepth: 1
 
-  advanced/explaining_the_pattern_detection_parameters
-  advanced/check_collisions_with
-  advanced/robot_tool_model
-  advanced/maximum_angle_between_pick_frame_zaxis_and_surface_normal
-  advanced/maximum_angle_between_pick_and_reference_frame_zaxis
-  advanced/enforce_alignment_of_pick_frame_orientation
-  advanced/pick_strategy
-  advanced/object_to_reference_frame_alignment
-  advanced/object_ordering
-  advanced/explaining_the_teach_detection_parameters
-  advanced/example:_the_clustering_methods
-  advanced/installing_the_pickit_calibration_plate_on_a_robot_flange_or_tool_changer
-  advanced/saving_a_snapshot_in_pickit
+  advanced/explaining-the-pattern-detection-parameters
+  advanced/check-collisions-with
+  advanced/robot-tool-model
+  advanced/maximum-angle-between-pick-frame-zaxis-and-surface-normal
+  advanced/maximum-angle-between-pick-and-reference-frame-zaxis
+  advanced/enforce-alignment-of-pick-frame-orientation
+  advanced/pick-strategy
+  advanced/object-to-reference-frame-alignment
+  advanced/object-ordering
+  advanced/explaining-the-teach-detection-parameters
+  advanced/example:-the-clustering-methods
+  advanced/installing-the-pickit-calibration-plate-on-a-robot-flange-or-tool-changer
+  advanced/saving-a-snapshot-in-pickit
   advanced/settings
-  advanced/explaining_the_flex_detection_parameters
-  advanced/how_to_use_the_color_filter
-  advanced/advanced_roi_filters
-  advanced/using_the_model_id_in_a_robot_program
-  advanced/the_pickit_detection_grid
+  advanced/explaining-the-flex-detection-parameters
+  advanced/how-to-use-the-color-filter
+  advanced/advanced-roi-filters
+  advanced/using-the-model-id-in-a-robot-program
+  advanced/the-pickit-detection-grid

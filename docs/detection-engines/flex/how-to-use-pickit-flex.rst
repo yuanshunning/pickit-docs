@@ -27,9 +27,6 @@ The typical workflow when using the Flex engine is as following:
 On the **Detection** page select **Pick-it** **Flex** under the
 Detection algorithm option.
 
-If you don't see this option on your Pick-it system contact us on 
-`support@pickit3d.com <mailto:mailto:support@pickit3d.com>`__.
-
 2. Optimize the 3D image
 ------------------------
 

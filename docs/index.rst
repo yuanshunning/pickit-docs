@@ -7,33 +7,22 @@ palletizing, depalletizing, order picking, bin-picking, machine tending or
 assembly tasks with a robot or machine.
 
 .. toctree::
-  :caption: Quick start
+  :caption: First steps
   :maxdepth: 1
 
-  quick_start/whats-in-the-box
-  quick_start/mount-the-camera
-  quick_start/connect-the-cables
-  quick_start/test-the-setup
-  quick_start/your-first-detection
-  quick_start/your-first-pick
-
-.. toctree::
-  :caption: Installation
-  :maxdepth: 1
-
-  installation/components
-  installation/connecting-the-cables
-  installation/test-your-setup
+  quick-start/index
+  installation/index
   
 .. toctree::
-  :caption: Web interface
+  :caption: Documentation
   :maxdepth: 1
 
-  web_interface/index
-
-.. toctree::
-  :caption: User documentation
-  :maxdepth: 1
+  web-interface/index
+  detection-engines/index
+  faq/index
+  support/index
+  safety-instructions
+  warranty
 
 .. toctree::
   :caption: Robot integrations
@@ -57,14 +46,6 @@ assembly tasks with a robot or machine.
   M camera <hardware/pickit-m-camera>
   M-HD camera <hardware/pickit-m-hd-camera>
   L camera <hardware/pickit-l-camera>
-
-.. toctree::
-  :maxdepth: 1
-  :caption: FAQ
-
-  General <faq/general/index>
-  Web interface <faq/web-interface/index>
-  Robot programming <faq/robot-programming/index>
 
 .. toctree::
   :maxdepth: 1

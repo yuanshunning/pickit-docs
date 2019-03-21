@@ -1,5 +1,5 @@
-Explaining the Flex detection parameters
-========================================
+Detection parameters
+====================
 
 The Pick-it Flex vision engine is designed to detect basic geometric
 shapes as cylinders, rectangles, squares, circles and more.
