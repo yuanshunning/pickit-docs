@@ -68,6 +68,6 @@ assembly tasks with a robot or machine.
 
 .. toctree::
   :maxdepth: 1
-  :caption: Sample cases
+  :caption: Examples
 
-  sample_cases/index
+  examples/index

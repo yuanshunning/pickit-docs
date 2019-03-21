@@ -1,5 +1,5 @@
-Sample Cases
-============
+Examples
+========
 
 .. toctree::
   :glob:
