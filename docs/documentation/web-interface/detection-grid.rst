@@ -1,3 +1,5 @@
+.. _detection-grid:
+
 Detection grid
 ==============
 

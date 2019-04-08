@@ -1,3 +1,5 @@
+.. _calibration-plate-mounting-on-robot:
+
 Installing the Pick-it calibration plate on a robot flange or tool changer
 ==========================================================================
 

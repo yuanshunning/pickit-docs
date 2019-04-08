@@ -2,19 +2,9 @@ Detection parameters
 ====================
 
 The Pick-it Flex vision engine is designed to detect basic geometric
-shapes as cylinders, rectangles, squares, circles and more.
-
-The parameters for Flex detection are split into five categories:
-
--  `Optimize 3D image <#optimize_3d_image>`__
--  `Group points into clusters <#group_clusters>`__
--  `Reject clusters <#reject_clusters>`__
--  `Fit objects to clusters <#fit_objects>`__
--  `Filter objects <#filter_objects>`__
-
-The process of detecting objects with the Flex vision engine is all
-about step by step testing and fine-tuning parameters until you get a
-good result.
+shapes as cylinders, rectangles, squares, circles and more. The process
+of detecting objects with the Flex vision engine is all about step by step
+testing and fine-tuning parameters until you get a good result.
 
 Optimize 3D image
 -----------------
@@ -28,7 +18,7 @@ the **Points** view.
 ~~~~~~~~~~~~~~~~
 
 Image fusion is the combination of multiple camera captures into a
-single image. Enabling image fusion can provide \ **more detail** in
+single image. Enabling image fusion can provide **more detail** in
 regions that show flickering in the 2D or 3D live streams. Flickering
 typically occurs when working with **reflective materials**. There are
 three possible fusion configurations: **None**, **Light fusion** and
@@ -39,12 +29,8 @@ The recommended practice is to use None in the absence of flickering,
 and try first Light fusion over Heavy fusion when flickering is
 present. 
 
-**Scene downsampling resolution**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. raw:: html
-
-   <div>
+Scene downsampling resolution
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The downsampling resolution allows reducing the density of the point
 cloud. This parameter has a big impact on detection time, and to a
@@ -52,30 +38,10 @@ lesser extent on detection accuracy. More points lead to higher
 detection times and higher accuracy, fewer points to lower detection
 times and lower accuracy.
 
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   <div>
-
 In the illustration, you can see an example of setting the scene
 downsampling parameter to 1 mm, 4 mm and 10 mm.
 
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   <div>
-
 |image0|
-
-.. raw:: html
-
-   </div>
 
 Group points into clusters
 --------------------------
@@ -84,11 +50,11 @@ These parameters affect the clustering (grouping) of points. Clustering
 points is a way of grouping points belonging to individual objects. A
 good way to detect multiple objects is to try and group points that
 belong to the same object. The effect of modifying these parameters can
-be visualized in the \ **Clusters** view.
+be visualized in the **Clusters** view.
 
 There are multiple clustering strategies available, and the choice
 initially depends on whether your parts
-are \ **touching** or **non-touching**. 
+are **touching** or **non-touching**. 
 
 -  For **touching parts**, a few preset configurations exist, and you
    should experiment with them to determine which works best with your
@@ -102,6 +68,8 @@ clusters** at all, and an **expert mode** which is intended mostly for
 compatibility with older versions of Pick-it. The expert-mode parameters
 are such that higher values will typically result in less and/or bigger
 clusters, while lower values result in more and/or smaller clusters.
+
+.. _flex-reject-clusters:
 
 Reject clusters
 ---------------
@@ -153,11 +121,9 @@ Filter objects
 
 These parameters specify filters for rejecting detected
 objects. Rejected objects are shown in the  **Objects** view and in
-the \ `detection
-grid <https://support.pickit3d.com/article/57-the-pick-it-detection-grid>`__
-as invalid.
+the :ref:`detection grid <detection-grid>` as invalid.
 
-Similar to how we reject\ `clusters <#reject_clusters>`__, objects can
+Similar to how we :ref:`flex-reject-clusters`, objects can
 be rejected by setting minimum and maximum values for their \ **size
 in number of points**, or their \ **physical size** (length, width,
 diameter). Additionally, objects can be rejected depending on the value
@@ -186,15 +152,7 @@ This score applies to all shapes, and represents the percentage of the
 The example below is for **cylinders** (in yellow, shown from the side),
 but this score can be given for every object shape.
 
-.. raw:: html
-
-   <div>
-
 |image6|
-
-.. raw:: html
-
-   </div>
 
 .. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/58ee1e3edd8c8e5c5731532a/file-pKR4nQsEQv.png
 .. |image1| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5a8d3bd104286305fbc9b172/file-ra6obvfgNo.png

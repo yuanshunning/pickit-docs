@@ -1,3 +1,5 @@
+.. _robot-integrations:
+
 Robot integrations
 ==================
 

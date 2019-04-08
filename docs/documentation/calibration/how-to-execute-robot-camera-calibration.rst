@@ -1,13 +1,16 @@
-How to execute robot camera calibration
-=======================================
+Robot camera calibration
+========================
 
-To **accurately pick** objects located by Pick-it, a robot camera
-**calibration is needed**. Pick-it provides **two ways of executing**
-this calibration. Which to choose depends on how Pick-it is set up and
-will be used.
+Robot camera calibration is the process where the camera and the robot
+learn their relative position towards each other. If done correctly, the
+camera can guide the robot to correct positions in the physical
+environment. 
 
--  `Multi poses calibration <#multipose>`__
--  `Single pose calibration <#singlepose>`__
+Once the camera and robot are mounted, calibration can be done. This
+process only needs to be repeated if the the camera is moved relative
+to the robot, or visa versa. Pick-it provides two methods of executing
+this calibration. Which method to choose depends on how Pick-it is set up
+and how it will be used.
 
 If the Pick-it **camera is fixed to an independent structure**, \ `multi
 poses <#multipose_fixed>`__ and \ `single pose <#singlepose>`__
@@ -21,23 +24,15 @@ The first step in the calibration process are:
 #. Selecting the camera mounting type for your application
 #. Choosing calibration method
 
-.. raw:: html
-
-   <div class="callout-red">
-
-**WARNING** Wrong or old calibration parameters can lead to unexpected
-motions. Safe motions of the robot must always be checked by the
-operator of the robot itself and can never be guaranteed by Pick-it.
-
-.. raw:: html
-
-   </div>
+.. warning::
+  Wrong or old calibration parameters can lead to unexpected
+  motions. Safe motions of the robot must always be checked by the
+  operator of the robot itself and can never be guaranteed by Pick-it.
 
 Multi poses calibration
 -----------------------
 
--  `Camera fixed to an independent structure <#multipose_fixed>`__
--  `Camera mounted on the robot <#multipose_mounted>`__
+.. _calibration-multi-pose-fixed:
 
 Camera fixed to an independent structure
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -47,8 +42,7 @@ Camera fixed to an independent structure
 Clamp the calibration plate to the robot flange or end-effector in
 whatever way you can but always make sure the plate  **is rigidly
 attached to the flange during the calibration process**. You
-can \ `attach it to the robot
-flange <http://support.pickit3d.com/article/37-installing-the-pick-it-calibration-plate-on-a-robot-flange-or-tool-changer>`__,
+can :ref:`attach it to the robot flange <calibration-plate-mounting-on-robot>`,
 grab it firmly with a gripper, screw it to a tool or any other way that
 it is firmly attached to the robot flange or end-effector.
 
@@ -80,35 +74,17 @@ Next step: `Calculate multi poses calibration <#multipose_calculate>`__
 Calculate multi poses calibration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. raw:: html
-
-   <div>
-
 Go to the **Calibration** tab in the Pick-it web interface and select
 **Multi Poses Calibration**.
 
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   <div>
-
 Now repeat the following cycle for every pose:  
-
-.. raw:: html
-
-   </div>
 
 #. Move the robot to the first pose for calibration.
 #. At this point, a request for calibration should be sent.
 
 This request should be sent from the robot using the provided
 calibration program. This program can be found under the  **Files** tab
-of the Pick-it web interface or on \ `this page about all supported
-robot
-programs <http://support.pickit3d.com/article/36-pick-it-robot-programs>`__.
+of the Pick-it web interface or under :ref:`robot-integrations`.
 
 After each successful collection of such a pair of transformations, the
 interface looks as follows:
@@ -125,16 +101,9 @@ If something went wrong in the middle of the calibration process, you
 can always restart from the beginning by pressing the **Reset
 poses** button.
 
-.. raw:: html
-
-   <div class="callout-yellow">
-
-**NOTE** Always  `verify the calibration <#verify>`__ in the 3D view as
-shown below. 
-
-.. raw:: html
-
-   </div>
+.. note::
+  Always  `verify the calibration <#verify>`__ in the 3D view as
+  shown below. 
 
 Single pose calibration
 -----------------------
@@ -162,25 +131,17 @@ Go to the **Calibration** tab of the Pick-it user interface and
 select \ **Single pose calibration**.
 
 Mount the calibration plate to the robot flange directly or by making
-use of a tool changer of your choice. Read more on  `Installing the
+use of a tool changer of your choice. Read more on :ref:`Installing the
 Pick-it calibration plate on a robot flange or tool
-changer <http://support.pickit3d.com/article/37-installing-the-pick-it-calibration-plate-on-a-robot-flange-or-tool-changer>`__. 
+changer <calibration-plate-mounting>`. 
 
 | Position the robot such that the calibration plate can be seen by the
   camera (the “Plate visible” indicator should be green).
 | *Preferably, the calibration plate is as much as possible in the
   center of the region where the actual picking will take place. *
 
-.. raw:: html
-
-   <div>
-
 .. rubric:: Step 2: Define helper transformation
    :name: helper_transformation
-
-.. raw:: html
-
-   </div>
 
 The **helper transformation** is the transformation between the flange
 frame of the robot and the calibration plate frame. On the figure below
@@ -188,16 +149,8 @@ you can see the defined calibration plate frame. 
 
 |calibration -plate -pickit.jpg|
 
-.. raw:: html
-
-   <div>
-
 The helper transformation from the robot flange to the calibration plate
 results from the following possible motions: 
-
-.. raw:: html
-
-   </div>
 
 #. a possible rotation around the Z-axes
 #. a possible translation along Z-axes
@@ -241,16 +194,9 @@ instructions.
 
 |image7|
 
-.. raw:: html
-
-   <div class="callout-yellow">
-
-**NOTE** Always  `verify the calibration <#verify>`__ in the 3D view as
-shown below. 
-
-.. raw:: html
-
-   </div>
+.. note::
+  Always  `verify the calibration <#verify>`__ in the 3D view as
+  shown below. 
 
 Verify calibration
 ==================

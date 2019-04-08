@@ -1,9 +1,6 @@
 Configuration
 =============
 
--  `Loading a setup or product file <#loading>`__
--  `Creating a setup or product file <#creating>`__
-
 On the configuration page, you can manage the setup and product files on
 your Pick-it system.
 
@@ -32,15 +29,8 @@ You can download or delete a specific setup or product by pressing the
 selected. Note that a setup or product file cannot be deleted while
 being loaded.
 
-.. raw:: html
-
-   <div class="callout-red">
-
-**Warning** Deleted setup and product files cannot be recovered.
-
-.. raw:: html
-
-   </div>
+.. warning::
+  Deleted setup and product files cannot be recovered.
 
 Creating a new setup or product file
 ------------------------------------
@@ -53,17 +43,10 @@ loaded.
 
 |image2|
 
-.. raw:: html
-
-   <div class="callout-yellow">
-
-**Note** Setup and product properties can only be saved to the current
-configuration. Therefore, a new setup and/or product should be created
-or loaded **before** starting to configure a Pick-it application.
-
-.. raw:: html
-
-   </div>
+.. note::
+  Setup and product properties can only be saved to the current
+  configuration. Therefore, a new setup and/or product should be created
+  or loaded **before** starting to configure a Pick-it application.
 
 .. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5b5ed2140428631d7a897003/file-M6Fn0C7Lma.png
 .. |image1| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5b8ce5572c7d3a03f89e6172/file-iChLc0TC3i.png
