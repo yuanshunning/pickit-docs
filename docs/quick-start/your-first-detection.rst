@@ -38,5 +38,4 @@ Follow the steps below to do your first detection with Pick-it:
 .. image:: /assets/images/First-steps/First-detection.png
 
 .. tip:: More information about the possibilities of the Pick-it system can be
-   found in the `Region of Interest </documentation/region-of-interest/index.html>`__ or the `Teach </documentation/teach/index.html>`__
-   section.
+   found in the :ref:`region-of-interest` or the :ref:`teach` section.

@@ -1,3 +1,5 @@
+.. _abb:
+
 Setting up Pick-it with ABB
 ===========================
 

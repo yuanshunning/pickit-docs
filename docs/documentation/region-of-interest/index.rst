@@ -1,3 +1,5 @@
+.. _region-of-interest:
+
 Region of Interest
 ==================
 

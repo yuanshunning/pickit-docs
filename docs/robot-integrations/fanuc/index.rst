@@ -1,3 +1,5 @@
+.. _fanuc:
+
 Setup Pick-it with a Fanuc robot
 ================================
 

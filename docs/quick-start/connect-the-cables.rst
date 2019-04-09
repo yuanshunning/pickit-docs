@@ -27,7 +27,6 @@ connections. Follow the steps below to connect the processor:
 
 .. image:: /assets/images/First-steps/Connecting-instructions.png
 
-
 .. tip:: More information about connecting all the hardware components can be
-   found in `Connecting the cables </installation/connecting-the-cables.html>`__.
+   found in :ref:`connecting-the-cables`.
 

@@ -1,3 +1,5 @@
+.. _yaskawa:
+
 Setup Pick-it with a Yaskawa robot
 ==================================
 

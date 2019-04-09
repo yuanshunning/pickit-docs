@@ -1,7 +1,12 @@
+.. _connecting-the-cables:
+
 Connecting the cables
 =====================
 
-.. contents:: Table of Contents
+.. contents::     
+    :backlinks: top
+    :local:
+    :depth: 1
 
 Connect the power cable
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -47,18 +52,12 @@ the back side of the Pick-it processor.
 Instructions on the network configuration can be found on the robot
 brand specific instruction pages:
 
--  `Setup Pick-it with an ABB
-   robot </robot-integrations/abb/index.html>`__
--  `Setup Pick-it with a Fanuc
-   robot </robot-integrations/fanuc/index.html>`__
--  `Setup Pick-it with a Kuka
-   robot </robot-integrations/kuka/index.html>`__
--  `Setup Pick-it with a Staubli
-   robot </robot-integrations/staubli/index.html>`__
--  `Setup Pick-it with a Universal Robots
-   robot </robot-integrations/universal-robots/index.html>`__
--  `Setup Pick-it with a Yaskawa
-   robot </robot-integrations/yaskawa/index.html>`__
+-  :ref:`abb`
+-  :ref:`fanuc`
+-  :ref:`kuka`
+-  :ref:`staubli`
+-  :ref:`universal-robots`
+-  :ref:`yaskawa`
 
 Connect a computer
 ~~~~~~~~~~~~~~~~~~

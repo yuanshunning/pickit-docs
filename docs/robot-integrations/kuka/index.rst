@@ -1,3 +1,5 @@
+.. _kuka:
+
 Setting up Pick-it with a KUKA robot
 ====================================
 

@@ -26,5 +26,4 @@ Follow the steps below to do a robot-camera calibration:
 -  Robot-to-camera calibration plate can be dismounted from the robot.
 
 .. tip:: More details about robot-camera calibration can be found in
-   the `Calibration </documentation/calibration/index.html>`__
-   article.
+   the :ref:`calibration` article.

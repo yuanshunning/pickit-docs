@@ -1,7 +1,5 @@
-.. _calibration-plate-mounting-on-robot:
-
-Installing the Pick-it calibration plate on a robot flange or tool changer
-==========================================================================
+Installing the Pick-it calibration plate
+========================================
 
 To  **accurately pick** objects located by Pick-it, a robot
 camera \ **calibration is needed**. Different methods of calibration are
