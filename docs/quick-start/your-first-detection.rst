@@ -3,7 +3,7 @@ Your first detection
 
 Now that all connections are tested we can start our first detection.
 For this we'll use a soda can. Note that this is the final step of this
-quick start guide that you can still complete without having a robot.
+quick start guide that can be completed without having a robot.
 Follow the steps below to do your first detection with Pick-it:
 
 -  Make sure that the Pick-it camera is mounted 700mm above a flat work
@@ -19,14 +19,14 @@ Follow the steps below to do your first detection with Pick-it:
 -  Set following values for Zmin and Zmax: 10mm and 150mm.
 -  Press the Save button.
 
-|image0|
+.. image:: /assets/images/First-steps/Empty-roi.png
 
 -  In the Detection tab select Pick-it Teach. 
 -  Now place a soda can on his side in the middle of the marks.
 -  Under define your model(s) press Add a model. Now the model view is
    opened and a point cloud of the soda can is shown.
 
-|image1|
+.. image:: /assets/images/First-steps/Model-soda-can.png
 
 -  Go back to the 2D view and press Detect, a Pick Frame (red-green-blue
    arrows) appears above the soda can.
@@ -35,14 +35,8 @@ Follow the steps below to do your first detection with Pick-it:
 -  Press the Save button.
 -  Congratulations with your first detections!
 
-|image2|
+.. image:: /assets/images/First-steps/First-detection.png
 
 .. tip:: More information about the possibilities of the Pick-it system can be
-   found in the \ `Web
-   interface <https://support.pickit3d.com/article/154-web-interface-an-extensive-overview>`__
+   found in the `Region of Interest </documentation/region-of-interest/index.html>`__ or the `Teach </documentation/teach/index.html>`__
    section.
-
-.. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5b4cac402c7d3a03f89c9c55/file-8Tp0RC4fu0.png
-.. |image1| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5b4cad902c7d3a03f89c9c64/file-y2BUtRcZO3.png
-.. |image2| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5b4cae3f2c7d3a03f89c9c6a/file-UH6pvOihaT.png
-

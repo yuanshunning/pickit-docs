@@ -4,5 +4,5 @@ Flex
 .. toctree::
     :maxdepth: 1
 
-    how-to-use-pickit-flex
-    detection-parameters
+    detection-pickit-flex
+    explaining-the-flex-detection-parameters
