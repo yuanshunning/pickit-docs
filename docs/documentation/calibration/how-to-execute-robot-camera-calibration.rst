@@ -1,3 +1,5 @@
+.. _robot-camera-calibration:
+
 Robot camera calibration
 ========================
 
