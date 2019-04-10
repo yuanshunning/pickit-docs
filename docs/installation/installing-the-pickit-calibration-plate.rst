@@ -1,3 +1,5 @@
+.. _installing-calibration-plate:
+
 Installing the Pick-it calibration plate
 ========================================
 

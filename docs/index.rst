@@ -19,7 +19,7 @@ assembly tasks with a robot or machine.
 
   Web interface <documentation/web-interface/index>
   Configuration <documentation/configuration/index>
-  Calibration <documentation/calibration/index>
+  Camera(s) <documentation/cameras/index>
   Region of Interest <documentation/region-of-interest/index>
   Flex <documentation/flex/index>
   Pattern <documentation/pattern/index>
