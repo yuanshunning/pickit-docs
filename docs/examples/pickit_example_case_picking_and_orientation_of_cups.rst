@@ -252,7 +252,7 @@ into the 7 major steps to explain every aspect of every step.
 Whole Universal Robots program
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code:: prettyprint
+.. code-block:: bash
 
     Program
       Init Variables
@@ -372,7 +372,7 @@ Split up Universal Robots program
 1. Declare variables and load scripts 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code:: prettyprint
+.. code-block:: bash
 
     Program
       Init Variables
@@ -419,7 +419,7 @@ loaded.
 2. Move to a starting position
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code:: prettyprint
+.. code-block:: bash
 
       Robot Program
         MoveJ
@@ -432,7 +432,7 @@ position to a waypoint called **wp\_home**.
 3. Look for an object
 ^^^^^^^^^^^^^^^^^^^^^
 
-.. code:: prettyprint
+.. code-block:: bash
 
         Loop pickit_is_running()
           pickit_configure(setup_bin,prod_bin)
@@ -456,7 +456,7 @@ response on the  **pickit\_look\_for\_object()** command.
 4. Pick object
 ^^^^^^^^^^^^^^
 
-.. code:: prettyprint
+.. code-block:: bash
 
           If pickit_object_found()
             pick_pose=pickit_get_pose(False)
@@ -502,7 +502,7 @@ grasp the object.
 5. Check orientation of object and drop object
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code:: prettyprint
+.. code-block:: bash
 
               If pre_pick_ok and pick_ok
                 wp_pre_check
@@ -596,7 +596,7 @@ intermediate waypoint depending on the drop off waypoint.
 6. Switch the kind of object Pick-it is looking for if no products are safe to pick
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code:: prettyprint
+.. code-block:: bash
 
               Else
                 If pickit_remaining_objects()=0
@@ -619,7 +619,7 @@ if we were looking for circles.
 7. Switch the kind of object Pick-it is looking for if no products are found
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code:: prettyprint
+.. code-block:: bash
 
           Else
             If prod_bin=prod_cir_bin
@@ -634,7 +634,7 @@ In the case Pick-it did not find any objects (after the command on line
 switch from cylinders to circles if we were looking for cylinders and
 form circles to cylinders if we were looking for circles.
 
-.. code:: prettyprint
+.. code-block:: bash
 
         pickit_socket_close()
 

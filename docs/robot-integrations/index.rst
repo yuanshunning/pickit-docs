@@ -56,7 +56,7 @@ Universal Robots
   :glob:
   :maxdepth: 1
 
-  ur/*
+  universal-robots/*
 
 
 Yaskawa
