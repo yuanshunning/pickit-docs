@@ -22,8 +22,8 @@ To load a new setup or product file just select them from the list. 
 Setup and product files can also be loaded from within your robot
 program using the correct Pick-it command.
 
-You can rename, download or delete a specific setup or product by pressing the **Rename** 
-**Download** or **Delete** button once the setup or product files are
+You can rename, download or delete a specific setup or product by pressing :guilabel:`Rename` 
+:guilabel:`Download` or :guilabel:`Delete` once the setup or product files are
 selected. Note that a setup or product file cannot be renamed or deleted while
 being active.
 
@@ -35,8 +35,8 @@ being active.
 Creating a new setup or product file
 ------------------------------------
 
-To create a new setup or product file, first press the **New** button and fill in the corresponding text
-fields and click the **Continue** button. Pick-it will make a new file with all settings set to the basic default settings.
+To create a new setup or product file, first press the :guilabel:`New` button and fill in the corresponding text
+fields and click the :guilabel:`Continue`. Pick-it will make a new file with all settings set to the basic default settings.
 After creation, the new setup and product file will automatically be
 loaded.
 
@@ -46,11 +46,11 @@ Saving a setup or product file
 ------------------------------
 
 Once settings are changed in Pick-it they can be saved in the correct file. 
-The **Save** button for the setup file can be found at the bottom of the Region of Interest tab. 
+The :guilabel:`Save` button for the setup file can be found at the bottom of the Region of Interest tab. 
 For the product file the button can be found both at the bottom of the Detection and the Picking tab.
 
-Pressing the **Save** button updates the active file with the new data. 
-The **Save as** button creates a new file with the new data. A name has to be given to this file. 
-Pressing **Reset** restores the settings of the last time saved.
+Pressing the :guilabel:`Save` updates the active file with the new data. 
+The :guilabel:`Save as` creates a new file with the new data. A name has to be given to this file. 
+Pressing :guilabel:`Reset` restores the settings of the last time saved.
 
 .. image:: /assets/images/Documentation/Save-saveas-reset.png
