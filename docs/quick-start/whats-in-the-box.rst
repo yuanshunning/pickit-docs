@@ -1,7 +1,7 @@
 What's in the box
 =================
 
-|image0|
+.. image:: /assets/images/First-steps/Pickit-full-system.jpg
 
 -  Pick-it processor
 
@@ -33,6 +33,3 @@ to buy one of these options.
    -  1 camera plate
    -  2 plate screws
    -  2 dowel pins
-
-.. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5a7c5bdc0428634376cff12f/file-v97KZ0ZWCw.jpg
-

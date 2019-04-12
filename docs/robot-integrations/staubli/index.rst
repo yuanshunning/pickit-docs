@@ -1,3 +1,5 @@
+.. _staubli:
+
 Setting up Pick-it with Staubli
 ===============================
 

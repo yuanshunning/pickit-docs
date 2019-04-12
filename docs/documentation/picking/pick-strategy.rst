@@ -1,16 +1,8 @@
 Pick strategy
 =============
 
-.. raw:: html
-
-   <div class="callout-yellow">
-
-**Note** This setting is only available for **cylinder** and **sphere**
-detections with the **Flex engine**.
-
-.. raw:: html
-
-   </div>
+.. note::
+  This setting is only available for **cylinder** and **sphere** detections with the **Flex engine**.
 
 This setting allows you to move the pick frame to the real surface of
 the detected object instead of the center of the object. The possible
@@ -28,17 +20,8 @@ options are:
 -  End circle: The pick frame will be moved to the highest circular end
    of the cylinder.
 
-.. raw:: html
-
-   <div class="callout-yellow">
-
-**Note** The resulting pick frame axes will not necessarily be parallel
-to one of the reference frame axes. If you want this, use the **Enforce
-alignment of pick frame orientation** option.
-
-.. raw:: html
-
-   </div>
+.. note::
+  The resulting pick frame axes will not necessarily be parallel to one of the reference frame axes. If you want this, use the **Enforce alignment of pick frame orientation** option.
 
 The picture below shows an example of a spherical and cylindrical object
 respectively:

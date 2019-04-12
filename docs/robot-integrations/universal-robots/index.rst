@@ -1,3 +1,5 @@
+.. _universal-robots:
+
 Set up Pick-it with a Universal robot
 =====================================
 
