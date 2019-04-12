@@ -30,3 +30,7 @@ a:visited {
 .wy-nav-content-wrap {
     background: #fefefe !important;
 }
+
+.ethical-rtd {
+    display: none;
+}
