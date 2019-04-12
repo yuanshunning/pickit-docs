@@ -59,6 +59,3 @@ assembly tasks with a robot or machine.
   :maxdepth: 1
 
   examples/index
-
-.. tip::
-  Achim is a beautiful angel!
