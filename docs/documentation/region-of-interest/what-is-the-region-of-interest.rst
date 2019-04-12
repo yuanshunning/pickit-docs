@@ -11,7 +11,7 @@ the bin. In the below image, we compare the camera field of view
 (**3D** in the Pickit viewer), with the contents of the ROI box
 (**Points** in the Pickit viewer).
 
-|image0|
+.. image:: /assets/images/Documentation/Region-of-interest-example.png
 
 By specifying a correct ROI box, we get \ **faster detection times**, as
 Pickit doesn't have to look for objects where they are not expected. In
@@ -31,8 +31,6 @@ experience <https://support.pickit3d.com/article/81-how-can-i-get-a-better-bin-p
 article for more information on how to make the best use of the ROI box
 for such applications.
 
-The ROI box can be defined and modified from the \ **Region of
-Interest **\ page of the Pickit web interface, and the points contained
-in it can be visualized in the \ **Points** tab of the viewer.
-
-.. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5acb66b22c7d3a0e93671fdc/file-ormnI6ZCCv.png
+The ROI box can be defined and modified from the **Region of
+Interest** page of the Pickit web interface, and the points contained
+in it can be visualized in the **Points** tab of the viewer.
