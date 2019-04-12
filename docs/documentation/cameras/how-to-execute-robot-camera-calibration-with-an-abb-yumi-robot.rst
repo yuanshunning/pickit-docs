@@ -1,3 +1,5 @@
+.. _robot-camera-calibration-yumi:
+
 
 Calibration with an ABB Yumi
 ============================
@@ -19,7 +21,7 @@ structure <calibration-multi-pose-fixed>` can be used.
   around. Therefore, **a smaller L-shaped calibration plate needs to be
   used**.
 
-|image0|
+.. image:: /assets/images/Documentation/Calibration-plate-yumi.jpg
 Because it is very important that **this plate cannot move with
 respect to the gripper**, during calibration you should attach any
 piece to the plate that can be grasped firmly by the fingers of your
@@ -34,11 +36,6 @@ like with any other robot.
 
 Example of attaching a grasping part to the L-shaped plate
 
-|image1|
+.. image:: /assets/images/Documentation/Calibration-plate-yumi-grapsing-part.jpg
 
-|image2|
-
-.. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/58bff93f2c7d3a576d35c6e2/file-Cv6a7f42pK.jpg
-.. |image1| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/58c6642e2c7d3a576d35e3cf/file-JIOpZOBNzp.jpg
-.. |image2| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/58c664402c7d3a576d35e3d1/file-NsK16II0hP.jpg
-
+.. image:: /assets/images/Documentation/Calibration-plate-yumi-assembly.jpg

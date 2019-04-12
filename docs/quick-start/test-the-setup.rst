@@ -21,6 +21,6 @@ processor can be checked:
 
 .. image:: /assets/images/First-steps/Network-settings.png
 
-.. tip:: In case of failure, check if the cables are properly connected and
+.. note:: In case of failure, check if the cables are properly connected and
    whether the IP assigned to the robot during the IP configuration step
    matches the tested one.

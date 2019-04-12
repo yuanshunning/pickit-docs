@@ -10,9 +10,10 @@ Connecting to Pick-it using ROS
   ROS parameters, nodes and topics using standard ROS messages and a
   limited set of Pick-it specific ROS messages.
 
-**NOTE**: Since Pick-it’s ROS master is always running / on, it is
-recommended that the client system uses Pick-it’s ROS master and does
-not start its own.
+.. note::
+   Since Pick-it’s ROS master is always running / on, it is
+   recommended that the client system uses Pick-it’s ROS master and does
+   not start its own.
 
 Connecting to Pick-it ROS nodes requires you to define the Pick-it
 hostname on the client system. Likewise, the client system’s name must
@@ -28,14 +29,13 @@ stays synchronised.
 |image1|
 
 Connecting to the Pick-it system
-` <>`__
 --------------------------------
 
 First verify that the Pick-it system is reachable from your local
 system. Execute the following command in a terminal, replacing 
 ``<pickit-pc>`` with the hostname of your Pick-it system.
 
-.. code:: prettyprint
+.. code-block:: bash
 
     ping <pickit-pc>
 
@@ -53,7 +53,7 @@ Set your local system to use the  `**ROS
 master** <http://wiki.ros.org/ROS/EnvironmentVariables#ROS_MASTER_URI>`__
 of the **Pick-it system**.
 
-.. code:: prettyprint
+.. code-block:: bash
 
     export ROS_MASTER_URI=http://<pickit-pc>:11311/
 
@@ -61,7 +61,7 @@ Set the 
 `**ROS\_IP** <http://wiki.ros.org/ROS/EnvironmentVariables#ROS_IP.2BAC8-ROS_HOSTNAME>`__
 environment variable to point to the IP of your **local system**.
 
-.. code:: prettyprint
+.. code-block:: bash
 
     export ROS_IP=<local-pc-ip>
 
@@ -78,20 +78,20 @@ for details on how to build ROS packages and source ROS workspaces. Once
 the package has been built and its workspace has been sourced, run the
 following commands to verify connectivity with the Pick-it system:
 
-.. code:: prettyprint
+.. code-block:: bash
 
     rostopic echo /pickit/heartbeat
 
 If you see a stream of empty messages, then communication with the
 Pick-it system has been established. Now run:
 
-.. code:: prettyprint
+.. code-block:: bash
 
     rostopic echo /pickit/status
 
 which should produce output similar to the following:
 
-.. code:: prettyprint
+.. code-block:: bash
 
     state: root.Running.No_action
     setup_file: setup_default.cpf
@@ -102,7 +102,7 @@ which should produce output similar to the following:
 If you instead get an error as shown below, it means that the current
 ROS workspace does not contain the  **``im_pickit_msgs``** package.
 
-.. code:: prettyprint
+.. code-block:: bash
 
     ERROR: Cannot load message class for [im_pickit_msgs/PickitStatus]. Are your messages built?
 
@@ -116,7 +116,7 @@ The Pick-it ROS interface is based on using topics. Any connected robot
 or machine can give commands to Pick-it by publishing a string command
 to the following topic:
 
-.. code:: prettyprint
+.. code-block:: bash
 
         /pickit/external_cmds   
         (type: std_msgs/String)
@@ -125,7 +125,7 @@ These commands will trigger Pick-it to go into states responsible
 executing a specific task. The current state can at all times be
 monitored by subscribing to the following topic:
 
-.. code:: prettyprint
+.. code-block:: bash
 
         /pickit/status  
         (im_pickit_msgs/PickitStatus)
@@ -133,7 +133,7 @@ monitored by subscribing to the following topic:
 Object detections are published on a topic with a Pick-it specific
 message type:
 
-.. code:: prettyprint
+.. code-block:: bash
 
         /pickit/objects_wrt_robot_frame  
         (type: im_pickit_msgs/ObjectArray)
@@ -163,7 +163,7 @@ To change the active setup or product file, use the 
 ``/load_config`` service. Product file change example from the command
 line:
 
-.. code:: prettyprint
+.. code-block:: bash
 
     rosservice call /load_config "config_type: 2
     path: 'product_<productname>.cpf'
@@ -174,8 +174,8 @@ for changing the **product** file. More details on the service request
 and reply arguments can be found in
 the  \ ``im_pickit_msgs/srv/LoadConfig.srv`` file.
 
-` <>`__\ Publishing the robot pose
-----------------------------------
+Publishing the robot pose
+-------------------------
 
 When using the Pick-it ROS interface, Pick-it requires the robot pose of
 the robot being published on the ROS topic ``/pickit/robot_pose``. Robot
@@ -186,10 +186,9 @@ If you can lookup the above transform of your robot via
 `tf <wiki.ros.org/tf2>`__, you can use the Python script below to
 continuously publish the robot pose to the mentioned ROS topic.
 
-**NOTE**: The necessity to publish this transform will be removed in the
-near future.
 
-.. code:: prettyprint
+.. code-block:: python
+    :linenos:
 
     #!/usr/bin/env python
     import rospy
@@ -229,20 +228,20 @@ near future.
             base_to_ee_pub.publish(trans_stamped)
             rate.sleep()
 
-` <>`__\ Camera URDF
---------------------
+Camera URDF
+-----------
 
 You can retrieve the camera’s URDF from the ROS parameter server by
 issuing the following command:
 
-.. code:: prettyprint
+.. code-block:: bash
 
     rosparam get /camera/camera_description > pickit_camera.urdf
 
 The mesh files of the camera can be fetched from the Pick-it system
 under
 
-.. code:: prettyprint
+.. code-block:: bash
 
     http://<pickit-pc>/resources/camera/camera_description/meshes/camera_display.dae
     http://<pickit-pc>/resources/camera/camera_description/meshes/camera_hull.dae
@@ -252,18 +251,18 @@ own ``camera_description`` package and/or to directly integrate it with
 your robot’s URDF. For more information on this topic see
 http://wiki.ros.org/urdf/Tutorials.
 
-` <>`__\ TF tree
-----------------
+TF tree
+-------
 
 Pick-it uses two fixed robot frame names that are important for you if
 you want to connect your robot’s tf tree with Pick-it’s tf tree. A
 simplified version of the Pick-it tf tree for both camera fixed and
 camera on the robot looks like the following:
 
-` <>`__\ Camera fixed
-~~~~~~~~~~~~~~~~~~~~~
+Camera fixed
+~~~~~~~~~~~~
 
-.. code:: prettyprint
+.. code-block:: bash
 
     pickit/robot_ee
            ^
@@ -272,10 +271,10 @@ camera on the robot looks like the following:
            +              robot-camera-calibration
     pickit/robot_base +------------------------------> camera/camera_link
 
-` <>`__\ Camera on robot
-~~~~~~~~~~~~~~~~~~~~~~~~
+Camera on robot
+~~~~~~~~~~~~~~~
 
-.. code:: prettyprint
+.. code-block:: bash
 
                         robot-camera-calibration
      pickit/robot_ee  +------------------------------> camera/camera_link
@@ -285,11 +284,11 @@ camera on the robot looks like the following:
             +
      pickit/robot_base
 
-` <>`__\ Connecting your robot’s tf tree
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Connecting your robot’s tf tree
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-` <>`__\ Camera fixed
-^^^^^^^^^^^^^^^^^^^^^
+Camera fixed
+^^^^^^^^^^^^
 
 For the camera fixed case this is fairly simple by publishing a static
 identity transform between your robot’s base frame (e.g. ``base_link``)
@@ -297,26 +296,27 @@ and ``pickit/robot_base``. This can be done with `tf2’s static transform
 publisher <http://wiki.ros.org/tf2_ros#static_transform_publisher>`__.
 In a ROS launch file this could look like the following:
 
-.. code:: prettyprint
+.. code-block:: xml
 
     <!-- Publish a static transform (identity) between base_link and
         pickit/robot_base to connect both tf tree. -->
     <node name="static_tf_brdc_pickit_robot" type="static_transform_publisher"
           args="0 0 0 0 0 0 base_link pickit/robot_base" pkg="tf2_ros" />
 
-` <>`__\ Camera on robot
-^^^^^^^^^^^^^^^^^^^^^^^^
+Camera on robot
+^^^^^^^^^^^^^^^
 
 This is similar to the camera fixed case with the addition that you also
 have to publish an identity transform between your robot’s end-effector
 frame (without attached tool) and ``pickit/robot_ee``.
 
-**NOTE**: In current releases it is not possible to disable the
-broadcasting of the tf transform between ``pickit/robot_base`` and
-``pickit/robot_ee``. This will cause tf loops if you connect both frames
-with your corresponding robot frames. Disabling the tf broadcasting will
-be possible in future releases, contact us if this is a requirement for
-you and we will see what we can do.
+.. note:: 
+   It is currently not possible to disable the
+   broadcasting of the tf transform between ``pickit/robot_base`` and
+   ``pickit/robot_ee``. This will cause tf loops if you connect both frames
+   with your corresponding robot frames. Disabling the tf broadcasting will
+   be possible in future releases, contact us if this is a requirement for
+   you and we will see what we can do.
 
 A possible workaround for the tf loop issue would be to run a ROS node
 that filters the ``/tf`` topic by removing the above mentioned
@@ -324,14 +324,15 @@ transform. The filtered result could then be published to another topic
 e.g. ``/tf_filtered``. You would then have to remap from ``/tf`` to
 ``/tf_filtered`` for all your nodes (that listen to tf) e.g. like this:
 
-.. code:: prettyprint
+.. code-block:: bash
 
     rosrun rviz rviz /tf:=/tf_filtered
 
 An example script that could to the filtering of the  ``/tf`` topic
 could look like this:
 
-.. code:: prettyprint
+.. code-block:: python
+    :linenos:
 
     #!/usr/bin/env python
     import rospy
@@ -362,8 +363,8 @@ ROS interface. You need to publish certain commands to the
 ``/pickit/external_cmds`` topic and optionally listen to the
 ``/pickit/status`` or ``/pickit/status_calib`` topic to get feedback.
 
-` <>`__\ Single pose calibration
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Single pose calibration
+~~~~~~~~~~~~~~~~~~~~~~~
 
 #. Go to the web interface and setup the calibration for `single
    pose <http://support.pickit3d.com/article/35-how-to-execute-robot-camera-calibration#singlepose>`__.
@@ -372,8 +373,8 @@ ROS interface. You need to publish certain commands to the
 #. Save the calibration in the setup file (through web interface or
    ``/save_setup`` service).
 
-` <>`__\ Multi poses calibration
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Multi poses calibration
+~~~~~~~~~~~~~~~~~~~~~~~
 
 #. Go to the web interface and setup the calibration for `multi
    pose <http://support.pickit3d.com/article/35-how-to-execute-robot-camera-calibration#multipose>`__.

@@ -28,7 +28,7 @@ The example program explained
 What follows describes the parts of the example that relate to Pick-it.
 Lines unrelated to Pick-it have been skipped.
 
-.. code:: prettyprint
+.. code-block:: bash
 
       Pickit_configure(2,3) ; Setup 2 Product 3
 
@@ -45,7 +45,7 @@ Make sure that the setup and product passed to
 **``pickit_configure()``** are the ones you are expecting, or the robot
 may have an unexpected behaviour.
 
-.. code:: prettyprint
+.. code-block:: bash
 
       Pickit_look_for_object()
 
@@ -55,7 +55,7 @@ may have an unexpected behaviour.
 
 Trigger Pick-it to detect objects and enter the actual program loop. 
 
-.. code:: prettyprint
+.. code-block:: bash
 
         WAIT FOR Pickit_has_response()
 
@@ -73,7 +73,7 @@ errors. Before the actual picking, it is desired that the robot first
 stops at a distance above the object (100 mm in the Z direction). This
 pre-pick pose is stored in **``F_PrePick``**.
 
-.. code:: prettyprint
+.. code-block:: bash
 
           ; Check if position is reachable
           BAS(#TOOL,10) ; Suction cup / Tool for picking
@@ -85,7 +85,7 @@ object pose **``F_Pick``** for the given base and tool frames. The
 **``Pickit_ErrStatusCheckPos``** stores whether the pose is actually
 reachable.
 
-.. code:: prettyprint
+.. code-block:: bash
 
           IF (Pickit_ErrStatusCheckPos==0) THEN
 
@@ -118,7 +118,7 @@ parallel to the final **``M_DropToBin()``** motion sequence. This
 motivates why the first call of **``Pickit_look_for_object()``** was
 outside the actual program loop. 
 
-.. code:: prettyprint
+.. code-block:: bash
 
           ELSE
 
@@ -142,7 +142,7 @@ object pose is required. There are two alternatives:
 #. Alternatively, if there are no remaining detected objects, Pick-it is
    triggered to detect objects again in line 89. 
 
-.. code:: prettyprint
+.. code-block:: bash
 
         ELSE
 

@@ -1,0 +1,26 @@
+.. _cameras:
+
+Camera(s)
+=========
+
+In this article the different settings of the Camera(s) tab are discussed.
+
+Camera configuration
+--------------------
+
+One Pick-it processor can be connected to two different Pick-it cameras at the same time. 
+This can be two M-cameras, two L-cameras or a M and L-camera combined.
+
+Here you select which camera to use in the setup file. Each setup file should have exactly one active camera.
+
+Robot camera calibration
+------------------------
+
+Robot camera calibration is the process where the camera and the robot learn their relative position towards each other. 
+If done correctly, the camera can guide the robot to correct positions in the physical environment. 
+Once the camera and robot are mounted, calibration can be done. 
+This process only needs to be repeated if the camera is moved relative to the robot base, or visa versa. 
+
+This article fully explaines how to do the robot camera calibration with your robot, :ref:`robot-camera-calibration`.
+
+This article fully explaines how to do the robot camera calibration for an ABB Yumi robot, :ref:`robot-camera-calibration-yumi`.

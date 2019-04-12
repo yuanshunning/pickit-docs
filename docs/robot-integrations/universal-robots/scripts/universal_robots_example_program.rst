@@ -1,19 +1,13 @@
 Universal Robots Example Program
 ================================
 
- 1
-    `Loading the program <#loading>`__
- 2
-    `The example program explained <#explained>`__
- 3
-    `Running the example program <#running>`__
-
-| **Note** This article describes the legacy way of using Pick-it with a
-  Universal Robot.
-| For new robot programs, please refer to the  `Getting started with the
-  Pick-it
-  URCap <https://support.pickit3d.com/article/75-getting-started-with-the-pick-it-urcap>`__
-  article.
+.. attention::
+   This article describes the legacy way of using Pick-it with a
+   Universal Robot.
+   For new robot programs, please refer to the  `Getting started with the
+   Pick-it
+   URCap <https://support.pickit3d.com/article/75-getting-started-with-the-pick-it-urcap>`__
+   article.
 
 This program is part of the Universal Robots package  `which you can
 download
@@ -37,7 +31,7 @@ The example program explained
 The example application program Robot\_picking.txt executes a simple
 picking task using Pick-it.
 
-.. code:: prettyprint
+.. code-block:: bash
 
     Init Variables 
     BeforeStart
@@ -78,7 +72,7 @@ picking task using Pick-it.
 
 Pick-it-related code lines are explained in detail:
 
-.. code:: prettyprint
+.. code-block:: bash
 
           pickit_port≔5001
           pickit_ip≔"169.254.5.180"
@@ -86,7 +80,7 @@ Pick-it-related code lines are explained in detail:
 The pickit\_port and pickit\_ip must be set to their correct values to
 enable communication between the robot and Pick-it.
 
-.. code:: prettyprint
+.. code-block:: bash
 
           pick_pose≔p[0,0,0,0,0,0]
           pre_pick_offset≔p[0,0,-0.15,0,0,0]
@@ -98,7 +92,7 @@ before picking the object. The pre\_pick\_offset defines this offset and
 will be used later, adding a negative translational component to the
 z-axis of the tool.
 
-.. code:: prettyprint
+.. code-block:: bash
 
           Script: pickit_functions
           ...
@@ -107,18 +101,18 @@ z-axis of the tool.
 
 Scripts containing relevant Pick-it functions are loaded.
 
-.. code:: prettyprint
+.. code-block:: bash
 
           pickit_socket_open()
 
-.. code:: prettyprint
+.. code-block:: bash
 
           pickit_socket_close()
 
 Lines 9 and 35 open and close a socket connection with Pick-it
 respectively.
 
-.. code:: prettyprint
+.. code-block:: bash
 
           Loop pickit_is_running()
 
@@ -126,7 +120,7 @@ This line indicates that, as long as Pick-it is running (i.e., the **RUN
 button** is active), the code inside its scope will be executed
 repeatedly.
 
-.. code:: prettyprint
+.. code-block:: bash
 
           'pickit_configure(1,3)'
 
@@ -138,7 +132,7 @@ does not exist, the program does not proceed. Make sure that the setup
 and product passed to pickit\_configure()are the ones you are expecting,
 or the robot may have an unexpected behaviour.
 
-.. code:: prettyprint
+.. code-block:: bash
 
           If pickit_remaining_objects()≟0
                 pickit_look_for_object()
@@ -150,7 +144,7 @@ it is ordered to search for objects once again. However, if Pick-it
 found more than one object in its previous search, the next object is
 requested.
 
-.. code:: prettyprint
+.. code-block:: bash
 
           Wait pickit_has_response()
                 If pickit_object_found()
@@ -171,7 +165,7 @@ direction, as defined by the variable pre\_pick\_offset. The robot is
 commanded to adopt first the pre\_pick\_pose, than the pick\_pose (where
 it actually picks the object), and finally the pre\_pick\_pose again.
 
-.. code:: prettyprint
+.. code-block:: bash
 
           If pickit_object_dim[0] > 0.1
                 MoveJ
@@ -193,17 +187,11 @@ grasp and drop depends on the employed gripper.
 Running the example program
 ---------------------------
 
-.. raw:: html
+.. attention::
+   Before running the program, it should be verified that the robot camera
+   calibration has been done correctly and that the tool frame has been
+   defined correctly.
 
-   <div class="callout-yellow">
-
-Before running the program, it should be verified that the robot camera
-calibration has been done correctly and that the tool frame has been
-defined correctly.
-
-.. raw:: html
-
-   </div>
 
 To allow Pick-it to respond to robot requests, Pick-it has to be in the
 Running state. Press the RUN button on the Pick-it web interface.
@@ -221,19 +209,12 @@ to run the program.
 The program execution can be stopped or paused by clicking in the stop
 and pause buttons respectively.
 
-.. raw:: html
-
-   <div class="callout-red">
-
-When running a program for the first time, it is advised to **set a low
-robot speed**. As such, non-expected behaviour (for example due to
-incorrect programming or wrong calibration) can be identified early
-enough to prevent the robot from colliding with surrounding objects or
-people.
-
-.. raw:: html
-
-   </div>
+.. danger::
+   When running a program for the first time, it is advised to **set a low
+   robot speed**. As such, non-expected behaviour (for example due to
+   incorrect programming or wrong calibration) can be identified early
+   enough to prevent the robot from colliding with surrounding objects or
+   people.
 
 .. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/58579736c697912ffd6c26bd/file-VOU2nZXgnX.png
 
