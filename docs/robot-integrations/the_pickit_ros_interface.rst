@@ -1,57 +1,57 @@
-The Pick-it ROS interface
+The Pickit ROS interface
 =========================
 
-Connecting to Pick-it using ROS
+Connecting to Pickit using ROS
 -------------------------------
 
 | |image0|
-| The Pick-it system is running a ROS Master, which allows another
-  system to connect to it using the ROS interfaces. Pick-it exposes its
+| The Pickit system is running a ROS Master, which allows another
+  system to connect to it using the ROS interfaces. Pickit exposes its
   ROS parameters, nodes and topics using standard ROS messages and a
-  limited set of Pick-it specific ROS messages.
+  limited set of Pickit specific ROS messages.
 
 .. note::
-   Since Pick-it’s ROS master is always running / on, it is
-   recommended that the client system uses Pick-it’s ROS master and does
+   Since Pickit’s ROS master is always running / on, it is
+   recommended that the client system uses Pickit’s ROS master and does
    not start its own.
 
-Connecting to Pick-it ROS nodes requires you to define the Pick-it
+Connecting to Pickit ROS nodes requires you to define the Pickit
 hostname on the client system. Likewise, the client system’s name must
-be resolvable on the Pick-it system. Preferably, the DNS Server of the
+be resolvable on the Pickit system. Preferably, the DNS Server of the
 client network resolves all hostnames to the LAN IP address of each
 host. If this is not possible, the host to IP mapping must be added to
-both Pick-it’s and the client’s /etc/hosts.
+both Pickit’s and the client’s /etc/hosts.
 
-The Pick-it system is also running an ntp server. It can be used to make
-sure that the time between the client system and the Pick-it system
+The Pickit system is also running an ntp server. It can be used to make
+sure that the time between the client system and the Pickit system
 stays synchronised.
 
 |image1|
 
-Connecting to the Pick-it system
+Connecting to the Pickit system
 --------------------------------
 
-First verify that the Pick-it system is reachable from your local
+First verify that the Pickit system is reachable from your local
 system. Execute the following command in a terminal, replacing 
-``<pickit-pc>`` with the hostname of your Pick-it system.
+``<pickit-pc>`` with the hostname of your Pickit system.
 
 .. code-block:: bash
 
     ping <pickit-pc>
 
-The hostname of your Pick-it system is shown on the top-left corner of
-the Pick-it web interface, next to the Pick-it logo. In the below
+The hostname of your Pickit system is shown on the top-left corner of
+the Pickit web interface, next to the Pickit logo. In the below
 example, it corresponds to  **pickit-demo-002.**
 
 |image2|
 
 If the ping test fails, please check the network configuration for your
-local system and make sure that it's in the same network as the Pick-it
+local system and make sure that it's in the same network as the Pickit
 system.
 
 Set your local system to use the  `**ROS
 master** <http://wiki.ros.org/ROS/EnvironmentVariables#ROS_MASTER_URI>`__
-of the **Pick-it system**.
+of the **Pickit system**.
 
 .. code-block:: bash
 
@@ -67,7 +67,7 @@ environment variable to point to the IP of your **local system**.
 
 To test communications, you first need to source a ROS workspace
 containing the   **``im_pickit_msgs``** package. The package can be
-downloaded from the Pick-it web interface, in the **Files** page, under
+downloaded from the Pickit web interface, in the **Files** page, under
 the **ros** folder.
 
 |image3|
@@ -76,14 +76,14 @@ Refer to the  `catkin tools
 quickstart <http://catkin-tools.readthedocs.io/en/latest/quick_start.html>`__
 for details on how to build ROS packages and source ROS workspaces. Once
 the package has been built and its workspace has been sourced, run the
-following commands to verify connectivity with the Pick-it system:
+following commands to verify connectivity with the Pickit system:
 
 .. code-block:: bash
 
     rostopic echo /pickit/heartbeat
 
 If you see a stream of empty messages, then communication with the
-Pick-it system has been established. Now run:
+Pickit system has been established. Now run:
 
 .. code-block:: bash
 
@@ -106,14 +106,14 @@ ROS workspace does not contain the  **``im_pickit_msgs``** package.
 
     ERROR: Cannot load message class for [im_pickit_msgs/PickitStatus]. Are your messages built?
 
-Pick-it ROS communication
+Pickit ROS communication
 -------------------------
 
 The command-response mechanism
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The Pick-it ROS interface is based on using topics. Any connected robot
-or machine can give commands to Pick-it by publishing a string command
+The Pickit ROS interface is based on using topics. Any connected robot
+or machine can give commands to Pickit by publishing a string command
 to the following topic:
 
 .. code-block:: bash
@@ -121,7 +121,7 @@ to the following topic:
         /pickit/external_cmds   
         (type: std_msgs/String)
 
-These commands will trigger Pick-it to go into states responsible
+These commands will trigger Pickit to go into states responsible
 executing a specific task. The current state can at all times be
 monitored by subscribing to the following topic:
 
@@ -130,7 +130,7 @@ monitored by subscribing to the following topic:
         /pickit/status  
         (im_pickit_msgs/PickitStatus)
 
-Object detections are published on a topic with a Pick-it specific
+Object detections are published on a topic with a Pickit specific
 message type:
 
 .. code-block:: bash
@@ -146,17 +146,17 @@ The following are valid strings that can be passed as payload to the
 
 -  e\_look\_for\_object
 
-   -  Pick-it performs one detection on the latest camera image.
+   -  Pickit performs one detection on the latest camera image.
 
 -  e\_do\_stop
 
-   -  Pick-it leaves the continuous testing state.
+   -  Pickit leaves the continuous testing state.
 
 -  e\_calibration\_requested
 
-   -  Pick-it looks for the robot-camera calibration plate.
+   -  Pickit looks for the robot-camera calibration plate.
 
-Changing the Pick-it configuration
+Changing the Pickit configuration
 ----------------------------------
 
 To change the active setup or product file, use the 
@@ -177,7 +177,7 @@ the  \ ``im_pickit_msgs/srv/LoadConfig.srv`` file.
 Publishing the robot pose
 -------------------------
 
-When using the Pick-it ROS interface, Pick-it requires the robot pose of
+When using the Pickit ROS interface, Pickit requires the robot pose of
 the robot being published on the ROS topic ``/pickit/robot_pose``. Robot
 pose in this context is the transform between robot base frame and robot
 end effector (without attached tool).
@@ -238,7 +238,7 @@ issuing the following command:
 
     rosparam get /camera/camera_description > pickit_camera.urdf
 
-The mesh files of the camera can be fetched from the Pick-it system
+The mesh files of the camera can be fetched from the Pickit system
 under
 
 .. code-block:: bash
@@ -254,9 +254,9 @@ http://wiki.ros.org/urdf/Tutorials.
 TF tree
 -------
 
-Pick-it uses two fixed robot frame names that are important for you if
-you want to connect your robot’s tf tree with Pick-it’s tf tree. A
-simplified version of the Pick-it tf tree for both camera fixed and
+Pickit uses two fixed robot frame names that are important for you if
+you want to connect your robot’s tf tree with Pickit’s tf tree. A
+simplified version of the Pickit tf tree for both camera fixed and
 camera on the robot looks like the following:
 
 Camera fixed
@@ -383,7 +383,7 @@ Multi poses calibration
    ``/pickit/external_cmds`` topic. Make sure to wait a couple of
    seconds (~10s) before moving to the next pose. Alternatively you can
    listen to the ``/pickit/status_calib`` topic to get notified when
-   Pick-it has processed the new calibration pose.
+   Pickit has processed the new calibration pose.
 #. Publish the string command ``e_do_calculate_calibration`` on the
    ``/pickit/external_cmds`` topic.
 #. Save the calibration in the setup file (through web interface or
@@ -397,29 +397,29 @@ Topics of interest
 +----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | ``/camera/depth_registered/points_3d_rectified``   | Raw calibrated point cloud.                                                                                                                                                                                                                                                               |
 +----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``/pickit/camera_to_reference``                    | Transformation between the camera's optical frame and the Pick-it reference frame in which the ROI box is given in. This transformation is updated while the robot moves in case the camera is mounted on the robot and the Pick-it reference frame is fixed to the robot's base frame.   |
+| ``/pickit/camera_to_reference``                    | Transformation between the camera's optical frame and the Pickit reference frame in which the ROI box is given in. This transformation is updated while the robot moves in case the camera is mounted on the robot and the Pickit reference frame is fixed to the robot's base frame.   |
 +----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``/pickit/clouds/model_cloud``                     | Point cloud of the currently active Pick-it Teach model.                                                                                                                                                                                                                                  |
+| ``/pickit/clouds/model_cloud``                     | Point cloud of the currently active Pickit Teach model.                                                                                                                                                                                                                                  |
 +----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``/pickit/clouds/pp_scene_cloud``                  | Point cloud used by Pick-it for object detection. It only contains points belonging to the Region of Interest.                                                                                                                                                                            |
+| ``/pickit/clouds/pp_scene_cloud``                  | Point cloud used by Pickit for object detection. It only contains points belonging to the Region of Interest.                                                                                                                                                                            |
 +----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | ``/pickit/folder_content``                         | List of available setup and product files.                                                                                                                                                                                                                                                |
 +----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | ``/pickit/is_detecting``                           | Boolean value indicating whether a detection is ongoing. True when a detection is ongoing.                                                                                                                                                                                                |
 +----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``/pickit/objects_wrt_reference_frame``            | List of detected objects given in the Pick-it reference frame. The message also includes the camera pose with respect to the robot base, the camera to Pick-it reference frame transform (same content of  ``/pickit/camera_to_reference``), and detection time.                          |
+| ``/pickit/objects_wrt_reference_frame``            | List of detected objects given in the Pickit reference frame. The message also includes the camera pose with respect to the robot base, the camera to Pickit reference frame transform (same content of  ``/pickit/camera_to_reference``), and detection time.                          |
 +----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``/pickit/objects_wrt_robot_frame``                | Same as  ``/pickit/objects_wrt_reference_frame`` but object poses are transformed into the robot's base frame (``pickit/robot_base``). These object poses are the same as the ones the robot can request using the Pick-it socket interface.                                              |
+| ``/pickit/objects_wrt_robot_frame``                | Same as  ``/pickit/objects_wrt_reference_frame`` but object poses are transformed into the robot's base frame (``pickit/robot_base``). These object poses are the same as the ones the robot can request using the Pickit socket interface.                                              |
 +----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | ``/pickit/robot_calib_to_camera``                  | Transform between the robot and the camera's optical frame. The robot frame depends on the camera mount and is either the robot base ( ``pickit/robot_base``) or the robot flange (``pickit/robot_ee``).                                                                                  |
 +----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``/pickit/robot_connection_status``                | Boolean indicating whether the robot is sending pose updates to the Pick-it system.                                                                                                                                                                                                       |
+| ``/pickit/robot_connection_status``                | Boolean indicating whether the robot is sending pose updates to the Pickit system.                                                                                                                                                                                                       |
 +----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | ``/pickit/robot_pose``                             | The transformation between the robot base and robot flange as sent by the robot.                                                                                                                                                                                                          |
 +----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``/pickit/status``                                 | Status information of the Pick-it system. Includes the state as well as the currently loaded setup and product file.                                                                                                                                                                      |
+| ``/pickit/status``                                 | Status information of the Pickit system. Includes the state as well as the currently loaded setup and product file.                                                                                                                                                                      |
 +----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``/pickit/viewer/image_out``                       | Camera image corresponding to the 2D view in the Pick-it web interface.                                                                                                                                                                                                                   |
+| ``/pickit/viewer/image_out``                       | Camera image corresponding to the 2D view in the Pickit web interface.                                                                                                                                                                                                                   |
 +----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The ROS message type of a given topic can be queried from the command

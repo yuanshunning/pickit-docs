@@ -1,13 +1,13 @@
 .. _installing-calibration-plate:
 
-Installing the Pick-it calibration plate
+Installing the Pickit calibration plate
 ========================================
 
-To  **accurately pick** objects located by Pick-it, a robot
+To  **accurately pick** objects located by Pickit, a robot
 camera \ **calibration is needed**. Different methods of calibration are
 described in the article :ref:`robot-camera-calibration`.
 
-Pick-it provides the necessary equipment for mounting the calibration
+Pickit provides the necessary equipment for mounting the calibration
 plate on two types of flanges, namely robots with 50 mm (ISO
 9409-1-50-4-M6) and 31,5 mm (ISO 9409-1-31.5-4-M5) wide flanges.
 
@@ -28,7 +28,7 @@ hammer, so that it enters the plate.
 
 .. image:: /assets/images/First-steps/Calibration-plate-dowel-pin.jpg
 
-Installing the Pick-it calibration plate on the robot flange
+Installing the Pickit calibration plate on the robot flange
 ------------------------------------------------------------
 
 #. Align the plate, dowel pin and holes with the robot flange.
@@ -36,7 +36,7 @@ Installing the Pick-it calibration plate on the robot flange
 
 .. image:: /assets/images/First-steps/Calibration-plate-robot-flange.jpg
 
-Installing the Pick-it calibration plate on a tool changer
+Installing the Pickit calibration plate on a tool changer
 ----------------------------------------------------------
 
 It is also possible to mount the calibration plate to the robot flange

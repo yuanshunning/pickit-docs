@@ -1,21 +1,21 @@
-Saving a snapshot in Pick-it
+Saving a snapshot in Pickit
 ============================
 
-A snapshot is a powerful support tool of Pick-it. In a snapshot both the
+A snapshot is a powerful support tool of Pickit. In a snapshot both the
 camera images and detection parameters of the last detection are stored.
-This file can be downloaded and send to anybody with a Pick-it system.
+This file can be downloaded and send to anybody with a Pickit system.
 This tool allows anybody to give you remote support without a direct
 connection to your system.
 
-By saving and sending a Pick-it snapshot to Pick-it support. A Pick-it
+By saving and sending a Pickit snapshot to Pickit support. A Pickit
 support engineer will analyze your scenario and will give you feedback
 on your detection settings.
 
-#. Press the \ **Detect** button under the Pick-it viewer to make sure
+#. Press the \ **Detect** button under the Pickit viewer to make sure
    you capture the current scene.
    You have to do this every time you are saving a new snapshot,
    otherwise, the new data is not captured and old data is being saved.
-#. Press the yellow **Snapshot** button in the lower left of the Pick-it
+#. Press the yellow **Snapshot** button in the lower left of the Pickit
    viewer.
 
    |image0|
@@ -33,7 +33,7 @@ on your detection settings.
 
    <div class="callout-yellow">
 
-When sending a snapshot to Pick-it Support it's always very helpful when
+When sending a snapshot to Pickit Support it's always very helpful when
 you send multiple snapshots of different situations:
 
 -  Scene almost empty
@@ -54,12 +54,12 @@ What to read next
 | `Files <https://support.pickit3d.com/article/164-files>`__
 | `Region of
   Interest <https://support.pickit3d.com/article/159-region-of-interest>`__
-| `Detection: Pick-it
+| `Detection: Pickit
   Flex <https://support.pickit3d.com/article/160-detection-pick-it-flex>`__
 | `Detection:
-  Pick-it Pattern <https://support.pickit3d.com/article/161-detection-pick-it-pattern>`__
+  Pickit Pattern <https://support.pickit3d.com/article/161-detection-pick-it-pattern>`__
 | `Detection:
-  Pick-it Teach <https://support.pickit3d.com/article/162-detection-pick-it-teach>`__
+  Pickit Teach <https://support.pickit3d.com/article/162-detection-pick-it-teach>`__
 | `Picking <https://support.pickit3d.com/article/163-picking>`__
 
 .. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5b153d0b2c7d3a0fa9a2926c/file-DNHP7Ur92V.png

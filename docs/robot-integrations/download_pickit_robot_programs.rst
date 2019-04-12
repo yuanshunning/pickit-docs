@@ -1,8 +1,8 @@
-Download Pick-it robot programs
+Download Pickit robot programs
 ===============================
 
-| Pick-it provides robot programs for all supported robot brands.
-| For now, Pick-it supports **Universal Robots**, **Fanuc**, **ABB**,
+| Pickit provides robot programs for all supported robot brands.
+| For now, Pickit supports **Universal Robots**, **Fanuc**, **ABB**,
   **KUKA, Staubli,** and **Yaskawa**.
 
 Download robot programs for:
@@ -11,7 +11,7 @@ Download robot programs for:
 
    -  **URCap plugin:** 
 
-      -  `Pick-it URCap
+      -  `Pickit URCap
          1.3.0 <https://drive.google.com/uc?export=download&id=1CUFA_v4PJSS2X0ASLC9F7kH3Y2udnTSQ>`__
          download (for Polyscope versions 3.4.x to 3.7.x, and 5.0.x to
          5.1.x).
@@ -21,7 +21,7 @@ Download robot programs for:
 
    -  **Non-URCap plugin:** `Legacy
       examples <https://drive.google.com/uc?export=download&id=1VedZYjVvlcyiE4iuqUuF67DsT8545ojU>`__,
-      intended for Pick-it users predating the existence of the URCap
+      intended for Pickit users predating the existence of the URCap
       plugin.
 
 -  `Fanuc <https://drive.google.com/uc?export=download&id=0BzZKo0Mfhw0RMDNULWxxY0dvcG8>`__

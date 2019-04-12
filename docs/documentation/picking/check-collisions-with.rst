@@ -7,7 +7,7 @@ bin and/or other objects.
 
 When collision checking yields that a certain object pose will result in
 a collision,  the object will be labeled as unpickable and not sent to
-the robot. In the Pick-it web interface, unpickable objects are
+the robot. In the Pickit web interface, unpickable objects are
 displayed orange in the Objects view and the `detection
 grid <https://support.pickit3d.com/article/167-the-pick-it-detection-grid>`__.
 When clicking on the unpickable object, the modeled tool will appear in

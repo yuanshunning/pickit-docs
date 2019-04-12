@@ -2,13 +2,13 @@ Build a showcase demo with Pattern
 ==================================
 
 This article will guide you in setting up a simple robot picking demo
-with Pick-it Pattern. The Pattern vision engine is made for picking
+with Pickit Pattern. The Pattern vision engine is made for picking
 objects with **simple geometrical** **shapes** stacked into an
 **organized pattern**. In this demo we are picking cardboard boxes.
 Click `here <#picking>`__ to see the video of this demo.
 
 #. `Requirements <#requirements>`__
-#. `Your first detection(configuring the Pick-it files) <#detection>`__
+#. `Your first detection(configuring the Pickit files) <#detection>`__
 #. `Calibration <#calibration>`__
 #. `Your first pick(program the robot) <#program>`__
 #. `Happy picking <#picking>`__
@@ -18,36 +18,36 @@ Click `here <#picking>`__ to see the video of this demo.
 
 The hardware requirements to set up this demo are:
 
--  A Pick-it vision system
+-  A Pickit vision system
 -  A robot and gripper, UR5 + vacuum suction cup
 -  An additional computer or laptop
 -  Cardboard boxes of equal size, i.e. 115 x 65 x 30 mm
    (contact support@pickit3d.com to get exactly these parts).
 
-It is assumed that the Pick-it system is mounted around 700 mm above the
+It is assumed that the Pickit system is mounted around 700 mm above the
 table and is running correctly. If you are not sure, please follow step
 1-4 from our  `getting
 started <https://support.pickit3d.com/article/125-quick-start-7-steps-to-your-first-pick>`__
 guide. 
 
-2. Your first detection(Configure the Pick-it files)
+2. Your first detection(Configure the Pickit files)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Now that every component is connected to the Pick-it system, we are able
-to configure Pick-it. Open a chrome web browser on your external PC and
-enter the following IP address to access the Pick-it system.
+Now that every component is connected to the Pickit system, we are able
+to configure Pickit. Open a chrome web browser on your external PC and
+enter the following IP address to access the Pickit system.
 
 ::
 
     http://192.168.66.1
 
-In the Pick-it user interface, go to the configuration tab and create
+In the Pickit user interface, go to the configuration tab and create
 new setup files and a product file:
 
 -  **Setup:** pattern\_demo.
 -  **Product:** pattern\_demo.
 
-Configuring the Pick-it comes down to three simple steps:
+Configuring the Pickit comes down to three simple steps:
 
 #. Create a scene where you want to pick the parts
 #. Define the shape of objects that need to be picked
@@ -56,7 +56,7 @@ Configuring the Pick-it comes down to three simple steps:
 2.a create a scene
 ^^^^^^^^^^^^^^^^^^
 
-The first step defines where Pick-it has to look for objects. This is
+The first step defines where Pickit has to look for objects. This is
 done by defining the region of interest (ROI). See the article   `Region
 of
 Interest <https://support.pickit3d.com/article/159-region-of-interest>`__
@@ -73,16 +73,16 @@ Don't forget to save the settings in the corresponding Setup files.
 2.b Define the detection parameters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The second step consists in setting up the Pick-it Pattern detection
-engine. In this application Pick-it will look for fixed sized
+The second step consists in setting up the Pickit Pattern detection
+engine. In this application Pickit will look for fixed sized
 rectangular shapes.
 
 See below for images of the results of the clustering and the fitting
 step. Below the images all used detection parameters are given. See
-following articles on how to use Pick-it Pattern and an explanation of
+following articles on how to use Pickit Pattern and an explanation of
 all parameters.
 
--  `Detection: Pick-it
+-  `Detection: Pickit
    Pattern <https://support.pickit3d.com/article/161-detection-pick-it-pattern>`__
 -  `Explaining the Pattern detection
    parameters <https://support.pickit3d.com/article/175-explaining-the-pattern-detection-parameters>`__
@@ -125,7 +125,7 @@ Don't forget to save the settings. This will update the Product file.
 3. Calibration
 ~~~~~~~~~~~~~~
 
-Next step is the robot-camera calibration. This process teaches Pick-it
+Next step is the robot-camera calibration. This process teaches Pickit
 where the robot base is located w.r.t. to the camera. This information
 is used to transform the object pick-frames into robot coordinates. A
 detailed description in robot-camera calibration can be found  
@@ -135,7 +135,7 @@ not forget to save after the calibration is finished.
 4. Program the robot
 ~~~~~~~~~~~~~~~~~~~~
 
-Now Pick-it is configured, the only thing left to do is programming the
+Now Pickit is configured, the only thing left to do is programming the
 robot. The robot used in the demo video is a UR5, but a similar program
 can be created on any other robot.
 
@@ -164,7 +164,7 @@ every time.
 5. Happy picking!
 ~~~~~~~~~~~~~~~~~
 
-If you followed all steps above, you're ready building your Pick-it
+If you followed all steps above, you're ready building your Pickit
 product showcase using the Pattern detection engine. Happy picking!
 
 If you need any help with one of the steps above, please contact 

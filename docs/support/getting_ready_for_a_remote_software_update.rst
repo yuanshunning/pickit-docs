@@ -1,13 +1,13 @@
 Getting ready for a remote software update
 ==========================================
 
-To receive an update of the Pick-it software, your Pick-it processor
+To receive an update of the Pickit software, your Pickit processor
 needs to be connected to the Internet:
 
--  The preferred method is to connect your Pick-it  processor  `via  an
+-  The preferred method is to connect your Pickit  processor  `via  an
    Ethernet
    cable <https://secure.helpscout.net/docs/583bfcdbc6979106d37373a0/article/5af03bfa0428631126f1c29e#ethernet>`__. 
--  If this is not possible you can connect your Pick-it processor \ `via
+-  If this is not possible you can connect your Pickit processor \ `via
    the 3G USB
    dongle <https://secure.helpscout.net/docs/583bfcdbc6979106d37373a0/article/5af03bfa0428631126f1c29e#usb>`__.
 
@@ -15,7 +15,7 @@ Connecting via Ethernet cable
 -----------------------------
 
 #. **Plug in an Ethernet cable** (with Internet access) into the **LAN
-   port** of the Pick-it processor.
+   port** of the Pickit processor.
 #. Navigate to the **Network settings**, by clicking on the Settings
    button at the top-right of the web interface.
    |image0|
@@ -25,13 +25,13 @@ Connecting via Ethernet cable
 
 |image1|
 
-If an **IP address** shows up, you are good to go. A Pick-it engineer
+If an **IP address** shows up, you are good to go. A Pickit engineer
 can now connect to your system.
 
 If no **IP address** shows up:
 
 -  Double check if the Ethernet cable \ `is attached in the right
-   way <#ethernet>`__ to the Pick-it processor and your network;
+   way <#ethernet>`__ to the Pickit processor and your network;
 -  Check with your system administrator if there is a **firewall** on
    your network. If so:
 
@@ -45,8 +45,8 @@ If no **IP address** shows up:
 
    <div id="callout_protocol" class="callout-blue">
 
-**Info:** Pick-it uses VPN/TLS over TCP port 443 to establish a
-connection. The Pick-it software update server is known as
+**Info:** Pickit uses VPN/TLS over TCP port 443 to establish a
+connection. The Pickit software update server is known as
 **vpn.intermodalics.eu**.
 
 .. raw:: html
@@ -56,9 +56,9 @@ connection. The Pick-it software update server is known as
 Connecting via USB dongle
 -------------------------
 
-Your Pick-it system was delivered with a USB 3G dongle to connect the
-Pick-it system to the Internet when  `connecting via
-Ethernet <#ethernet>`__ is not an option. A Pick-it SIM card is already
+Your Pickit system was delivered with a USB 3G dongle to connect the
+Pickit system to the Internet when  `connecting via
+Ethernet <#ethernet>`__ is not an option. A Pickit SIM card is already
 inside so this works out of the box. 
 
 .. raw:: html
@@ -67,7 +67,7 @@ inside so this works out of the box. 
 
 **Note:** Since this is a wireless device, it's important that it is
 positioned **outside a metal enclosure** (cage of Faraday). In case your
-Pick-it system is in such an enclosure, you may use an extension cable
+Pickit system is in such an enclosure, you may use an extension cable
 up to 2m to install the remote service modem outside this enclosure.
 
 .. raw:: html
@@ -78,8 +78,8 @@ up to 2m to install the remote service modem outside this enclosure.
 
    <div class="callout-yellow">
 
-**Note:** Depending on **3G reception on site**, a Pick-it support
-engineer could view and manipulate the Pick-it web interface, install
+**Note:** Depending on **3G reception on site**, a Pickit support
+engineer could view and manipulate the Pickit web interface, install
 product and or setup files and perform updates. If the mobile reception
 is bad viewing and manipulating the interface could be impossible. On
 slow connections, software updates can take up to several hours.
@@ -88,9 +88,9 @@ slow connections, software updates can take up to several hours.
 
    </div>
 
-Pick-it systems were shipped with 2 different types of USB 3G dongles,
+Pickit systems were shipped with 2 different types of USB 3G dongles,
 use the images below as a reference to check which type of dongle came
-with your Pick-it system.
+with your Pickit system.
 
 Type 1
 ~~~~~~
@@ -98,7 +98,7 @@ Type 1
 |image2|
 
 The USB dongle can be plugged into any available USB port of your
-Pick-it system. No configuration is required.
+Pickit system. No configuration is required.
 
 .. raw:: html
 
@@ -112,9 +112,9 @@ Pick-it system. No configuration is required.
 | Blinking red     | Check if a SIM/USIM card is inserted. If it is, try to unplug and replug the modem.                                             |
 +------------------+---------------------------------------------------------------------------------------------------------------------------------+
 | Blinking green   | The card has registered to the network but no Internet connection could be made.                                                |
-|                  | Try reinserting the USB modem and restarting the Pick-it processor. If that doesn’t help, contact a Pick-it support engineer.   |
+|                  | Try reinserting the USB modem and restarting the Pickit processor. If that doesn’t help, contact a Pickit support engineer.   |
 +------------------+---------------------------------------------------------------------------------------------------------------------------------+
-| Solid Green      | The network is available with a successful Internet connection. A Pick-it support engineer can now access the system.           |
+| Solid Green      | The network is available with a successful Internet connection. A Pickit support engineer can now access the system.           |
 +------------------+---------------------------------------------------------------------------------------------------------------------------------+
 
 .. raw:: html
@@ -127,7 +127,7 @@ Type 2
 |image3|
 
 The USB dongle can be plugged into any available USB port of your
-Pick-it system. No configuration is required.
+Pickit system. No configuration is required.
 
 .. raw:: html
 
@@ -143,13 +143,13 @@ Pick-it system. No configuration is required.
 | Blinking blue (every 3s)          | The USB dongle is registering with a 3G/3G+ network.                                                                      |
 +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------+
 | Solid Green                       | The network is available with a successful Internet connection to a 2G network.                                           |
-|                                   | A Pick-it support engineer can now access the system but the connection might be too slow to perform a software update.   |
+|                                   | A Pickit support engineer can now access the system but the connection might be too slow to perform a software update.   |
 +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------+
 | Solid Blue                        | The network is available with a successful Internet connection to a 3G network.                                           |
-|                                   | A Pick-it support engineer can now access the system but the software update might take up to several hours.              |
+|                                   | A Pickit support engineer can now access the system but the software update might take up to several hours.              |
 +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------+
 | Solid Cyan                        | The network is available with a successful Internet connection to a 3G+ network.                                          |
-|                                   | A Pick-it support engineer can now access the system to perform a software update.                                        |
+|                                   | A Pickit support engineer can now access the system to perform a software update.                                        |
 +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------+
 
 .. raw:: html

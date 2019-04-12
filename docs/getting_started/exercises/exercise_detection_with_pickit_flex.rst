@@ -1,9 +1,9 @@
 .. _exercise_detection_flex:
 
-Exercise detection with Pick-it Flex
+Exercise detection with Pickit Flex
 ====================================
 
-This exercise involves using Pick-it Flex. Different objects needs to be
+This exercise involves using Pickit Flex. Different objects needs to be
 detected using simple shapes. 
 
 +--------------+------------+
@@ -20,7 +20,7 @@ Requirements
 Before starting on the exercise we advice you to read following
 articles:
 
--  `Detection: Pick-it
+-  `Detection: Pickit
    Flex <https://support.pickit3d.com/article/160-detection-pick-it-flex>`__
 -  `Explaining the Flex detection
    parameters <https://support.pickit3d.com/article/174-explaining-the-flex-detection-parameters>`__
@@ -51,8 +51,8 @@ Follow the next steps to complete the exercise.
 #. Download the snapshot file
    `here <https://drive.google.com/uc?export=download&id=10AhDBLtBmbjaK2JM1Zfr1Pq3FpCMWxFB>`__
    on your device.
-#. Connect your device to your Pick-it processor.
-#. In the user interface of Pick-it, go to the Files tab. 
+#. Connect your device to your Pickit processor.
+#. In the user interface of Pickit, go to the Files tab. 
 #. Press Upload and select the file.
 #. The file can now be found in snapshots/uploads.
 #. Finish the exercise.
@@ -68,9 +68,9 @@ What to read next
   snapshots <https://support.pickit3d.com/article/188-exercises-through-snapshots>`__
 | `Exercise Region of
   Interest <https://support.pickit3d.com/article/187-exercise-region-of-interest>`__
-| `Exercise detection with Pick-it
+| `Exercise detection with Pickit
   Teach <https://support.pickit3d.com/article/189-exercise-detection-with-pick-it-teach>`__
-| `Exercise detection with Pick-it
+| `Exercise detection with Pickit
   Pattern <https://support.pickit3d.com/article/191-exercise-detection-with-pick-it-pattern>`__
 
 .. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5b042ea50428635ba8b28e73/file-w74xbCgWpo.png

@@ -1,7 +1,7 @@
-I can not connect to the Pick-it web interface on Windows. What to do?
+I can not connect to the Pickit web interface on Windows. What to do?
 ======================================================================
 
-In case the Pick-it web interface cannot be reached when surfing to
+In case the Pickit web interface cannot be reached when surfing to
 **http://192.168.66.1** using **Google Chrome**, the following actions
 can be taken:
 

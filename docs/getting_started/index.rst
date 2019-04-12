@@ -1,7 +1,7 @@
 Getting started
 ===============
 
-Welcome and thank you for choosing for Pick-it.
+Welcome and thank you for choosing for Pickit.
 
 7 steps to your first pick
 --------------------------

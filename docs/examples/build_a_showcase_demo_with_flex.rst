@@ -2,13 +2,13 @@ Build a showcase demo with Flex
 ===============================
 
 This article will guide you in setting up a simple robot picking demo
-with Pick-it Flex. The Flex vision engine is the vision engine for
+with Pickit Flex. The Flex vision engine is the vision engine for
 finding objects with **simple geometrical shapes** in **random
 orientations**. In this demo we are picking simple steel
 cylinders. Click \ `here <#picking>`__ to see the video of this demo.
 
 #. `Requirements <#requirements>`__
-#. `Your first detection(configuring the Pick-it files) <#detection>`__
+#. `Your first detection(configuring the Pickit files) <#detection>`__
 #. `Calibration <#calibration>`__
 #. `Your first pick(program the robot) <#program>`__
 #. `Happy picking <#picking>`__
@@ -18,7 +18,7 @@ cylinders. Click \ `here <#picking>`__ to see the video of this demo.
 
 The hardware requirements to set up this demo are:
 
--  A Pick-it vision system
+-  A Pickit vision system
 -  A robot and gripper, UR5 + double-lined magnetic gripper
 -  An additional computer or laptop
 -  Steel cylinders of 105 x 42 mm (diameters greater than 30 mm are
@@ -40,30 +40,30 @@ bin.
 
    </div>
 
-It is assumed that the Pick-it system is mounted around 700 mm above the
+It is assumed that the Pickit system is mounted around 700 mm above the
 table and is running correctly. If you are not sure, please follow step
 1-4 from our   `getting
 started <https://support.pickit3d.com/article/125-quick-start-7-steps-to-your-first-pick>`__
 guide. 
 
-2. Your first detection(configuring the Pick-it files)
+2. Your first detection(configuring the Pickit files)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Now that every component is connected to the Pick-it system, we are able
-to configure Pick-it. Open a chrome web browser on your external PC and
-enter the following IP address to access the Pick-it system.
+Now that every component is connected to the Pickit system, we are able
+to configure Pickit. Open a chrome web browser on your external PC and
+enter the following IP address to access the Pickit system.
 
 ::
 
     http://192.168.66.1
 
-In the Pick-it user interface, go to the configuration tab and create
+In the Pickit user interface, go to the configuration tab and create
 new setup files and a product file:
 
 -  **Setup:** flex\_demo.
 -  **Product:** flex\_demo.
 
-Configuring the Pick-it comes down to three simple steps:
+Configuring the Pickit comes down to three simple steps:
 
 #. Create a scene where you want to pick the parts
 #. Define the shape of objects that need to be picked
@@ -76,7 +76,7 @@ file.
 2.a Create the scene
 ^^^^^^^^^^^^^^^^^^^^
 
-The first step defines where Pick-it has to look for objects. This is
+The first step defines where Pickit has to look for objects. This is
 done by defining the region of interest (ROI). See the article  `Region
 of
 Interest <https://support.pickit3d.com/article/159-region-of-interest>`__
@@ -96,16 +96,16 @@ Don't forget to save the settings in the corresponding Setup files.
 2.b Define the detection parameters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The second step consists in setting up the Pick-it Flex detection
-engine. In this application Pick-it will look for cylindrical shapes in
+The second step consists in setting up the Pickit Flex detection
+engine. In this application Pickit will look for cylindrical shapes in
 the scene. 
 
 See below for images of the results of the clustering and the fitting
 step. Below the images all used detection parameters are given. See
-following articles on how to use Pick-it Flex and an explanation of all
+following articles on how to use Pickit Flex and an explanation of all
 parameters.
 
--  `Detection: Pick-it
+-  `Detection: Pickit
    Flex <https://support.pickit3d.com/article/160-detection-pick-it-flex>`__
 -  `Explaining the Flex detection
    parameters <https://support.pickit3d.com/article/174-explaining-the-flex-detection-parameters>`__\ |image2|
@@ -132,7 +132,7 @@ Don't forget to save the settings. This will update the Product file.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Finally the picking strategy is defined. For this application bin
-collision is checked. This means that Pick-it checks if the gripper can
+collision is checked. This means that Pickit checks if the gripper can
 pick the parts without hitting the bin. Also  the pick frames are
 orientated on the top surface of the cylinders. More information about
 the picking strategies can be found in the 
@@ -150,7 +150,7 @@ Don't forget to save the settings. This will update the Product file.
 3. Calibration
 ~~~~~~~~~~~~~~
 
-Next step is the robot-camera calibration. This process teaches Pick-it
+Next step is the robot-camera calibration. This process teaches Pickit
 where the robot base is located w.r.t. to the camera. This information
 is used to transform the object pick-frames into robot coordinates. A
 detailed description in robot-camera calibration can be found 
@@ -160,7 +160,7 @@ not forget to save after the calibration is finished.
 4. Your first pick(Program the robot)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Now Pick-it is configured, the only thing left to do is programming the
+Now Pickit is configured, the only thing left to do is programming the
 robot. The robot used in the demo video is a UR5, but a similar program
 can be created on any other robot.
 
@@ -201,7 +201,7 @@ could lead to undesired miss-picks.
 5. Happy picking!
 ~~~~~~~~~~~~~~~~~
 
-Following all these previous steps leads to the next Pick-it Flex demo
+Following all these previous steps leads to the next Pickit Flex demo
 application, happy picking!
 
 .. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5ae089b42c7d3a5063b4dd94/file-N07wxn0nrw.png

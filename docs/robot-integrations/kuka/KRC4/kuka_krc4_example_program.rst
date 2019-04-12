@@ -11,32 +11,32 @@ KUKA KRC4 example program
 This program is part of the KUKA package which you can download 
 `here <https://drive.google.com/open?id=0B6DoUWOcKeMHdWhqODEwVlF0M0E>`__.
 
-More details about setting up Pick-it with a KUKA robot can be found 
+More details about setting up Pickit with a KUKA robot can be found 
 `here <http://support.pickit3d.com/article/64-setting-up-pick-it-with-a-kuka-robot>`__.
 
 **Loading the example program**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This article describes an example program illustrating how to perform a
-simple picking task with Pick-it. The file is called
+simple picking task with Pickit. The file is called
 **``ExampleSimplePicking.src``** are is located in
 **``R1> Program> PickIt``**. 
 
 The example program explained
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-What follows describes the parts of the example that relate to Pick-it.
-Lines unrelated to Pick-it have been skipped.
+What follows describes the parts of the example that relate to Pickit.
+Lines unrelated to Pickit have been skipped.
 
 .. code-block:: bash
 
       Pickit_configure(2,3) ; Setup 2 Product 3
 
-Request Pick-it to switch to the setup with number 2 and the product
+Request Pickit to switch to the setup with number 2 and the product
 with number 3. These are numbers shown next to the setup and products on
-the Pick-it CONFIGURATION page:
+the Pickit CONFIGURATION page:
 
--  If this line is suppressed, Pick-it keeps its current setup and
+-  If this line is suppressed, Pickit keeps its current setup and
    product.
 -  If the specified setup or product does not exist, the program does
    not proceed.
@@ -53,7 +53,7 @@ may have an unexpected behaviour.
 
         CONTINUE
 
-Trigger Pick-it to detect objects and enter the actual program loop. 
+Trigger Pickit to detect objects and enter the actual program loop. 
 
 .. code-block:: bash
 
@@ -64,8 +64,8 @@ Trigger Pick-it to detect objects and enter the actual program loop. 
           F_Pick=Pickit_get_pose():F_PickCorrection
           F_PrePick=F_Pick:{X 0.0,Y 0.0,Z 100.0,A 0.0,B 0.0,C 0.0}
 
-Now, the program has to wait until a response from Pick-it is received.
-If Pick-it object detection is successful, we get the object pose
+Now, the program has to wait until a response from Pickit is received.
+If Pickit object detection is successful, we get the object pose
 **``F_Pick``** using **``Pickit_get_pose()``**, and apply an ad-hoc
 correction offset **``F_PickCorrection``** (zero by default), which
 might be useful to compensate for changes to the tool or systematic
@@ -113,7 +113,7 @@ If the object pose is reachable, lines 62-73 perform the object picking
 sequence, which consists of a sequence of point-to-point and linear
 motions, as well as enabling/disabling vacuum for grasping. Once the
 object has been picked, **``Pickit_look_for_object()``** is called to
-trigger Pick-it to detect objects again, so detection takes place in
+trigger Pickit to detect objects again, so detection takes place in
 parallel to the final **``M_DropToBin()``** motion sequence. This
 motivates why the first call of **``Pickit_look_for_object()``** was
 outside the actual program loop. 
@@ -139,7 +139,7 @@ object pose is required. There are two alternatives:
    multiple objects, we can request the next object (lines 86-87). This
    alternative is faster, as it does not incur the overhead of a new
    detection.
-#. Alternatively, if there are no remaining detected objects, Pick-it is
+#. Alternatively, if there are no remaining detected objects, Pickit is
    triggered to detect objects again in line 89. 
 
 .. code-block:: bash
@@ -158,7 +158,7 @@ object pose is required. There are two alternatives:
 
 If the last call to **``Pickit_look_for_object()``** found no objects
 (line 94 is the else statement of line 51), the robot is sent to its
-home position and Pick-it is triggered to detect objects. As long as
+home position and Pickit is triggered to detect objects. As long as
 there are no object detections, the infinite loop will keep on trying to
 find one.
 
@@ -185,5 +185,5 @@ Running the example program
 
 The example program can be run as any other KUKA.KRL program. Please
 refer to the **KUKA KR-C4** user manual for further details. Once
-running, verify that an object detection is executed on the Pick-it side
+running, verify that an object detection is executed on the Pickit side
 and that the robot is correctly moving to the object.

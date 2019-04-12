@@ -13,7 +13,7 @@ on the ID of the detected model. Use cases are:
 Universal Robots with URCap
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A variable  **pickit\_type** is available to use after using the Pick-it
+A variable  **pickit\_type** is available to use after using the Pickit
 URCap \ **Find object(s)** command.This variable will represent
 the detected model id.
 
@@ -44,9 +44,9 @@ What to read next
 
 | `Region of
   Interest <https://support.pickit3d.com/article/159-region-of-interest>`__
-| `Detection: Pick-it
+| `Detection: Pickit
   Flex <https://support.pickit3d.com/article/160-detection-pick-it-flex>`__
 | `Detection:
-  Pick-it Pattern <https://support.pickit3d.com/article/161-detection-pick-it-pattern>`__
+  Pickit Pattern <https://support.pickit3d.com/article/161-detection-pick-it-pattern>`__
 | `Detection:
-  Pick-it Teach <https://support.pickit3d.com/article/162-detection-pick-it-teach>`__
+  Pickit Teach <https://support.pickit3d.com/article/162-detection-pick-it-teach>`__

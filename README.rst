@@ -1,4 +1,4 @@
-Pick-it docs
+Pickit docs
 ============
 
 Build html on Docker

@@ -1,10 +1,10 @@
 .. _yaskawa:
 
-Setup Pick-it with a Yaskawa robot
+Setup Pickit with a Yaskawa robot
 ==================================
 
-This setup manual helps you setup Pick-it with a Yaskawa robot. The
-setup of Pick-it with a Yaskawa robot consists of 4 steps:
+This setup manual helps you setup Pickit with a Yaskawa robot. The
+setup of Pickit with a Yaskawa robot consists of 4 steps:
 
  1
     `Check controller and software compatibility <#compatibility>`__
@@ -18,7 +18,7 @@ setup of Pick-it with a Yaskawa robot consists of 4 steps:
 Check controller and software compatibility
 -------------------------------------------
 
-Pick-it is compatible with controllers **FS100,** **DX200** and
+Pickit is compatible with controllers **FS100,** **DX200** and
 **YRC1000**.
 
 .. raw:: html
@@ -49,15 +49,15 @@ Setup the network connection
 Hardware connection
 ~~~~~~~~~~~~~~~~~~~
 
-The connection between the Yaskawa controller and Pick-it is done over
+The connection between the Yaskawa controller and Pickit is done over
 ethernet. You connect your robot controller to the **ROBOT **\ port on
-the Pick-it processor as shown in the diagram below:
+the Pickit processor as shown in the diagram below:
 
 |image0|
 
--  For **DX200** controllers you need to connect the Pick-it processor
+-  For **DX200** controllers you need to connect the Pickit processor
    to the **CN104** port.
--  For **FS100** controllers you need to connect the Pick-it processor
+-  For **FS100** controllers you need to connect the Pickit processor
    to the **CN2** port.
 
 IP configuration
@@ -84,10 +84,10 @@ NETWORK** and set the following values:
    -  **SUBNET MASK:** 255.255.0.0
    -  **DEFAULT GATEWAY:** 0.0.0.0
 
-Setting the Pick-it IP address on the robot controller
+Setting the Pickit IP address on the robot controller
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The address of Pick-it needs to be entered in a **String**. To do this:
+The address of Pickit needs to be entered in a **String**. To do this:
 
 #. Start the robot controller in **normal mode**
 #. Go to \ **Main menu → VARIABLE → STRING → S099**
@@ -101,7 +101,7 @@ to management mode before making these changes.
 
 | Before starting, the MotoPlus application should be placed on a USB
   dongle.
-| `Download the Pick-it MotoPlus application
+| `Download the Pickit MotoPlus application
   here <https://support.pickit3d.com/article/36-pick-it-robot-programs>`__.
 
 #. Load the correct USB device under \ **SYSTEM → MotoPlus APL. →
@@ -111,11 +111,11 @@ to management mode before making these changes.
 #. Load the MotoPlus application under \ **SYSTEM → MotoPlus APL. →
    LOAD(USER APPLICATION)**. 
 
-Test robot connection on Pick-it
+Test robot connection on Pickit
 --------------------------------
 
 Details on testing this connection can be found on:  `Test robot to
-Pick-it
+Pickit
 connection <http://support.pickit3d.com/article/19-test-robot-connection>`__
 
 .. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5ab51daf042863794fbe8cd1/file-f1uO7SanPN.png

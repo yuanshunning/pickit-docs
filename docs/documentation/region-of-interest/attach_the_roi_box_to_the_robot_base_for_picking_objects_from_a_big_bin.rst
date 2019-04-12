@@ -5,15 +5,15 @@ Introduction
 ============
 
 When you would like to pick objects form a big bin (a bin bigger than
-the field of view of the Pick-it camera) you need to move the camera to
+the field of view of the Pickit camera) you need to move the camera to
 different view positions to see the whole bin.
 
 This can be done by putting the camera on a slider, but
 more conveniently you can **put the camera on the robot flange**. In
 this way you can use the robot both for picking as for enlarging the
-field of view of you Pick-it camera.
+field of view of you Pickit camera.
 
-Pick-it has a feature making it easier to solve this kind of
+Pickit has a feature making it easier to solve this kind of
 application: **Attaching the virtual Region of interest box (ROI box) to
 the the robot base.**
 
@@ -35,8 +35,8 @@ How to attach the ROI box to the robot base frame?
 1. Perform robot camera calibration
 -----------------------------------
 
-For Pick-it to define where the ROI box is with to the robot base
-Pick-it needs to know where the camera is with respect to the robot. To
+For Pickit to define where the ROI box is with to the robot base
+Pickit needs to know where the camera is with respect to the robot. To
 define this you should first perform `multi poses robot camera
 calibration <http://support.pickit3d.com/article/35-how-to-execute-robot-camera-calibration#multipose_mounted>`__.
 If calibration was already done, there is no need to do this again.
@@ -55,9 +55,9 @@ of interest page.
    <div class="callout-yellow">
 
 | To define the ROI box, **robot communication should be active**.
-  (verify the **V** icon in the green bar at the top of the Pick-it
+  (verify the **V** icon in the green bar at the top of the Pickit
   interface)
-| For Universal Robots, when you don't have the Pick-it URCap installed,
+| For Universal Robots, when you don't have the Pickit URCap installed,
   you explicitly need to run the 
   `Robot\_communication <http://support.pickit3d.com/article/36-pick-it-robot-programs>`__
   program to have an active communication.

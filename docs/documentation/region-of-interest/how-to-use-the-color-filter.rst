@@ -86,12 +86,12 @@ What to read next
 
 | `Region of
   Interest <https://support.pickit3d.com/article/159-region-of-interest>`__
-| `Detection: Pick-it
+| `Detection: Pickit
   Flex <https://support.pickit3d.com/article/160-detection-pick-it-flex>`__
 | `Detection:
-  Pick-it Pattern <https://support.pickit3d.com/article/161-detection-pick-it-pattern>`__
+  Pickit Pattern <https://support.pickit3d.com/article/161-detection-pick-it-pattern>`__
 | `Detection:
-  Pick-it Teach <https://support.pickit3d.com/article/162-detection-pick-it-teach>`__
+  Pickit Teach <https://support.pickit3d.com/article/162-detection-pick-it-teach>`__
 
 .. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5975f0e02c7d3a73488b5397/file-cKtGY3f5zJ.png
 .. |image1| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5975eeaa042863033a1b53d1/file-A6K5LHfoqe.png

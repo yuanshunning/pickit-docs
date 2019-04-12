@@ -1,15 +1,15 @@
-Detection: Pick-it Flex
+Detection: Pickit Flex
 =======================
 
 -  `Define the 3D scene <#define>`__
 -  `Divide the scene into clusters & reject (some) clusters <#divide>`__
 -  `Fit & filter objects <#fit>`__
 
-This article describes how to get started with the Pick-it Flex engine.
-The Pick-it Flex engine easily finds geometric shapes (cylinders, boxes,
+This article describes how to get started with the Pickit Flex engine.
+The Pickit Flex engine easily finds geometric shapes (cylinders, boxes,
 planes, circles ... ) and can handle a variety of sizes with one
 configuration. In the image below an example of a Flex detection is
-shown. The Pick-it Flex detection engine has a typical workflow, which
+shown. The Pickit Flex detection engine has a typical workflow, which
 is described step by step in this article.
 
 |image0|
@@ -17,7 +17,7 @@ is described step by step in this article.
 Define the 3D scene
 ~~~~~~~~~~~~~~~~~~~
 
-The first step of Pick-it Flex is to define where the Pick-it system
+The first step of Pickit Flex is to define where the Pickit system
 should look. The 3D scene is defined by a Region of Interest and the
 optimize detection parameters. These detection parameters are explained
 in the article  `Explaining the Flex detection
@@ -32,14 +32,14 @@ view. 
 
 The information shown in the Points view is what will be transferred to
 the next step. All other information is not taken into account for the
-detection with Pick-it Flex. 
+detection with Pickit Flex. 
 
 |image1|
 
 Divide the scene into clusters & reject (some) clusters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The next step in the Pick-it Flex detection is rather important. Here
+The next step in the Pickit Flex detection is rather important. Here
 the scene will be divided into different parts(clusters). Each cluster
 contains all points that belong to one object in the scene. All clusters
 are shown in a different color. 
@@ -55,7 +55,7 @@ objects. So these points are then excluded from the following step. 
 
 For the Flex detection to work properly every object should be clustered
 apart. A bad example would be one cluster(color) for 2 parts in the
-scene. The Pick-it system supports different ways of clustering. All
+scene. The Pickit system supports different ways of clustering. All
 methods are explained in the  `Explaining the Flex parameters
 article <https://support.pickit3d.com/article/174-explaining-the-flex-detection-parameters>`__.
 
@@ -64,7 +64,7 @@ article <https://support.pickit3d.com/article/174-explaining-the-flex-detection-
 Fit & filter objects
 ~~~~~~~~~~~~~~~~~~~~
 
-The final step of Pick-it flex is to fit a certain geometric shape on
+The final step of Pickit flex is to fit a certain geometric shape on
 every cluster and to filter out the wrong objects. All accepted objects
 can be send back to the robot one by one.
 
@@ -90,16 +90,16 @@ What to read next
 | ` <https://support.pickit3d.com/article/168-saving-a-snapshot-in-pick-it>`__\ `Explaining
   the Flex detection
   parameters <https://support.pickit3d.com/article/174-explaining-the-flex-detection-parameters>`__
-| ` <https://support.pickit3d.com/article/41-attaching-the-roi-box-to-the-robot-base-for-binpicking-objects-from-a-big-bin>`__\ `Pick-it
+| ` <https://support.pickit3d.com/article/41-attaching-the-roi-box-to-the-robot-base-for-binpicking-objects-from-a-big-bin>`__\ `Pickit
   detection
   grid <https://support.pickit3d.com/article/167-the-pick-it-detection-grid>`__
 
 | `Region of
   Interest <https://support.pickit3d.com/article/159-region-of-interest>`__
 | `Detection:
-  Pick-it Pattern <https://support.pickit3d.com/article/161-detection-pick-it-pattern>`__
+  Pickit Pattern <https://support.pickit3d.com/article/161-detection-pick-it-pattern>`__
 | `Detection:
-  Pick-it Teach <https://support.pickit3d.com/article/162-detection-pick-it-teach>`__
+  Pickit Teach <https://support.pickit3d.com/article/162-detection-pick-it-teach>`__
 | `Picking <https://support.pickit3d.com/article/163-picking>`__
 
 .. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5b583cea2c7d3a03f89cf6f8/file-SIMuw9Wskm.gif

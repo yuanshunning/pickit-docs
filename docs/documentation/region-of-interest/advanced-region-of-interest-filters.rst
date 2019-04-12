@@ -32,7 +32,7 @@ Dynamic Box-based ROI filter
 
 Removes all points in the point cloud that are located below the topmost
 point minus the threshold distance. Located below, refers here to points
-that have a smaller value for their z-coordinate when taking the Pick-it
+that have a smaller value for their z-coordinate when taking the Pickit
 reference frame as a reference.
 
 This feature is handy during depalletizing to force it picking layer by
@@ -105,9 +105,9 @@ workspace** button.
   Interest <https://support.pickit3d.com/article/159-region-of-interest>`__
 | `How to use the color
   filter <https://support.pickit3d.com/article/171-how-to-use-the-color-filter>`__
-| `Detection: Pick-it
+| `Detection: Pickit
   Flex <https://support.pickit3d.com/article/160-detection-pick-it-flex>`__
 | `Detection:
-  Pick-it Pattern <https://support.pickit3d.com/article/161-detection-pick-it-pattern>`__
+  Pickit Pattern <https://support.pickit3d.com/article/161-detection-pick-it-pattern>`__
 | `Detection:
-  Pick-it Teach <https://support.pickit3d.com/article/162-detection-pick-it-teach>`__
+  Pickit Teach <https://support.pickit3d.com/article/162-detection-pick-it-teach>`__

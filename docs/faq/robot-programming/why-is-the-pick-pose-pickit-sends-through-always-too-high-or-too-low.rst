@@ -1,4 +1,4 @@
-Why is the pick pose Pick-it sends through always too high or too low?
+Why is the pick pose Pickit sends through always too high or too low?
 ======================================================================
 
 In most cases this is related to a wrong definition of the tool center

@@ -1,10 +1,10 @@
 .. _fanuc:
 
-Setup Pick-it with a Fanuc robot
+Setup Pickit with a Fanuc robot
 ================================
 
-This setup manual helps you setup Pick-it with a **Fanuc robot**. The
-setup of **Pick-it** with a **Fanuc** **robot** consists of **4 steps**:
+This setup manual helps you setup Pickit with a **Fanuc robot**. The
+setup of **Pickit** with a **Fanuc** **robot** consists of **4 steps**:
 
  1
     `Check controller and software compatibility <#chapter01>`__
@@ -22,7 +22,7 @@ Check controller and software compatibility
 
    <div class-"callout-yellow">
 
-Pick-it is compatible with controllers as of version **R-J3iB** and the
+Pickit is compatible with controllers as of version **R-J3iB** and the
 software module **User Socket Msg** for socket communication is
 required. (The product number for this module is A05B-2600-R648)
 
@@ -44,7 +44,7 @@ Alternatively, a backup of the controller can be made and the
 information on the installed software can be found in the following
 file: ~/backup/All Of Above/orderfil.dat.
 
-To get you started as quickly as possible, Pick-it provides:
+To get you started as quickly as possible, Pickit provides:
 
 -  All ASCII files for both the low-level communication as well as an
    example program.  
@@ -82,12 +82,12 @@ Setting up network connection for a Fanuc robot consists of 4 steps:
 Hardware connection
 ~~~~~~~~~~~~~~~~~~~
 
-The Pick-it processor has to be connected to the Fanuc controller using
+The Pickit processor has to be connected to the Fanuc controller using
 an Ethernet cable. 
 
 This Ethernet cable should be plugged in:
 
-#. The **ROBOT** port of the **Pick-it processor**; 
+#. The **ROBOT** port of the **Pickit processor**; 
 #. The **Port 1** port of **Fanuc controller**.
 
 The location of port 1 on the Fanuc  is shown for different controller
@@ -104,11 +104,11 @@ pulled directly. This clamp is also used to ground the cable shield. 
 IP configuration
 ~~~~~~~~~~~~~~~~
 
-To allow communication between Pick-it and the Fanuc controller both
+To allow communication between Pickit and the Fanuc controller both
 must have an IP address in the same subnet.
 
-By default, the Pick-it ROBOT connection (the Ethernet port on the
-Pick-it processor labeled ROBOT) is configured to have the following
+By default, the Pickit ROBOT connection (the Ethernet port on the
+Pickit processor labeled ROBOT) is configured to have the following
 static IP address: **169.254.5.180** with a subnet mask of
 **255.255.0.0**.
 
@@ -118,7 +118,7 @@ controller via  ``MENU > SETUP > Host Comm``: 
 #. To obtain a static IP, **DHCP** has to be **disabled** on the
    controller.
 #. A **static IP should be set** to e.g. 169.254.5.182 which is an IP in
-   the same subnet as the Pick-it IP.
+   the same subnet as the Pickit IP.
 
 |image4|
 
@@ -132,9 +132,9 @@ Next, you have to take the following steps: 
 #. **Set the correct IP address** and subnet mask for Port#1 
 #. **Activate** these new settings via ``NEXT > INIT``
 
-*To verify now if a network connection can be made between Pick-it and
+*To verify now if a network connection can be made between Pickit and
 the robot controller, you can create a new host name ‘pickit’ and give
-it the Pick-it ROBOT connection IP address. After pressing the PING
+it the Pickit ROBOT connection IP address. After pressing the PING
 button, you should see the following message printed:*
 
 **Ping 169.254.5.180 succeeded**
@@ -142,7 +142,7 @@ button, you should see the following message printed:*
 Socket configuration
 ~~~~~~~~~~~~~~~~~~~~
 
-Pick-it works through socket communication. To work properly Pick-it has
+Pickit works through socket communication. To work properly Pickit has
 to act as the **server** for the socket communication. Hence, the robot
 controller has to be configured to be **client**.
 
@@ -169,7 +169,7 @@ Test robot connection
 ---------------------
 
 Details on testing this connection can be found on:  `Test robot to
-Pick-it
+Pickit
 connection <http://support.pickit3d.com/article/19-test-robot-connection>`__
 
 --------------
@@ -198,14 +198,14 @@ The .zip folder contains the following ASCII files:
 -  **pick\_it\_communication13\_C.kl**: This a Karel program that cares
    of the low level communication. This files should not be adapted.
 -  **EXAMPLE\_PICK\_IT.LS**: This is a Teach Pendant program that shows
-   a simple pick application for FANUC using Pick-it.
+   a simple pick application for FANUC using Pickit.
 -  For calibration two Teach Pendant programs are provided
    **MP\_CALIBRATE.LS** for \ `multi poses
    calibration <http://support.pickit3d.com/article/35-how-to-execute-robot-camera-calibration#multipose>`__
    and **CALIBRATE.LS** for \ `single pose
    calibration <http://support.pickit3d.com/article/35-how-to-execute-robot-camera-calibration#singlepose>`__.
 -  The other **.LS** file define short Teach Pendant program that
-   abstract some of the Pick-it logic into more user readable functions.
+   abstract some of the Pickit logic into more user readable functions.
    They can also serve as macros that can be called manually. More about
    that later. 
 
@@ -226,7 +226,7 @@ first have to compile the above files into binaries. 
    <div class-"callout-yellow">
 
 Modifying the pick\_it\_communication13\_C.kl file should only be
-considered after talking to a Pick-it support engineer.
+considered after talking to a Pickit support engineer.
 
 .. raw:: html
 
@@ -252,25 +252,25 @@ Registers used by the Karel program
 -----------------------------------
 
 The Karel program **pick\_it\_communication13\_C.kl**, which takes care
-of the low-level communication between the controller and Pick-it, uses
+of the low-level communication between the controller and Pickit, uses
 the following IO and registers to pass on data from the low-level
 communication to a Teach Pendant application program:
 
--  Data communicated from Pick-it via the Karel program to the Teach
+-  Data communicated from Pickit via the Karel program to the Teach
    Pendant application program:
 
-   -  **R[1]**: the Pick-it status
-   -  **PR[1]**: an object pose detected by Pick-it
+   -  **R[1]**: the Pickit status
+   -  **PR[1]**: an object pose detected by Pickit
 
 -  Data communicated from the Teach Pendant application program via the
-   Karel program to Pick-it:
+   Karel program to Pickit:
 
-   -  **R[2]**: the command for Pick-it
+   -  **R[2]**: the command for Pickit
    -  **R[4]**: the desired setup
    -  **R[5]**: the desired product
-   -  **R[6]**: Pick-it object dimension x
-   -  **R[7]**: Pick-it object dimension y
-   -  **R[8]**: Pick-it object dimension z
+   -  **R[6]**: Pickit object dimension x
+   -  **R[7]**: Pickit object dimension y
+   -  **R[8]**: Pickit object dimension z
 
 .. raw:: html
 
@@ -323,11 +323,11 @@ In case the communication was started successfully, you can see the
 following on the robot Teach Pendant:
 
 **C1\_CONNECTED** is **shown** in the top status barVerify on the
-Pick-it interface
+Pickit interface
 
 |image12|
 
-You can verify the connection from within the Pick-it web interface by
+You can verify the connection from within the Pickit web interface by
 checking if there is a checkmark next to the robot status label in the
 top bar.
 

@@ -1,9 +1,9 @@
 .. _abb:
 
-Setting up Pick-it with ABB
+Setting up Pickit with ABB
 ===========================
 
-The setup of Pick-it with an ABB robot consists of 4 steps:
+The setup of Pickit with an ABB robot consists of 4 steps:
 
 .. contents::
     :backlinks: top
@@ -13,7 +13,7 @@ The setup of Pick-it with an ABB robot consists of 4 steps:
 Check controller and software compatibility
 -------------------------------------------
 
-Pick-it is compatible with controllers as of version IRC5 with RobotWare 5 or 6 and furthermore. To communicate with Pick-it, the following controller modules needs to be installed:
+Pickit is compatible with controllers as of version IRC5 with RobotWare 5 or 6 and furthermore. To communicate with Pickit, the following controller modules needs to be installed:
 
 - 616 PC interface
 - 623-1 Multitasking
@@ -38,12 +38,12 @@ Setup the network connection
 Hardware connection
 ~~~~~~~~~~~~~~~~~~~
 
-The Pick-it processor has to be connected to the robot controller using
+The Pickit processor has to be connected to the robot controller using
 an Ethernet cable. 
 
 This Ethernet cable should be plugged in:
 
-- The **ROBOT** port of the Pick-it processor; 
+- The **ROBOT** port of the Pickit processor; 
 - The **WAN** port of the robot controller.
 
 IP configuration
@@ -56,9 +56,9 @@ Open RobotStudio and follow next steps:
 
 .. image:: /assets/images/robot-integrations/abb/abb-ip-configuration-step-2.jpg
 
-Set the IP address of the controller preferably to **169.254.5.182** which is an IP address in the same subnet as the Pick-it IP and set the subnet mask to **255.255.0.0**.
+Set the IP address of the controller preferably to **169.254.5.182** which is an IP address in the same subnet as the Pickit IP and set the subnet mask to **255.255.0.0**.
 
-The IP address of the robot can not be the same as the IP address of Pick-it.
+The IP address of the robot can not be the same as the IP address of Pickit.
 
 After these steps restart from the Flex pendant (assuming you have no write acces yet).
 
@@ -110,7 +110,7 @@ Restart the controller.
 .. image:: /assets/images/robot-integrations/abb/abb-load-program-files-step-5.jpg
     :alt: Restart the controller
 
-Test robot connection on Pick-it
+Test robot connection on Pickit
 --------------------------------
 
 Details on testing this connection can be found on: :ref:`test-robot-connection`

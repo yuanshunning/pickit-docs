@@ -34,7 +34,7 @@ Normally the three distance should resemble:
 -  A and C: 514.4 mm
 
 **If this is not the case, there is something wrong with the accuracy of
-the robot.** In that case further refinement of the Pick-it calibration
+the robot.** In that case further refinement of the Pickit calibration
 will not lead to a beter accuracy.
 
 If this is the case: Good news! There is no indication that there is

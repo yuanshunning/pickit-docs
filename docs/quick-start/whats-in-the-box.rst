@@ -3,13 +3,13 @@ What's in the box
 
 .. image:: /assets/images/First-steps/Pickit-full-system.jpg
 
--  Pick-it processor
+-  Pickit processor
 
    -  Rack handles and mounting bolts
    -  Pair of keys for locking the front lid
    -  Power cable
 
--  Pick-it 3D Camera
+-  Pickit 3D Camera
 
    -  10m camera USB cable
 
@@ -23,7 +23,7 @@ What's in the box
 
 **Optionally**
 
-These items can be ordered as options on the Pick-it system. Please
+These items can be ordered as options on the Pickit system. Please
 contact our `Sales team <mailto:sales@pickit3d.com>`__ if you would like
 to buy one of these options.
 

@@ -2,10 +2,10 @@ Universal Robots Example Program
 ================================
 
 .. attention::
-   This article describes the legacy way of using Pick-it with a
+   This article describes the legacy way of using Pickit with a
    Universal Robot.
    For new robot programs, please refer to the  `Getting started with the
-   Pick-it
+   Pickit
    URCap <https://support.pickit3d.com/article/75-getting-started-with-the-pick-it-urcap>`__
    article.
 
@@ -29,7 +29,7 @@ The example program explained
 -----------------------------
 
 The example application program Robot\_picking.txt executes a simple
-picking task using Pick-it.
+picking task using Pickit.
 
 .. code-block:: bash
 
@@ -70,7 +70,7 @@ picking task using Pick-it.
 
           pickit_socket_close()
 
-Pick-it-related code lines are explained in detail:
+Pickit-related code lines are explained in detail:
 
 .. code-block:: bash
 
@@ -78,7 +78,7 @@ Pick-it-related code lines are explained in detail:
           pickit_ip≔"169.254.5.180"
 
 The pickit\_port and pickit\_ip must be set to their correct values to
-enable communication between the robot and Pick-it.
+enable communication between the robot and Pickit.
 
 .. code-block:: bash
 
@@ -99,7 +99,7 @@ z-axis of the tool.
           Script: pickit_communication
           Script: pickit_transformations
 
-Scripts containing relevant Pick-it functions are loaded.
+Scripts containing relevant Pickit functions are loaded.
 
 .. code-block:: bash
 
@@ -109,14 +109,14 @@ Scripts containing relevant Pick-it functions are loaded.
 
           pickit_socket_close()
 
-Lines 9 and 35 open and close a socket connection with Pick-it
+Lines 9 and 35 open and close a socket connection with Pickit
 respectively.
 
 .. code-block:: bash
 
           Loop pickit_is_running()
 
-This line indicates that, as long as Pick-it is running (i.e., the **RUN
+This line indicates that, as long as Pickit is running (i.e., the **RUN
 button** is active), the code inside its scope will be executed
 repeatedly.
 
@@ -124,9 +124,9 @@ repeatedly.
 
           'pickit_configure(1,3)'
 
-Pick-it is commanded to load the setup and product with codes 1 and 3
+Pickit is commanded to load the setup and product with codes 1 and 3
 respectively. These are the numbers shown next to the setup and product
-on the Pick-it CONFIGURATION page. If this line is suppressed, Pick-it
+on the Pickit CONFIGURATION page. If this line is suppressed, Pickit
 keeps its current setup and product. If the specified setup or product
 does not exist, the program does not proceed. Make sure that the setup
 and product passed to pickit\_configure()are the ones you are expecting,
@@ -139,8 +139,8 @@ or the robot may have an unexpected behaviour.
           Else
                 pickit_next_object()
 
-If only one object was found the last time Pick-it searched for objects,
-it is ordered to search for objects once again. However, if Pick-it
+If only one object was found the last time Pickit searched for objects,
+it is ordered to search for objects once again. However, if Pickit
 found more than one object in its previous search, the next object is
 requested.
 
@@ -155,7 +155,7 @@ requested.
                             pick_pose
                             pre_pick_pose
 
-The program waits until Pick-it returns the requested object and, if it
+The program waits until Pickit returns the requested object and, if it
 is found, the robot shall pick it.The pose that the robot shall reach to
 pick the object (pick\_pose) is returned by the function
 pickit\_get\_pose(). Before the actual picking, it is desired that the
@@ -193,8 +193,8 @@ Running the example program
    defined correctly.
 
 
-To allow Pick-it to respond to robot requests, Pick-it has to be in the
-Running state. Press the RUN button on the Pick-it web interface.
+To allow Pickit to respond to robot requests, Pickit has to be in the
+Running state. Press the RUN button on the Pickit web interface.
 
 In order to run the program in the robot controller, at the bottom of
 the graphic interface, make sure that **Real robot** is selected and

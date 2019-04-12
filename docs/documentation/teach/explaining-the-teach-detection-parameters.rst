@@ -5,9 +5,9 @@ Explaining the Teach detection parameters
 
    <div>
 
-The Pick-it Teach vision engine is designed to detect complex
+The Pickit Teach vision engine is designed to detect complex
 3D shapes. This article explains its detection parameters. For details
-on how to use Pick-it Teach, please refer to the  `How to use Pick-it
+on how to use Pickit Teach, please refer to the  `How to use Pickit
 Teach <https://support.pickit3d.com/article/162-detection-pick-it-teach>`__
 article.
 
@@ -89,7 +89,7 @@ Enable or disable a model
 Pick frame
 ~~~~~~~~~~
 
-By default, Pick-it Teach provides an initial guess for the pick frame,
+By default, Pickit Teach provides an initial guess for the pick frame,
 but this will in general not be the best choice. It's possible to
 specify the desired  **pick frame** as a positional and rotational
 offset with respect to the object model. The pick frame is the location
@@ -168,7 +168,7 @@ Detection speed
 
    <div>
 
-With this parameter, you can specify how hard Pick-it Teach tries to
+With this parameter, you can specify how hard Pickit Teach tries to
 find multiple matches. Slower detection speeds are likely to produce
 more matches. There are three available options:
 
@@ -192,7 +192,7 @@ more matches. There are three available options:
 Detection precision
 ~~~~~~~~~~~~~~~~~~~
 
-Apart from the above choice, you can instruct Pick-it Teach to favor
+Apart from the above choice, you can instruct Pickit Teach to favor
 being **more precise** or to potentially find \ **more objects**. This
 choice has a negligible impact on detection times. In most cases,
 selecting \ **more precise** yields a good number of matches per
@@ -212,7 +212,7 @@ cases are distinguished:
 -  Parts are lying on a flat surface, without overlapping. This is
    commonly the case on conveyor belts or tables.
 
-If the user chooses the non-overlapping application type, Pick-it will
+If the user chooses the non-overlapping application type, Pickit will
 try to fit the model always with a straight orientation, and never under
 an angle. This does not only save processing effort, but also results in
 more robust fits. This is especially noticeable when the parts to be
@@ -235,15 +235,15 @@ Mentioned articles
 What to read next
 
 | ` <https://support.pickit3d.com/article/167-the-pick-it-detection-grid>`__\ `Detection:
-  Pick-it Teach <https://support.pickit3d.com/article/162-detection-pick-it-teach>`__\ ` <https://support.pickit3d.com/article/168-saving-a-snapshot-in-pick-it>`__\ ` <https://support.pickit3d.com/article/41-attaching-the-roi-box-to-the-robot-base-for-binpicking-objects-from-a-big-bin>`__
+  Pickit Teach <https://support.pickit3d.com/article/162-detection-pick-it-teach>`__\ ` <https://support.pickit3d.com/article/168-saving-a-snapshot-in-pick-it>`__\ ` <https://support.pickit3d.com/article/41-attaching-the-roi-box-to-the-robot-base-for-binpicking-objects-from-a-big-bin>`__
 
 | `Configuration <https://support.pickit3d.com/article/157-configuration>`__
 | `Region of
   Interest <https://support.pickit3d.com/article/159-region-of-interest>`__
-| `Detection: Pick-it
+| `Detection: Pickit
   Flex <https://support.pickit3d.com/article/160-detection-pick-it-flex>`__
 | `Detection:
-  Pick-it Pattern <https://support.pickit3d.com/article/161-detection-pick-it-pattern>`__
+  Pickit Pattern <https://support.pickit3d.com/article/161-detection-pick-it-pattern>`__
 | `Picking <https://support.pickit3d.com/article/163-picking>`__
 
 .. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5b1923140428632c466aa4bd/file-HvTm5oRaq7.png

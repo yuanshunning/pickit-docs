@@ -4,7 +4,7 @@ Modifying the Region of Interest
 Once an initial ROI box has been defined, you can manually adjust its
 size and position. When the \ **Region of Interest page** is open,
 colored arrows attached to the ROI are displayed in the viewer (in all
-views except 2D). Arrows are colored according to the Pick-it reference
+views except 2D). Arrows are colored according to the Pickit reference
 frame direction: X→red, Y→green, Z→blue. You can interactively click and
 drag the arrows to extend and contract the box along each of its sides.
 

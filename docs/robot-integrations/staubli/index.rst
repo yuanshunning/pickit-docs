@@ -1,11 +1,11 @@
 .. _staubli:
 
-Setting up Pick-it with Staubli
+Setting up Pickit with Staubli
 ===============================
 
-This setup manual helps you setup Pick-it with a **Staubli robot**.
+This setup manual helps you setup Pickit with a **Staubli robot**.
 
-The setup of **Pick-it** with a **Staubli** consists of **4 steps**:
+The setup of **Pickit** with a **Staubli** consists of **4 steps**:
 
 #. `Check Staubli software version <#chapter00>`__
 #. `Setup the network connection <#chapter01>`__
@@ -32,21 +32,21 @@ Setup the network connection
 Hardware connection
 ~~~~~~~~~~~~~~~~~~~
 
-The Pick-it processor has to be connected to the robot controller using
+The Pickit processor has to be connected to the robot controller using
 an Ethernet cable. 
 
 This Ethernet cable should be plugged in:
 
-#. The **ROBOT** port of the **Pick-it processor**; 
+#. The **ROBOT** port of the **Pickit processor**; 
 #. The **robot controller**.
 
 IP configuration
 ~~~~~~~~~~~~~~~~
 
-To allow communication between Pick-it and the robot controller both
+To allow communication between Pickit and the robot controller both
 must have a different IP address in the same subnet.
 
-By default, the Ethernet port on the Pick-it processor labeled ROBOT is
+By default, the Ethernet port on the Pickit processor labeled ROBOT is
 configured to have the following static IP address: **169.254.5.180**
 with a subnet mask of **255.255.0.0**.
 
@@ -57,13 +57,13 @@ Go to  ``MENU`` > ``CONTROL PANEL`` > ``CONTROLLER CONFIGURATION`` >
 ``NETWORK`` > ``J204 or J205``
 
 #. Set the IP address of the robot to \ **169.254.5.182** which is an IP
-   address in the same subnet as the Pick-it IP address;
+   address in the same subnet as the Pickit IP address;
 #. Set the subnet mask to\ ** 255.255.0.0**;
 
 Push Enter to edit. Push F8 OK.
 
 The IP address of the robot can of course not be the same as the IP
-address of Pick-it.
+address of Pickit.
 
 |image2|
 
@@ -75,7 +75,7 @@ Go to   ``MENU``>  ``CONTROL PANEL``
 
 #. Choose Type: Client
 #. Add name: pickit
-#. Add the Pick-it IP address
+#. Add the Pickit IP address
 
 |image3|
 
@@ -83,11 +83,11 @@ Go to   ``MENU``>  ``CONTROL PANEL``
 
 You can test the new socket connection by pushing the Test button.
 
-Test robot connection on Pick-it
+Test robot connection on Pickit
 --------------------------------
 
 Details on testing this connection can be found on:  `Test robot to
-Pick-it
+Pickit
 connection <http://support.pickit3d.com/article/19-test-robot-connection>`__
 
 --------------
@@ -130,20 +130,20 @@ Starting and verifying communication consists of 3 steps:
 Select the right robot
 ----------------------
 
-Select **Staubli** as the robot type on the Pick-it interface. You can
+Select **Staubli** as the robot type on the Pickit interface. You can
 select the robot type under ``Configuration``.
 
 Start communication
 -------------------
 
-To start the communication, on the robot you have to select a Pick-it
+To start the communication, on the robot you have to select a Pickit
 example program. You can test this by using the  *OpenComm* program. 
 
-Verify on the Pick-it interface
+Verify on the Pickit interface
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To verify the data packages are received by Pick-it: Check for the 
-**V** icon next to 'Robot' in the top bar of the Pick-it interface.
+To verify the data packages are received by Pickit: Check for the 
+**V** icon next to 'Robot' in the top bar of the Pickit interface.
 
 .. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/58da5f212c7d3a52b42efc64/file-xgLfNUca9b.png
 .. |image1| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/58da5f4add8c8e5c5730e996/file-f6GktCCUzZ.png

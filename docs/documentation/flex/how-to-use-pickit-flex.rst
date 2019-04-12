@@ -1,14 +1,14 @@
-How to use Pick-it Flex
+How to use Pickit Flex
 =======================
 
-This article describes how to get started with the Pick-it Flex engine.
-The Pick-it Flex engine easily finds geometric shapes (cylinders, boxes,
+This article describes how to get started with the Pickit Flex engine.
+The Pickit Flex engine easily finds geometric shapes (cylinders, boxes,
 planes, circles ... ) and can handle a variety of sizes with one
 configuration. 
 
-Working with Pick-it Flex is all about clustering (grouping) of points.
-The Pick-it camera captures the scene and converts it into points with
-depth information (point cloud). For Pick-it Flex we need to split this
+Working with Pickit Flex is all about clustering (grouping) of points.
+The Pickit camera captures the scene and converts it into points with
+depth information (point cloud). For Pickit Flex we need to split this
 point cloud into several clusters (`step 3 <#step-3>`__), each cluster
 is then used to match a geometrical shape on it (`step 4 <#step-4>`__).
 
@@ -24,7 +24,7 @@ The typical workflow when using the Flex engine is as following:
 1. Choose vision engine
 -----------------------
 
-On the **Detection** page select **Pick-it** **Flex** under the
+On the **Detection** page select **Pickit** **Flex** under the
 Detection algorithm option.
 
 2. Optimize the 3D image
@@ -117,7 +117,7 @@ a list of typical applications for each object model:
 6. Invalidate objects
 ---------------------
 
-The `Pick-it detection
+The `Pickit detection
 grid <http://support.pickit3d.com/article/57-the-pick-it-detection-grid>`__
 is a very helpful tool for improving the reliability of your detections.
 

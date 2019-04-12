@@ -3,7 +3,7 @@ Settings
 
 -  `User settings <#user>`__
 -  `Network setting <#network>`__
--  `Upgrade Pick-it version <#upgrade>`__
+-  `Upgrade Pickit version <#upgrade>`__
 
 User settings
 -------------
@@ -37,10 +37,10 @@ problems.
 Network settings
 ----------------
 
-Pick-it port labeled ROBOT
+Pickit port labeled ROBOT
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This port has the purpose of connecting your Pick-it processor to the
+This port has the purpose of connecting your Pickit processor to the
 robot controller or PLC.
 
 |image2|
@@ -57,13 +57,13 @@ If you prefer to get an IP Address from a DHCP server you set this port
 to Dynamic. 
 
 Test the connection to your robot by entering the IP of your robot
-controller or PLC and check if it can be reached by the Pick-it
+controller or PLC and check if it can be reached by the Pickit
 processor.
 
-Pick-it port labeled LAN
+Pickit port labeled LAN
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-This port has the purpose of connecting your Pick-it processor to a
+This port has the purpose of connecting your Pickit processor to a
 network. 
 
 |image3|\ By default, this port is set to Dynamic, which means it's
@@ -78,11 +78,11 @@ Configuration options:
 
 Test connectivity to the internet by pressing the Check button.
 
-Upgrade Pick-it version (available from version 1.10)
+Upgrade Pickit version (available from version 1.10)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Here you can upgrade your Pick-it system to latest software version.
-Refer to the \ `Pick-it systems upgrade
+Here you can upgrade your Pickit system to latest software version.
+Refer to the \ `Pickit systems upgrade
 guide <https://support.pickit3d.com/article/196-pick-it-system-software-upgrades>`__
 for a step-by-step explanation how to upgrade the software on your
 system.
@@ -96,12 +96,12 @@ What to read next
 | `Configuration <https://support.pickit3d.com/article/157-configuration>`__
 | `Region of
   Interest <https://support.pickit3d.com/article/159-region-of-interest>`__
-| `Detection: Pick-it
+| `Detection: Pickit
   Flex <https://support.pickit3d.com/article/160-detection-pick-it-flex>`__
 | `Detection:
-  Pick-it Pattern <https://support.pickit3d.com/article/161-detection-pick-it-pattern>`__
+  Pickit Pattern <https://support.pickit3d.com/article/161-detection-pick-it-pattern>`__
 | `Detection:
-  Pick-it Teach <https://support.pickit3d.com/article/162-detection-pick-it-teach>`__
+  Pickit Teach <https://support.pickit3d.com/article/162-detection-pick-it-teach>`__
 
 .. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5a8eeb2f04286305fbc9c22a/file-6s4JSgfNcK.png
 .. |image1| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5a8eeb432c7d3a080649478b/file-pm8LtL8rjI.png

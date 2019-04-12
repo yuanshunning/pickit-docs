@@ -2,8 +2,8 @@ How can I get a better bin picking experience?
 ==============================================
 
 This article covers a number of tips and tricks for improving the **bin
-picking** experience with Pick-it. Some of the tips are specific to
-Pick-it, while others relate to your hardware setup.
+picking** experience with Pickit. Some of the tips are specific to
+Pickit, while others relate to your hardware setup.
 
 -  Use the ROI box to \ `represent the
    bin <http://support.pickit3d.com/article/42-define-the-boundaries-of-your-application-with-the-roi-box#representation>`__.
@@ -18,7 +18,7 @@ Pick-it, while others relate to your hardware setup.
    between camera and objects relatively short produces higher quality
    image captures.
    |image1|
--  In bin picking, each Pick-it detection request typically yields
+-  In bin picking, each Pickit detection request typically yields
    multiple objects. Select an **object ordering strategy** that places
    higher objects first. In general prefer highest product center over
    highest product part. In the image below object 1 will be picked
@@ -37,7 +37,7 @@ Pick-it, while others relate to your hardware setup.
 -  Consider adding an \ `empty bin
    check <http://support.pickit3d.com/article/62-how-to-detect-an-empty-roi>`__
    when no more detections are found.
--  Not related to Pick-it but to bin picking in general, use a **slender
+-  Not related to Pickit but to bin picking in general, use a **slender
    tool** **that is as long as the bin depth**. Leaving bulky parts of
    the tool and the robot outside of the bin at all times greatly
    improves object reachability. This is not always a feasible
@@ -46,7 +46,7 @@ Pick-it, while others relate to your hardware setup.
    |image4|
 
 To conclude, you can take a look at some real bin picking scenarios with
-Pick-it on the  `videos section of our
+Pickit on the  `videos section of our
 website <https://www.pickit3d.com/videos/category/bin-picking>`__.
 
 .. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5a6b6d772c7d3a39e6266646/file-9CnfgLZD2B.png

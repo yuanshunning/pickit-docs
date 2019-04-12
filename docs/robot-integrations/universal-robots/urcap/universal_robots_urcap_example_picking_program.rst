@@ -13,10 +13,10 @@ Universal Robots URCap example picking program
 Loading the program
 -------------------
 
-This example program requires the **Pick-it URCap plugin** to be
+This example program requires the **Pickit URCap plugin** to be
 installed in your robot. For installation instructions of both the URCap
 plugin and the example programs please refer to the \ `Getting started
-with the Pick-it
+with the Pickit
 URCap <http://support.pickit3d.com/article/75-getting-started-with-the-pick-it-urcap>`__
 article.
 
@@ -28,7 +28,7 @@ the \ **``simple_picking.urp``** program. The program is then loaded. 
 The program explained
 ---------------------
 
-The program implements a simple task where Pick-it is used to
+The program implements a simple task where Pickit is used to
 continuously pick objects from a detection region and place them in a
 specified location. No assumptions are made on how objects are laid out
 in the detection region, so the program is a good starting point to
@@ -47,21 +47,21 @@ The complete program
 |image1|
 
 The program is composed by standard URScript commands and commands
-specific to the Pick-it URCap plugin, which are identified by the green
+specific to the Pickit URCap plugin, which are identified by the green
 gripper symbol. A complete description of available commands can be
-found in  `The Pick-it URCap
+found in  `The Pickit URCap
 interface <http://support.pickit3d.com/article/80-the-pick-it-urcap-interface>`__
 article.
 
 Commands marked in yellow have uninitialized parameters that must be set
-by the user before running the program. This is the case for the Pick-it
+by the user before running the program. This is the case for the Pickit
 **``Select``** command, which is explained further down in the document;
 and for the fixed waypoints **``home_pose``**, **``detect_pose``** and
 **``drop_off_pose``**, which should be set in accordance to the robot's
 environment. In particular, we assume a collision-free transition
 between adjacent waypoints in the program, e.g. between
 **``drop_off_pose``** and **``home_pose``**. We also assume that in
-**``detect_pose``** the robot does not occlude the Pick-it camera field
+**``detect_pose``** the robot does not occlude the Pickit camera field
 of view.
 
 It's important to have a correctly specified robot TCP, as all
@@ -74,31 +74,31 @@ Program breakdown
 
 |image2|
 
-The Pick-it URCap plugin requires the existence of two global variables
+The Pickit URCap plugin requires the existence of two global variables
 named **``pickit_pose``** and **``pickit_pre_pose``**. The value of
-these variables is set by the Pick-it plugin after a successful
+these variables is set by the Pickit plugin after a successful
 detection.
 
 |image3|
 
 The first commands in the program are run only once. Firstly, the
-condition that Pick-it is in Robot mode is verified using the
+condition that Pickit is in Robot mode is verified using the
 **``Check if robot mode enabled``** command. Next, the **``Select``**
 command loads the setup and product configuration to use for object
 detection. These are initially unset, which is why the command is marked
 in yellow. This makes it necessary for the user to specify a setup and
 product configuration from the list of alternatives available on the
-Pick-it system the robot is connected to.
+Pickit system the robot is connected to.
 
 The robot is then moved to the **``home_pose``**, from which the
 detection loop starts. The detection loop is run continuously until the
 program is stopped, and handles three main cases:
 
--  **No objects detected** → trigger a new Pick-it object detection
+-  **No objects detected** → trigger a new Pickit object detection
 -  **Object detected and reachable** → perform pick and place sequence
    and re-trigger object detection
 -  **Object detected but unreachable** → get another (potentially
-   reachable) object already detected by Pick-it, if any
+   reachable) object already detected by Pickit, if any
 
 What follows describes each case in detail. For clarity, code paths
 related to cases other than the one being described are collapsed.
@@ -107,14 +107,14 @@ No object detected
 ^^^^^^^^^^^^^^^^^^
 
 |asdasdasd|\ The detection loop first
-calls \ **``pickit_object_found()``** to check if Pick-it has a
+calls \ **``pickit_object_found()``** to check if Pickit has a
 detection result available. The first time the loop is entered there are
-no detection results, as Pick-it has not yet been triggered to detect
+no detection results, as Pickit has not yet been triggered to detect
 objects; so the **``Else``** statement is evaluated.
 
 In the **``Else``** statement, the robot first moves to
 **``detect_pose``**, from which detections are triggered using the
-**``Find object(s)``** command. We then wait for Pick-it to reply with
+**``Find object(s)``** command. We then wait for Pickit to reply with
 detection results using \ **``Get results``**. When object detection is
 successful, this command sets the values of \ **``pickit_pose``** and
 **``pickit_pre_pose``**: While **``pickit_pose``** is the actual pose
@@ -149,7 +149,7 @@ The sequence consists of four parts:
 
 Note that **``home_pose``** can typically be the same as
 **``detect_pose``**, but we name the two poses differently to make
-explicit that in **``home_pose``** we don't trigger Pick-it detections.
+explicit that in **``home_pose``** we don't trigger Pickit detections.
 As such, **``home_pose``** is not required to prevent the robot from
 occluding the camera field of view.
 
@@ -166,7 +166,7 @@ example pick and place sequence for vacuum grippers.
 *Cycle time optimization*
 '''''''''''''''''''''''''
 
-| The time it takes for Pick-it to detect objects is
+| The time it takes for Pickit to detect objects is
   application-dependent and can vary from a fraction of a second to
   multiple seconds. To optimize cycle time, we perform object placing
   (step 3) in parallel to detection of the next object to pick, such
@@ -185,7 +185,7 @@ Object detected but unreachable
 |image7|
 
 When an object is detected but unreachable, the detection loop checks if
-there are additional object detections available from Pick-it. A single
+there are additional object detections available from Pickit. A single
 call to **``Find object(s)``** might yield the detection of multiple
 objects, and **``Get next object``** allows to access the next available
 object, if any, without the need of triggering a new detection and the
@@ -226,9 +226,9 @@ people.
 
    </div>
 
-To allow Pick-it to respond to robot requests, Pick-it needs to be in
+To allow Pickit to respond to robot requests, Pickit needs to be in
 **robot mode**. To enable robot mode, click on the following button on
-the Pick-it web interface:
+the Pickit web interface:
 
 |image8|
 
@@ -245,25 +245,25 @@ and pause buttons respectively.
 
 |image9|
 
-Monitoring Pick-it from Polyscope
+Monitoring Pickit from Polyscope
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The Pick-it URCap plugin exposes the view of the Pick-it camera
+The Pickit URCap plugin exposes the view of the Pickit camera
 highlighted with the region of interest and detected object markers (the
-same as the 2D view in the Pick-it web interface). This is very
-convenient, as it allows to perform basic Pick-it monitoring without
-having to connect a separate computer to the Pick-it processor for
+same as the 2D view in the Pickit web interface). This is very
+convenient, as it allows to perform basic Pickit monitoring without
+having to connect a separate computer to the Pickit processor for
 opening the web interface.
 
-To access the camera view, select any Pick-it URCap command on the robot
+To access the camera view, select any Pickit URCap command on the robot
 program, and navigate to the **``Command``** tab on the right hand
 panel.
 
 |image10|
 
 Note that below the camera image there is an indicator of the
-connectivity with the Pick-it system that is constantly updated. This is
-the appearance of the indicator when Pick-it is connected and
+connectivity with the Pickit system that is constantly updated. This is
+the appearance of the indicator when Pickit is connected and
 disconnected, respectively:
 
 |image11|
@@ -336,7 +336,7 @@ pointing to the detection region.
 image capture is done on a stationary robot. If a robot motion starts
 just after calling **``Find object(s)``**, it is recommended to briefly
 wait to allow image capture to complete before starting to move. Image
-capture takes place only at the beginning of a Pick-it detection. In the
+capture takes place only at the beginning of a Pickit detection. In the
 example program, this only occurs once, in the object detected and
 reachable case. 
 

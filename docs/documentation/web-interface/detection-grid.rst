@@ -7,7 +7,7 @@ Detection grid
 
    <div>
 
-The Pick-it detection grid gives a clear overview of all detected
+The Pickit detection grid gives a clear overview of all detected
 objects. In this way, you can see the dimensions, detection scores and a
 lot more in a blink of an eye. 
 
@@ -48,7 +48,7 @@ the detection time.
    </div>
 
 Do you want to learn more about how to start detecting objects with
-Pick-it: Check out \ `our articles on Pick-it Teach and Pick-it
+Pickit: Check out \ `our articles on Pickit Teach and Pickit
 Flex <http://support.pickit3d.com/category/33-detection>`__.
 
 .. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5a8c289504286305fbc9a80d/file-NBjb5lyIXL.png

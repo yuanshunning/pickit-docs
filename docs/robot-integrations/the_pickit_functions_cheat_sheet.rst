@@ -1,14 +1,14 @@
-The Pick-it functions cheat sheet
+The Pickit functions cheat sheet
 =================================
 
-| **Note** This article describes the legacy way of using Pick-it with a
+| **Note** This article describes the legacy way of using Pickit with a
   Universal Robot.
 | For new systems, please refer to the  `Getting started with the
-  Pick-it
+  Pickit
   URCap <https://support.pickit3d.com/article/75-getting-started-with-the-pick-it-urcap>`__
   article.
 
-Pick-it provides many functions to script your Pick-it application to a
+Pickit provides many functions to script your Pickit application to a
 success. Underneath we provide an overview of the provided functions:
 
 `pickit\_is\_running() <#pickit_is_running>`__,
@@ -37,7 +37,7 @@ We differentiate two different kinds of functions:
 
    </div>
 
--  **Blocking functions: **\ These functions send a command to Pick-it
+-  **Blocking functions: **\ These functions send a command to Pickit
    and waits until a response is received. 
 -  **Stopping functions:** These functions force the robot program to
    stop in case it returns false. Note that the return value is never
@@ -45,7 +45,7 @@ We differentiate two different kinds of functions:
 -  **Non-blocking functions**: This is
    `pickit\_look\_for\_object() <#pickit_look_for_object>`__ and
    `pickit\_next\_object() <#pickit_next_object>`__. These functions
-   only send a command to Pick-it and immediately return. Waiting for a
+   only send a command to Pickit and immediately return. Waiting for a
    response has to happen in another line/function. The motivation for
    that is that the
    `pickit\_look\_for\_object() <#pickit_look_for_object>`__ function
@@ -53,13 +53,13 @@ We differentiate two different kinds of functions:
    time. By having this function non-blocking, the robot or control
    process can do something else before waiting for the response.
 
-Pick-it functions
+Pickit functions
 -----------------
 
 pickit\_is\_running()
 ~~~~~~~~~~~~~~~~~~~~~
 
-Request Pick-it if Pick-it is in Running state.
+Request Pickit if Pickit is in Running state.
 
 +-----------------+------------------------+-----------+
 | **Behaviour**   | **Universal robots**   | **ABB**   |
@@ -74,8 +74,8 @@ Request Pick-it if Pick-it is in Running state.
 pickit\_can\_calibrate()
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Request Pick-it if Pick-it is in Calibration state. (the Robot setup
-page is active in the Pick-it web interface)
+Request Pickit if Pickit is in Calibration state. (the Robot setup
+page is active in the Pickit web interface)
 
 +-----------------+------------------------+-----------+
 | **Behaviour**   | **Universal robots**   | **ABB**   |
@@ -90,7 +90,7 @@ page is active in the Pick-it web interface)
 pickit\_save\_scene()
 ~~~~~~~~~~~~~~~~~~~~~
 
-Request Pick-it to save the latest image and configurations into a
+Request Pickit to save the latest image and configurations into a
 file. 
 
 +-----------------+------------------------+-----------+
@@ -106,7 +106,7 @@ file. 
 pickit\_find\_calib\_plate()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Request Pick-it to localise the Pick-it camera-to-robot calibration
+Request Pickit to localise the Pickit camera-to-robot calibration
 plate.
 
 +-----------------+------------------------+-----------+
@@ -122,7 +122,7 @@ plate.
 pickit\_configure(setup, product)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Request Pick-it to load and use a specific setup and product type.
+Request Pickit to load and use a specific setup and product type.
 
 +-----------------+------------------------+-----------+
 | **Behaviour**   | **Universal robots**   | **ABB**   |
@@ -137,7 +137,7 @@ Request Pick-it to load and use a specific setup and product type.
 pickit\_look\_for\_object()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Request Pick-it to look for objects.
+Request Pickit to look for objects.
 
 +-----------------+------------------------+-----------+
 | **Behaviour**   | **Universal robots**   | **ABB**   |
@@ -152,7 +152,7 @@ Request Pick-it to look for objects.
 pickit\_next\_object()
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Request Pick-it to return the next object stored in the Pick-it buffer
+Request Pickit to return the next object stored in the Pickit buffer
 which was found before with pickit\_look\_for\_object()
 
 +-----------------+------------------------+-----------+
@@ -184,7 +184,7 @@ pickit\_look\_for\_object() or pickit\_next\_object().
 pickit\_object\_found()
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Check if any objects are present in the Pick-it buffer.
+Check if any objects are present in the Pickit buffer.
 
 +-----------------+------------------------+-----------+
 | **Behaviour**   | **Universal robots**   | **ABB**   |
@@ -199,7 +199,7 @@ Check if any objects are present in the Pick-it buffer.
 pickit\_no\_image\_captured()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Check if Pick-it was able to capture an image.
+Check if Pickit was able to capture an image.
 
 +-----------------+------------------------+-----------+
 | **Behaviour**   | **Universal robots**   | **ABB**   |
@@ -214,7 +214,7 @@ Check if Pick-it was able to capture an image.
 pickit\_remaining\_objects()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Check the number of remaining objects in the Pick-it buffer.
+Check the number of remaining objects in the Pickit buffer.
 
 +-----------------+------------------------+-----------+
 | **Behaviour**   | **Universal robots**   | **ABB**   |
@@ -229,7 +229,7 @@ Check the number of remaining objects in the Pick-it buffer.
 pickit\_get\_pose()
 ~~~~~~~~~~~~~~~~~~~
 
-Request Pick-it for the pick pose of the first object in the Pick-it
+Request Pickit for the pick pose of the first object in the Pickit
 buffer. 
 
 +-----------------+--------------------------------------+-----------+

@@ -1,4 +1,4 @@
-Installing your Pick-it system
+Installing your Pickit system
 ==============================
 
 .. toctree::

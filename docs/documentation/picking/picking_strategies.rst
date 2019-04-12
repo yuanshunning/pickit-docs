@@ -1,9 +1,9 @@
 Picking strategies
 ==================
 
-Pick-it comes with a set of options that allows configuring how detected
+Pickit comes with a set of options that allows configuring how detected
 objects should be picked by a robot. These options, that can be found in
-the  **Picking** tab of the Pick-it web interface, are grouped in the
+the  **Picking** tab of the Pickit web interface, are grouped in the
 following categories:
 
 -  `Pick strategy <#pick_strategy>`__
@@ -18,15 +18,15 @@ order.
 Note on frames
 --------------
 
-Before we start, let's first define three frame types in Pick-it that
+Before we start, let's first define three frame types in Pickit that
 we'll need throughout the article.
 
 -  **Reference frame:** The reference frame defines the location of your
    workspace in which to find objects. It usually has a Z axis (blue)
    that points up.
--  The **object frame** is the default frame that Pick-it associates to
+-  The **object frame** is the default frame that Pickit associates to
    a shape. It indicates where a detected object is located and how it
-   is oriented. It is chosen by the Pick-it detection algorithms and
+   is oriented. It is chosen by the Pickit detection algorithms and
    cannot be modified. This frame might not always be the best choice to
    use for picking, which is why the pick frame exists.
 -  The **pick frame** is what gets sent to the robot. It defines how a
@@ -173,7 +173,7 @@ Collision prevention
 This section explains how to prevent collisions when picking objects
 with a robot. Objects that will not be picked because of collision
 constraints will be labeled as unpickable and not sent to the robot. In
-the Pick-it web interface, unpickable objects are displayed orange in
+the Pickit web interface, unpickable objects are displayed orange in
 the Objects view and the  `detection
 grid <https://support.pickit3d.com/article/57-the-pick-it-detection-grid>`__.
 
@@ -184,7 +184,7 @@ With this setting, you can specify the maximum angular difference
 between the Z axis of your pick frame and the Z axis of your reference
 frame. If an object is tilted more than the maximum specified angle, the
 object will be labeled as unpickable and not sent to the robot. In the
-Pick-it web interface, unpickable objects are displayed orange in the
+Pickit web interface, unpickable objects are displayed orange in the
 Objects view and the  `detection
 grid <https://support.pickit3d.com/article/57-the-pick-it-detection-grid>`__.
 
@@ -236,7 +236,7 @@ Why is it important to model your robot tool?
 
 In bin picking applications, it is important to prevent that the robot
 collides with the bin or potential other objects such that the
-application can run without interruption. Starting from Pick-it version
+application can run without interruption. Starting from Pickit version
 1.10, it is now possible to more accurately model the robot tool to
 closely resemble the actual tool that is mounted on the robot.
 

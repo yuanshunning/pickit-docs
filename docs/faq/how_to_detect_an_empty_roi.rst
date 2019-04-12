@@ -4,10 +4,10 @@ How to detect an empty ROI
 Overview
 --------
 
-In this article, you will learn a strategy when Pick-it no longer 
+In this article, you will learn a strategy when Pickit no longer 
 detects  objects that allows discriminating between an empty Region of
 Interest (ROI) from a ROI that still contains parts that are either
-undetected or of a different type than what Pick-it is looking for.
+undetected or of a different type than what Pickit is looking for.
 
 These are the steps to follow:
 
@@ -34,7 +34,7 @@ Navigate to the  **Detection** page and input the following settings:
    points. <#define-minimum-number-of-points>`__
 -  Fit objects to clusters: **Blob**.
 
-If you run object detection with this product file and Pick-it finds
+If you run object detection with this product file and Pickit finds
 zero objects, the ROI is empty; otherwise, it still has contents inside.
 
 Define the minimum number of points
@@ -76,7 +76,7 @@ the  **Detection** page and input the following settings:
 Modify your robot program
 -------------------------
 
-If running Pick-it object detection with the product file meant to
+If running Pickit object detection with the product file meant to
 detect your parts returns zero matches, we can check for an empty ROI:
 
 -  Optional: Retry object detection a few times to confirm that no parts
@@ -85,5 +85,5 @@ detect your parts returns zero matches, we can check for an empty ROI:
 
    -  If no objects are found, **the ROI is empty**.
    -  If objects are found, **the ROI is not empty** and contains
-      undetected parts or parts of a different type than what Pick-it
+      undetected parts or parts of a different type than what Pickit
       was looking for.

@@ -1,15 +1,15 @@
-The Pick-it URCap interface
+The Pickit URCap interface
 ===========================
 
 Overview
 --------
 
-Pick-it integrates seamlessly with Universal Robots by means of a URCap
-plugin. This plugin exposes a set of Pick-it specific command blocks
+Pickit integrates seamlessly with Universal Robots by means of a URCap
+plugin. This plugin exposes a set of Pickit specific command blocks
 that make the creation of vision-guided programs simple and easy. This
-article documents the interface of the Pick-it URCap plugin. For
+article documents the interface of the Pickit URCap plugin. For
 installation instructions please refer to the \ `Getting started with
-the Pick-it
+the Pickit
 URCap <http://support.pickit3d.com/article/75-getting-started-with-the-pick-it-urcap>`__
 article.
 
@@ -23,20 +23,20 @@ article.
 Global variables
 ----------------
 
-To use one of the global variables defined by the Pick-it plugin, you
+To use one of the global variables defined by the Pickit plugin, you
 need to declare it in the **BeforeStart** section of the program. You
 only need to declare the variables you actually use in your program.
 
 +--------------------------------------------------------------------------+
 | **pickit\_pose**                                                         |
 +==========================================================================+
-| Pick pose for the latest detection results sent by Pick-it, represented  |
+| Pick pose for the latest detection results sent by Pickit, represented  |
 | as a 6D array.                                                           |
 | The sequence of commands to get a valid and reachable pick pose is:      |
 |                                                                          |
 | #. Declare the variable in the **BeforeStart** section of the            |
 |    program.\ |image0|                                                    |
-| #. In the **Robot Program** section, send a request to Pick-it           |
+| #. In the **Robot Program** section, send a request to Pickit           |
 |    using \ **Find object(s)** or **Get next object** command.            |
 | #. Wait for detection result using **Get Result** command.               |
 | #. Check that a valid detection is available by                          |
@@ -53,7 +53,7 @@ only need to declare the variables you actually use in your program.
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **pickit\_pre\_pose**                                                                                                                                                                                                                                                                                                        |
 +==============================================================================================================================================================================================================================================================================================================================+
-| Pre-pick pose for the latest detection results sent by Pick-it, represented as a 6D array.                                                                                                                                                                                                                                   |
+| Pre-pick pose for the latest detection results sent by Pickit, represented as a 6D array.                                                                                                                                                                                                                                   |
 | The sequence of commands to get a valid and reachable pre-pick pose is the same as for **``pickit_pose``**. Refer to the documentation of **``pickit_pose``** for more details. For details on how **``pickit_pre_pose``** is computed from **``pickit_pose``**, refer to the documentation of the **Get result** command.   |
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
@@ -61,7 +61,7 @@ only need to declare the variables you actually use in your program.
 | **pickit\_dim**                                                          |
 +==========================================================================+
 | Object dimensions, in meters, for the latest detection results sent by   |
-| Pick-it, represented as a 3D array.                                      |
+| Pickit, represented as a 3D array.                                      |
 | This is how to interpret the array according to the object type:         |
 |                                                                          |
 | -  **Square** **``[length, length, 0]``**                                |
@@ -70,7 +70,7 @@ only need to declare the variables you actually use in your program.
 | -  **Ellipse** **``[length, width, 0]``**                                |
 | -  **Cylinder** **``[length, diameter, diameter]``**                     |
 | -  **Sphere** **``[diameter, diameter, diameter]``**                     |
-| -  **Point** **cloud (Pick-it Teach                                      |
+| -  **Point** **cloud (Pickit Teach                                      |
 |    model)** **``[bbox x, bbox y, bbox z]``**                             |
 | -  **Blob** **``[bbox x, bbox y, bbox z]``**                             |
 |                                                                          |
@@ -86,7 +86,7 @@ only need to declare the variables you actually use in your program.
 | **pickit\_type**                                                         |
 +==========================================================================+
 | Object type, as an integer identifier, for the latest detection results  |
-| sent by Pick-it.                                                         |
+| sent by Pickit.                                                         |
 | The mapping between object shape and identifier follows:                 |
 |                                                                          |
 | -  **Square** 21                                                         |
@@ -95,8 +95,8 @@ only need to declare the variables you actually use in your program.
 | -  **Ellipse** 24                                                        |
 | -  **Cylinder** 32                                                       |
 | -  **Sphere** 33                                                         |
-| -  **Point cloud (Pick-it Teach model)** 35                              |
-|    From version 1.9+ this variable is no longer 35 with the Pick-it      |
+| -  **Point cloud (Pickit Teach model)** 35                              |
+|    From version 1.9+ this variable is no longer 35 with the Pickit      |
 |    Teach detection engine, but representing the ID Teach model the       |
 |    object was detected from.                                             |
 | -  **Blob** 50                                                           |
@@ -117,10 +117,10 @@ Commands
 
    <div>
 
-The Pick-it plugin provides a set of commands that add to the set of
+The Pickit plugin provides a set of commands that add to the set of
 Polyscope’s existing commands. They can be accessed from within the 
 **Program** tab, under  **Structure** →   **URCaps**, and clicking the 
-**Pick-it** button.
+**Pickit** button.
 
 .. raw:: html
 
@@ -133,7 +133,7 @@ Polyscope’s existing commands. They can be accessed from within the 
 |image1|
 
 To insert a new command, navigate to the **Command** tab select an entry
-from the \ **Pick-it** **command** drop-down. When a command is
+from the \ **Pickit** **command** drop-down. When a command is
 selected, a brief description is shown on the rightmost part of the
 page. Some commands require the specification of input parameters.
 
@@ -142,30 +142,30 @@ page. Some commands require the specification of input parameters.
 +--------------------------------------------------------------------------+
 | **Check if robot mode enabled**                                          |
 +==========================================================================+
-| Checks whether robot mode is enabled in Pick-it.                         |
+| Checks whether robot mode is enabled in Pickit.                         |
 |                                                                          |
 | -  If robot mode is enabled, program execution continues                 |
 | -  If robot mode is not enabled, a pop-up is shown requesting the user   |
-|    to set Pick-it to robot mode.                                         |
+|    to set Pickit to robot mode.                                         |
 |                                                                          |
-| Except for **Find calibration plate**, all other Pick-it plugin commands |
+| Except for **Find calibration plate**, all other Pickit plugin commands |
 | require robot mode to be Robot mode is enabled. Robot mode is enabled    |
-| from the Pick-it web interface.                                          |
+| from the Pickit web interface.                                          |
 +--------------------------------------------------------------------------+
 
 +--------------------------------------------------------------------------+
 | **Select**                                                               |
 +==========================================================================+
 | Loads the specified setup and product configuration.                     |
-| This configuration specifies the behavior of Pick-it detections, e.g.    |
+| This configuration specifies the behavior of Pickit detections, e.g.    |
 | what to look for, in which part of the field of view.                    |
 | **Parameters**                                                           |
 |                                                                          |
 | **Setup** Any of the setup configurations currently available in the     |
-| connected Pick-it system.                                                |
+| connected Pickit system.                                                |
 |                                                                          |
 | **Product** Any of the product configurations currently available in the |
-| connected Pick-it system.                                                |
+| connected Pickit system.                                                |
 |                                                                          |
 | Available configurations are listed in drop-down menus.                  |
 +--------------------------------------------------------------------------+
@@ -173,10 +173,10 @@ page. Some commands require the specification of input parameters.
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Find object(s)**                                                                                                                                                                                                                                                                              |
 +=================================================================================================================================================================================================================================================================================================+
-| Trigger a Pick-it object detection using the currently active setup and product configuration.                                                                                                                                                                                                  |
-| The next Pick-it command after **Find object(s)** should always be **Get result**, which waits until a response for the detection request is ready.                                                                                                                                             |
-| Note that it's valid (and sometimes encouraged) to perform robot motions or other non Pick-it actions between calls to **Find object(s)** and **Get result**, for instance                                                                                                                      |
-| |image3|\ |image4|\ Refer to the cycle time optimization section of the \ `Universal Robots URCap example program <http://support.pickit3d.com/article/76-universal-robots-urcap-example-program>`__ article for the motivation behind performing robot motions while a Pick-it detection is.   |
+| Trigger a Pickit object detection using the currently active setup and product configuration.                                                                                                                                                                                                  |
+| The next Pickit command after **Find object(s)** should always be **Get result**, which waits until a response for the detection request is ready.                                                                                                                                             |
+| Note that it's valid (and sometimes encouraged) to perform robot motions or other non Pickit actions between calls to **Find object(s)** and **Get result**, for instance                                                                                                                      |
+| |image3|\ |image4|\ Refer to the cycle time optimization section of the \ `Universal Robots URCap example program <http://support.pickit3d.com/article/76-universal-robots-urcap-example-program>`__ article for the motivation behind performing robot motions while a Pickit detection is.   |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 +--------------------------------------------------------------------------+
@@ -187,7 +187,7 @@ page. Some commands require the specification of input parameters.
 | multiple objects. **Get next object** allows to request the next         |
 | available object, if any, without the need of triggering a new detection |
 | and the time overhead it entails.                                        |
-| The next Pick-it command after  **Find object(s)** should always         |
+| The next Pickit command after  **Find object(s)** should always         |
 | be \ **Get next object**, which waits until a response for the request   |
 | is ready.                                                                |
 | |image5|\ It's recommended to use this command only when objects in the  |
@@ -196,7 +196,7 @@ page. Some commands require the specification of input parameters.
 | detection is unreachable by the robot. An example of when using \ **Get  |
 | next object** is not ideal would be the following bin picking scenario:  |
 |                                                                          |
-| -  Trigger Pick-it detection that finds multiple objects.                |
+| -  Trigger Pickit detection that finds multiple objects.                |
 | -  First object is picked. Since objects are randomly placed in bin,     |
 |    neighboring objects move and fall into place.                         |
 | -  Call **Get next object** and attempt to pick next object. If the next |
@@ -210,10 +210,10 @@ page. Some commands require the specification of input parameters.
 +--------------------------------------------------------------------------+
 | **Get result**                                                           |
 +==========================================================================+
-| Wait for Pick-it reply with detection results.                           |
-| **Get result** should always be the next Pick-it command after           |
+| Wait for Pickit reply with detection results.                           |
+| **Get result** should always be the next Pickit command after           |
 | a \ **Find object(s)** or **Get next object** request. It blocks until a |
-| reply from Pick-it is received, and the success of the request can then  |
+| reply from Pickit is received, and the success of the request can then  |
 | be queried by calling **``pickit_object_found()``**. When an object has  |
 | been found, the following global variables are populated:                |
 |                                                                          |
@@ -238,20 +238,20 @@ page. Some commands require the specification of input parameters.
 | **Find calibration plate**                                                                                                                                                            |
 +=======================================================================================================================================================================================+
 | Trigger detection of the robot-camera calibration plate.                                                                                                                              |
-| This command requires the Pick-it web interface to be in the Calibration page, hence robot mode should be disabled. When Pick-it is not in the calibration page, a pop-up is shown.   |
+| This command requires the Pickit web interface to be in the Calibration page, hence robot mode should be disabled. When Pickit is not in the calibration page, a pop-up is shown.   |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Save snapshot**                                                                                                                                                                 |
 +===================================================================================================================================================================================+
 | Save a snapshot with the latest detection results.                                                                                                                                |
-| The saved snapshot can then be loaded or downloaded by going to the Files page on the Pick-it web interface and searching for a file whose name contains the capture timestamp.   |
+| The saved snapshot can then be loaded or downloaded by going to the Files page on the Pickit web interface and searching for a file whose name contains the capture timestamp.   |
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Helper functions
 ----------------
 
-As opposed to commands, that don't have a return value; the Pick-it
+As opposed to commands, that don't have a return value; the Pickit
 plugin also exposes a number of helper functions that return useful
 information. They typically are used as the expression of a conditional,
 such as an **if** statement, and can be selected from the **available
@@ -269,9 +269,9 @@ functions drop-down**. 
 | | True if detection results are available.                               |
 | | When results are available, the global variables                       |
 |   **``pickit_pre_pose``** and **``pickit_pose``** have valid contents.   |
-| | This function returns false when Pick-it replied with no detection     |
+| | This function returns false when Pickit replied with no detection     |
 |   results (nominal usecase); or if called without making a request to    |
-|   Pick-it and collecting the results with **Get result** (should be      |
+|   Pickit and collecting the results with **Get result** (should be      |
 |   avoided, as it makes no sense).                                        |
 +--------------------------------------------------------------------------+
 

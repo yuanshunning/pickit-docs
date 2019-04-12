@@ -1,4 +1,4 @@
-Detection: Pick-it Pattern
+Detection: Pickit Pattern
 ==========================
 
 -  `Define the 3D scene <#scene>`__
@@ -7,13 +7,13 @@ Detection: Pick-it Pattern
 -  `Define dimensions and orientation of objects <#dimensions>`__
 -  `Fit & filter objects <#fit>`__
 
-This article describes how to get started with the Pick-it Pattern
-engine. The Pick-it Pattern engine is similar towards the Flex detection
+This article describes how to get started with the Pickit Pattern
+engine. The Pickit Pattern engine is similar towards the Flex detection
 engine. Pattern looks for predefined sized objects(boxes, planes,
 circles,..).  This allows the Pattern detection engine to solve
 applications beyond the limits of the Flex detection engine. The example
 that is being used in this article is one of touching aluminum blocks,
-see image below. Just like the Flex detection engine, the Pick-it
+see image below. Just like the Flex detection engine, the Pickit
 Pattern detection engine has a typical workflow, which is described in
 step by step in this article.
 
@@ -22,7 +22,7 @@ step by step in this article.
 Define the 3D scene
 ~~~~~~~~~~~~~~~~~~~
 
-The first step of Pick-it Pattern is to define where the Pick-it system
+The first step of Pickit Pattern is to define where the Pickit system
 should look. The 3D scene is defined by a Region of Interest and the
 optimize detection parameters. These detection parameters are explained
 in the article  `Explaining the Pattern detection
@@ -35,14 +35,14 @@ shown. The table is filtered out. 
 
 The information shown in the Points view is what will be transferred to
 the next step. All other information is not taken into account for the
-detection with Pick-it Pattern.
+detection with Pickit Pattern.
 
 |image1|
 
 Divide the scene into clusters & reject (some) clusters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The next step in the Pick-it Pattern detection is to divide the scene
+The next step in the Pickit Pattern detection is to divide the scene
 into smaller different parts(clusters). Each cluster contains all points
 of one layer in the scene. All clusters are shown in a different color.
 
@@ -64,7 +64,7 @@ Difference of clustering between Pattern and Flex
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In the detection engine Flex it is important that each cluster
-represents a different object, see  `Detection: Pick-it
+represents a different object, see  `Detection: Pickit
 Flex <https://support.pickit3d.com/article/160-detection-pick-it-flex>`__
 for more information about the Flex engine. For the Pattern engine one
 cluster can contain multiple objects, but the sides of the cluster needs
@@ -84,7 +84,7 @@ engine <https://support.pickit3d.com/article/175-explaining-the-pattern-detectio
 Fit & filter objects
 ~~~~~~~~~~~~~~~~~~~~
 
-The final step of Pick-it Pattern is to fit the defined fixed size shape
+The final step of Pickit Pattern is to fit the defined fixed size shape
 from the previous step. This fixed size shape is fitted from the sides
 of the cluster on. Good fits can be send back to the robot one by one.
 
@@ -108,17 +108,17 @@ What to read next
 
 | `Explaining the Pattern detection
   parameters <https://support.pickit3d.com/article/175-explaining-the-pattern-detection-parameters>`__
-| `Detection: Pick-it
+| `Detection: Pickit
   Flex <https://support.pickit3d.com/article/160-detection-pick-it-flex>`__
-| `Pick-it detection
+| `Pickit detection
   grid <https://support.pickit3d.com/article/167-the-pick-it-detection-grid>`__
 
 | `Region of
   Interest <https://support.pickit3d.com/article/159-region-of-interest>`__
-| `Detection: Pick-it
+| `Detection: Pickit
   Flex <https://support.pickit3d.com/article/160-detection-pick-it-flex>`__
 | `Detection:
-  Pick-it Teach <https://support.pickit3d.com/article/162-detection-pick-it-teach>`__
+  Pickit Teach <https://support.pickit3d.com/article/162-detection-pick-it-teach>`__
 | `Picking <https://support.pickit3d.com/article/163-picking>`__
 
 .. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5b5ae4eb2c7d3a03f89d0fc1/file-5MYwaY9b55.gif

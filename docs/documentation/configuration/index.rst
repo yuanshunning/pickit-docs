@@ -2,7 +2,7 @@ Configuration
 =============
 
 On the configuration page, you can manage the setup and product files on
-your Pick-it system.
+your Pickit system.
 
 -  **Setup** file: contains the Region of Interest (ROI) configuration and
    the camera selection.
@@ -20,7 +20,7 @@ Loading a setup or product file
 To load a new setup or product file just select them from the list. 
 
 Setup and product files can also be loaded from within your robot
-program using the correct Pick-it command.
+program using the correct Pickit command.
 
 You can rename, download or delete a specific setup or product by pressing :guilabel:`Rename` 
 :guilabel:`Download` or :guilabel:`Delete` once the setup or product files are
@@ -36,7 +36,7 @@ Creating a new setup or product file
 ------------------------------------
 
 To create a new setup or product file, first press the :guilabel:`New` button and fill in the corresponding text
-fields and click the :guilabel:`Continue`. Pick-it will make a new file with all settings set to the basic default settings.
+fields and click the :guilabel:`Continue`. Pickit will make a new file with all settings set to the basic default settings.
 After creation, the new setup and product file will automatically be
 loaded.
 
@@ -45,7 +45,7 @@ loaded.
 Saving a setup or product file
 ------------------------------
 
-Once settings are changed in Pick-it they can be saved in the correct file. 
+Once settings are changed in Pickit they can be saved in the correct file. 
 The :guilabel:`Save` button for the setup file can be found at the bottom of the Region of Interest tab. 
 For the product file the button can be found both at the bottom of the Detection and the Picking tab.
 

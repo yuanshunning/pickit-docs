@@ -40,7 +40,7 @@ the object it doesn’t matter how the other axises are orientated.
 
 |image0|
 
-See screenshots below to see the effect on a real scene of Pick-it. The
+See screenshots below to see the effect on a real scene of Pickit. The
 image on the left is with no alignment and the image on the right is
 with the Y ⊥ Z option.
 
@@ -85,7 +85,7 @@ axis of the reference frame. In most applications, the Z axis points up
 from the table or bin, so this option enforces the pick frame to point
 upwards. This is typically used when there is a flexible gripper to pick
 the objects, e.g. a vacuum cup to pick cardboard boxes. See image below
-for the effect on a real scene in Pick-it. The image on the left is with
+for the effect on a real scene in Pickit. The image on the left is with
 no alignment, on the right z\|\|z alignment is used. Note that the
 X-axis of all pick frames are still pointing in the same orientation.
 This correction has no influence on the orientation of the pick frames.
@@ -121,7 +121,7 @@ This option aligns all three axis of the pick frame with all three axis
 of the reference frame. This setting is typically used when there is a
 flexible gripper to pick the objects, e.g. a vacuum cup to pick
 cardboard boxes. See image below for the effect on a real scene in
-Pick-it. The image on the left is with no alignment, on the right
+Pickit. The image on the left is with no alignment, on the right
 XYZ\|\|XYZ alignment is used.
 
 |image6|

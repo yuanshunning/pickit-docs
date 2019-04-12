@@ -22,7 +22,7 @@ articles:
 
 -  `Region of
    Interest <https://support.pickit3d.com/article/159-region-of-interest>`__
--  `Detection: Pick-it
+-  `Detection: Pickit
    Flex <https://support.pickit3d.com/article/160-detection-pick-it-flex>`__
 -  `Explaining the Flex detection
    parameters <https://support.pickit3d.com/article/174-explaining-the-flex-detection-parameters>`__
@@ -52,8 +52,8 @@ Follow the next steps to complete the exercise.
 #. Download the snapshot
    file \ `here <https://drive.google.com/uc?export=download&id=1BNLUIKJtbcDMQgcBDjwan6QRq6Y275am>`__
    on your device.
-#. Connect your device to your Pick-it processor.
-#. In the user interface of Pick-it, go to the Files tab. 
+#. Connect your device to your Pickit processor.
+#. In the user interface of Pickit, go to the Files tab. 
 #. Press Upload and select the file.
 #. The file can now be found in snapshots/uploads.
 #. Finish the exercise.
@@ -69,9 +69,9 @@ What to read next
   snapshots <https://support.pickit3d.com/article/188-exercises-through-snapshots>`__
 | `Exercise Region of
   Interest <https://support.pickit3d.com/article/187-exercise-region-of-interest>`__
-| `Exercise detection with Pick-it
+| `Exercise detection with Pickit
   Teach <https://support.pickit3d.com/article/189-exercise-detection-with-pick-it-teach>`__
-| `Exercise detection with Pick-it
+| `Exercise detection with Pickit
   Flex <https://support.pickit3d.com/article/190-exercise-detection-with-pick-it-flex>`__
 
 .. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5b33a7222c7d3a0fa9a381b8/file-4rTBLy2AoW.png

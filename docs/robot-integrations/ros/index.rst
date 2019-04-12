@@ -1,3 +1,3 @@
-Pick-it ROS interfaces
+Pickit ROS interfaces
 ======================
 

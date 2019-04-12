@@ -3,13 +3,13 @@
 Robot camera calibration
 ========================
 
-Pick-it provides two methods of executing
-this calibration. Which method to choose depends on how Pick-it is set up
+Pickit provides two methods of executing
+this calibration. Which method to choose depends on how Pickit is set up
 and how it will be used.
 
-If the Pick-it **camera is fixed to an independent structure**, :ref:`calibration-multi-poses` and :ref:`calibration-single-pose` can be used depending on the setup.
+If the Pickit **camera is fixed to an independent structure**, :ref:`calibration-multi-poses` and :ref:`calibration-single-pose` can be used depending on the setup.
 
-If the Pick-it  **camera is mounted on the robot**, only :ref:`calibration-multi-poses` can be used.
+If the Pickit  **camera is mounted on the robot**, only :ref:`calibration-multi-poses` can be used.
 
 The first steps in the calibration process are:
 
@@ -19,7 +19,7 @@ The first steps in the calibration process are:
 .. warning::
   Wrong or old calibration parameters can lead to unexpected
   motions. Safe motions of the robot must always be checked by the
-  operator of the robot itself and can never be guaranteed by Pick-it.
+  operator of the robot itself and can never be guaranteed by Pickit.
 
 .. _calibration-multi-poses:
 
@@ -70,7 +70,7 @@ Next step: :ref:`calculate-multi-poses-calibration`.
 Calculate multi poses calibration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Go to the **Calibration** tab in the Pick-it web interface and select
+Go to the **Calibration** tab in the Pickit web interface and select
 **Multi Poses Calibration**.
 
 Now repeat the following cycle for every pose:  
@@ -80,7 +80,7 @@ Now repeat the following cycle for every pose:  
 
 This request should be sent from the robot using the provided
 calibration program. This program can be found under the  **Files** tab
-of the Pick-it web interface or under :ref:`robot-integrations`.
+of the Pickit web interface or under :ref:`robot-integrations`.
 
 After each successful collection of such a pair of transformations, the
 interface looks as follows:
@@ -116,7 +116,7 @@ Some restrictive conditions on using single pose calibration
    31 mm (ISO 9409-1-31.5-4-M5) wide flanges.
 #. The calibration plate has to be mounted in a way **the position and
    orientation of the calibration plate** with respect to the robot
-   flange **is exactly known** and later configured in the Pick-it
+   flange **is exactly known** and later configured in the Pickit
    system.
 
 If one of these conditions can not be met, you will need to perform
@@ -125,7 +125,7 @@ calibration with :ref:`calibration-multi-poses`.
 Step 1: Install calibration plate
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Go to the **Calibration** tab of the Pick-it user interface and
+Go to the **Calibration** tab of the Pickit user interface and
 select **Single pose calibration**.
 
 Mount the calibration plate to the robot flange directly or by making
@@ -177,11 +177,11 @@ At this point, a request for calibration should be sent.
 
 This request should be sent from the robot using the provided
 calibration program. This program can be found under the **Files** tab
-of the Pick-it web interface or on `this page about all supported
+of the Pickit web interface or on `this page about all supported
 robot
 programs <http://support.pickit3d.com/article/36-pick-it-robot-programs>`__.
 
-Once Pick-it receives the request for calibration from the robot the
+Once Pickit receives the request for calibration from the robot the
 robot-camera calibration is calculated. 
 
 **At the end of a successful calibration, all indicators should be
@@ -214,7 +214,7 @@ correct. Redo calibration if the result does not look correct.
 
 At this point, calibration is done!
 
-The calibration parameters are stored on the Pick-it processor.
+The calibration parameters are stored on the Pickit processor.
 Recalibration is only required when the camera is moved or rotated with
 respect to the robot. 
 
@@ -225,7 +225,7 @@ If you have a Universal Robots robot, you can additionally visualize a
 **virtual 3D robot**, which should make it easier to verify the
 correctness of calibration. To do so, follow these steps:
 
--  Make sure **Pick-it is communicating with the robot**: a Pick-it
+-  Make sure **Pickit is communicating with the robot**: a Pickit
    robot program is running and the Robot status indicator at the top of
    the web interface shows a checkmark. .. image:: /assets/images/Documentation/Communication-robot.png
 

@@ -1,7 +1,7 @@
 Detection parameters
 ====================
 
-The Pick-it Flex vision engine is designed to detect basic geometric
+The Pickit Flex vision engine is designed to detect basic geometric
 shapes as cylinders, rectangles, squares, circles and more. The process
 of detecting objects with the Flex vision engine is all about step by step
 testing and fine-tuning parameters until you get a good result.
@@ -63,9 +63,9 @@ are **touching** or **non-touching**. 
    threshold**, which represents the minimum distance to consider
    clusters as separate entities.
 
-Pick-it also allows the possibility of **not grouping points into
+Pickit also allows the possibility of **not grouping points into
 clusters** at all, and an **expert mode** which is intended mostly for
-compatibility with older versions of Pick-it. The expert-mode parameters
+compatibility with older versions of Pickit. The expert-mode parameters
 are such that higher values will typically result in less and/or bigger
 clusters, while lower values result in more and/or smaller clusters.
 
@@ -101,7 +101,7 @@ object models** like cylinders and spheres, one can specify:
 
 |image2|
 
-For **2D object models**, Pick-it first finds flat regions and then
+For **2D object models**, Pickit first finds flat regions and then
 looks for the selected model within them (square, rectangle, circle or
 ellipse). One can specify:
 

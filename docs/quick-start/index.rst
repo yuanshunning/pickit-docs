@@ -1,7 +1,7 @@
 Quick start
 ===========
 
-Welcome and thank you for choosing for Pick-it.
+Welcome and thank you for choosing for Pickit.
 
 .. toctree::
     :maxdepth: 2

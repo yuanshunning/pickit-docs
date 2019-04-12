@@ -1,52 +1,52 @@
-Getting started with the Pick-it URCap
+Getting started with the Pickit URCap
 ======================================
 
-Pick-it integrates seamlessly with Universal Robots by means of a URCap
-plugin. This plugin exposes a set of Pick-it specific command blocks
+Pickit integrates seamlessly with Universal Robots by means of a URCap
+plugin. This plugin exposes a set of Pickit specific command blocks
 that make the creation of vision-guided programs simple and easy. This
-document explains how to install the Pick-it URCap plugin and introduces
+document explains how to install the Pickit URCap plugin and introduces
 the functionality it provides.
 
-Some of the benefits of using the Pick-it URCap plugin:
+Some of the benefits of using the Pickit URCap plugin:
 
 -  Less typing and less code.
 -  Graphical command interface with in-place documentation.
--  Pick-it 2D view available from the UR Teach Pendant.
+-  Pickit 2D view available from the UR Teach Pendant.
 
 Pre-requisites
 --------------
 
-Pick-it
+Pickit
 ~~~~~~~
 
-| Verify that the installed **Pick-it version is 1.8.2 or greater**. The
+| Verify that the installed **Pickit version is 1.8.2 or greater**. The
   software version can be verified at the top left of the web interface.
 | When the version is not displayed at the top left of the web interface
-  you are running an older version of Pick-it which needs to be updated
+  you are running an older version of Pickit which needs to be updated
   first.
 
 |image0|
 
-In order to have your Pick-it system updated, you can always contact
+In order to have your Pickit system updated, you can always contact
 your support team:  support@pickit3d.com.
 
 Robot
 ~~~~~
 
 Verify that you have a supported \ **Polyscope version**.\ ** **\ The
-Polyscope versions supported by the Pick-it URCap plugin are listed on
+Polyscope versions supported by the Pickit URCap plugin are listed on
 our \ `downloads <https://support.pickit3d.com/article/36-pick-it-robot-programs>`__
 page. To check the Polyscope version currently installed in your robot,
 click the **About** button on the home screen.
 
 |image1|
 
-Installing the Pick-it URCap plugin
+Installing the Pickit URCap plugin
 -----------------------------------
 
-To install the Pick-it URCap plugin, follow these steps:
+To install the Pickit URCap plugin, follow these steps:
 
-#. `Download </downloads>`__ the Pick-it URCap plugin archive containing
+#. `Download </downloads>`__ the Pickit URCap plugin archive containing
    the latest version of the URCap.
 #. Unzip the archive and copy its contents to an **empty** USB drive.
 #. Insert the drive into the USB port of either the robot controller or
@@ -54,13 +54,13 @@ To install the Pick-it URCap plugin, follow these steps:
 #. On the Polyscope home screen, press **Setup Robot**.
    **|image2|**
 #. Inside the \ **Setup Robot** menu, press \ **URCaps**.
-#. If there's a previous installation of the Pick-it URCap plugin
+#. If there's a previous installation of the Pickit URCap plugin
    (appears listed under Active), it should be removed by selecting it
    and pressing **-**.
    Polyscope will indicate that a restart is needed to apply the
    changes. Press the restart button to continue, and after restart head
    back to the  **Setup Robot** menu, **URCaps**, and make sure that
-   Pick-it is not listed in the Active URCaps.
+   Pickit is not listed in the Active URCaps.
    |image3|
 #. In the \ **Setup Robot** menu, press **URCaps**, then **+
    |image4|**
@@ -72,17 +72,17 @@ To install the Pick-it URCap plugin, follow these steps:
    |image5|
 
 #. Once Polyscope restarts, the plugin will be deployed and ready to
-   use. Make sure your Pick-it system is running and connected to the
+   use. Make sure your Pickit system is running and connected to the
    robot’s network to continue.
 
-Using the Pick-it URCap plugin
+Using the Pickit URCap plugin
 ------------------------------
 
-To use the Pick-it URCap plugin two things must be done: Connect to a
-running Pick-it system, and write a program that uses Pick-it specific
+To use the Pickit URCap plugin two things must be done: Connect to a
+running Pickit system, and write a program that uses Pickit specific
 commands.
 
-Connect to a running Pick-it system
+Connect to a running Pickit system
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. raw:: html
@@ -90,8 +90,8 @@ Connect to a running Pick-it system
    <div>
 
 From the main screen, go to **Program Robot** and select the
-**Installation** tab. The configuration screen of the Pick-it plugin is
-accessible by selecting **Pick-it** on the left panel.
+**Installation** tab. The configuration screen of the Pickit plugin is
+accessible by selecting **Pickit** on the left panel.
 
 .. raw:: html
 
@@ -105,26 +105,26 @@ accessible by selecting **Pick-it** on the left panel.
 
 |image7|
 
-#. Make sure that **Enable Pick-it plugin** is checked.
-#. Set the **IP address** and **hostname** of the Pick-it system. The
-   hostname of the Pick-it system can be found on the top-left of the
-   Pick-it web interface next to the Pick-it logo.
-#. Click **Connect to Pick-it**
+#. Make sure that **Enable Pickit plugin** is checked.
+#. Set the **IP address** and **hostname** of the Pickit system. The
+   hostname of the Pickit system can be found on the top-left of the
+   Pickit web interface next to the Pickit logo.
+#. Click **Connect to Pickit**
 
-As long as the connection to Pick-it has not been established, the
+As long as the connection to Pickit has not been established, the
 status indicator at the lower left looks like this:
 
-|image8|\ Establishing the connection to Pick-it can take a few seconds,
+|image8|\ Establishing the connection to Pickit can take a few seconds,
 and while this takes place, the status indicator displays:
 
-| |image9|\ When the connection to the Pick-it system is successful, the
+| |image9|\ When the connection to the Pickit system is successful, the
   status indicator at the lower left should look like this:
 
 |image10|
 
-If you plan to run robot programs that don't use Pick-it, you should
-disable (not uninstall) the Pick-it URCap plugin, by unchecking the
-**Enable Pick-it plugin** checkbox in the plugin's installation screen.
+If you plan to run robot programs that don't use Pickit, you should
+disable (not uninstall) the Pickit URCap plugin, by unchecking the
+**Enable Pickit plugin** checkbox in the plugin's installation screen.
 
 .. rubric:: Writing programs
    :name: writing_programs
@@ -133,10 +133,10 @@ disable (not uninstall) the Pick-it URCap plugin, by unchecking the
 
    <div>
 
-The Pick-it plugin exposes a new set of commands that add to the set of
+The Pickit plugin exposes a new set of commands that add to the set of
 Polyscope’s existing commands, as well as a number of helper functions
 and global variables. A complete description of the interface, and how
-to access it from the Polyscope interface can be found in  `The Pick-it
+to access it from the Polyscope interface can be found in  `The Pickit
 URCap
 interface <http://support.pickit3d.com/article/80-the-pick-it-urcap-interface>`__
 article.
@@ -156,11 +156,11 @@ article.
 .. rubric:: Example programs
    :name: example_programs
 
-The Pick-it URCap plugin installation makes available a few example
+The Pickit URCap plugin installation makes available a few example
 programs under **``/programs/pickit_samples``** folder of the
 robot. The can be also downloaded independently of the
 URCap \ `here <https://drive.google.com/open?id=1Gf63Y35NaVxbP4mwc5YUC5SU8u8RYvyO>`__.
-These programs are a great way to get familiar with the Pick-it URCap
+These programs are a great way to get familiar with the Pickit URCap
 plugin, and can serve as a template to build your own applications. The
 following articles provide detailed descriptions of example programs:
 
@@ -174,7 +174,7 @@ following articles provide detailed descriptions of example programs:
 .. rubric:: Running legacy programs with the URCap plugin
    :name: running-legacy-programs-with-the-urcap-plugin
 
-If you have robot programs written for Pick-it 1.7 or older, before the
+If you have robot programs written for Pickit 1.7 or older, before the
 URCap plugin existed, and want to run them without porting them to the
 new URCap syntax, please refer to the \ `Running a legacy UR script
 program (no URCap

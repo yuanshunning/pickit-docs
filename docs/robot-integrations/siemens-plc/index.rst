@@ -1,7 +1,7 @@
-Setting up Pick-it with Siemens PLC
+Setting up Pickit with Siemens PLC
 ===================================
 
-This manual explains how to make Pick-it communicate with a Siemens PLC.
+This manual explains how to make Pickit communicate with a Siemens PLC.
 This manual guides you through the process in TIA-portal. The files are
 however also compatible with Siematic manager (S7).
 
@@ -9,21 +9,21 @@ Step 1: Check the hardware configuration
 ----------------------------------------
 
 Make sure that both the PLC is equipped with a ProfiNET or
-TCP/IP-connector and that both the PLC as well as Pick-it are connected
-to the network. Pick-it communicates with the robot (or in this case
+TCP/IP-connector and that both the PLC as well as Pickit are connected
+to the network. Pickit communicates with the robot (or in this case
 PLC) with the TCP/IP-protocol. For an in-depth specification about this
 low-level communication structure, this 
 `link <https://support.pickit3d.com/article/51-the-low-level-communication-structures-between-a-robot-and-pick-it-on-the-tcp-ip-socket-level>`__
 will be useful. Unlike a lot of 
 
-**Q: Welk object is Pick-it in de network?**
+**Q: Welk object is Pickit in de network?**
 
 **Q: Vraag Jan foto netwerk setup in TIA**
 
 Step 2: Download the necessary files
 ------------------------------------
 
-Pick-it provides a function block and additional data blocks for
+Pickit provides a function block and additional data blocks for
 communication over TCP/IP. The necessary (.scl) file can be found in the
 table below. Make sure to choose the correct PLC version.
 
@@ -31,7 +31,7 @@ S300/S400/S1200/S1500
 
 **Q: Vraag Jan?**
 
-3: Migration of Pick-it function blocks
+3: Migration of Pickit function blocks
 ---------------------------------------
 
 The first step consists in adding the downloaded file in your TIA-portal
@@ -49,12 +49,12 @@ we simply drag it into our main OB1. TIA-portal
 automatically generates the necessary datablock which has to be
 confirmed in the dialog.
 
-The Pick-it function block contains inputs and outputs. Firstly, the
-inputs are discussed. The inputs contain the information sent to Pick-it
+The Pickit function block contains inputs and outputs. Firstly, the
+inputs are discussed. The inputs contain the information sent to Pickit
 during communication. This information exists of the actual robot
 position, some basic commando’s seen in the `cheat
 sheet <https://support.pickit3d.com/article/50-the-pick-it-functions-cheat-sheet>`__,
-and the Pick-it IP and Port data.
+and the Pickit IP and Port data.
 
 **Q: Should be robot pose be multiplied with MULT (10000) in advance?
 Q: If both Successfull and Not Successfull false then ????
@@ -68,7 +68,7 @@ Q:Typo Jan Successfull ???? **
 |              |              | robot        |              |              | stable       |
 |              |              | position in  |              |              | connection   |
 |              |              | X            |              |              | between      |
-|              |              |              |              |              | Pick-it and  |
+|              |              |              |              |              | Pickit and  |
 |              |              |              |              |              | the PLC      |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 | ActualPosY   | Byte[4]      | The actual   | Waiting      | Bool         | TRUE if      |
@@ -78,14 +78,14 @@ Q:Typo Jan Successfull ???? **
 |              |              |              |              |              | response.    |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 | ActualPosZ   | Byte[4]      | The actual   | Successful   | Bool         | TRUE if      |
-|              |              | robot        |              |              | Pick-it      |
+|              |              | robot        |              |              | Pickit      |
 |              |              | position in  |              |              | processed    |
 |              |              | Z            |              |              | the message  |
 |              |              |              |              |              | successfully |
 |              |              |              |              |              | .            |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 | ActualPosA   | Byte[4]      | The actual   | Not          | Bool         | TRUE if      |
-|              |              | robot        | Successful   |              | Pick-it      |
+|              |              | robot        | Successful   |              | Pickit      |
 |              |              | orientation  |              |              | processed    |
 |              |              | A.\*         |              |              | the message  |
 |              |              |              |              |              | not          |
@@ -107,7 +107,7 @@ Q:Typo Jan Successfull ???? **
 |              |              | orientation  |              |              | object       |
 |              |              | D.\*         |              |              | position Z.  |
 +--------------+--------------+--------------+--------------+--------------+--------------+
-| pickit\_find | Bool         | Pick-it      | ObjectPosA   | Real         | The latest   |
+| pickit\_find | Bool         | Pickit      | ObjectPosA   | Real         | The latest   |
 | \_calib\_pla |              | command for  |              |              | returned     |
 | te           |              | searching    |              |              | object       |
 |              |              | the          |              |              | orientation  |
@@ -123,7 +123,7 @@ Q:Typo Jan Successfull ???? **
 |              |              | at-sheet>`__ |              |              |              |
 |              |              | ).           |              |              |              |
 +--------------+--------------+--------------+--------------+--------------+--------------+
-| pickit\_look | Bool         | Pick-it      | ObjectPosB   | Real         | The latest   |
+| pickit\_look | Bool         | Pickit      | ObjectPosB   | Real         | The latest   |
 | \_for\_objec |              | command for  |              |              | returned     |
 | t            |              | searching    |              |              | object       |
 |              |              | objects in   |              |              | orientation  |
@@ -138,7 +138,7 @@ Q:Typo Jan Successfull ???? **
 |              |              | at-sheet>`__ |              |              |              |
 |              |              | ).           |              |              |              |
 +--------------+--------------+--------------+--------------+--------------+--------------+
-| pickit\_next | Bool         | Pick-it      | ObjectPosC   | Real         | The latest   |
+| pickit\_next | Bool         | Pickit      | ObjectPosC   | Real         | The latest   |
 | \_object     |              | command for  |              |              | returned     |
 |              |              | returning    |              |              | object       |
 |              |              | the next     |              |              | orientation  |
@@ -153,7 +153,7 @@ Q:Typo Jan Successfull ???? **
 |              |              | at-sheet>`__ |              |              |              |
 |              |              | ).           |              |              |              |
 +--------------+--------------+--------------+--------------+--------------+--------------+
-| pickit\_conf | Bool         | Pick-it      | ObjectPosD   | Real         | The latest   |
+| pickit\_conf | Bool         | Pickit      | ObjectPosD   | Real         | The latest   |
 | igure        |              | command for  |              |              | returned     |
 |              |              | configuring  |              |              | object       |
 |              |              | setup and    |              |              | orientation  |
@@ -168,12 +168,12 @@ Q:Typo Jan Successfull ???? **
 |              |              | at-sheet>`__ |              |              |              |
 |              |              | ).           |              |              |              |
 +--------------+--------------+--------------+--------------+--------------+--------------+
-| ConfigSetup  | Int          | The Pick-it  | ObjectDimHei | Real         | The latest   |
+| ConfigSetup  | Int          | The Pickit  | ObjectDimHei | Real         | The latest   |
 |              |              | setup file   | ght          |              | returned     |
 |              |              | number.      |              |              | object       |
 |              |              |              |              |              | height.      |
 +--------------+--------------+--------------+--------------+--------------+--------------+
-| ConfigProduc | Int          | The Pick-it  | ObjectDimLen | Real         | The latest   |
+| ConfigProduc | Int          | The Pickit  | ObjectDimLen | Real         | The latest   |
 | t            |              | product file | gth          |              | returned     |
 |              |              | number.      |              |              | object       |
 |              |              |              |              |              | length.      |
@@ -265,7 +265,7 @@ Q:Typo Jan Successfull ???? **
 \|Functionalities and usage
 ---------------------------
 
-The PLC/Pick-it configuration is always set in
+The PLC/Pickit configuration is always set in
 Master/Slave-configuration. This implies that the PLC always starts the
-communication. By changing the Pick-it cheat sheet functions booleans,
+communication. By changing the Pickit cheat sheet functions booleans,
 the request is set. The

@@ -1,9 +1,9 @@
-Pick-it example case: Picking and orientation of cups
+Pickit example case: Picking and orientation of cups
 =====================================================
 
 |image0|
 
-This article covers an extensive overview of an actual Pick-it
+This article covers an extensive overview of an actual Pickit
 application where picking and orientation is verified during every cycle
 of the robot program. We cover the basics of the application as well as
 the robot program used in this application.
@@ -27,8 +27,8 @@ The orientation of the cups is done by looking for a circle when the cup
 was initially detected and picked as a cylinder and looking for a
 cylinder when the cup was initially detected and picked as a circle.
 
-So we have already created and saved 2 Pick-it setup files and 4 Pick-it
-product files through the Pick-it interface.
+So we have already created and saved 2 Pickit setup files and 4 Pickit
+product files through the Pickit interface.
 
 Two setup files
 ^^^^^^^^^^^^^^^
@@ -58,11 +58,11 @@ Flowchart
 Step by step:
 ~~~~~~~~~~~~~
 
-Pick-it looks for circles and detects 3. 
+Pickit looks for circles and detects 3. 
 
 |image2|
 
-Pick-it will only start to search for cylinders when no circles can be
+Pickit will only start to search for cylinders when no circles can be
 detected anymore or all detected circles are not reachable to the robot.
 
 Search for cylinders and detects 1. 
@@ -97,7 +97,7 @@ the robot tool. 
 
 In the case that the cup was initially detect as a circle and the robot
 is grasping the cup from its bottom side, the cup does not enter the
-region of interest and so no detection is made by Pick-it.  
+region of interest and so no detection is made by Pickit.  
 
 .. raw:: html
 
@@ -119,7 +119,7 @@ region of interest and so no detection is made by Pick-it.  
 
 In the case that the cup was initially detect as a circle and and the
 robot is grasping the cup from its top side the lateral sides of the cup
-enter the ROI box, allowing Pick-it to see a cylinder. 
+enter the ROI box, allowing Pickit to see a cylinder. 
 
 .. raw:: html
 
@@ -150,7 +150,7 @@ is shown to the camera in the orientation check. 
 
    <div>
 
-If the bottom is showed, Pick-it detects a circle.
+If the bottom is showed, Pickit detects a circle.
 
 .. raw:: html
 
@@ -170,7 +170,7 @@ If the bottom is showed, Pick-it detects a circle.
 
    <div>
 
-In the case the other side is showed, Pick-it detects nothing, as the
+In the case the other side is showed, Pickit detects nothing, as the
 cup lateral sides hide a large part of the circular base.
 
 .. raw:: html
@@ -221,19 +221,19 @@ The 7 steps are:
 #. Look for an object
 #. Pick an object
 #. Check orientation of the object and drop object
-#. Switch the kind of object Pick-it is looking for if no objects are
+#. Switch the kind of object Pickit is looking for if no objects are
    safe to pick 
-#. Switch the kind of object Pick-it is looking for if no objects are
+#. Switch the kind of object Pickit is looking for if no objects are
    found 
 
 3. A generic way of explaining the program
 ------------------------------------------
 
 Here we explain all the steps of the program in a generic way and
-language to introduce the different Pick-it commands used for this
+language to introduce the different Pickit commands used for this
 application.
 
-All **Pick-it specific commands are marked green** and **all waypoints
+All **Pickit specific commands are marked green** and **all waypoints
 are marked blue**.
 
 |image10|
@@ -401,7 +401,7 @@ Here we first start the program (line 1), and then before the actual
 start of the program declare some variables and load some scripts.
 
 The **pickit\_port** and **pickit\_ip** must be set to their correct
-values to enable communication between the robot and Pick-it.
+values to enable communication between the robot and Pickit.
 
 The pose of the next detected object to be picked shall be stored in the
 pose variable **pick\_pose**. For each pick, it is intended that the
@@ -410,10 +410,10 @@ tool briefly goes to an intermediary position above the actual
 defines this offset and will be used later, adding a negative
 translational component to the z-axis of the tool.
 
-From line 9 untill 16 we assign certain Pick-it setup file numbers and
+From line 9 untill 16 we assign certain Pickit setup file numbers and
 product file numbers to variables. 
 
-On line 19, 21 and 22 scripts containing relevant Pick-it functions are
+On line 19, 21 and 22 scripts containing relevant Pickit functions are
 loaded.
 
 2. Move to a starting position
@@ -439,17 +439,17 @@ position to a waypoint called **wp\_home**.
           pickit_look_for_object()
           Wait pickit_has_response()
 
-On line 27 a loop that will keep on as long as Pick-it is running is
+On line 27 a loop that will keep on as long as Pickit is running is
 started.
 
-On line 28 the script commands Pick-it load the setup file associated
+On line 28 the script commands Pickit load the setup file associated
 with the variable **setup\_bin** and the product file associated with
 the variable **prod\_bin**. (**pickit\_configure**)
 
-On line 29 the commands Pick-it to look for objects. (
+On line 29 the commands Pickit to look for objects. (
 **pickit\_look\_for\_object()**)
 
-On line 30 we make the robot program to wait until Pick-it has send a
+On line 30 we make the robot program to wait until Pickit has send a
 response on the  **pickit\_look\_for\_object()** command.
 (**pickit\_has\_response**)
 
@@ -471,12 +471,12 @@ response on the  **pickit\_look\_for\_object()** command.
                   pick_pose
                   Wait: 0.5
 
-If Pick-it found an object the command  **pickit\_object\_found()**
+If Pickit found an object the command  **pickit\_object\_found()**
 equals true.
 
 On line 32 we declare the variable **pick\_pose** equals the just
 received **pickit\_get\_pose**. In other words: **pick\_pose** now
-equals the pose where Pick-it told us the object can be picked.
+equals the pose where Pickit told us the object can be picked.
 
 On line 33 we the variable **pre\_pick\_pose** as a new pose that equals
 the **pick\_pose** added with the predefined **pre\_pick\_offset** (in
@@ -489,7 +489,7 @@ of the robot (= if it is reachable and safe according to the robot).
 
 So if the **pre\_pick\_pose** is safe the robot moves there.
 
-On line 38 we check if the **pick\_pose** provided by Pick-it is within
+On line 38 we check if the **pick\_pose** provided by Pickit is within
 the safety limits of the robot (= if it is reachable and safe according
 to the robot).
 
@@ -561,12 +561,12 @@ checks which we explain here.
 First the robot moves to a waypoint **wp\_check** via an intermediate
 point **wp\_pre\_check** (lines 44 and 45).
 
-On line 46 the script commands Pick-it to load the setup file associated
+On line 46 the script commands Pickit to load the setup file associated
 with the variable **setup\_check** and the product file associated with
 the variable **prod\_check**.
 
-Then on line 47 the script commands Pick-it to look for an object, again
-we wait until there is a response of Pick-it coming in.
+Then on line 47 the script commands Pickit to look for an object, again
+we wait until there is a response of Pickit coming in.
 
 The next step is that the robot moves to a waypoint 
 **wp\_pre\_check** via an intermediate point \ **wp\_pre\_drop** (lines
@@ -574,17 +574,17 @@ The next step is that the robot moves to a waypoint 
 
 Now the real logic behind the orientation check starts:
 
-#. If Pick-it was looking for a **cylinder** and Pick-it **found an
+#. If Pickit was looking for a **cylinder** and Pickit **found an
    object** we know it was oriented with the top up and drop it of on
    **wp\_cyl\_topup** via **wp\_pre\_topup** (lines 51 to 61)
-#. If Pick-it was looking for a **cylinder** and Pick-it **did not
+#. If Pickit was looking for a **cylinder** and Pickit **did not
    find** **an object** we know it was oriented with the top down and
    drop it of on **wp\_cyl\_topdown** via **wp\_pre\_topdown**. (line 51
    and 62 to 71)
-#. If Pick-it was looking for a **circle** and Pick-it **found an
+#. If Pickit was looking for a **circle** and Pickit **found an
    object** we know it was oriented with the top up and drop it of on
    **wp\_cir\_topup** via **wp\_pre\_topup**. (lines 72 to 82)
-#. If Pick-it was looking for a \ **circle** and Pick-it\ ** did not
+#. If Pickit was looking for a \ **circle** and Pickit\ ** did not
    find an object **\ we know it was oriented with the top down and drop
    it of on **wp\_cir\_topdown** via **wp\_pre\_topdown**. (line 72 and
    83 to 92)
@@ -593,7 +593,7 @@ In all 4 cases we do a short wait of 0.2 seconds, then but the magnet
 off, wait again 0.2 seconds and move to  **wp\_pre\_drop** via an
 intermediate waypoint depending on the drop off waypoint.
 
-6. Switch the kind of object Pick-it is looking for if no products are safe to pick
+6. Switch the kind of object Pickit is looking for if no products are safe to pick
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: bash
@@ -610,13 +610,13 @@ intermediate waypoint depending on the drop off waypoint.
                 Else
                   pickit_next_object()
 
-In the case Pick-it found object, but the objects Pick-it found are not
+In the case Pickit found object, but the objects Pickit found are not
 safe to be picked (for reason of reachability of safety), we switch the
-kind of objects Pick-it was looking for. We switch from cylinders to
+kind of objects Pickit was looking for. We switch from cylinders to
 circles if we were looking for cylinders and form circles to cylinders
 if we were looking for circles.
 
-7. Switch the kind of object Pick-it is looking for if no products are found
+7. Switch the kind of object Pickit is looking for if no products are found
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: bash
@@ -629,8 +629,8 @@ if we were looking for circles.
               prod_bin=prod_cir_bin
               prod_check=prod_cyl_check
 
-In the case Pick-it did not find any objects (after the command on line
-29), we switch the kind of objects Pick-it was looking for. We
+In the case Pickit did not find any objects (after the command on line
+29), we switch the kind of objects Pickit was looking for. We
 switch from cylinders to circles if we were looking for cylinders and
 form circles to cylinders if we were looking for circles.
 

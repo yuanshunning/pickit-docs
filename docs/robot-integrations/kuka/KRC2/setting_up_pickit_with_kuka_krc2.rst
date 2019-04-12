@@ -1,2 +1,2 @@
-Setting up Pick-it with KUKA KRC2
+Setting up Pickit with KUKA KRC2
 =================================

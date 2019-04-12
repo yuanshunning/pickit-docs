@@ -1,18 +1,18 @@
-Can I connect a Pick-it processor as a normal PC?
+Can I connect a Pickit processor as a normal PC?
 =================================================
 
-You can **not** access the Pick-it processor as a normal PC. You
+You can **not** access the Pickit processor as a normal PC. You
 can \ **not** plug an external screen and/or keyboard direct into the
-Pick-it processor.
+Pickit processor.
 
-**The Pick-it processor can only be accessed over network through the
-Pick-it web interface.**
+**The Pickit processor can only be accessed over network through the
+Pickit web interface.**
 
-To access the Pick-it processor you need to connect a PC/laptop to the
-Pick-it processor with an Ethernet cable using the Pick-it network port
+To access the Pickit processor you need to connect a PC/laptop to the
+Pickit processor with an Ethernet cable using the Pickit network port
 labeled 'Interface/Your PC'.
 
-Afterwards, access the Pick-it processor by navigating a **Chrome**
+Afterwards, access the Pickit processor by navigating a **Chrome**
 **browser** to  http://192.168.66.1/
 
 After setup and configuration the external PC/laptop can be removed.

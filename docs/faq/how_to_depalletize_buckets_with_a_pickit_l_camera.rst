@@ -1,11 +1,11 @@
-How to depalletize buckets with a Pick-it L camera
+How to depalletize buckets with a Pickit L camera
 ==================================================
 
 |image0|
 ========
 
 In this article, we explain step by step how to set up an application
-for unloading buckets from a euro pallet using Pick-it with a  `Pick-it
+for unloading buckets from a euro pallet using Pickit with a  `Pickit
 L
 camera <https://drive.google.com/file/d/1PolmzgreM0RNcAzXhGkgD8IeyU2aCDOA/view>`__.
 If you're already curious to see the end result, here's
@@ -41,7 +41,7 @@ way, the robot can bring the camera lower to make sure that the buckets
 are always in the field of view of the camera, as the layers of buckets
 are emptied.
 
-In this stage, it is useful to have the Pick-it web interface opened,
+In this stage, it is useful to have the Pickit web interface opened,
 showing the 2D view. This provides immediate visual feedback of the
 effectiveness of the camera mounting.
 
@@ -76,10 +76,10 @@ and not to the camera.
 
 |image4|
 
-Before continuing, make sure there is a connection between Pick-it and
+Before continuing, make sure there is a connection between Pickit and
 the robot. Refer to one of `these
 articles <https://support.pickit3d.com/category/20-robot-connection>`__
-for more information on how to connect your robot to Pick-it.
+for more information on how to connect your robot to Pickit.
 
 |image5|
 
@@ -116,7 +116,7 @@ detection tutorials.
 Buckets product
 ~~~~~~~~~~~~~~~
 
-This product should allow detecting aligned touching circles. Pick-it
+This product should allow detecting aligned touching circles. Pickit
 Pattern is recommended for this type of applications. Since the circles
 are touching, the circle contours cannot be seen completely. Tune the 
 `contour
@@ -130,7 +130,7 @@ Cardboard product
 ~~~~~~~~~~~~~~~~~
 
 This product should be configured in a way that the cardboard is always
-detected. This can be achieved using Pick-it Flex rectangles, with a
+detected. This can be achieved using Pickit Flex rectangles, with a
 flexible range of dimensions and low contour and surface scores.
 
 Make a robot program

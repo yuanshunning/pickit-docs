@@ -1,10 +1,10 @@
 Robot camera calibration with the URCap plugin
 ==============================================
 
-This example program requires the  **Pick-it URCap** plugin to be
+This example program requires the  **Pickit URCap** plugin to be
 installed in your robot.  For installation instructions of both the
 URCap plugin and the example programs please refer to the \ `Getting
-started with the Pick-it
+started with the Pickit
 URCap <http://support.pickit3d.com/article/75-getting-started-with-the-pick-it-urcap>`__
 article.
 
@@ -24,7 +24,7 @@ Multi poses calibration
 
 The program starts by opening a pop-up message, informing that
 multi-poses calibration will be carried out. Before running the program,
-the user must have the **Calibration** page of the Pick-it web interface
+the user must have the **Calibration** page of the Pickit web interface
 opened. If this is not the case, it is notified by a pop-up message.
 Otherwise, the following sequence is repeated five times:
 
@@ -36,7 +36,7 @@ Otherwise, the following sequence is repeated five times:
    flange** (as opposed to the TCP).
 
    While teaching the waypoints, it is recommended to have the
-   **Calibration** page opened in the Pick-it interface, where the user
+   **Calibration** page opened in the Pickit interface, where the user
    can verify whether the calibration plate is visible.
 
 #. The provided program serves as a template only, and the waypoints are
@@ -45,7 +45,7 @@ Otherwise, the following sequence is repeated five times:
    on how the five waypoints should be taught can be found in the
    article referenced above.
 
-#. Sends Pick-it a calibration request, through the command Find
+#. Sends Pickit a calibration request, through the command Find
    calibration plate
 
    |image2| In the Calibration page, the user can follow the progress of

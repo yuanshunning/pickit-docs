@@ -1,11 +1,11 @@
-Detection: Pick-it Teach
+Detection: Pickit Teach
 ========================
 
 -  `Teach a model based on your product <#teach_model>`__
 -  `Detecting different parts in a new setup <#detecting>`__
 
-This article describes how to get started with the Pick-it Teach engine.
-Pick-it Teach is a detection engine in Pick-it which can search for
+This article describes how to get started with the Pickit Teach engine.
+Pickit Teach is a detection engine in Pickit which can search for
 objects based on a previously shown example object. It is primarily used
 to find irregularly shaped objects that don't fit in one of the basic
 shape categories, like cylinders, spheres, squares, rectangles, circles,
@@ -15,8 +15,8 @@ Teach a model based on your product
 -----------------------------------
 
 Teaching a model of an object is the most important step when setting up
-the Pick-it Teach engine to detect your object. The model is the only
-thing that is used by Pick-it Teach to search for your objects in a
+the Pickit Teach engine to detect your object. The model is the only
+thing that is used by Pickit Teach to search for your objects in a
 scene, so a better quality model results in better detections. A
 high-quality model has the following characteristics:
 
@@ -61,7 +61,7 @@ go to the next step.
    :name: adding-a-model
 
 In this step, the actual model will be taught and saved. Go to the
-Detection tab and select the Pick-it Teach engine. Open the ‘Define your
+Detection tab and select the Pickit Teach engine. Open the ‘Define your
 model(s)’ section. Here you will see a widget that allows adding models.
 
 When no models are defined yet, there will be a text stating: “There are
@@ -92,7 +92,7 @@ section to see how they work.
    :name: adding-multiple-models
 
 We just learned how to teach and detect an object model using the
-Pick-it Teach detection engine. Now, we will extend this knowledge by
+Pickit Teach detection engine. Now, we will extend this knowledge by
 adding more models to your application. 
 
 Using more than one model is useful when multiple parts are shown in one
@@ -102,7 +102,7 @@ orientation with respect to the camera. 
 
 Multiple Models works in the same way as the single model case: repeat
 the steps in the previous sections for every new model that you want to
-add. The maximum number of models that Pick-it can search for in one
+add. The maximum number of models that Pickit can search for in one
 detection is eight. If you want more models, it’s required to make a new
 product file in the Configuration tab.
 
@@ -161,7 +161,7 @@ grid <https://support.pickit3d.com/article/167-the-pick-it-detection-grid>`__.
 If you want to optimize your detections, the article  `Explaining the
 Teach detection
 parameters <https://support.pickit3d.com/article/173-explaining-the-teach-detection-parameters>`__
-goes more in depth on the different parameters of Pick-it Teach. We
+goes more in depth on the different parameters of Pickit Teach. We
 advice you to experiment with different settings and multiple objects in
 different settings(tilted, on top of each other,..)
 
@@ -188,12 +188,12 @@ What to read next
   parameters <https://support.pickit3d.com/article/173-explaining-the-teach-detection-parameters>`__
 | `Region of
   Interest <https://support.pickit3d.com/article/159-region-of-interest>`__
-| `Pick-it detection
+| `Pickit detection
   grid <https://support.pickit3d.com/article/167-the-pick-it-detection-grid>`__
 
 | `Region of
   Interest <https://support.pickit3d.com/article/159-region-of-interest>`__
-| `Detection: Pick-it
+| `Detection: Pickit
   Flex <https://support.pickit3d.com/article/160-detection-pick-it-flex>`__
 | `Detection:
   Pattern <https://support.pickit3d.com/article/161-detection-pick-it-pattern>`__

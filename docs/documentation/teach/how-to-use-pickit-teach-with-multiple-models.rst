@@ -1,17 +1,17 @@
-How to use Pick-it Teach with multiple models
+How to use Pickit Teach with multiple models
 =============================================
 
-!This article describes how to get started with the Pick-it Teach
-engine. Pick-it Teach is a detection engine in Pick-it which can search
+!This article describes how to get started with the Pickit Teach
+engine. Pickit Teach is a detection engine in Pickit which can search
 for objects based on a previously shown example object. It is primarily
 used to find irregularly shaped objects that don't fit in one of the
 basic shape categories, like cylinders, spheres, squares, rectangles,
 circles, and ellipses.
 
-How to use Pick-it Teach engine in Pick-it?
+How to use Pickit Teach engine in Pickit?
 ===========================================
 
-Using Pick-it Teach is an intuitive two-step process. First, you show
+Using Pickit Teach is an intuitive two-step process. First, you show
 the part to the camera and store one or more models of it. Second, this
 stored model is used to find similar parts in a new scene.
 
@@ -24,8 +24,8 @@ Teach a model based on your product
 -----------------------------------
 
 Teaching a model of an object is the most important step when setting up
-the Pick-it Teach engine to detect your object. The model is the only
-thing that is used by Pick-it to search for your objects in a scene, so
+the Pickit Teach engine to detect your object. The model is the only
+thing that is used by Pickit to search for your objects in a scene, so
 a better quality model results in better detections. A high-quality
 model has the following characteristics:
 
@@ -72,7 +72,7 @@ the next step.
    :name: adding-a-model
 
 In this step, the actual model will be taught and saved. Go to the
-Detection tab and select the Pick-it Teach engine. Open the ‘Define your
+Detection tab and select the Pickit Teach engine. Open the ‘Define your
 model(s)’ section. Here you will see a widget that allows adding models.
 
 When no models are defined yet, there will be a text stating: “There are
@@ -99,7 +99,7 @@ work.
    :name: adding-multiple-models
 
 We just learned how to teach and detect an object model using the
-Pick-it Teach detection engine. Now, we will extend this knowledge by
+Pickit Teach detection engine. Now, we will extend this knowledge by
 adding more models to your application. 
 
 Using more than one model is useful when the objects in your application
@@ -111,7 +111,7 @@ belong to multiple different objects as well.
 
 Multiple Models works in the same way as the single model case: repeat
 the steps in the previous sections for every new model that you want to
-add. The maximum number of models that Pick-it can search for in one
+add. The maximum number of models that Pickit can search for in one
 detection is eight. If you want more models, it’s required to make a new
 product file in the Configuration tab.
 
@@ -145,7 +145,7 @@ Model actions column of a model row. There are three types of actions:
    matches the number in your robot program (see `robot
    program <#robot_program>`__).
 
--  | **Enable/disable:** Toggles whether Pick-it will search for the
+-  | **Enable/disable:** Toggles whether Pickit will search for the
      model or not. This is a useful feature to compare the performance
      of two models of the same side of an object.
 
@@ -303,7 +303,7 @@ scenario:
 
 -  Table-top picking: the sole purpose of downsampling the scene is to
    speed up the detection time.
--  Bin picking: the Pick-it camera resolution drops exponentially with
+-  Bin picking: the Pickit camera resolution drops exponentially with
    the distance to the camera. Hence, the downsampling can be used to
    create a more uniform resolution over the whole depth range required
    for covering the bin. If the resolution is uniform, also the
@@ -314,7 +314,7 @@ scenario:
 
    </div>
 
-`An in-depth explanation of the different parameters of Pick-it Teach is
+`An in-depth explanation of the different parameters of Pickit Teach is
 explained in this
 article. <https://support.pickit3d.com/article/48-explaining-the-teach-detection-parameters>`__
 
@@ -330,7 +330,7 @@ on the ID of the detected model. Use cases are:
 Universal Robots with URCap
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A variable **pickit\_type** is available to use after using the Pick-it
+A variable **pickit\_type** is available to use after using the Pickit
 URCap **Find object(s)** command\ **.
 **\ This variable will represent the **detected model id**.
 

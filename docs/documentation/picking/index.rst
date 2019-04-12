@@ -1,9 +1,9 @@
 Picking
 =======
 
-Pick-it comes with a set of options that allows configuring how detected
+Pickit comes with a set of options that allows configuring how detected
 objects should be picked by a robot. These options, that can be found in
-the Picking tab of the Pick-it web interface.
+the Picking tab of the Pickit web interface.
 
 This article explains how to use all settings to get the most out of
 your application. You will learn how to align object frames for picking,
@@ -24,15 +24,15 @@ order.
 .. rubric:: Note on frames
    :name: frames
 
-Before we start, let's first define three frame types in Pick-it that
+Before we start, let's first define three frame types in Pickit that
 we'll need throughout the article.
 
 -  Reference frame: The reference frame defines the location of your
    work space in which to find objects. It usually has a Z axis (blue)
    that points up.
--  The object frame is the default frame that Pick-it associates to a
+-  The object frame is the default frame that Pickit associates to a
    shape. It indicates where a detected object is located and how it is
-   oriented. It is chosen by the Pick-it detection algorithms and cannot
+   oriented. It is chosen by the Pickit detection algorithms and cannot
    be modified. This frame might not always be the best choice to use
    for picking, which is why the pick frame exists.
 -  The pick frame is what gets sent to the robot. It defines how a robot
@@ -71,7 +71,7 @@ collision. Following settings can be applied:
 This section explains how to prevent collisions when picking objects
 with a robot. Objects that will not be picked because of collision
 constraints will be labeled as unpickable and not sent to the robot. In
-the Pick-it web interface, unpickable objects are displayed orange in
+the Pickit web interface, unpickable objects are displayed orange in
 the Objects view and the `detection
 grid <https://support.pickit3d.com/article/167-the-pick-it-detection-grid>`__.
 
@@ -91,7 +91,7 @@ unpickable and will not be sent to the robot.
 .. rubric:: Check collisions with
    :name: check-collisions-with
 
-Pick-it also checks for possible collisions in the actual scene. For
+Pickit also checks for possible collisions in the actual scene. For
 this, first a `robot
 tool  <https://support.pickit3d.com/article/217-robot-tool-model>`__\ needs
 to be modeled. And second you have to define with what you want to check

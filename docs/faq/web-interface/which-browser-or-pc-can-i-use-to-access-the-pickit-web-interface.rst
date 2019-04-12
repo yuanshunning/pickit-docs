@@ -1,18 +1,18 @@
-Which browser or PC can I use to access the Pick-it web interface?
+Which browser or PC can I use to access the Pickit web interface?
 ==================================================================
 
 .. raw:: html
 
    <div class="section callout-yellow">
 
-The only supported internet browser for Pick-it is \ `Google
+The only supported internet browser for Pickit is \ `Google
 Chrome <https://www.google.com/chrome/>`__. 
 
 .. raw:: html
 
    </div>
 
-| Note also that the Pick-it web interface requires **WebGL** to be able
+| Note also that the Pickit web interface requires **WebGL** to be able
   to show 3D visualizations. In case the 3D views don’t work
   out-of-the-box, check your GPU state by going to the following link: 
   `chrome://gpu <chrome://gpu/>`__. 

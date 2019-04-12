@@ -11,7 +11,7 @@ Camera
 
 A ROI box attached to the **camera** moves relative to the robot base as
 the robot end-effector (and camera) move.To define the ROI box,
-a running connection between Pick-it and the robot is not required.
+a running connection between Pickit and the robot is not required.
 
 |image7|
 
@@ -21,7 +21,7 @@ Robot base
 | A ROI box attached to the **robot base** remains stationary relative
   to the robot base as the robot end-effector (and camera) move. 
 | This is the recommended attachment for camera-on-robot scenarios. To
-  define the ROI box, a running connection between Pick-it and the robot
+  define the ROI box, a running connection between Pickit and the robot
   is **required**.
 
 Refer to the \ `Attach the ROI Box to the robot base for picking objects

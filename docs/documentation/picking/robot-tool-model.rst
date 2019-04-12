@@ -9,7 +9,7 @@ Why is it important to model your robot tool?
 
 In picking applications, it is important to prevent that the robot
 collides with the bin or potential other objects such that the
-application can run without interruption. Starting from Pick-it version
+application can run without interruption. Starting from Pickit version
 1.10, it is possible to model the robot tool to closely resemble the
 actual tool that is mounted on the robot.
 

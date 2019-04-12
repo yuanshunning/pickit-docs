@@ -5,10 +5,10 @@ Overview
 -  `Left side <#left>`__
 -  `Right side <#right>`__
 
-When a Pick-it system is connected to an additional device and in a
+When a Pickit system is connected to an additional device and in a
 Google chrome web browser following address is typed in 
 `http://192.168.66.1 <http://192.168.66.1/>`__, the user interface of
-Pick-it shown. The user interface looks like the image below. In this
+Pickit shown. The user interface looks like the image below. In this
 article a general overview of what you can see in this interface is
 discussed. The interface is divided into 3 part: top, left and right.
 
@@ -17,28 +17,28 @@ discussed. The interface is divided into 3 part: top, left and right.
 Top bar
 -------
 
-Starting from left to right. First the logo of Pick-it shown. Next to
+Starting from left to right. First the logo of Pickit shown. Next to
 the logo the name of the system is given, typically this is pc-XXXXX.
 Next to the name the current software version of your system is shown.
 
-Next are the Pick-it connection status:
+Next are the Pickit connection status:
 
 -  **Robot**: An active robot communication is indicated by **✓**,
    otherwise **∅**.
 -  **Cam**: A camera connection is indicated by **✓**, otherwise **∅**.
--  **App**: The Pick-it application correctly working is indicated by
+-  **App**: The Pickit application correctly working is indicated by
    **✓**, otherwise **∅**.
 
-Then the current operational mode is shown. The Pick-it system has 4
+Then the current operational mode is shown. The Pickit system has 4
 main operational modes:
 
--  **Running**: Pick-it is ready to receive commands from the robot and
+-  **Running**: Pickit is ready to receive commands from the robot and
    to send localization results to the robot. You can only run a robot
-   program with Pick-it when this state is activated. 
--  **Check**: Pick-it is doing a single object detection without sending
+   program with Pickit when this state is activated. 
+-  **Check**: Pickit is doing a single object detection without sending
    the result to a connected robot. This allows testing the object
    detection without any robot or machine connected. 
--  **Testing**: Pick-it is continuously detecting objects without
+-  **Testing**: Pickit is continuously detecting objects without
    sending the result to a connected robot. This mode allows testing the
    object detection without any robot or machine connected. 
 -  **Idle**: No commands from the robot are accepted.
@@ -47,7 +47,7 @@ main operational modes:
 
    <div class="callout-yellow">
 
-By default, Pick-it enables the **Robot mode** upon startup.
+By default, Pickit enables the **Robot mode** upon startup.
 
 .. raw:: html
 
@@ -70,7 +70,7 @@ At last the **Robot mode** button is shown. Here you can change from
 
    <div class="callout-yellow">
 
-Only when Pick-it is in **Idle** mode parameters can be changed and
+Only when Pickit is in **Idle** mode parameters can be changed and
 saved.
 
 .. raw:: html
@@ -80,7 +80,7 @@ saved.
 Left side
 ---------
 
-Here the  `Pick-it
+Here the  `Pickit
 viewer <https://support.pickit3d.com/article/156-views>`__
 and \ `detection
 grid <https://support.pickit3d.com/article/167-the-pick-it-detection-grid>`__
@@ -90,7 +90,7 @@ explanation.
 Right side
 ----------
 
-Here the parameters of the Pick-it system can be changed and saved. All
+Here the parameters of the Pickit system can be changed and saved. All
 settings and parameters are divided over several tabs. See article of
 each tab to have an extensive overview:
 
@@ -99,11 +99,11 @@ each tab to have an extensive overview:
 -  `Region of
    Interest <https://support.pickit3d.com/article/159-region-of-interest>`__
 -  ` <https://support.pickit3d.com/article/159-region-of-interest>`__\ `Detection:
-   Pick-it
+   Pickit
    Flex <https://support.pickit3d.com/article/160-detection-pick-it-flex>`__
--  `Detection: Pick-it
+-  `Detection: Pickit
    Pattern <https://support.pickit3d.com/article/161-detection-pick-it-pattern>`__
--  `Detection: Pick-it
+-  `Detection: Pickit
    Teach <https://support.pickit3d.com/article/162-detection-pick-it-teach>`__
 -  ` <https://support.pickit3d.com/article/162-detection-pick-it-teach>`__\ `Picking <https://support.pickit3d.com/article/163-picking>`__
 -  `Files <https://support.pickit3d.com/article/164-files>`__

@@ -1,9 +1,9 @@
 Detection parameters
 ====================
 
-The Pick-it Teach vision engine is designed to detect complex
+The Pickit Teach vision engine is designed to detect complex
 3D shapes. This article explains its detection parameters. For details
-on how to use Pick-it Teach, please refer to the \ `How to use Pick-it
+on how to use Pickit Teach, please refer to the \ `How to use Pickit
 Teach <http://support.pickit3d.com/article/47-how-to-use-pick-it-teach>`__
 article.
 
@@ -65,7 +65,7 @@ Enable or disable a model
 Pick frame
 ^^^^^^^^^^
 
-By default, Pick-it Teach provides an initial guess for the pick frame,
+By default, Pickit Teach provides an initial guess for the pick frame,
 but this will in general not be the best choice. It's possible to
 specify the desired  **pick frame** as a positional and rotational
 offset with respect to the object model. The pick frame is the location
@@ -144,7 +144,7 @@ Detection speed
 
    <div>
 
-With this parameter, you can specify how hard Pick-it Teach tries to
+With this parameter, you can specify how hard Pickit Teach tries to
 find multiple matches. Slower detection speeds are likely to produce
 more matches. There are three available options:
 
@@ -168,7 +168,7 @@ more matches. There are three available options:
 Detection precision
 ^^^^^^^^^^^^^^^^^^^
 
-Apart from the above choice, you can instruct Pick-it Teach to favor
+Apart from the above choice, you can instruct Pickit Teach to favor
 being **more precise** or to potentially find \ **more objects**. This
 choice has a negligible impact on detection times. In most cases,
 selecting \ **more precise** yields a good number of matches per

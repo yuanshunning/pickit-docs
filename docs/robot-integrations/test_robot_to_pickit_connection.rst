@@ -1,12 +1,12 @@
 .. _test-robot-connection:
 
-Test robot to Pick-it connection
+Test robot to Pickit connection
 ================================
 
-To test if Pick-it can connect to the robot through the Ethernet cable
+To test if Pickit can connect to the robot through the Ethernet cable
 you can perform the following test:
 
-- Press the **Settings** button on the top of the Pick-it interface
+- Press the **Settings** button on the top of the Pickit interface
 - Insert the **IP address of your robot** in the Robot IP field
 - Press **Check**
 

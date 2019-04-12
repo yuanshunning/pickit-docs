@@ -5,7 +5,7 @@ Explaining the Flex detection parameters
 
    <div>
 
-The Pick-it Flex vision engine is designed to detect basic geometric
+The Pickit Flex vision engine is designed to detect basic geometric
 shapes of different sizes, such as cylinders, rectangles, squares,
 circles and more.
 
@@ -49,9 +49,9 @@ initially depends on whether your parts are 
    threshold**, which represents the minimum distance to consider
    clusters as separate entities.
 
-Pick-it also allows the possibility of **not grouping points into
+Pickit also allows the possibility of **not grouping points into
 clusters** at all, and an **expert mode** which is intended mostly for
-compatibility with older versions of Pick-it. The expert-mode parameters
+compatibility with older versions of Pickit. The expert-mode parameters
 are such that higher values will typically result in less and/or bigger
 clusters, while lower values result in more and/or smaller clusters.
 
@@ -108,7 +108,7 @@ object models** like cylinders and spheres, one can specify:
 
 |image2|
 
-For **2D object models**, Pick-it first finds flat regions and then
+For **2D object models**, Pickit first finds flat regions and then
 looks for the selected model within them (square, rectangle, circle or
 ellipse). One can specify:
 
@@ -239,19 +239,19 @@ Mentioned articles
 
 What to read next
 
-| `Pick-it detection
+| `Pickit detection
   grid <https://support.pickit3d.com/article/167-the-pick-it-detection-grid>`__
 | `Example: the clustering
   methods <https://support.pickit3d.com/article/192-example-the-clustering-methods>`__
 
 | `Region of
   Interest <https://support.pickit3d.com/article/159-region-of-interest>`__
-| `Detection: Pick-it
+| `Detection: Pickit
   Flex <https://support.pickit3d.com/article/160-detection-pick-it-flex>`__
 | `Detection:
-  Pick-it Pattern <https://support.pickit3d.com/article/161-detection-pick-it-pattern>`__
+  Pickit Pattern <https://support.pickit3d.com/article/161-detection-pick-it-pattern>`__
 | `Detection:
-  Pick-it Teach <https://support.pickit3d.com/article/162-detection-pick-it-teach>`__
+  Pickit Teach <https://support.pickit3d.com/article/162-detection-pick-it-teach>`__
 | `Picking <https://support.pickit3d.com/article/163-picking>`__
 
 .. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5a8d3bd104286305fbc9b172/file-ra6obvfgNo.png

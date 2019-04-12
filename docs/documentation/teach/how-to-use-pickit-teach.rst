@@ -1,11 +1,11 @@
-How to use Pick-it Teach
+How to use Pickit Teach
 ========================
 
 .. raw:: html
 
    <div>
 
-This article describes how to get started with the Pick-it Teach
+This article describes how to get started with the Pickit Teach
 engine, designed to detect complex 3D shapes. For details on the
 individual detection parameters, please refer to the  `Explaining the
 Teach detection
@@ -16,7 +16,7 @@ article.
 
    </div>
 
-Using Pick-it Teach is an intuitive two-step process. First, you show
+Using Pickit Teach is an intuitive two-step process. First, you show
 the part to the camera and store a model of it in the memory of the
 processor. Second, this stored model is used to find similar parts in a
 new scene.
@@ -48,7 +48,7 @@ file ‘MyModel’.
 Isolating the part
 ------------------
 
-Pick-it stores a point cloud of the model which will be used to find
+Pickit stores a point cloud of the model which will be used to find
 similar parts. So it is important that a good point cloud is stored as a
 model. A good model contains lots of information on the part and no
 information on things that don't belong to the part. Therefore it is
@@ -58,7 +58,7 @@ box <https://support.pickit3d.com/article/42-define-the-boundaries-of-your-appli
 (ROI).
 
 The ROI box is a hard filter which filters out all points lying outside
-of this box. Normally, this box defines where Pick-it looks for objects,
+of this box. Normally, this box defines where Pickit looks for objects,
 here, it is used to define which points belong to the model and which
 don’t:
 
@@ -93,7 +93,7 @@ Teaching and verifying the model
 --------------------------------
 
 In this step, the actual model will be defined and saved. Make sure to
-select Pick-it Teach as the detection algorithm on the Detection page. 
+select Pickit Teach as the detection algorithm on the Detection page. 
 
 #. On the **Detection** tab go to the Teach model step and press the
    Teach Model button.
@@ -200,7 +200,7 @@ the model and in the Points view for the scene. 
 
 A typical value for the **Scene downsampling resolution** is smaller
 than 5 mm. Some applications require detecting objects at different
-depth ranges, like emptying a bin. Because the Pick-it camera resolution
+depth ranges, like emptying a bin. Because the Pickit camera resolution
 drops exponentially with the distance to the camera, scene downsampling
 can be used to create a more uniform resolution over the whole depth
 range required for covering the bin. If the resolution is uniform, also

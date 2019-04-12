@@ -1,9 +1,9 @@
 .. _exercise_detection_teach:
 
-Exercise detection with Pick-it Teach
+Exercise detection with Pickit Teach
 =====================================
 
-This exercise involves using Pick-it Teach. Different models of the part
+This exercise involves using Pickit Teach. Different models of the part
 will be taught to the system to find similar parts in the bin.
 
 +--------------+------------+
@@ -23,7 +23,7 @@ articles:
 `Region of
 Interest <https://support.pickit3d.com/article/159-region-of-interest>`__
 
-`Detection: Pick-it
+`Detection: Pickit
 Teach <https://support.pickit3d.com/article/162-detection-pick-it-teach>`__
 
 Task
@@ -44,8 +44,8 @@ Follow the next steps to complete the exercise.
 #. Download the snapshot file
    `here <https://drive.google.com/uc?export=download&id=1YfIvtjgyZVhGMglbvDvxnS49zodYwk73>`__
    on your device.
-#. Connect your device to your Pick-it processor.
-#. In the user interface of Pick-it, go to the Files tab. 
+#. Connect your device to your Pickit processor.
+#. In the user interface of Pickit, go to the Files tab. 
 #. Press Upload and select the file.
 #. The file can now be found in snapshots/uploads.
 #. Finish the exercise.

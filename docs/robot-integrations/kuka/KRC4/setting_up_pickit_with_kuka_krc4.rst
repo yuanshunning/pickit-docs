@@ -1,7 +1,7 @@
-Setting up Pick-it with KUKA KRC4
+Setting up Pickit with KUKA KRC4
 =================================
 
-The setup of Pick-it with an KUKA robot consists of 4 steps:
+The setup of Pickit with an KUKA robot consists of 4 steps:
 
  1
     `Check controller and software compatibility <#chapter00>`__
@@ -15,7 +15,7 @@ The setup of Pick-it with an KUKA robot consists of 4 steps:
 Check controller and software compatibility
 -------------------------------------------
 
-Pick-it is compatible with controllers as of version **KR-C4** and the
+Pickit is compatible with controllers as of version **KR-C4** and the
 software module **KUKA Connect KRC** for socket communication is
 required. The product number for this module is **91B300-020** version
 **2.0.14** or later.
@@ -47,7 +47,7 @@ drive, and a 16-digit license key with the format
 **xxxx-xxxx-xxxx-xxxx** that depends on the robot’s serial number.
 
 Generation of temporary license keys by KUKA is possible for validating
-an application before the actual purchase of a Pick-it system.
+an application before the actual purchase of a Pickit system.
 
 Plug in the USB drive containing the **KUKA Connect KRC** module files
 in the external USB port of the **KR-C4** controller cabinet.
@@ -121,7 +121,7 @@ panel).
 
 |image11|
 
-The **``pickitsps()``** function allows Pick-it to have access to the
+The **``pickitsps()``** function allows Pickit to have access to the
 robot flange pose, as opposed to the pose of the currently active tool.
 
 |image12|
@@ -130,7 +130,7 @@ KUKA KRC settings
 ~~~~~~~~~~~~~~~~~
 
 Now that the **KUKA Connect KRC** module is installed, we need to
-configure it to communicate correctly with the Pick-it system. To do
+configure it to communicate correctly with the Pickit system. To do
 this, go to **Main Menu**, then **``Configuration> Connect settings``**.
 In the **``Connect settings``** screen select the
 **``Pickit Settings``** tab and inspect/modify the configuration, as
@@ -153,15 +153,15 @@ follows, and as shown in the figure below (right):
 -  **Disable the local TCP port.**
 -  **Activate ‘Show dialogs to autocomplete filter’.**
 -  **Activate ‘Enable PickIt client connection’.**
--  **Specify the Pick-it server IP address.**
+-  **Specify the Pickit server IP address.**
 
-| When communicating with KUKA robots, the Pick-it server IP address
+| When communicating with KUKA robots, the Pickit server IP address
   cannot belong to the following IP ranges:
 | **169.254.0.0** to **169.254.255.255
   192.168.0.0** to **192.168.0.255
   172.16.0.0** to **172.16.255.255
   172.17.0.0** to **172.17.255.255
-  **\ The default Pick-it server IP is **169.254.5.180**, which belongs
+  **\ The default Pickit server IP is **169.254.5.180**, which belongs
   to the first range, so it must be modified.
 
 Click on the **``Save``** button to store the settings.
@@ -169,10 +169,10 @@ Click on the **``Save``** button to store the settings.
 .. rubric:: Setting up the network connection
    :name: chapter01
 
-The Pick-it processor has to be connected to the **KUKA KR-C4**
+The Pickit processor has to be connected to the **KUKA KR-C4**
 controller using an Ethernet cable. This Ethernet cable should connect:
 
-#. The network port labeled **‘ROBOT’** of the Pick-it PC;
+#. The network port labeled **‘ROBOT’** of the Pickit PC;
 #. The KLI Ethernet port of the KR-C4 controller (also referred to as
    X66). The location of this port may vary depending on the controller
    model. The below images show example locations: Cabinet door (left),
@@ -184,22 +184,22 @@ controller using an Ethernet cable. This Ethernet cable should connect:
    :name: chapter02
 
 There are two sets of files installed in the robot controller that
-relate to Pick-it communication:
+relate to Pickit communication:
 
--  **Pick-it application files.**\ These are example programs that
-   illustrate how to perform typical Pick-it operations, like
+-  **Pickit application files.**\ These are example programs that
+   illustrate how to perform typical Pickit operations, like
    robot-camera calibration or object detection for pick and place.
    These are located in **``R1> Program> PickIt``**.
--  **Pick-it interface files.** These are internal files that expose the
+-  **Pickit interface files.** These are internal files that expose the
    high-level functions used by the application files, and manage
-   low-level communication with the Pick-it system. These files are not
+   low-level communication with the Pickit system. These files are not
    meant for editing and are located in **``R1> TP> Connect> PickIt``**.
 
-The Pick-it application files can be loaded and executed as any other
+The Pickit application files can be loaded and executed as any other
 KUKA.KRL program. Please refer to the **KUKA KR-C4** user manual for
 further details.
 
-The examples contained in the Pick-it application files contain
+The examples contained in the Pickit application files contain
 **hard-coded robot poses that should be adapted to every new robot**.
 When executing such programs for the first time, please do so in
 **manual mode and at low speed** to check for potential collisions.
@@ -207,17 +207,17 @@ When executing such programs for the first time, please do so in
 .. rubric:: Starting and verifying the communication
    :name: chapter03
 
-Before starting the communication, on the Pick-it interface select KUKA
+Before starting the communication, on the Pickit interface select KUKA
 as the robot to communicate with. Next, on the robot side, go to **Main
 Menu**, then **``Configuration> Connect settings``**. In the
 **``Connect settings``** screen, data being exchanged between the robot
-and Pick-it is displayed in the text boxes labeled **``PC -> Robot``**
+and Pickit is displayed in the text boxes labeled **``PC -> Robot``**
 and **``Robot -> PC``**. You should see data and timestamps be updated
 multiple times per second.
 
 |image15|
 
-On the Pick-it side, you can also enable the Log raw data from robot
+On the Pickit side, you can also enable the Log raw data from robot
 checkbox to display the raw text messages being sent by the robot.
 
 |image16|
