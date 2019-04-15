@@ -4,6 +4,11 @@ How to use Pickit Flex
 The Pickit Flex detection engine has a typical workflow, which
 is described step by step in this article.
 
+.. contents::
+    :backlinks: top
+    :local:
+    :depth: 1
+
 Define the 3D scene
 ~~~~~~~~~~~~~~~~~~~
 
