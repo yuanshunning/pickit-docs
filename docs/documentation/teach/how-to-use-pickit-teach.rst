@@ -1,220 +1,109 @@
 How to use Pickit Teach
-========================
-
-.. raw:: html
-
-   <div>
-
-This article describes how to get started with the Pickit Teach
-engine, designed to detect complex 3D shapes. For details on the
-individual detection parameters, please refer to the  `Explaining the
-Teach detection
-parameters <https://support.pickit3d.com/article/48-explaining-the-teach-detection-parameters>`__
-article.
-
-.. raw:: html
-
-   </div>
-
-Using Pickit Teach is an intuitive two-step process. First, you show
-the part to the camera and store a model of it in the memory of the
-processor. Second, this stored model is used to find similar parts in a
-new scene.
-
-The typical workflow when using the Teach engine is as follows:
-
-#. `Teach a model based on your product <#chapter01>`__
-#. `Detecting different parts in a new setup <#chapter02>`__
-
-Teach a model based on your product
-===================================
-
-Initial steps
--------------
-
-Mount the camera above a flat surface that is larger than the footprint
-of the object that has to be taught. The optimal camera height is the
-height that brings the top of the object to approximately 50-70 cm from
-the camera. 
-
-|image0|
-
-It's useful to keep the 2D image view open so you have the most accurate
-representation of what the camera sees.
-
-Next, create a new setup file ‘MySetupForTeaching’ and a new product
-file ‘MyModel’.
-
-Isolating the part
-------------------
-
-Pickit stores a point cloud of the model which will be used to find
-similar parts. So it is important that a good point cloud is stored as a
-model. A good model contains lots of information on the part and no
-information on things that don't belong to the part. Therefore it is
-necessary to isolate the part from its surroundings. This is done by
-using the \ `Region of Interest
-box <https://support.pickit3d.com/article/42-define-the-boundaries-of-your-application-with-the-roi-box>`__
-(ROI).
-
-The ROI box is a hard filter which filters out all points lying outside
-of this box. Normally, this box defines where Pickit looks for objects,
-here, it is used to define which points belong to the model and which
-don’t:
-
-#. Go to the Region of Interest tab and define the Region of Interest
-   box. 
-#. Press the Detect button to take a snapshot in the newly defined
-   Region of Interest.
-#. Go to the Points view and verify the following:
-
-   #. All parts of the object that are expected to be visible are
-      covered by points. The top part might be missing e.g. because the
-      top of the Region of Interest box is not high enough.
-   #. There should be no other points than the ones belonging to the
-      object. Wrong points might appear because the bottom of the Region
-      of Interest box is not high enough or because your hand is
-      accidentally in the Region of Interest box. 
-
-.. raw:: html
-
-   <div>
-
-Before going to the next step, save the changes to your
-‘MySetupForTeaching’ setup file by pressing the SAVE button at the
-bottom of the Region of interest page. Note that the model is not yet
-saved now.
-
-.. raw:: html
-
-   </div>
-
-Teaching and verifying the model
---------------------------------
-
-In this step, the actual model will be defined and saved. Make sure to
-select Pickit Teach as the detection algorithm on the Detection page. 
-
-#. On the **Detection** tab go to the Teach model step and press the
-   Teach Model button.
-#. In the Product model view, the new model is now displayed. 
-
-   |image1|
-
-#. Finally, you can save the changes to your ‘MyModel’ product file by
-   pressing the Save button at the bottom of the Detection page. 
-
-Note that always the full resolution model is saved. Hence, the
-downsampling resolution, discussed in the next section, can still be
-changed for a model that has been saved already.
-
-Detecting different parts in a new setup
-========================================
-
-To start using the product model for actual picking, create a new setup
-file ‘MySetup’ on the Configuration page. Next, define the Region of
-Interest on the Region of Interest tab according to your scenario and
-save it.
-
-Testing different product scenarios
------------------------------------
-
-Before testing make sure that downsampling is set to none, both in the
-Optimize 3D image and the Teach model page. 
-
-#. | Place one object inside the region of interest box and press the
-     Detect button.
-   | One successfully detected object should appear in the Valid Matches
-     view and the matching score should be close to 1.
-
-   |image2|
-
-#. Add a few more objects into the Region of Interest area and press the
-   Detect button again. At least one successfully detected object should
-   appear in the Valid Matches view and the matching score should still
-   be close to 1.
-
-   |image3|
-
-#. Change the orientation of some of the objects into the Region of
-   Interest area and press the Detect button again. At least one
-   successfully detected object should appear in the Valid Matches view.
-   Depending on how much the object orientation varies from the
-   orientation at the moment of teaching the model, the matching score
-   will be lower, since the number of model points overlapping with the
-   scene reduces.\ |image4|
-#. In case there is only one red failed fit (see below), but it does
-   look like a good fit, you can reduce the minimal model coverage 3D on
-   the Filter objects page.
-
-**Note:** There is a hard limit on the Teach matching time of 5 seconds.
-Before applying any downsampling, this limit is likely to be reached.
-Optimizing the balance between computational speed and accuracy is
-discussed in the next section.
-
-Optimize detection time
 -----------------------
 
-.. raw:: html
+This article describes how to get started with the Pickit Teach engine.
+Pickit Teach is a detection engine in Pickit which can search for
+objects based on a previously shown example object. It is primarily used
+to find irregularly shaped objects that don't fit in one of the basic
+shape categories, like cylinders, spheres, squares, rectangles, circles,
+and ellipses.
 
-   <div>
+.. contents::
+    :backlinks: top
+    :local:
+    :depth: 1
 
-Depending on the model and the scenario, the detection time resulting in
-a good balance between computational speed and accuracy can vary from
-**1 to 5 seconds**. If you want to reduce the detection time, you can
-look at downsampling both the model and the scene. 
+Teach a model based on your product
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. raw:: html
+Teaching a model of an object is the most important step when setting up
+the Pickit Teach engine to detect your object. The model is the only
+thing that is used by Pickit Teach to search for your objects in a
+scene, so a better quality model results in better detections. A
+high-quality model has the following characteristics:
 
-   </div>
+#. It contains as many details of the object as possible,
+#. It contains only points that
+   belong to the object itself and
+#. It exactly matches the side of the object
+   that you want to detect.
 
-.. raw:: html
+Continue reading to learn how to build a high-quality model.
 
-   <div>
+Placing the object under the camera
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A model providing a good balance between computational speed and
-accuracy is about 500 to 1000 points large. If the size of the model is
-too large, you have to increase the **Scene downsampling resolution** to
-reduces the number of points in the model.
+Place your object under the camera and try to put it as close as
+possible to the camera to capture the most details while making sure
+that the object is lying fully in the field of view of the camera. It's
+useful to keep the 2D view open so you see what the camera sees.
 
-.. raw:: html
+.. image:: /assets/images/Documentation/Teach-object-under-camera.png
 
-   </div>
+Isolating the object
+^^^^^^^^^^^^^^^^^^^^
 
-.. raw:: html
+Before creating a model of the object, we need to isolate the part from
+its surroundings to make sure that only points belonging to the object
+are captured in the model. This is done by using the :ref:`region-of-interest`.
 
-   <div>
+Go to the **Region of Interest** tab and modify the region of interest
+box boundaries until only points that belong to your objects are inside
+the ROI box. When you're done adapting the boundaries, you're ready to
+go to the next step.
 
-The effect of downsampling can be verified in the Product model view for
-the model and in the Points view for the scene. 
+Adding a model
+^^^^^^^^^^^^^^
 
-.. raw:: html
+In this step, the actual model will be taught and saved. Go to the
+Detection tab and select the Pickit Teach engine. Open the ‘Define your
+model(s)’ section. Here you will see a widget that allows adding models.
 
-   </div>
+To add a new model, click the :guilabel:`Add a model`. Before clicking
+this button, make sure that the previous steps are completed so that a correct side of the object is oriented to the
+camera. When a new model is
+successfully defined, the viewer will open the **Model
+tab** automatically and a **Model row** will be added to the models'
+widget.
 
-.. raw:: html
+The **Model tab** shows a 3D visual representation of your model, a
+model bounding box as a green dashed line and the Pick frame. Note the
+number in round brackets in the Model view tab name, this is the model
+ID.
 
-   <div>
+Previous steps can be repeated to Teach different models to Pickit Teach. 
+In one product file up to 8 different models can be taught. 
+This means that Pickit Teach is capable of looking for 8 different shapes in one detection.
+See :ref:`Using-the-model-id-in-a-robot-program` on how you can use the model id in a robot program. 
 
-|image5|
+Detecting object(s)
+~~~~~~~~~~~~~~~~~~~
 
-A typical value for the **Scene downsampling resolution** is smaller
-than 5 mm. Some applications require detecting objects at different
-depth ranges, like emptying a bin. Because the Pickit camera resolution
-drops exponentially with the distance to the camera, scene downsampling
-can be used to create a more uniform resolution over the whole depth
-range required for covering the bin. If the resolution is uniform, also
-the detection time and the resulting model scores will be uniform over
-the depth range.
+Now that you've added your models, it's time to detect objects. 
 
-.. raw:: html
+Place your objects inside the region of interest box and press the
+Detect button. On a successful detection, you will see in the 2D view
+that a frame appears on the detected objects and yellow lines indicate
+the bounding box. (For the yellow lines enable the "Show model box" in
+the Viewer options.)
 
-   </div>
+.. image:: /assets/images/Documentation/Teach-detecting-objects.png
 
-.. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/58dd1cdadd8c8e5c5730fc9b/file-TC9h5cgiX1.png
-.. |image1| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/58dd2162dd8c8e5c5730fce3/file-95YGNHNQWf.png
-.. |image2| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/58dd2184dd8c8e5c5730fce7/file-nw7IGWcj1N.png
-.. |image3| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/58dd219bdd8c8e5c5730fcea/file-G5p8YYpyXH.png
-.. |image4| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/58dd21badd8c8e5c5730fced/file-NumVMRY7Ai.png
-.. |image5| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/58dd22632c7d3a52b42f10ea/file-3YWO41zGNa.png
+In the Objects view, the point cloud models are visualized as a colored
+cloud on top of the detected objects. When a detection failed because
+for example a threshold parameter was exceeded, the model cloud will be
+colored in red.
 
+In the Objects table, you can see the detected object dimensions,
+matching score and the Model ID that was found. Take a look at this
+article to learn how to interpret the :ref:`detection-grid`.
+
+.. image:: /assets/images/Documentation/Teach-detection-grid.png
+
+If you want to optimize your detections, the article :ref:`Explaining-the-teach-detection-parameters`
+goes more in depth on the different parameters of Pickit Teach. We
+advice you to experiment with different settings and multiple objects in
+different settings(tilted, on top of each other,..)
+
+.. note:: There is a hard limit on the Teach matching time of 5 seconds.
+   Before applying any optimization, this limit could be reached.

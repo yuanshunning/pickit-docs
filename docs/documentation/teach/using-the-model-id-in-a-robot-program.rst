@@ -1,52 +1,109 @@
-Using the model ID in a robot program
-=====================================
+.. _Using-the-model-id-in-a-robot-program:
 
 Using the model ID in a robot program
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------
 
-Sometimes it's desired to do a different action with a robot depending
+Often it's desired to do a different action with a robot depending
 on the ID of the detected model. Use cases are:
 
 -  define how to grip an object based on the visible object side or
 -  define how to drop off an object based on the visible object side.
 
-Universal Robots with URCap
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In this article two example programs with multiple models are shown. One for Universal robots and another for ABB. 
 
-A variable  **pickit\_type** is available to use after using the Pickit
-URCap \ **Find object(s)** command.This variable will represent
-the detected model id.
+Universal Robots
+^^^^^^^^^^^^^^^^
 
-Universal Robots with non-URCap
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The variable **pickit_type** is available to use after using the Pickit
+URCap **Find object(s)** command. This variable represents the detected model id.
+In the example program this id is used to define both a different picking as dropping strategy.
 
-When calling  **pickit\_look\_for\_object()** in a robot program, an
-object named \ **pickit\_object** will be available. Use the type
-property of this object to get the detected model id. An example robot
-program might look like this:
+.. image:: /assets/images/Documentation/UR-example-multiple-models.png
+
+ABB
+^^^
+
+The variable **pickit_object.type** is available to use after using the combination of commands **pickit_look_for_object** and
+**WaitUntil pickit_has_response()** command. This variable represents the detected model id.
+In the example program this id is used to define a different picking and dropping strategy.
 
 ::
 
-    pickit_look_for_object()
-    if pickit_object_found()
-      if (pickit_object.type == 1)
-        // Use drop off position 2.
-      elsif (pickit_object.type == 2)
-       // Use drop off position 2.
-      endif
-    endif
+    PROC Example()
+        CONST robtarget drop_off_pose_1:=[[0,0,0],[1,0,0,0],[0,0,0,0],[9e9,9e9,9e9,9e9,9e9,9e9]];
+        CONST robtarget drop_off_pose_2:=[[0,0,0],[1,0,0,0],[0,0,0,0],[9e9,9e9,9e9,9e9,9e9,9e9]];
+        CONST robtarget detect_pose:=[[0,0,0],[1,0,0,0],[0,0,0,0],[9e9,9e9,9e9,9e9,9e9,9e9]];
+        VAR robtarget pick_pose:=[[0,0,0],[1,0,0,0],[0,0,0,0],[9e9,9e9,9e9,9e9,9e9,9e9]];
+        VAR robtarget pick_pre_pose:=[[0,0,0],[1,0,0,0],[0,0,0,0],[9e9,9e9,9e9,9e9,9e9,9e9]];
+        
+        ! Fill in the correct setup file/product file/offsets.
+        CONST num desired_setup:=2;
+        CONST num desired_product:=2;
+        CONST num pre_pick_Z_offset:=-100;
+        CONST num pre_drop_Z_offset:=-100;
+        
+        IF NOT pickit_is_running() THEN
+            ErrLog 4800, "Pick-it NOT in Robot Mode", "Pick-it is not in Robot Mode.", "In the Pick-it web interface, click on 'Enable Robot Mode',", "and restart the program to start picking.", " ";
+            Stop;
+        ENDIF
 
-Mentioned articles
+        TPWrite "Setting setup and product configuration...";
+        pickit_configure desired_setup,desired_product;
 
-What to read next
+         WHILE TRUE DO
+            IF pickit_object_found() THEN
+                pick_pose:=pickit_get_pose();
+                pick_pre_pose := RelTool(pick_pose,0,0,pre_pick_Z_offset);
+                IF pickit_is_pose_reachable(pick_pose, tool0) AND pickit_is_pose_reachable(pick_pre_pose,tool0) THEN
+                    IF pickit_object.type = 1 THEN
+                        TPWrite "Moving to an object...";
+                        MoveJ pick_pre_pose,v500,z0,tool0;
+                        MoveL pick_pose,v500,fine,tool0;
+                        ! Add object grasping logic for model 1 here.
+                        MoveL pick_pre_pose,v500,z0,tool0;
+                        TPWrite "Moving to the drop off position...";
+                        MoveJ detect_pose,v500,z0,tool0;
+                        TPWrite "Looking for new object(s)";
+                        pickit_look_for_object;
+                        MoveJ RelTool(drop_off_pose_1,0,0,pre_drop_Z_offset), v500,z0,tool0;
+                        ! Define drop off position for product 1.
+                        MoveL drop_off_pose_1,v500,fine,tool0;
+                        ! Add object releasing logic here.
+                        MoveL RelTool(drop_off_pose_1,0,0,pre_drop_Z_offset), v500,z0,tool0;
+                        MoveJ detect_pose,v500,fine,tool0;
+                        WaitUntil pickit_has_response();
+                    ELSEIF pickit_object.type = 2 THEN
+                        TPWrite "Moving to an object...";
+                        MoveJ pick_pre_pose,v500,z0,tool0;
+                        MoveL pick_pose,v500,fine,tool0;
+                        ! Add object grasping logic for model 2 here.
+                        MoveL pick_pre_pose,v500,z0,tool0;
+                        TPWrite "Moving to the drop off position...";
+                        MoveJ detect_pose,v500,z0,tool0;
+                        TPWrite "Looking for new object(s)";
+                        pickit_look_for_object;
+                        MoveJ RelTool(drop_off_pose_2,0,0,pre_drop_Z_offset), v500,z0,tool0;
+                        ! Define drop off position for product 2.
+                        MoveL drop_off_pose_2,v500,fine,tool0;
+                        ! Add object releasing logic here.
+                        MoveL RelTool(drop_off_pose_2,0,0,pre_drop_Z_offset), v500,z0,tool0;
+                        MoveJ detect_pose,v500,z0,tool0;
+                        WaitUntil pickit_has_response();
+                    ENDIF
+                ELSE 
+                    pickit_next_object;
+                    TPWrite "Asking for next object";
+                    WaitUntil pickit_has_response();
+                ENDIF
+            ELSE
+                ! Define detect position.
+                MoveJ detect_pose,v500,z0,tool0;
+                pickit_look_for_object;
+                TPWrite "Looking for new object(s)";
+                WaitUntil pickit_has_response(); 
+            ENDIF
 
-| 
+         ENDWHILE
 
-| `Region of
-  Interest <https://support.pickit3d.com/article/159-region-of-interest>`__
-| `Detection: Pickit
-  Flex <https://support.pickit3d.com/article/160-detection-pick-it-flex>`__
-| `Detection:
-  Pickit Pattern <https://support.pickit3d.com/article/161-detection-pick-it-pattern>`__
-| `Detection:
-  Pickit Teach <https://support.pickit3d.com/article/162-detection-pick-it-teach>`__
+         ! EXIT; ! stop program
+    ENDPROC
