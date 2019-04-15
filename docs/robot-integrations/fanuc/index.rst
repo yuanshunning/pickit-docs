@@ -163,8 +163,8 @@ The .zip folder contains the following ASCII files:
 *  ``pick_it_communication13_C.kl`` is a Karel program that cares of the low level communication. This files should not be adapted.
 *  ``EXAMPLE_PICK_IT.LS`` is a Teach Pendant program that shows a simple pick application for FANUC using Pickit.
 *  For calibration we provide two Teach Pendant programs;
-  * ``MP_CALIBRATE.LS`` for \ `multi poses calibration <http://support.pickit3d.com/article/35-how-to-execute-robot-camera-calibration#multipose>`__ 
-  * ``CALIBRATE.LS`` for \ `single pose calibration <http://support.pickit3d.com/article/35-how-to-execute-robot-camera-calibration#singlepose>`__
+  * ``MP_CALIBRATE.LS`` for :ref:`multi poses calibration <calibration-multi-poses>`  
+  * ``CALIBRATE.LS`` for :ref:`single pose calibration <calibration-single-pose>`
 *  The other ``*.LS`` file define short Teach Pendant program that abstract some of the Pickit logic into more user readable functions. They can also serve as macros that can be called manually. More about that later. 
 
 .. tip:: In case of using Fanuc software version v8.30, you can directly use the binaries available in the downloaded folder. In the other case, you first have to compile the above files into binaries. 
