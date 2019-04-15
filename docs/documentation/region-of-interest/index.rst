@@ -44,4 +44,3 @@ in it can be visualized in the **Points** tab of the viewer.
     attaching-the-region-of-interest-to-the-world
     color-filter
     advanced-roi-filters
-    

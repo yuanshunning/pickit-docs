@@ -1,7 +1,7 @@
 .. _robot-camera-calibration:
 
-Robot camera calibration
-========================
+How to execute robot camera calibration
+=======================================
 
 Pickit provides two methods of executing
 this calibration. Which method to choose depends on how Pickit is set up
