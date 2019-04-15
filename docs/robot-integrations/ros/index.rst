@@ -6,17 +6,18 @@ The Pickit ROS interface
 Connecting to Pickit using ROS
 ------------------------------
 
-| |image0|
+.. image:: /assets/images/robot-integrations/ros/ros-logo.png
 
 The Pickit system is running a ROS Master, which allows another system to connect to it using the ROS interfaces. Pickit exposes its ROS parameters, nodes and topics using standard ROS messages and a limited set of Pickit specific ROS messages.
 
-.. note:: Since Pickit’s ROS master is always running on, it is recommended that the client system uses Pickit’s ROS master and does not start its own.
+.. note:: 
+    Since Pickit’s ROS master is always running on, it is recommended that the client system uses Pickit’s ROS master and does not start its own.
 
 Connecting to Pickit ROS nodes requires you to define the Pickit hostname on the client system. Likewise, the client system’s name must be resolvable on the Pickit system. Preferably, the DNS Server of the client network resolves all hostnames to the LAN IP address of each host. If this is not possible, the host to IP mapping must be added to both Pickit’s and the client’s /etc/hosts.
 
 The Pickit system is also running an ntp server. It can be used to make sure that the time between the client system and the Pickit system stays synchronised.
 
-|image1|
+.. image:: /assets/images/robot-integrations/ros/ros-network.png
 
 Connecting to the Pickit system
 --------------------------------
@@ -29,7 +30,7 @@ First verify that the Pickit system is reachable from your local system. Execut
 
 The hostname of your Pickit system is shown on the top-left corner of the Pickit web interface, next to the Pickit logo. In the below example, it corresponds to  ``pickit-demo-002``.
 
-|image2|
+.. image:: /assets/images/robot-integrations/ros/ros-pickit-hostname.png
 
 If the ping test fails, please check the network configuration for your local system and make sure that it's in the same network as the Pickit system.
 
@@ -47,7 +48,7 @@ Set the `ROS_IP <http://wiki.ros.org/ROS EnvironmentVariables#ROS_IP.2BAC8-ROS_
 
 To test communications, you first need to source a ROS workspace containing the ``im_pickit_msgs`` package. The package can be downloaded from the Pickit web interface, in the **Files** page, under the **ros** folder.
 
-|image3|
+.. image:: /assets/images/robot-integrations/ros/ros-messages-download.png
 
 Refer to the `catkin tools quickstart <http://catkin-tools.readthedocs.io/en/latest/quick_start.html>`__ for details on how to build ROS packages and source ROS workspaces. Once the package has been built and its workspace has been sourced, run the following commands to verify connectivity with the Pickit system:
 
@@ -346,10 +347,3 @@ queried with the \ ``rossmg show`` command, for instance:
 
     $ rosmsg show im_pickit_msgs/ObjectArray
     <message definition>
-
-.. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5900974f0428634b4a32a20c/file-yWUGrEDvjs.png
-   :class: noBdr
-.. |image1| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/590093d10428634b4a32a1dd/file-pnGJLVrvQc.png
-.. |image2| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5a67462b0428632faf6213bb/file-BRGtKmDjk4.png
-.. |image3| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5a6749e22c7d3a39e62644f4/file-d9yi5Pdsuv.png
-
