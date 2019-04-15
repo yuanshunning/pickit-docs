@@ -1,3 +1,5 @@
+.. _How-can-i-get-a-better-bin-picking-experience:
+
 How can I get a better bin picking experience?
 ==============================================
 
