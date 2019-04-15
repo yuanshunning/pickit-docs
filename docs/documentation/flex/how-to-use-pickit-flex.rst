@@ -1,130 +1,70 @@
 How to use Pickit Flex
-=======================
+----------------------
 
-This article describes how to get started with the Pickit Flex engine.
-The Pickit Flex engine easily finds geometric shapes (cylinders, boxes,
-planes, circles ... ) and can handle a variety of sizes with one
-configuration. 
+The Pickit Flex detection engine has a typical workflow, which
+is described step by step in this article.
 
-Working with Pickit Flex is all about clustering (grouping) of points.
-The Pickit camera captures the scene and converts it into points with
-depth information (point cloud). For Pickit Flex we need to split this
-point cloud into several clusters (`step 3 <#step-3>`__), each cluster
-is then used to match a geometrical shape on it (`step 4 <#step-4>`__).
+Define the 3D scene
+~~~~~~~~~~~~~~~~~~~
 
-The typical workflow when using the Flex engine is as following:
+The first step of Pickit Flex is to define where the Pickit system
+should look. The 3D scene is defined by a Region of Interest and the
+optimize detection parameters. These detection parameters are explained
+in the article :ref:`Explaining-the-flex-detection-parameters`.
 
-#. `Choose the vision engine <#step-1>`__
-#. `Optimize the 3D image <#step-2>`__
-#. `Group points into clusters <#step-3>`__
-#. `Reject clusters <#step-4>`__
-#. `Fit objects <#step-5>`__
-#. `Invalidate objects <#step-6>`__
+In the image below an example of a good defined scene is shown. First,
+in the 3D view all points within the field of view of the camera are
+shown. Second, in the Points view only the points of the parts in the
+bin are shown. The table and the bin are filtered out. Also it can be
+seen that the space in between points have gotten bigger in the second
+view. 
 
-1. Choose vision engine
------------------------
+The information shown in the Points view is what will be transferred to
+the next step. All other information is not taken into account for the
+detection with Pickit Flex. 
 
-On the **Detection** page select **Pickit** **Flex** under the
-Detection algorithm option.
+.. image:: /assets/images/Documentation/Flex-3d-points.gif
 
-2. Optimize the 3D image
-------------------------
+Divide the scene into clusters & reject (some) clusters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-|image0|
+The next step in the Pickit Flex detection is rather important. Here
+the scene will be divided into different parts(clusters). Each cluster
+contains all points that belong to one object in the scene. All clusters
+are shown in a different color. 
 
-Select the **Points** view, press the **Check** button and make sure
-your objects are visible inside the blue ROI box. You can now configure
-how many points used for object detection.
+In the image below the effect of clustering is visualized. The 3D scene
+is now divided into 7 different clusters(all shown in a different
+color). Also it can be noted that the Clusters view contains less points
+than the Points view. This is due to the user defined settings that
+certain clusters are rejected. In this case smaller clusters are
+rejected(not visualized in the image below). It makes sense to reject
+smaller clusters because they often represent noise or partially covered
+objects. So these points are then excluded from the following step. 
 
--  `Number of Images for
-   Fusion <http://support.pickit3d.com/article/30-explaining-the-flex-detection-parameters#fusion>`__
--  `Scene downsampling
-   resolution <http://support.pickit3d.com/article/30-explaining-the-flex-detection-parameters#downsampling>`__
+For the Flex detection to work properly every object should be clustered
+apart. A bad example would be one cluster(color) for 2 parts in the
+scene. The Pickit system supports different ways of clustering. All
+methods are explained in the  :ref:`Explaining-the-flex-detection-parameters`.
 
-` <http://support.pickit3d.com/article/30-explaining-the-flex-detection-parameters#downsampling>`__
+.. image:: /assets/images/Documentation/Flex-points-clusters.gif
 
-|image1|
+Fit & filter objects
+~~~~~~~~~~~~~~~~~~~~
 
-3. Group points into clusters
------------------------------
+The final step of Pickit flex is to fit a certain geometric shape on
+every cluster and to filter out the wrong objects. All accepted objects
+can be send back to the robot one by one.
 
-|image2|
+For each cluster that was accepted in the previous step now a shape is
+fitted. In the image below we see that each cluster gives rise to a
+object. Seven green cylinders and all points in the Region of Interest
+are shown in the Objects view. 
 
-Select the **Clusters** view. Clustering points is a way of grouping
-points belonging to individual objects. 
+In this last step it is decided which objects are accepted as good fits.
+These good fits can then be sent back to the robot. Filtering of the
+objects is done on their parameters shown in the  :ref:`detection-grid`.
+An explanation of all these parameters can be found in the
+article :ref:`Explaining-the-flex-detection-parameters`.
 
--  `No
-   clustering <http://support.pickit3d.com/article/30-explaining-the-flex-detection-parameters#no-clustering>`__
-   is combining all cloud points into a single cluster. This is mostly
-   used with single objects, or to check if there is something to found
-   within the blue ROI box.
--  `Distance-based
-   clustering <http://support.pickit3d.com/article/30-explaining-the-flex-detection-parameters#distance-based-clustering>`__
-   is ideal for clustering non-touching objects of simple geometrical
-   shapes.
--  `Normal-based
-   clustering <http://support.pickit3d.com/article/30-explaining-the-flex-detection-parameters#normal-based-clustering>`__
-   is ideal for clustering touching objects of simple geometrical
-   shapes.
-
-Good clustering typically leads to one (or sometimes more) cluster(s)
-per physical object under the camera.
-
-4. Reject clusters
-------------------
-
-|image3|
-
-Exclude clusters regarding on their size and dimensions. Good practices
-for rejecting clusters are:
-
--  Remove very small clusters that will never allow a good match.
--  In case you have large objects; increase the minimum number of points
-   in a cluster.
-
-.. raw:: html
-
-   <div class="callout-yellow">
-
-**Note:** If you have \ **Cluster size in № of pts** set you have to
-review your values after modifying the **downsampling** parameter.
-
-.. raw:: html
-
-   </div>
-
-5. Fit objects
---------------
-
-|image4|
-
-|image5|
-
-Define the kind of model you want to find in your cluster. Below we have
-a list of typical applications for each object model:
-
--  **Square** and **rectangle**: cardboard packaging, plastic bags,
-   industrial objects
--  **Circle** and \ **ellipse**: industrial rings, pipe ends, top of
-   soda cans 
--  **Cylinder**: coke cans, tubes, bottles
--  **Sphere**: oranges, footballs
--  **Blob** is perfect for detecting objects that can be very well
-   clustered but don't have a geometrical shape. Examples for these are
-   vegetables and fruit (bananas, peppers ...) and special shaped boxes
-   typically on a conveyor belt. 
-
-6. Invalidate objects
----------------------
-
-The `Pickit detection
-grid <http://support.pickit3d.com/article/57-the-pick-it-detection-grid>`__
-is a very helpful tool for improving the reliability of your detections.
-
-.. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/598482e82c7d3a73488ba4d5/file-qxT6eTJ3eZ.gif
-.. |image1| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/598819842c7d3a73488bad4b/file-pqO64ES658.gif
-.. |image2| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/598836902c7d3a73488bae18/file-H6bBxgOw8h.gif
-.. |image3| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/59883c172c7d3a73488bae43/file-4cLERIpKmZ.gif
-.. |image4| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5988380f042863033a1bae8a/file-rCZWjFMDNx.gif
-.. |image5| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/598839bf2c7d3a73488bae32/file-ACM2zMi4P6.gif
-
+.. image:: /assets/images/Documentation/Flex-clusters-objects.gif
