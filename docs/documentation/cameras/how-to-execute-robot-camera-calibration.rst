@@ -61,7 +61,7 @@ different and that still allows the camera to see the calibration plate.
 Preferably, the calibration plate is as much as possible in the center
 of the region where the actual picking will take place. 
 
-.. image:: /assets/images/Documentation/Calibration-stationary-mounted.jpg
+.. image:: /assets/images/Documentation/Calibration-robot-mounted.jpg
 
 Next step: :ref:`calculate-multi-poses-calibration`.
 
