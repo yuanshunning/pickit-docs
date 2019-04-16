@@ -1,16 +1,9 @@
 Object to reference frame alignment
-===================================
+-----------------------------------
 
-.. raw:: html
+.. note:: This setting is only available with the Flex and Pattern
+   engine.
 
-   <div class="callout-yellow">
-
-**Note**  This setting is only available with the Flex and Pattern
-engine.
-
-.. raw:: html
-
-   </div>
 
 This setting aligns the object frame axis with a reference frame axis.
 The newly created aligned frame is the pick frame that will be sent to
@@ -28,8 +21,4 @@ Two settings need to be provided to make this work:
 The pictures below show examples of the object to reference frame
 alignment setting for rectangular and circular shapes respectively:
 
-|image0|
-
-.. |image0| image:: https://lh5.googleusercontent.com/PgCI2Uj-QLZUUz0gaJ8Rn9mr1jFSsqLGnT_71XwAviaWTply_T3PCvWiHKWUyCgyk2PGIfjdLJ1BgnVngsMScS70Etf5ysC21CVteF5EUhWfQIQlnpd4VOCZVv1ZJgmN96VAJUuB
-   :width: 624px
-   :height: 1187px
+.. image:: /assets/images/Documentation/Object-to-reference-frame-alignment.png

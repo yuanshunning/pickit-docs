@@ -1,5 +1,5 @@
 Object ordering
-===============
+---------------
 
 This setting defines in which order the objects are returned to the
 robot.
@@ -34,8 +34,4 @@ robot.
 The pattern sort options are useful for depalletization or pallet
 loading applications. The picture below illustrates each option:
 
-|image0|
-
-.. |image0| image:: https://lh5.googleusercontent.com/kqDgJJtwh3VJ9xma5VZozrS9CEDMVco-6L5pwGi0LX8n2ntlpyP9ILqUZeGZP412h_mDz-PbgoRVXnUcOaMggtr276OzJuLkY4WjMzadlyrjkN0oNDeSRMKmxAfzXVYQMwKSR82D
-   :width: 624px
-   :height: 245px
+.. image:: /assets/images/Documentation/Object-ordering-pattern.png

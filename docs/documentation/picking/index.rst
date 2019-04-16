@@ -10,19 +10,8 @@ your application. You will learn how to align object frames for picking,
 prevent collisions with a bin or other objects and choose the pick
 order.
 
-.. toctree::
-    :maxdepth: 1
-    :glob:
-
-    object-ordering
-    pick-strategy
-    collision-prevention
-    maximum-angles
-    check-collisions-with
-    *
-
-.. rubric:: Note on frames
-   :name: frames
+Note on frames
+--------------
 
 Before we start, let's first define three frame types in Pickit that
 we'll need throughout the article.
@@ -39,66 +28,70 @@ we'll need throughout the article.
    can pick or grasp a detected object and is derived from the object
    frame by changing settings in the Picking tab of the web interface.
 
-|image0|
+.. image:: /assets/images/Documentation/Note-on-frames.png
 
-.. rubric:: Object ordering
-   :name: object_ordering
+Object ordering
+---------------
 
 Under object ordering, the order in which objects will be picked when
 more than one object is detected is defined. See following article to
-have more detailed information about the different options, `Object
-ordering <https://support.pickit3d.com/article/211-object-ordering>`__.
+have more detailed information about the different options.
 
-.. rubric:: Pick strategy
-   :name: pick_strategy
+.. toctree::
+    :maxdepth: 1
+    :glob:
+
+    object-ordering
+
+Pick strategy
+-------------
 
 Under Pick strategy, it is defined if and how the pick frames should be
 aligned. This is often used to optimize cycle time or to prevent bin
 collision. Following settings can be applied:
 
--  `Object to reference frame
-   alignment <https://support.pickit3d.com/article/212-object-to-reference-frame-alignment>`__\ (Flex
-   and Pattern only)
--  `Pick
-   strategy <https://support.pickit3d.com/article/213-pick-strategy>`__\ (Flex:
-   cylinders and spheres only)
--  `Enforce alignment of Pick frame
-   orientation <https://support.pickit3d.com/article/214-enforce-alignment-of-pick-frame-orientation>`__
+.. toctree::
+    :maxdepth: 1
+    :glob:
 
-.. rubric:: Collision prevention
-   :name: collision_prevention
+    object-to-reference-frame-alignment
+    pick-strategy
+    enforce-alignment-of-pick-frame-orientation
+
+Collision prevention
+--------------------
 
 This section explains how to prevent collisions when picking objects
 with a robot. Objects that will not be picked because of collision
 constraints will be labeled as unpickable and not sent to the robot. In
 the Pickit web interface, unpickable objects are displayed orange in
-the Objects view and the `detection
-grid <https://support.pickit3d.com/article/167-the-pick-it-detection-grid>`__.
+the Objects view and the :ref:`detection-grid`.
 
-.. rubric:: Maximum angles
-   :name: maximum-angles
+Maximum angles
+~~~~~~~~~~~~~~
 
 To define objects as unpickable two overall angles can be defined. If
 the calculated pick frame is bigger than either angle it is seen as
 unpickable and will not be sent to the robot.
 
--  `Maximum angle between pick and reference frame
-   Z-axes <https://support.pickit3d.com/article/215-maximum-angle-between-pick-and-reference-frame-z-axis>`__
--  `Maximum angle between pick frame Z-axis and surface normal(only if
-   alignment is
-   enforced) <https://support.pickit3d.com/article/216-maximum-angle-between-pick-frame-z-axis-and-surface-normal>`__
+.. toctree::
+    :maxdepth: 1
+    :glob:
 
-.. rubric:: Check collisions with
-   :name: check-collisions-with
+    maximum-angle-between-pick-and-reference-frame-zaxis
+    maximum-angle-between-pick-frame-zaxis-and-surface-normal
+
+Check collisions with
+~~~~~~~~~~~~~~~~~~~~~
 
 Pickit also checks for possible collisions in the actual scene. For
-this, first a `robot
-tool  <https://support.pickit3d.com/article/217-robot-tool-model>`__\ needs
-to be modeled. And second you have to define with what you want to check
+this, first a robot tool needs to be modeled. And second you have to define with what you want to check
 collision with: bin and/or other objects. More detailed information on
-how to use this feature can be found in this article, `check collision
-with <https://support.pickit3d.com/article/218-check-collisions-with>`__.
+how to use this feature can be found in these articles.
 
-.. |image0| image:: https://lh3.googleusercontent.com/dBxTCKnpjv0hkRZSyIAHbTDp_6YQaFpnw-6dwml-t-rCCV-yD_KRG-ZKohoV4ukdOoWU8_DJcMVOjPjcdK87nzGnEirZSMwfx0otkzH7MwR5bFFLh-WuiKXE0RkucEH44Ap93cBW
-   :width: 624px
-   :height: 339px
+.. toctree::
+    :maxdepth: 1
+    :glob:
+
+    robot-tool-model
+    check-collisions-with

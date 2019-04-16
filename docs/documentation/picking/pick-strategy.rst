@@ -1,5 +1,5 @@
 Pick strategy
-=============
+-------------
 
 .. note::
   This setting is only available for **cylinder** and **sphere** detections with the **Flex engine**.
@@ -26,8 +26,4 @@ options are:
 The picture below shows an example of a spherical and cylindrical object
 respectively:
 
-|image0|
-
-.. |image0| image:: https://lh4.googleusercontent.com/SXNC32lpmOOQUbN5kqeZxB2JSzYEdbQXyCuZTARG2-xnk3JMCgDTpD-yQ2lgu6k2SCAda-WqmNk_fTnd-G44msaacWCppKQjCnN4aIlTlmIIwy4m0o0vSxseAJmpS3fZvAYLz-Of
-   :width: 624px
-   :height: 1317px
+.. image:: /assets/images/Documentation/Pick-strategy-example.png
