@@ -9,7 +9,8 @@ structures. Follow these simple steps below to mount the camera:
 -  Use the L-bracket to mount the camera 700mm above a flat surface.
    (1700mm for a Pickit L-camera)
 -  Use the ball joints to point the camera towards the
-   surface.\
+   surface.
+
 .. image:: /assets/images/First-steps/Mounting-instructions.png
 
 .. attention:: Screws and nuts are not provided.

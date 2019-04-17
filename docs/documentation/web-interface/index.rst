@@ -48,7 +48,7 @@ main operational modes:
 
 Next to the state the current **Setup** and **Product** file are shown.
 More information on these can be found in
-the :ref:`_Configuration` article.
+the :ref:`Configuration` article.
 
 Then the Settings button is shown. Here the Network and user settings
 can be defined. More information about these settings can be found in

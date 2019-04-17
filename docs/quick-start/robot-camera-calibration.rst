@@ -16,8 +16,10 @@ Follow the steps below to do a robot-camera calibration:
 -  On your robot open the example multi pose calibration file supplied
    by Pickit
 -  In this robot program define 5 different waypoints where the robot
-   shows the robot-to-camera calibration plate to the camera.\ 
+   shows the robot-to-camera calibration plate to the camera.
+
 .. image:: /assets/images/First-steps/Robot-camera-calibration.jpg
+
 -  Run the program on the robot.
 -  In the Pickit user interface go to the 3D view and if the updated
    position of the robot base matches the actual position of the robot
