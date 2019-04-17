@@ -1,3 +1,5 @@
+.. _Files:
+
 Files
 =====
 
@@ -10,4 +12,4 @@ various robot program scripts as well as download the saved scenes.
    interface.
 -  **saved scenes:** Contains the snapshots that are saved on your
    system.
--  **user\_changelog.md:** The Pickit version changelog
+-  **user_changelog.md:** The Pickit version changelog

@@ -1,3 +1,5 @@
+.. _Saving-a-snapshot:
+
 Saving a snapshot in Pickit
 ============================
 

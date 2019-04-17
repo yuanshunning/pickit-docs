@@ -26,6 +26,7 @@ assembly tasks with a robot or machine.
   Teach <documentation/teach/index>
   Picking <documentation/picking/index>
   Files <documentation/files/index>
+  Settings <documentation/settings/index>
 
   faq/index
   support/index
