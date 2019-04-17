@@ -1,3 +1,5 @@
+.. _Pickit-system-software-upgrade:
+
 Pickit system software upgrades
 ================================
 
@@ -31,16 +33,8 @@ To upgrade your system follow these steps:
       steps
       described \ `here <#software-upgrade-without-internet>`__.\ |image2|
 
-.. raw:: html
-
-   <div class="callout-yellow">
-
-**Note:** Before proceeding with the automatic upgrade, make sure your
-setup and product files are saved.
-
-.. raw:: html
-
-   </div>
+.. note:: Before proceeding with the automatic upgrade, make sure your
+   setup and product files are saved.
 
 Software upgrade with internet connection
 -----------------------------------------
