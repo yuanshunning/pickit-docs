@@ -47,6 +47,8 @@ allow the camera to see the calibration plate.
 
 Next step: :ref:`calculate-multi-poses-calibration`.
 
+.. _calibration-multi-pose-robot:
+
 Camera mounted on the robot
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

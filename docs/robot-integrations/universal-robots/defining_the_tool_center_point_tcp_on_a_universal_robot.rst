@@ -1,3 +1,5 @@
+.. _Defining-tcp-universal-robots:
+
 Defining the tool center point (TCP) on a Universal Robot
 =========================================================
 

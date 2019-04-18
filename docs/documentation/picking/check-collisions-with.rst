@@ -1,3 +1,5 @@
+.. _check-collision-with:
+
 Check collisions with
 ---------------------
 

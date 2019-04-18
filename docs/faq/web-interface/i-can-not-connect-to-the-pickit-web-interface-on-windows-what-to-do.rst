@@ -10,7 +10,7 @@ can be taken:
 -  Enter the following command: ``ping 192.168.66.1``
 -  You should start receiving continuous ping replies:
 
-|image0|
+.. image:: /assets/images/faq/Ping-pickit-web-interface.png
 
 -  If instead of replies you are getting "Request timed out" messages,
    try to disable possible active WiFi connections on your
@@ -20,10 +20,6 @@ can be taken:
 -  The output of this command should look similar to what is shown
    below. If that is not the case, please make a screenshot of the
    output and send it
-   to \ `support@pickit3d.com <mailto:mailto:support@pickit3d.com>`__
+   to `support@pickit3d.com <mailto:mailto:support@pickit3d.com>`__
 
-|image1|
-
-.. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5900983c0428634b4a32a21b/file-EVYFJ6GoB7.png
-.. |image1| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/590098ff2c7d3a057f889440/file-gp0TzELiCJ.png
-
+.. image:: /assets/images/faq/ipconfig.png
