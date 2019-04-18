@@ -13,10 +13,10 @@ Overview
 
 To upgrade your system follow these steps:
 
--  | Press the **Settings** button in the top bar of Pickit's web
-     interface.
+-  Press the **Settings** button in the top bar of Pickit's web
+   interface.
 
-   |image0|
+.. image:: /assets/images/Documentation/Settings-button-2.png
 
 -  Under the **Upgrade Pickit version** drawer in the **Network
    settings** section of the screen, you should see the following
@@ -26,15 +26,20 @@ To upgrade your system follow these steps:
       through which you are accessing the Pickit web interface), the
       content will look like the screenshot below. To upgrade your
       system, proceed with the steps
-      described \ `here <#software-upgrade-with-internet>`__.
-      |image1|
+      described in :ref:`software-upgrade-with-internet`.
+
+      .. image:: /assets/images/Documentation/Upgrade-pickit-version-internet.png
+
    -  If you don’t have internet on your computer, the settings will
       look like the screenshot below. To upgrade your system, follow the
-      steps
-      described \ `here <#software-upgrade-without-internet>`__.\ |image2|
+      steps described in :ref:`software-upgrade-without-internet`.
+
+      .. image:: /assets/images/Documentation/Upgrade-pickit-version-no-internet.png
 
 .. note:: Before proceeding with the automatic upgrade, make sure your
    setup and product files are saved.
+
+.. _software-upgrade-with-internet:
 
 Software upgrade with internet connection
 -----------------------------------------
@@ -43,7 +48,9 @@ If you are connected to the internet, you can just press the **Download
 and Install Upgrades** button and the rest will be automatically taken
 care of. When the upgrading is in progress you should see the following:
 
-|image3|
+.. image:: /assets/images/Documentation/pickit-upgrading.png
+
+.. _software-upgrade-without-internet:
 
 Software upgrade without internet connection
 --------------------------------------------
@@ -57,9 +64,3 @@ it on the computer on which the Pickit web interface is open, and under
 the same section for version upgrades, press the **Upload and Install
 Upgrades** to upload it and proceed with the same procedure as described
 above.
-
-.. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5c04f2b904286304a71ce8e0/file-wV8hjEZ7Q2.png
-.. |image1| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5c04f34404286304a71ce8e3/file-s6cQT2fdzO.png
-.. |image2| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5c04f4232c7d3a31944ea354/file-AHhSuddTEX.png
-.. |image3| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5c04f71504286304a71ce8fe/file-hBjYR8IWxi.png
-
