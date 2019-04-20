@@ -1,3 +1,5 @@
+.. _color-filter:
+
 Color filter
 ------------
 

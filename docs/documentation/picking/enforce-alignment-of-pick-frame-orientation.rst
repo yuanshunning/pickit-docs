@@ -1,3 +1,5 @@
+.. _enforce-alignment-of-pick-frame-orientation:
+
 Enforce alignment of Pick frame orientation
 -------------------------------------------
 

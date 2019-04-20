@@ -98,6 +98,8 @@ points, for the detected object to be considered valid.
 Optimize detections
 ~~~~~~~~~~~~~~~~~~~
 
+.. _image-fusion:
+
 Image fusion
 ^^^^^^^^^^^^
 

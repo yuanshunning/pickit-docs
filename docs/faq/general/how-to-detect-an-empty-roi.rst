@@ -1,3 +1,5 @@
+.. _detect-empty-roi:
+
 How to detect an empty ROI
 ==========================
 
