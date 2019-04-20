@@ -1,3 +1,5 @@
+.. _how-does-the-pickit-3d-camera-works:
+
 How does the Pickit 3D camera works?
 ====================================
 
@@ -66,23 +68,3 @@ If not enough 3D data is shown, know that this can be further optimized.
 For the Pick-it M and L cameras, :ref:`image-fusion` leads to a more stable point cloud. 
 For the Pick-it M-HD camera, a different camera preset can be used. 
 If still not enough 3D is obtained the parts are too reflective or transparent. 
-
-Does additional lightning help me getting better 3D data?
----------------------------------------------------------
-
-Simple answer: no. 
-As explained in the first section of this article the Pick-it 3D cameras are based on the structured light principle. 
-For this to work the structured light needs to be the most present in the scene. 
-If additional light is added to the scene this can interfere with the known grid. 
-This interference leads to worse 3D data.
-
-The M and L camera work with structured infrared light. 
-So only other infrared light sources interfere with these cameras. 
-The most common infrared light source that causes interference is direct sunlight. 
-
-The M-HD camera works with structured visible light. 
-To be less depending on changing light conditions a strong projector is used in this camera. 
-Because of this normal changing light conditions in an office or factory don't have much influence on the camera. 
-Still, direct sunlight and bright spotlights can cause interference.
-
-.. note:: If the :ref:`color-filter` is used for detections, stable light conditions are necessary.

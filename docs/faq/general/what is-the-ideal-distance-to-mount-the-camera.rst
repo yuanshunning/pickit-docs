@@ -1,5 +1,7 @@
-What is the ideal distance to mount the camera?
-===============================================
+.. _what-is-the-ideal-distance-to-mount-the-pickit-camera:
+
+What is the ideal distance to mount the Pickit camera?
+======================================================
 
 The distance between the camera and the parts to detect plays an important role in getting high-quality detections out of your Pick-it system. 
 The following guidelines will help you to find the camera mounting distance that works best for your application:
@@ -22,13 +24,3 @@ The following guidelines will help you to find the camera mounting distance that
 
 -  For cameras fixed to an independent structure, make sure that the expected **robot motions don't collide with the camera**. 
    In some cases, it's necessary to reposition the camera to avoid potential collisions.
-
-Detecting cylinders with the Pickit M camera
---------------------------------------------
-
-The graph below shows which cylinder diameter can be reliably detected at which distance with a Pick-it M camera. 
-Everything above the green line is considered to be within Pick-it's comfort zone. 
-From this graph it can be noted that the closer the camera is mounted the smaller diameters can be detected. 
-But the closer the camera is mounted also means a smaller field of view.
-
-.. image:: /assets/images/faq/Cylinder-diameter-vs-camera-distance.png
