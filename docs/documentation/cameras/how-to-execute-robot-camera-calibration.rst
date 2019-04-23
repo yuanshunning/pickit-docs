@@ -100,7 +100,7 @@ can always restart from the beginning by pressing the **Reset
 poses** button.
 
 .. note::
-  Always  :ref:`verify-calibration` in the 3D view as
+  Always :ref:`verify-calibration` in the 3D view as
   shown below. 
 
 .. _calibration-single-pose:
@@ -133,10 +133,10 @@ select **Single pose calibration**.
 Mount the calibration plate to the robot flange directly or by making
 use of a tool changer of your choice. Read more on :ref:`installing-calibration-plate`. 
 
-| Position the robot such that the calibration plate can be seen by the
-  camera (the “Plate visible” indicator should be green).
-| *Preferably, the calibration plate is as much as possible in the
-  center of the region where the actual picking will take place. *
+Position the robot such that the calibration plate can be seen by the
+camera (the “Plate visible” indicator should be green).
+Preferably, the calibration plate is as much as possible in the
+center of the region where the actual picking will take place.
 
 .. rubric:: Step 2: Define helper transformation
    :name: helper_transformation

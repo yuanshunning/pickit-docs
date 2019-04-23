@@ -8,7 +8,7 @@ Pickit shown. The user interface looks like the image below. In this
 article a general overview of what you can see in this interface is
 discussed. The interface is divided into 3 part: top, left and right.
 
-.. image:: /assets/images/First-steps/Pickit-webinterface.png
+.. image:: /assets/images/First-steps/pickit-webinterface-20.png
 
 .. contents::
     :backlinks: top

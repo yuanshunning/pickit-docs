@@ -87,8 +87,8 @@ Configuration options:
 
 Test connectivity to the internet by pressing the Check button.
 
-Upgrade Pickit version (available from version 1.10)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Upgrade Pickit version
+~~~~~~~~~~~~~~~~~~~~~~
 
 Here you can upgrade your Pickit system to latest software version.
 Refer to the :ref:`Pickit-system-software-upgrade`

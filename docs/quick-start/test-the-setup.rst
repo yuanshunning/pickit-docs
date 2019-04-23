@@ -8,7 +8,7 @@ able to see Pickit's user interface:   
    enter \ http://192.168.66.1 in the address bar.
 -  Now the Pickit user interface is visible inside your web browser. 
 
-.. image:: /assets/images/First-steps/Pickit-webinterface.png
+.. image:: /assets/images/First-steps/pickit-webinterface-20.png
 
 In the Pickit user interface the connection between the robot and the
 processor can be checked:
