@@ -12,7 +12,7 @@ Download robot programs for:
    -  **URCap plugin:** 
 
       -  `Pickit URCap
-         1.3.0 <https://drive.google.com/uc?export=download&id=1CUFA_v4PJSS2X0ASLC9F7kH3Y2udnTSQ>`__
+         1.3.5 <https://drive.google.com/uc?export=download&id=1usAjN4b8Nv_KjCy5XFIIwGeNQDti5m7Y>`__
          download (for Polyscope versions 3.4.x to 3.7.x, and 5.0.x to
          5.1.x).
       -  `Plugin
