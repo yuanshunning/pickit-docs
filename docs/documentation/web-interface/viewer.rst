@@ -33,6 +33,8 @@ connected and no snapshot is loaded:
 
 .. image:: /assets/images/Documentation/No-connected-camera.png
 
+.. _2d-view:
+
 2D view
 ~~~~~~~
 
@@ -58,6 +60,8 @@ Live 3D camera image stream when a camera is connected. It also renders:
    3D models.
 
 .. image:: /assets/images/Documentation/Viewer-3d.png
+
+.. _points-view:
 
 Points view
 ~~~~~~~~~~~

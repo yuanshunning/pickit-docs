@@ -21,9 +21,9 @@ assembly tasks with a robot or machine.
   Configuration <documentation/configuration/index>
   Camera(s) <documentation/cameras/index>
   Region of Interest <documentation/region-of-interest/index>
+  Teach <documentation/teach/index>
   Flex <documentation/flex/index>
   Pattern <documentation/pattern/index>
-  Teach <documentation/teach/index>
   Picking <documentation/picking/index>
   Files <documentation/files/index>
   Settings <documentation/settings/index>

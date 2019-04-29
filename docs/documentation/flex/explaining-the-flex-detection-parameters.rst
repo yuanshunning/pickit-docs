@@ -13,6 +13,35 @@ categories.
     :local:
     :depth: 1
 
+M-HD preset(M-HD camera only)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: /assets/images/Documentation/m-hd-preset.png
+
+The Pickit M-HD camera is a high end camera with many different options to capture a point cloud of the scene.
+For instance the camera can be optimized to better detect bright parts or to better detect dark parts. 
+When set to detect bright parts typically the captured point cloud is darker, to compensate for the brightness of the parts. 
+On the contrary when it is set to detect darker parts the point cloud becomes brighter.
+This can be clearly noticed when looking at the :ref:`2d-view` in the Pickit viewer.
+
+Next to different settings to capture a point cloud the Pickit M-HD camera also has the possibility to trigger multiple captures in a row.
+Each capture uses a different setting. 
+The combined image of multiple captures leads to a point cloud which can be better than a single capture.
+For instance when parts are both bright and dark, it makes sense to combine the optimal settings for bright and dark parts.
+Taking multiple captures typically leads to a better point cloud but also leads to a longer overal time to capture the point cloud.
+
+In this tab different presets are available to help you find the best setting for your application.
+It is adviced to try different presets and chose the one that gives the best results on your scene.
+The result of a certain preset is best visualized in the :ref:`points-view` of the Pickit viewer.
+
+-  **Light reflective plastic** (1 capture): a preset typically used for plastic that is bright and reflective.
+-  **Light non-reflective plastic** (1 capture): a preset that is typically used for plastic that is bright and non-reflective.
+-  **Dark non-reflective plastic** (1 capture): a preset that is typically used for plastic that is dark and non-reflective.
+-  **Dark reflective plastic** (1 capture): a preset that is typically used for for plastic that is reflective and dark.
+-  **Mixed-color plastic** (3 captures): a preset that is typically used for mixed-color plastic.
+-  **Sandblasted metal** (2 captures): a preset that is typically used for metal that is sandblasted.
+-  **Polished metal** (3 captures): a preset that is typically used for for metal that is polished.
+
 .. _Group-points-into-clusters:
 
 Group points into clusters
@@ -168,8 +197,8 @@ These parameters affect the number of points of the captured point cloud
 used for object detection. The effect of modifying these parameters can
 be visualized in the **Points** view.
 
-Image fusion
-^^^^^^^^^^^^
+Image fusion(M/L camera only)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Image fusion is the combination of multiple camera captures into a
 single image. Enabling image fusion can provide  **more detail** in
