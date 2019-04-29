@@ -1,3 +1,5 @@
+.. _advanced-roi-filters:
+
 Advanced ROI filters
 --------------------
 

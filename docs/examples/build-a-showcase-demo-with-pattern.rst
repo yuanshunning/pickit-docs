@@ -5,16 +5,15 @@ This article will guide you in setting up a simple robot picking demo
 with Pickit Pattern. The Pattern vision engine is made for picking
 objects with **simple geometrical** **shapes** stacked into an
 **organized pattern**. In this demo we are picking cardboard boxes.
-Click `here <#picking>`__ to see the video of this demo.
+Click :ref:`here <pattern-demo-happy-picking>` to see the video of this demo.
 
-#. `Requirements <#requirements>`__
-#. `Your first detection(configuring the Pickit files) <#detection>`__
-#. `Calibration <#calibration>`__
-#. `Your first pick(program the robot) <#program>`__
-#. `Happy picking <#picking>`__
+.. contents::
+    :backlinks: top
+    :local:
+    :depth: 1
 
-1. Requirements
-~~~~~~~~~~~~~~~
+Requirements
+------------
 
 The hardware requirements to set up this demo are:
 
@@ -26,12 +25,10 @@ The hardware requirements to set up this demo are:
 
 It is assumed that the Pickit system is mounted around 700 mm above the
 table and is running correctly. If you are not sure, please follow step
-1-4 from our  `getting
-started <https://support.pickit3d.com/article/125-quick-start-7-steps-to-your-first-pick>`__
-guide. 
+1-4 from our :ref:`quick-start` guide. 
 
-2. Your first detection(Configure the Pickit files)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Your first detection(Configure the Pickit files)
+------------------------------------------------
 
 Now that every component is connected to the Pickit system, we are able
 to configure Pickit. Open a chrome web browser on your external PC and
@@ -44,8 +41,8 @@ enter the following IP address to access the Pickit system.
 In the Pickit user interface, go to the configuration tab and create
 new setup files and a product file:
 
--  **Setup:** pattern\_demo.
--  **Product:** pattern\_demo.
+-  **Setup:** pattern_demo.
+-  **Product:** pattern_demo.
 
 Configuring the Pickit comes down to three simple steps:
 
@@ -53,13 +50,11 @@ Configuring the Pickit comes down to three simple steps:
 #. Define the shape of objects that need to be picked
 #. Define a picking strategy
 
-2.a create a scene
-^^^^^^^^^^^^^^^^^^
+create a scene
+~~~~~~~~~~~~~~
 
 The first step defines where Pickit has to look for objects. This is
-done by defining the region of interest (ROI). See the article   `Region
-of
-Interest <https://support.pickit3d.com/article/159-region-of-interest>`__
+done by defining the region of interest (ROI). See the article :ref:`region-of-interest`
 on how to define a ROI. 
 
 Below you can see a pictures of a good defined ROI for this application.
@@ -68,10 +63,10 @@ information of the parts on the table are kept. 
 
 Don't forget to save the settings in the corresponding Setup files.
 
-|image0|
+.. image:: /assets/images/examples/pattern-demo-points.png
 
-2.b Define the detection parameters
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Define the detection parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The second step consists in setting up the Pickit Pattern detection
 engine. In this application Pickit will look for fixed sized
@@ -79,27 +74,23 @@ rectangular shapes.
 
 See below for images of the results of the clustering and the fitting
 step. Below the images all used detection parameters are given. See
-following articles on how to use Pickit Pattern and an explanation of
-all parameters.
+following article on how to use Pickit :ref:`Pattern`.
 
--  `Detection: Pickit
-   Pattern <https://support.pickit3d.com/article/161-detection-pick-it-pattern>`__
--  `Explaining the Pattern detection
-   parameters <https://support.pickit3d.com/article/175-explaining-the-pattern-detection-parameters>`__
+.. image:: /assets/images/examples/pattern-demo-clusters.png
 
-|image1|\ |image2|
+.. image:: /assets/images/examples/pattern-demo-objects.png
 
 In this demo following parameters are used
 
 -  **Clustering:** Non-touching 
--  No \ **rejecting clusters**
+-  No **rejecting clusters**
 -  **Object model:** rectangle
 -  **Contour:** inner and outer
 -  **3D tolerance:** 15mm
 -  **2D tolerance:** 10mm
 -  **Expected length:** 115mm
 -  **Expected width:** 65mm
--  **Expected orientation:** either X \|\| X or X \|\| Y depending on
+-  **Expected orientation:** either X||X or X||Y depending on
    the pattern orientation w.r.t. the reference frame in the 3D-view.
 -  **2D contour score:** 45%
 -  **2D surface score:** 95%
@@ -108,13 +99,12 @@ In this demo following parameters are used
 
 Don't forget to save the settings. This will update the Product file.
 
-2.c Define the picking parameters
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Define the picking parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Finally the picking strategy is defined. For this application no special
 strategies are applied. However more information about the picking
-strategies can be found in the 
-`Picking <https://support.pickit3d.com/article/163-picking>`__ article.
+strategies can be found in the :ref:`Picking` article.
 
 -  **Enforce alignment:** No alignment
 -  **Check collision with:** none
@@ -122,18 +112,17 @@ strategies can be found in the 
 
 Don't forget to save the settings. This will update the Product file.
 
-3. Calibration
-~~~~~~~~~~~~~~
+Calibration
+-----------
 
 Next step is the robot-camera calibration. This process teaches Pickit
 where the robot base is located w.r.t. to the camera. This information
 is used to transform the object pick-frames into robot coordinates. A
-detailed description in robot-camera calibration can be found  
-`here <https://support.pickit3d.com/article/35-how-to-execute-robot-camera-calibration>`__. Do
-not forget to save after the calibration is finished.
+detailed description in robot-camera calibration can be found in the article :ref:`robot-camera-calibration`. 
+Do not forget to save after the calibration is finished.
 
-4. Program the robot
-~~~~~~~~~~~~~~~~~~~~
+Program the robot
+-----------------
 
 Now Pickit is configured, the only thing left to do is programming the
 robot. The robot used in the demo video is a UR5, but a similar program
@@ -148,30 +137,25 @@ every time.
 -  **The UR robot program:** Download
    link \ `here <https://drive.google.com/uc?export=download&id=1CDlLHGBOY-UKC28ONp_8AvYfquVs0W4V>`__.
 
-|image3|
+.. image:: /assets/images/examples/pattern-demo-ur-program.png
 
-.. raw:: html
+.. warning:: When using the UR download program in the provided link,
+   **change the waypoints** to avoid moving the robot to unsafe positions.
 
-   <div class="callout-red">
+.. _pattern-demo-happy-picking:
 
-**Warning** When using the UR download program in the provided link,
-*change the waypoints* to avoid moving the robot to unsafe positions.
-
-.. raw:: html
-
-   </div>
-
-5. Happy picking!
-~~~~~~~~~~~~~~~~~
+Happy picking!
+--------------
 
 If you followed all steps above, you're ready building your Pickit
 product showcase using the Pattern detection engine. Happy picking!
 
+.. raw:: html
+
+  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+    <iframe src="https://r4---sn-5hnekn7k.c.drive.google.com/videoplayback?expire=1556550675&ei=09vGXMH9Ac2ruAWcobywBw&ip=194.78.201.251&cp=QVNKWEZfT1ZVRlhOOnJMODVDM2dSUHl5R1pjTk1wV2xpeGxBR1lJcmY0Wk9sSnZzU0UtbWY5bjE&id=db5abfa2acfc0494&itag=18&source=webdrive&requiressl=yes&mm=30&mn=sn-5hnekn7k&ms=nxu&mv=m&pl=17&ttl=transient&susc=dr&driveid=10b-IjeS_dyV19iv89WcnRObJlfhgguVw&app=explorer&mime=video/mp4&dur=89.977&lmt=1524127513710135&mt=1556536187&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,dur,lmt&sig=ALgxI2wwRQIgTto8gPA0jL-P11hjDahPs-IkgC9xCWAS0kJudFL6u1oCIQCGNi7RYi0Xqp7_wC30bRjjNudUPaGeDu3tBO3BZTSzVQ==&lsparams=mm,mn,ms,mv,pl&lsig=AHylml4wRAIfHUhzPMfyWcxEtroCoGsFjGLazgIZYVvhvGUEKP6EmwIhANWEqe6BCdIDC7V34MAiO3yBjmduDs9Y759zpBhYLcD3&cpn=GHgWGVIrkz4SSxmX&c=WEB_EMBEDDED_PLAYER&cver=20190423" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+  </div>
+  <br>
+
 If you need any help with one of the steps above, please contact 
 `support@pickit3d.com <mailto:mailto://support@pickit3d.com>`__.
-
-.. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5ad8b23c04286307509297ec/file-ulqiVC6aXr.png
-.. |image1| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5ad8b21404286307509297e6/file-JujSd916Lj.png
-.. |image2| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5ad8b3272c7d3a0e93677d63/file-u414cFpDJv.png
-.. |image3| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5b61cd832c7d3a03f89d3e5a/file-HYsEDLVJUC.png
-

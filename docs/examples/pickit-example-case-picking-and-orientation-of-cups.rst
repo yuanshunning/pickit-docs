@@ -1,20 +1,20 @@
 Pickit example case: Picking and orientation of cups
 =====================================================
 
-|image0|
+.. image:: /assets/images/examples/example-case-cups-general.png
 
 This article covers an extensive overview of an actual Pickit
 application where picking and orientation is verified during every cycle
 of the robot program. We cover the basics of the application as well as
 the robot program used in this application.
 
-#. `Intro (flowchart & step by step) <#intro>`__
-#. `A program of 7 steps <#steps>`__
-#. `A generic way of explaining the robot program <#genericway>`__
-#. `The Universal Robots program <#urprogram>`__
+.. contents::
+    :backlinks: top
+    :local:
+    :depth: 1
 
-1. Intro
---------
+Intro
+-----
 
 In this application we will try to pick a cylindrical cup form a bin and
 perform an orientation check on the cup before putting it next to the
@@ -31,7 +31,7 @@ So we have already created and saved 2 Pickit setup files and 4 Pickit
 product files through the Pickit interface.
 
 Two setup files
-^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~
 
 #. One setup file for bin picking (where the blue region of interest box
    is aligned with the bin)
@@ -39,7 +39,7 @@ Two setup files
    interest box is closer to the camera above the bin)
 
 Four product files
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 #. One product file for finding cylinders in the bin
 #. One product file for finding circles in the bin
@@ -52,163 +52,60 @@ and not in the product files for the orientation check.
 Flowchart
 ~~~~~~~~~
 
-|image1|
-~~~~~~~~
+.. image:: /assets/images/examples/example-case-cups-flow.png
 
 Step by step:
 ~~~~~~~~~~~~~
 
 Pickit looks for circles and detects 3. 
 
-|image2|
+.. image:: /assets/images/examples/example-case-cups-step-1.png
 
 Pickit will only start to search for cylinders when no circles can be
 detected anymore or all detected circles are not reachable to the robot.
 
 Search for cylinders and detects 1. 
 
-|image3|
-
-.. raw:: html
-
-   <div>
+.. image:: /assets/images/examples/example-case-cups-step-2.png
 
 After being picked, the product is shown to the camera. Then a region of
 interest box (virtual blue box) is marked in the space right in front of
 the robot tool. 
 
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   <div>
-
-|image4|
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   <div>
+.. image:: /assets/images/examples/example-case-cups-step-3.png
 
 In the case that the cup was initially detect as a circle and the robot
 is grasping the cup from its bottom side, the cup does not enter the
 region of interest and so no detection is made by Pickit.  
 
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   <div>
-
-|image5|
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   <div>
+.. image:: /assets/images/examples/example-case-cups-step-4.png
 
 In the case that the cup was initially detect as a circle and and the
 robot is grasping the cup from its top side the lateral sides of the cup
 enter the ROI box, allowing Pickit to see a cylinder. 
 
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   <div>
-
-|image6|
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   <div>
+.. image:: /assets/images/examples/example-case-cups-step-5.png
 
 If the cup was grasped lying on its side, either its top or bottom side
 is shown to the camera in the orientation check. 
 
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   <div>
-
 If the bottom is showed, Pickit detects a circle.
 
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   <div>
-
-|image7|
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   <div>
+.. image:: /assets/images/examples/example-case-cups-step-6.png
 
 In the case the other side is showed, Pickit detects nothing, as the
 cup lateral sides hide a large part of the circular base.
 
-.. raw:: html
+.. image:: /assets/images/examples/example-case-cups-step-7.png
 
-   </div>
-
-.. raw:: html
-
-   <div>
-
-.. raw:: html
-
-   <div>
-
-|image8|\ After a successful orientation check, there are 4 ways to drop
+After a successful orientation check, there are 4 ways to drop
 off the cup. Two for cups with the top side pointing up and another two
 for cups with the top side pointing down.
 
-.. raw:: html
+.. image:: /assets/images/examples/example-case-cups-step-8.png
 
-   </div>
-
-.. raw:: html
-
-   <div>
-
-|image9|
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   </div>
-
-2. A program of 7 steps
------------------------
+A program of 7 steps
+--------------------
 
 This application could be build with a robot program which we will split
 into 7 major steps. We will explain every step more extensively in the
@@ -226,8 +123,8 @@ The 7 steps are:
 #. Switch the kind of object Pickit is looking for if no objects are
    found 
 
-3. A generic way of explaining the program
-------------------------------------------
+A generic way of explaining the program
+---------------------------------------
 
 Here we explain all the steps of the program in a generic way and
 language to introduce the different Pickit commands used for this
@@ -236,13 +133,13 @@ application.
 All **Pickit specific commands are marked green** and **all waypoints
 are marked blue**.
 
-|image10|
+.. image:: /assets/images/examples/example-case-cups-program.png
 
-You can view \ `a printable version of this generic program
+You can view `a printable version of this generic program
 here <https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/attachments/588a247add8c8e73b3e9090a/illustratie-robot-program.pdf>`__.
 
-4. The Universal Robots program
--------------------------------
+The Universal Robots program
+----------------------------
 
 The actual used robot program is a program for a Universal Robot.
 
@@ -369,8 +266,8 @@ Whole Universal Robots program
 Split up Universal Robots program
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Declare variables and load scripts 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1. Declare variables and load scripts
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: bash
 
@@ -400,13 +297,13 @@ Split up Universal Robots program
 Here we first start the program (line 1), and then before the actual
 start of the program declare some variables and load some scripts.
 
-The **pickit\_port** and **pickit\_ip** must be set to their correct
+The **pickit_port** and **pickit_ip** must be set to their correct
 values to enable communication between the robot and Pickit.
 
 The pose of the next detected object to be picked shall be stored in the
-pose variable **pick\_pose**. For each pick, it is intended that the
+pose variable **pick_pose**. For each pick, it is intended that the
 tool briefly goes to an intermediary position above the actual
-**pick\_pose**, before picking the object. The **pre\_pick\_offset**
+**pick_pose**, before picking the object. The **pre_pick_offset**
 defines this offset and will be used later, adding a negative
 translational component to the z-axis of the tool.
 
@@ -426,8 +323,8 @@ loaded.
           actual_pose
           wp_home
 
-Here we **MoveJ** the robot via and intermediate **actual\_pose**
-position to a waypoint called **wp\_home**.
+Here we **MoveJ** the robot via and intermediate **actual_pose**
+position to a waypoint called **wp_home**.
 
 3. Look for an object
 ^^^^^^^^^^^^^^^^^^^^^
@@ -443,15 +340,15 @@ On line 27 a loop that will keep on as long as Pickit is running is
 started.
 
 On line 28 the script commands Pickit load the setup file associated
-with the variable **setup\_bin** and the product file associated with
-the variable **prod\_bin**. (**pickit\_configure**)
+with the variable **setup_bin** and the product file associated with
+the variable **prod_bin**. (**pickit_configure**)
 
 On line 29 the commands Pickit to look for objects. (
-**pickit\_look\_for\_object()**)
+**pickit_look_for_object()**)
 
 On line 30 we make the robot program to wait until Pickit has send a
-response on the  **pickit\_look\_for\_object()** command.
-(**pickit\_has\_response**)
+response on the  **pickit_look_for_object()** command.
+(**pickit_has_response**)
 
 4. Pick object
 ^^^^^^^^^^^^^^
@@ -471,30 +368,30 @@ response on the  **pickit\_look\_for\_object()** command.
                   pick_pose
                   Wait: 0.5
 
-If Pickit found an object the command  **pickit\_object\_found()**
+If Pickit found an object the command  **pickit_object_found()**
 equals true.
 
-On line 32 we declare the variable **pick\_pose** equals the just
-received **pickit\_get\_pose**. In other words: **pick\_pose** now
+On line 32 we declare the variable **pick_pose** equals the just
+received **pickit_get_pose**. In other words: **pick_pose** now
 equals the pose where Pickit told us the object can be picked.
 
-On line 33 we the variable **pre\_pick\_pose** as a new pose that equals
-the **pick\_pose** added with the predefined **pre\_pick\_offset** (in
-this case -10cm in the Z direction). Like this the **pre\_pick\_pose**
-will always be 10cm above the **pick\_pose** of a detected object.
+On line 33 we the variable **pre_pick_pose** as a new pose that equals
+the **pick_pose** added with the predefined **pre_pick_offset** (in
+this case -10cm in the Z direction). Like this the **pre_pick_pose**
+will always be 10cm above the **pick_pose** of a detected object.
 
 On line 34 the robot is commanded to start moving ( **MoveL**) the
-robot, but only if the **pre\_pick\_pose** is within the safety limits
+robot, but only if the **pre_pick_pose** is within the safety limits
 of the robot (= if it is reachable and safe according to the robot).
 
-So if the **pre\_pick\_pose** is safe the robot moves there.
+So if the **pre_pick_pose** is safe the robot moves there.
 
-On line 38 we check if the **pick\_pose** provided by Pickit is within
+On line 38 we check if the **pick_pose** provided by Pickit is within
 the safety limits of the robot (= if it is reachable and safe according
 to the robot).
 
 If this is the case the magnet on the end effector is switched on and
-the robot moves to the **pick\_pose**. (line 41)
+the robot moves to the **pick_pose**. (line 41)
 
 A wait of 0.5 seconds is added to give the magnet some time to really
 grasp the object.
@@ -558,43 +455,43 @@ grasp the object.
 In this step we check the orientation of the picked object by doing some
 checks which we explain here.
 
-First the robot moves to a waypoint **wp\_check** via an intermediate
-point **wp\_pre\_check** (lines 44 and 45).
+First the robot moves to a waypoint **wp_check** via an intermediate
+point **wp_pre_check** (lines 44 and 45).
 
 On line 46 the script commands Pickit to load the setup file associated
-with the variable **setup\_check** and the product file associated with
+with the variable **setup_check** and the product file associated with
 the variable **prod\_check**.
 
 Then on line 47 the script commands Pickit to look for an object, again
 we wait until there is a response of Pickit coming in.
 
 The next step is that the robot moves to a waypoint 
-**wp\_pre\_check** via an intermediate point \ **wp\_pre\_drop** (lines
+**wp_pre_check** via an intermediate point **wp_pre_drop** (lines
 49 and 50).
 
 Now the real logic behind the orientation check starts:
 
 #. If Pickit was looking for a **cylinder** and Pickit **found an
    object** we know it was oriented with the top up and drop it of on
-   **wp\_cyl\_topup** via **wp\_pre\_topup** (lines 51 to 61)
+   **wp_cyl_topup** via **wp_pre_topup** (lines 51 to 61)
 #. If Pickit was looking for a **cylinder** and Pickit **did not
    find** **an object** we know it was oriented with the top down and
-   drop it of on **wp\_cyl\_topdown** via **wp\_pre\_topdown**. (line 51
+   drop it of on **wp_cyl_topdown** via **wp_pre_topdown**. (line 51
    and 62 to 71)
 #. If Pickit was looking for a **circle** and Pickit **found an
    object** we know it was oriented with the top up and drop it of on
-   **wp\_cir\_topup** via **wp\_pre\_topup**. (lines 72 to 82)
-#. If Pickit was looking for a \ **circle** and Pickit\ ** did not
-   find an object **\ we know it was oriented with the top down and drop
-   it of on **wp\_cir\_topdown** via **wp\_pre\_topdown**. (line 72 and
+   **wp_cir_topup** via **wp_pre_topup**. (lines 72 to 82)
+#. If Pickit was looking for a **circle** and Pickit **did not
+   find an object** we know it was oriented with the top down and drop
+   it of on **wp_cir_topdown** via **wp_pre_topdown**. (line 72 and
    83 to 92)
 
 In all 4 cases we do a short wait of 0.2 seconds, then but the magnet
-off, wait again 0.2 seconds and move to  **wp\_pre\_drop** via an
+off, wait again 0.2 seconds and move to  **wp_pre_drop** via an
 intermediate waypoint depending on the drop off waypoint.
 
 6. Switch the kind of object Pickit is looking for if no products are safe to pick
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: bash
 
@@ -617,7 +514,7 @@ circles if we were looking for cylinders and form circles to cylinders
 if we were looking for circles.
 
 7. Switch the kind of object Pickit is looking for if no products are found
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: bash
 
@@ -637,16 +534,3 @@ form circles to cylinders if we were looking for circles.
 .. code-block:: bash
 
         pickit_socket_close()
-
-.. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/588a571f2c7d3a78463056a8/file-j0Uau20DmW.png
-.. |image1| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/588b4256dd8c8e73b3e911d8/file-i0Q7OFfX6A.png
-.. |image2| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/588a22b62c7d3a78463054f1/file-BxLt5GgMVA.png
-.. |image3| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/588a221ddd8c8e73b3e908f3/file-bOJUaD5AR4.png
-.. |image4| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/588a2229dd8c8e73b3e908f4/file-BDzxdnPWOD.png
-.. |image5| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/588a2395dd8c8e73b3e90901/file-oc9RgSzBYt.png
-.. |image6| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/588a2271dd8c8e73b3e908f7/file-a7fbB755aD.png
-.. |image7| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/588a23f52c7d3a7846305502/file-9OhOjw6KzU.png
-.. |image8| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/588a236f2c7d3a78463054fb/file-fWM8hzui6A.png
-.. |image9| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/588b3df8dd8c8e73b3e911c2/file-kxnGJgruLz.png
-.. |image10| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/588a547edd8c8e73b3e90a9b/file-TSVDXyL0rm.png
-

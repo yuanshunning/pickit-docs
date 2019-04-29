@@ -5,16 +5,15 @@ This article will guide you in setting up a simple robot picking demo
 with Pickit Flex. The Flex vision engine is the vision engine for
 finding objects with **simple geometrical shapes** in **random
 orientations**. In this demo we are picking simple steel
-cylinders. Click \ `here <#picking>`__ to see the video of this demo.
+cylinders. Click :ref:`here <flex-demo-happy-picking>` to see the video of this demo.
 
-#. `Requirements <#requirements>`__
-#. `Your first detection(configuring the Pickit files) <#detection>`__
-#. `Calibration <#calibration>`__
-#. `Your first pick(program the robot) <#program>`__
-#. `Happy picking <#picking>`__
+.. contents::
+    :backlinks: top
+    :local:
+    :depth: 1
 
-1. Requirements
-~~~~~~~~~~~~~~~
+Requirements
+------------
 
 The hardware requirements to set up this demo are:
 
@@ -28,26 +27,16 @@ The hardware requirements to set up this demo are:
 First we create the hardware setup. This includes mounting the camera
 and connecting all components.
 
-.. raw:: html
-
-   <div class="callout-yellow">
-
-**Note** the length of the gripper should be larger than the depth of
-the bin. The main reason is that the head of the robot stays out of the
-bin.
-
-.. raw:: html
-
-   </div>
+.. note:: The length of the gripper should be larger than the depth of
+   the bin. The main reason is that the head of the robot stays out of the
+   bin.
 
 It is assumed that the Pickit system is mounted around 700 mm above the
 table and is running correctly. If you are not sure, please follow step
-1-4 from our   `getting
-started <https://support.pickit3d.com/article/125-quick-start-7-steps-to-your-first-pick>`__
-guide. 
+1-4 from our :ref:`quick-start` guide. 
 
-2. Your first detection(configuring the Pickit files)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Your first detection(configuring the Pickit files)
+--------------------------------------------------
 
 Now that every component is connected to the Pickit system, we are able
 to configure Pickit. Open a chrome web browser on your external PC and
@@ -60,8 +49,8 @@ enter the following IP address to access the Pickit system.
 In the Pickit user interface, go to the configuration tab and create
 new setup files and a product file:
 
--  **Setup:** flex\_demo.
--  **Product:** flex\_demo.
+-  **Setup:** flex_demo.
+-  **Product:** flex_demo.
 
 Configuring the Pickit comes down to three simple steps:
 
@@ -73,13 +62,11 @@ The information of the shape and picking strategy is stored in the
 product file and the information of the scene is stored in the setup
 file.
 
-2.a Create the scene
-^^^^^^^^^^^^^^^^^^^^
+Create the scene
+~~~~~~~~~~~~~~~~
 
 The first step defines where Pickit has to look for objects. This is
-done by defining the region of interest (ROI). See the article  `Region
-of
-Interest <https://support.pickit3d.com/article/159-region-of-interest>`__
+done by defining the region of interest (ROI). See the article :ref:`region-of-interest`
 on how to define a ROI. 
 
 Below you can see a pictures of a good defined ROI for this application.
@@ -89,12 +76,12 @@ ROI is slightly higher than the real bin.
 
 Don't forget to save the settings in the corresponding Setup files.
 
-|image0|
+.. image:: /assets/images/examples/flex-demo-3d.png
 
-|image1|
+.. image:: /assets/images/examples/flex-demo-points.png
 
-2.b Define the detection parameters
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Define the detection parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The second step consists in setting up the Pickit Flex detection
 engine. In this application Pickit will look for cylindrical shapes in
@@ -102,15 +89,11 @@ the scene. 
 
 See below for images of the results of the clustering and the fitting
 step. Below the images all used detection parameters are given. See
-following articles on how to use Pickit Flex and an explanation of all
-parameters.
+following article on how to use Pickit :ref:`Flex`.
 
--  `Detection: Pickit
-   Flex <https://support.pickit3d.com/article/160-detection-pick-it-flex>`__
--  `Explaining the Flex detection
-   parameters <https://support.pickit3d.com/article/174-explaining-the-flex-detection-parameters>`__\ |image2|
+.. image:: /assets/images/examples/flex-demo-clusters.png
 
-|image3|
+.. image:: /assets/images/examples/flex-demo-objects.png
 
 In this demo following parameters are used:
 
@@ -124,19 +107,19 @@ In this demo following parameters are used:
 -  Filtering: 38mm < **Diameter** < 46mm
 -  **3D scene score:** 90%
 -  **Fusion:** None
--  **Downsampling: **\ 1
+-  **Downsampling:** 1
 
 Don't forget to save the settings. This will update the Product file.
 
-2.c Define the picking strategy
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Define the picking strategy
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Finally the picking strategy is defined. For this application bin
 collision is checked. This means that Pickit checks if the gripper can
 pick the parts without hitting the bin. Also  the pick frames are
 orientated on the top surface of the cylinders. More information about
 the picking strategies can be found in the 
-`Picking <https://support.pickit3d.com/article/163-picking>`__ article.
+:ref:`Picking` article.
 
 For this demo following parameters are used:
 
@@ -147,18 +130,17 @@ For this demo following parameters are used:
 
 Don't forget to save the settings. This will update the Product file.
 
-3. Calibration
-~~~~~~~~~~~~~~
+Calibration
+-----------
 
 Next step is the robot-camera calibration. This process teaches Pickit
 where the robot base is located w.r.t. to the camera. This information
 is used to transform the object pick-frames into robot coordinates. A
-detailed description in robot-camera calibration can be found 
-`here <https://support.pickit3d.com/article/35-how-to-execute-robot-camera-calibration>`__. Do
-not forget to save after the calibration is finished.
+detailed description in robot-camera calibration can be found in the article :ref:`robot-camera-calibration`. 
+Do not forget to save after the calibration is finished.
 
-4. Your first pick(Program the robot)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Your first pick(Program the robot)
+----------------------------------
 
 Now Pickit is configured, the only thing left to do is programming the
 robot. The robot used in the demo video is a UR5, but a similar program
@@ -170,43 +152,32 @@ appears. After the parts are taken away the program starts all over
 again. 
 
 -  **The UR robot program:** Download
-   link \ `here <https://drive.google.com/uc?export=download&id=1JhTG1n5DSZauU7sXV6Z0JXjZYLRb7HUf>`__.
+   link `here <https://drive.google.com/uc?export=download&id=1JhTG1n5DSZauU7sXV6Z0JXjZYLRb7HUf>`__.
 
-|image4|
+.. image:: /assets/images/examples/flex-demo-ur-program.png
 
-.. raw:: html
+.. note:: When performing random bin picking, **always** trigger a new
+   detection before picking the next object. The main reason lies in the
+   fact that the environment can change when an objects are picked and this
+   could lead to undesired miss-picks.
 
-   <div class="callout-yellow">
+.. warning:: When using the UR download program in the provided link,
+   **change the waypoints** to avoid moving the robot to unsafe positions.
 
-**Note** When performing random bin picking, *always* trigger a new
-detection before picking the next object. The main reason lies in the
-fact that the environment can change when an objects are picked and this
-could lead to undesired miss-picks.
+.. _flex-demo-happy-picking:
 
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   <div class="callout-red">
-
-**Warning** When using the UR download program in the provided link,
-*change the waypoints* to avoid moving the robot to unsafe positions.
-
-.. raw:: html
-
-   </div>
-
-5. Happy picking!
-~~~~~~~~~~~~~~~~~
+Happy picking!
+--------------
 
 Following all these previous steps leads to the next Pickit Flex demo
 application, happy picking!
 
-.. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5ae089b42c7d3a5063b4dd94/file-N07wxn0nrw.png
-.. |image1| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5ae088ee2c7d3a5063b4dd90/file-umdtf5TwpF.png
-.. |image2| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5ae0908f2c7d3a5063b4dde7/file-3kxVAYZ2kX.png
-.. |image3| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5ae09f992c7d3a5063b4deac/file-vNRKmvPg2U.png
-.. |image4| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5acf620c2c7d3a0e93674192/file-7fk4iZV1W4.png
+.. raw:: html
 
+  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+    <iframe src="https://r2---sn-5hnekn76.c.drive.google.com/videoplayback?expire=1556547615&ei=38_GXOPHJoPHuAXq7b2QCg&ip=194.78.201.251&cp=QVNKWEZfVlZPRlhOOnJMNzJDN2dSUHl5R1lqTkdwV2xpeGxaTllDcmY0Wk9sSWNzTUUtbWY5bjA&id=087bb34daffc9a44&itag=18&source=webdrive&requiressl=yes&ttl=transient&susc=dr&driveid=1seiw-MJk5h6fdsFnH9ERVj2buf2_i6vY&app=explorer&mime=video/mp4&dur=89.025&lmt=1524824043552759&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,dur,lmt&sig=ALgxI2wwRQIhAOkkqImrManYQZ3tvOpOWRP5qhVYHp-1XZCuKfFyjBOJAiBg45jYeTs0W9zpT6LrgQUgpkmeMMoc8j4hQOR441yT0A==&cpn=FTQPCgyI-b0rmyTo&c=WEB_EMBEDDED_PLAYER&cver=20190423&redirect_counter=1&cm2rm=sn-5hnes77l&req_id=9520525f3df236e2&cms_redirect=yes&mm=34&mn=sn-5hnekn76&ms=ltu&mt=1556533108&mv=m&pl=17&lsparams=mm,mn,ms,mv,pl&lsig=AHylml4wRAIgck7VUACLLBWHNxttsWSk3uBObCQdmgvnDCatUzQf3KACIGLkkAbdvpMcwovPNZWrMrmqx3NAVeI6wnLsc31BZxLl" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+  </div>
+  <br>
+
+If you need any help with one of the steps above, please contact 
+`support@pickit3d.com <mailto:mailto://support@pickit3d.com>`__.
