@@ -96,6 +96,8 @@ be done by check (Enable model - Default) or uncheck (Disable model).
 When disabling a model, the detection algorithm will completely ignore
 that specific model.
 
+.. _pick-frame-teach:
+
 Pick frame
 ^^^^^^^^^^
 
