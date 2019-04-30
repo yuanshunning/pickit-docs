@@ -73,7 +73,7 @@ compatibility with older versions of Pickit. The expert-mode parameters
 are such that higher values will typically result in less and/or bigger
 clusters, while lower values result in more and/or smaller clusters.
 
-See following article, :ref:`Example-the-clustering-methods`, to
+See following article, :ref:`how-to-clustering-preset`, to
 see examples and use cases for each clustering method.
 
 Reject clusters

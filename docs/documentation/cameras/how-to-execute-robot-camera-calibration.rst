@@ -199,7 +199,7 @@ instructions.
 .. _verify-calibration:
 
 Verify calibration
-==================
+------------------
 
 Verify the result of the calibration in the 3D view, by looking at the
 robot_base frame and the camera frame locations and their relative

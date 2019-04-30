@@ -16,4 +16,3 @@ shown. Here Pickit finds all cylindrical shapes in the bin.
 
     how-to-use-pickit-flex
     explaining-the-flex-detection-parameters
-    example-the-clustering-methods

@@ -1,16 +1,19 @@
-.. _Example-the-clustering-methods:
+.. _how-to-clustering-preset:
 
-Example: the clustering methods
--------------------------------
+How to chose the correct clustering preset?
+-------------------------------------------
 
 .. contents::
     :backlinks: top
     :local:
     :depth: 1
 
+The clustering preset is an important parameter when using the detection engines :ref:`Flex` or :ref:`Pattern`.
 In this article an example of different clustering methods is showed and
-discussed. The scene below is used to explain the different clustering
-method. In the scene there are 3 shampoo bottles next to each other, 4
+discussed. This example should help you chosing the correct setting for your application.
+
+The scene below is used to explain the different clustering
+methods. In the scene there are 3 shampoo bottles next to each other, 4
 boxes randomly on top of each other and 4 electrical plug shieldings
 separated from each other.  A snapshot of this scene can be downloaded 
 `here <https://drive.google.com/uc?export=download&id=1O_N-cxPfPcg-TQpFimSls3jx3sEwM_RW>`__.
