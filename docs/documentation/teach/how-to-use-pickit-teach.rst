@@ -28,6 +28,8 @@ high-quality model has the following characteristics:
 #. It exactly matches the side of the object
    that you want to detect.
 
+See following guide, :ref:`how-to-good-model`, for more in depth information.
+
 Continue reading to learn how to build a high-quality model.
 
 Placing the object under the camera
