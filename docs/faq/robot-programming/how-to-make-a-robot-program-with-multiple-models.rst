@@ -1,18 +1,19 @@
-.. _Using-the-model-id-in-a-robot-program:
+.. _how-to-multiple-models:
 
-Using the model ID in a robot program
--------------------------------------
+How to make a robot program with multiple models
+================================================
 
-Often it's desired to do a different action with a robot depending
-on the ID of the detected model. Use cases are:
+When using the :ref:`Teach` detection engine, Pickit can look for multiple models at the same time. 
+When doing this often it's desired to do a different action with a robot depending on which model is found.
+Typical actions that are model exclusive are:
 
--  define how to grip an object based on the visible object side or
--  define how to drop off an object based on the visible object side.
+-  Define how to grip the found model.
+-  Define how to drop off the found model.
 
 In this article two example programs with multiple models are shown. One for Universal robots and another for ABB. 
 
 Universal Robots
-^^^^^^^^^^^^^^^^
+----------------
 
 The variable **pickit_type** is available to use after using the Pickit
 URCap **Find object(s)** command. This variable represents the detected model id.
@@ -21,7 +22,7 @@ In the example program this id is used to define both a different picking as dro
 .. image:: /assets/images/Documentation/UR-example-multiple-models.png
 
 ABB
-^^^
+---
 
 The variable **pickit_object.type** is available to use after using the combination of commands **pickit_look_for_object** and
 **WaitUntil pickit_has_response()** command. This variable represents the detected model id.

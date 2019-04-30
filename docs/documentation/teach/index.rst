@@ -15,4 +15,3 @@ In the image below, first a single bottle was shown to the Pickit system, next s
 
     how-to-use-pickit-teach
     explaining-the-teach-detection-parameters
-    using-the-model-id-in-a-robot-program

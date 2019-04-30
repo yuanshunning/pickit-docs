@@ -36,6 +36,10 @@ currently visible within the ROI are now saved into a model. When the
 model is successfully created, the model will automatically be shown in
 the **Model** view.
 
+In one product file up to 8 different models can be taught. 
+This means that Pickit Teach is capable of looking for 8 different shapes in one detection. 
+See :ref:`how-to-multiple-models` on how you can use the model id in a robot program.
+
 Re-teach a model
 ^^^^^^^^^^^^^^^^
 
