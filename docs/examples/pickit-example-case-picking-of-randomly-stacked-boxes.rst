@@ -36,7 +36,7 @@ See video below for the result of this approach. Further below everything is exp
 .. raw:: html
 
   <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-    <iframe src="https://r5---sn-5hne6nsd.c.drive.google.com/videoplayback?expire=1556558590&ei=vvrGXNDoGM_3uQWF17qQAw&ip=194.78.201.251&cp=QVNKWEZfV1VXQVhOOnJMODNCNWJSUHl5R1prTU9rV2xpeGxBT1hLbWY0Wk9sSmRyVVotbWY5bjE&id=942f2cca180860f9&itag=18&source=webdrive&requiressl=yes&mm=30&mn=sn-5hne6nsd&ms=nxu&mv=m&pl=17&ttl=transient&susc=dr&driveid=16-dCquo9aoAMa05FWR7iSi4byzlyHXTZ&app=explorer&mime=video/mp4&dur=135.929&lmt=1527844712123419&mt=1556544097&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,dur,lmt&sig=ALgxI2wwRAIgTybf12G8B5uyDoTBiQ5RppcW_Fq4C2I_BBTMvkiseGYCIFsZ7AJBTq1A4_1aiYWO_19bhs-luUwCwTFSdrpT_DNL&lsparams=mm,mn,ms,mv,pl&lsig=AHylml4wRgIhAKhte56b2NZ-5bfAreD9D5vIKq339PmwUwxI-gklF8O8AiEA9rIIBmdrjzfBU5ZPz_V-ixRZrvHjBNjl8xSWkTYeCq0=&cpn=C4nkjaRsD9TKIZ5n&c=WEB_EMBEDDED_PLAYER&cver=20190423" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    <iframe src="https://drive.google.com/file/d/16-dCquo9aoAMa05FWR7iSi4byzlyHXTZ/preview" width="640" height="480"></iframe>
   </div>
   <br>
 
@@ -125,10 +125,10 @@ Below you can download 3 snapshots files to see the settings of all parameters t
 
 `Demo_SPS_1 <https://drive.google.com/file/d/1p1edGjpiMS1Kn8GB5cBuRCGx7oOXP8wZ/view?usp=sharing>`__
 
-.. image:: /assets/images/examples/example-case-boxes-snapshot-1.png
+.. image:: /assets/images/examples/example-case-boxes-snapshot-2.png
 
 `Demo_SPS_2 <https://drive.google.com/open?id=1lIP_AjW5D3nDWVkT_-Oyane-jBdSuPV6>`__
 
-.. image:: /assets/images/examples/example-case-boxes-snapshot-1.png
+.. image:: /assets/images/examples/example-case-boxes-snapshot-3.png
 
 `Demo_SPS_3 <https://drive.google.com/open?id=1nUpbXLw_gAqb_-LXvbp2Px-haxnbSmb7>`__
