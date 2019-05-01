@@ -42,6 +42,7 @@ Pickit camera calibration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: /assets/images/camera-calibration-seal.png
+
 The Pickit factory calibration is important to guarantee the accuracy over the Field Of View range. Opening the camera will result in bad performance.
 
 .. Attention:: Warranty is **lost** when calibration seal is broken.
