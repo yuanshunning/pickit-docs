@@ -29,18 +29,18 @@ Field of View
 Technical specifications
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
--  **3D measurement** **method
-   **\ Structured light
+-  **3D measurement method**
+   Structured light
 -  **Image processing speed**
    10 Hz (100ms snapshots)
--  **3D Camera accuracy
-   **\ 0.1mm
--  **3D Camera repeatability
-   **\ < 1mm
--  **3D camera weight
-   **\ 2 kg
--  **3D camera connection to PC
-   **\ M12-8 (USB) - USB3
+-  **3D Camera accuracy**
+   0.1mm
+-  **3D Camera repeatability**
+   < 1mm
+-  **3D camera weight**
+   2 kg
+-  **3D camera connection to PC**
+   M12-8 (USB) - USB3
 -  **PC connection to** **robot**
    TCP/IP over Ethernet
 -  **Power supply**
