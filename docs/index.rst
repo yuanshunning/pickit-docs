@@ -38,7 +38,7 @@ assembly tasks with a robot or machine.
   ABB <robot-integrations/abb/index>
   Fanuc <robot-integrations/fanuc/index>
   KUKA <robot-integrations/kuka/index>
-  Staubli <robot-integrations/staubli/index>
+  Stäubli <robot-integrations/staubli/index>
   Universal Robots <robot-integrations/universal-robots/index>
   Yaskawa <robot-integrations/yaskawa/index>
 
