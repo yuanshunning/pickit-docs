@@ -8,9 +8,7 @@ A video of the end result can be seen below.
 
 .. raw:: html
 
-  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-    <iframe src="https://r3---sn-5hne6nsk.c.drive.google.com/videoplayback?expire=1556560992&ei=IATHXMKyLMeGxwPL0IjIAg&ip=194.78.201.251&cp=QVNKWEZfT1lXQ1hOOnJMOTVGNWRSUHl5R0FjUU9tV2xpeGxCR0JLb2Y0Wk9sS3Z2VUItbWY5bjI&id=cc3380e7428fd1ac&itag=18&source=webdrive&requiressl=yes&mm=30&mn=sn-5hne6nsk&ms=nxu&mv=m&pl=17&ttl=transient&susc=dr&driveid=1vNjDmVY_XQT_40sZ2ACFpNRChnClE7rb&app=explorer&mime=video/mp4&dur=69.543&lmt=1550594659942794&mt=1556546437&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,dur,lmt&sig=ALgxI2wwRQIgTHFQivaWyTAWORqOHxC28eLkj_kOjupUgJ-PpRbzBYcCIQD8ih_z2B4iSFk-AQflDZeSGCxFMpkMoQKhb_gySRQXQw==&lsparams=mm,mn,ms,mv,pl&lsig=AHylml4wRAIgL0SFFPUtRk9qP5WXqbaMDy9eYzfXur_NULonX6_vekMCICyFyDkVhUtrbIdYdgULMza_tgvZ1DrdwjuC1A8H6SVv&cpn=2tVnOfXPgIL2EK-f&c=WEB_EMBEDDED_PLAYER&cver=20190423" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-  </div>
+  <iframe src="https://drive.google.com/file/d/1vNjDmVY_XQT_40sZ2ACFpNRChnClE7rb/preview" width="640" height="480"> </iframe>
   <br>
 
 .. contents::
