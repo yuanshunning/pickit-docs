@@ -1,3 +1,5 @@
+.. _support-remote-update:
+
 Getting ready for a remote software update
 ==========================================
 

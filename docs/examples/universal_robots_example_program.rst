@@ -3,19 +3,14 @@ Universal Robots Example Program
 
 .. attention::
    This article describes the legacy way of using Pickit with a
-   Universal Robot.
-   For new robot programs, please refer to the  `Getting started with the
-   Pickit
-   URCap <https://support.pickit3d.com/article/75-getting-started-with-the-pick-it-urcap>`__
-   article.
+   Universal Robot. For new robot programs, please refer to the :ref:`universal-robots-urcap-installation` article.
 
 This program is part of the Universal Robots package  `which you can
 download
 here <https://drive.google.com/uc?export=download&id=1VedZYjVvlcyiE4iuqUuF67DsT8545ojU>`__. 
 
 More details about downloading this programs and uploading them on a
-Universal Robot  `can be found
-here <http://support.pickit3d.com/article/13-set-up-pick-it-with-a-universal-robot>`__.
+Universal Robot can be found in the :ref:`universal-robots-scripts` article.
 
 Loading the example program
 ---------------------------

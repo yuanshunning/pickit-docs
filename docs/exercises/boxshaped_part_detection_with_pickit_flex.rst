@@ -26,9 +26,7 @@ articles:
    parameters <https://support.pickit3d.com/article/174-explaining-the-flex-detection-parameters>`__
 
 .. attention:: For this exercise you need Pickit version 1.10.x
-   If you have a older software version. Please read the following
-   `article <https://support.pickit3d.com/article/131-getting-ready-for-a-remote-software-update>`__
-   and contact support@pickit3d.com to get an update.
+   If you have a older software version. Please read the :ref:`support-remote-update` article and contact support@pickit3d.com to get an update.
 
 Task
 ----

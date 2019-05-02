@@ -90,14 +90,3 @@ Follow the next steps to complete the exercise.
 #. Name your snapshot 'Solution\_Teach\_2\_CompanyName'.
 #. Download the file from the snapshots folder.
 #. Send your solution to support@pickit3d.com to receive feedback.
-
-What to read next
-
-| `Exercises through
-  snapshots <https://support.pickit3d.com/article/188-exercises-through-snapshots>`__
-| `Exercise Region of
-  Interest <https://support.pickit3d.com/article/187-exercise-region-of-interest>`__
-| `Exercise detection with Pickit
-  Flex <https://support.pickit3d.com/article/190-exercise-detection-with-pick-it-flex>`__
-| `Exercise detection with Pickit
-  Pattern <https://support.pickit3d.com/article/191-exercise-detection-with-pick-it-pattern>`__

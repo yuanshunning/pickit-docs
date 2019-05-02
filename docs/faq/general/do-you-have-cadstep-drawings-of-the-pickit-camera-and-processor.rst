@@ -21,15 +21,3 @@ The dimensions of the processor can be found in the picture below,
 expressed in millimeters [inches].
 
 .. image:: /assets/images/faq/Dimensions-pickit-processor.png
-
-Camera mounting manual
-----------------------
-
-If you are looking for the camera mounting manual which contains:
-
--  the field of view size,
--  dimensions and weight,
--  mounting options (on robot or fixed)
-
-You can find a manual about the Pickit 3D
-camera `here <http://support.pickit3d.com/camera>`__.
