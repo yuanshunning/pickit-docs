@@ -6,12 +6,37 @@ a:visited {
     color: #5a9230;
 }
 
+.wy-side-nav-search>div.version {
+    color: #404040;
+    font-weight: bold;
+}
+
+.wy-side-nav-search>a.icon-home {
+    font-size: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.wy-side-nav-search>a.icon-home img.logo {
+    width: 65%;
+    padding: 0;
+}
+
+.wy-side-nav-search input[type=text] {
+    border-radius: 0;
+    border-color: #79C143;
+}
+
 .wy-menu-vertical header, .wy-menu-vertical p.caption {
     color: #79C143;
 }
 
+.wy-menu-vertical a {
+    padding: .2em 1.618em;
+}
+
 .wy-side-nav-search, .wy-nav-top {
-    background-color: #79C143;
+    background-color: #F2F2F2;
 }
 
 .wy-nav-side {
