@@ -57,18 +57,6 @@ Technical specifications
 The technical specifications in this section apply to both processor
 versions 1.0 and 2.0 unless mentioned otherwise.
 
-.. raw:: html
-
-   <div>
-
-.. raw:: html
-
-   <div>
-
-.. raw:: html
-
-   <div>
-
 -  Processor: 6 cores (12 threads) at 3.7 Ghz
 -  19-inch server: rack compatible (2U)
 -  Temperature: -20°C to 70°C
@@ -77,22 +65,10 @@ versions 1.0 and 2.0 unless mentioned otherwise.
 -  Power supply: 9-32V DC 160W
 -  Humidity: ̃95% @ 40°C (non-condensing)
 
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   </div>
-
 Processor ports and power supply
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-|image0|
+.. image:: /assets/images/hardware/processor.jpg
 
 The front side of the Pickit processor contains a lid, which can be
 opened by rotating the lock handle clockwise. A few ports (which are not
@@ -100,23 +76,14 @@ used by Pickit) and some buttons are located under the lid. In case of
 a power failure, while the computer is on, it will restart automatically
 when power is restored.
 
-|image1|
+.. image:: /assets/images/hardware/processor-back.jpg
 
 All labeled I/O ports and the power connector are placed on the back
 side of the processor as shown above. In order to connect the Pickit
 processor to a power supply, use the provided IEC cable (C13).
 
-.. raw:: html
-
-   <div class="callout-red">
-
-**Warning** In case the Pickit processor is positioned vertically and
-sideways, the air inlet shall not stay at the top. This may affect the
-ventilation process.
-
-.. raw:: html
-
-   </div>
+.. warning::
+    In case the Pickit processor is positioned vertically and sideways, the air inlet shall not stay at the top. This may affect the ventilation process.
 
 Power consumption specifications
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -134,9 +101,6 @@ Pickit processor 2.0:
 -  Booting: 115 W
 -  Idle: 70 W
 -  Heavy processing: 160 W
-
-.. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5aa64e762c7d3a7549518cff/file-8TUd7YX6dk.jpg
-.. |image1| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5aa64e6504286374f708ca46/file-UCG7Moyt1M.jpg
 
 Environmental and operating conditions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -1,7 +1,7 @@
 Pickit M-HD camera
 ==================
 
-|image0|
+.. image:: /assets/images/hardware/m-hd.jpg
 
 On this page, you can find all information on the Pickit M-HD camera.
 
@@ -60,7 +60,3 @@ Power consumption
 -  Booting: 35W
 -  Idle: 16W
 -  Detecting: 35W
-
-
-.. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5bb3e60b2c7d3a04dd5b3836/file-ABeT0lGCGq.jpg
-

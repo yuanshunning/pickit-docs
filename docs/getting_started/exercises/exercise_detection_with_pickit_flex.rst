@@ -12,7 +12,7 @@ detected using simple shapes. 
 | **Duration** | < 15 min   |
 +--------------+------------+
 
-|image0|
+.. image:: /assets/images/getting-started/detection-flex.png
 
 Requirements
 ------------
@@ -72,6 +72,3 @@ What to read next
   Teach <https://support.pickit3d.com/article/189-exercise-detection-with-pick-it-teach>`__
 | `Exercise detection with Pickit
   Pattern <https://support.pickit3d.com/article/191-exercise-detection-with-pick-it-pattern>`__
-
-.. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5b042ea50428635ba8b28e73/file-w74xbCgWpo.png
-

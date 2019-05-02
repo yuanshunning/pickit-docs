@@ -12,7 +12,7 @@ Different objects needs to be detected using fixed sized shapes.
 | **Duration** | < 15 min   |
 +--------------+------------+
 
-|image0|
+.. image:: /assets/images/getting-started/detection-pattern.png
 
 Requirements
 ------------
@@ -71,6 +71,3 @@ What to read next
   Teach <https://support.pickit3d.com/article/189-exercise-detection-with-pick-it-teach>`__
 | `Exercise detection with Pickit
   Flex <https://support.pickit3d.com/article/190-exercise-detection-with-pick-it-flex>`__
-
-.. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5b0690a00428635ba8b2ae81/file-7hq3maRozE.png
-

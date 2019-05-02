@@ -28,5 +28,3 @@ Normally the three distance should resemble:
 **If this is not the case, there is something wrong with the accuracy of the robot.** In that case further refinement of the Pickit calibration will not lead to a beter accuracy.
 
 If this is the case: Good news! There is no indication that there is something wrong with the accuracy of your robot. 
-
-.. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/588762642c7d3a7846303f6b/file-vjIIPef7aS.png

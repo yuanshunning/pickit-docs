@@ -12,7 +12,7 @@ will be taught to the system to find similar parts in the bin.
 | **Duration** | < 15 min   |
 +--------------+------------+
 
-|image0|
+.. image:: /assets/images/getting-started/detection-teach.png
 
 Requirement
 -----------
@@ -53,6 +53,3 @@ Follow the next steps to complete the exercise.
 #. Name your snapshot 'Solution\_Teach\_1\_CompanyName'.
 #. Download the file from the snapshots folder.
 #. Send your solution to support@pickit3d.com to receive feedback.
-
-.. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5b040e330428635ba8b28c2f/file-j85KCw56QM.png
-

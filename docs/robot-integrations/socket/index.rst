@@ -14,7 +14,7 @@ The robot Pickit communication is based on TCP/IP socket communication. Pickit i
 -  The **port number** which is **5001** by default.
 -  Pickit communicates data packages using the **network byte order** convention (Big Endian).
 
-|image0|
+.. image:: /assets/images/robot-integrations/socket/socket-1.png
 
 Above you can find an example of the different behaviour between network byte order and host byte order.
 
@@ -25,7 +25,7 @@ Above you can find an example of the different behaviour between network byte or
 
 The Pickit server only sends `response messages <#response-message>`__ after having received an explicit request from the robot client in a `command message <#command-message>`__. Apart from this request-response exchange, Pickit also expects to receive periodic **robot flange** pose updates from the client. The rate of these periodic updates depends on the robot brand, but is typically in the range of 10 to 50 messages per second. Note that both command requests and robot flange pose updates use the same message structure, ``robot_to_pickit_data``, described in more detail in the `command message <#command-message>`__ section. The structure of the response messages, ``pickit_to_robot_data``, is described in the `response message <#response-message>`__ section.
 
-|image1|
+.. image:: /assets/images/robot-integrations/socket/socket-2.png
 
 A Pickit data package consists of a number of **int32s** in network byte order. As such, floating-point data like distances and angles are multiplied by a factor MULT before being sent as an int32, and are divided by MULT after being received. This integer conversion factor **MULT** has the value of **10000**.
 
@@ -253,7 +253,3 @@ Each field is explained below. All **int32** are expressed in Network Byte Form
 +--------------------------+----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 To add support for a robot type not adhering to one of the above conventions, it's recommended to use the **GENERIC** (quaternions) convention above. The robot-side interface would then take the responsibility of converting back and forth between the representation used by Pickit and the robot.
-
-.. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5902f34d2c7d3a057f88a379/file-DAUfHg1N0f.png
-.. |image1| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5ac63f772c7d3a0e93670bf5/file-8aIct5CwLA.png
-

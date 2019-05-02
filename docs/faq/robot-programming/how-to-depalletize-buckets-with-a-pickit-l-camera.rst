@@ -1,7 +1,7 @@
 How to depalletize buckets with a Pickit L camera
 =================================================
 
-|image0|
+.. image:: /assets/images/faq/depal-buckets-1.png
 
 In this article, we explain step by step how to set up an application
 for unloading buckets from a euro pallet using Pickit with a `Pickit
@@ -21,7 +21,7 @@ In this example, a large 4 degrees of freedom depalletizing robotic arm,
 equipped with a vacuum gripper, is used for the picking. The gripper is
 composed of four suction cups.
 
-|image1|
+.. image:: /assets/images/faq/depal-buckets-2.png
 
 This tutorial consists of 6 easy to follow steps.
 
@@ -45,7 +45,7 @@ effectiveness of the camera mounting.
 For this application, we choose to have a tilted camera mount to make
 sure that the gripper does not occlude the field of view.
 
-|image2|
+.. image:: /assets/images/faq/depal-buckets-3.png
 
 You should make sure that the highest layer of the pallet is at least
 1300 mm away from the camera. In case the robot cannot bring the camera
@@ -55,7 +55,7 @@ sufficiently high to achieve this, the following solutions are possible:
    flange.
 -  Put the robot base at a higher position than the pallet.
 
-|image3|
+.. image:: /assets/images/faq/depal-buckets-4.png
 
 Robot camera calibration
 ------------------------
@@ -70,18 +70,18 @@ Teach the region of interest
 We recommend teaching the region of interest fixed to the robot base,
 and not to the camera.
 
-|image4|
+.. image:: /assets/images/faq/depal-buckets-5.png
 
 Before continuing, make sure there is a connection between Pickit and
 the robot. 
 
-|image5|
+.. image:: /assets/images/faq/depal-buckets-6.png
 
 For teaching the region of interest, use the L markers. Place the
 markers at three corners of the empty pallet or on the floor, and define
 a :ref:`region-of-interest`.
 
-|image6|
+.. image:: /assets/images/faq/depal-buckets-7.png
 
 Using the arrows in the 3D view of the web interface, adjust the region
 of interest, such that its height fits the whole loaded pallet. The
@@ -97,6 +97,8 @@ which can be activated in the **Region of interest** page, in the
 the top layer will be detected and picked before any objects in the next
 layer. For this application we set a threshold of 150 mm, i.e. we keep
 the top 150 mm of the point cloud and filter out everything below.
+
+.. image:: /assets/images/faq/depal-buckets-8.png
 
 Configure the products
 ----------------------
@@ -151,25 +153,3 @@ attempt, ensure a safe experience: let the robot move slowly and in
 manual mode. Here's a 
 `video <https://www.youtube.com/watch?v=cizCcV2qmR4>`__ of the tutorial
 that you just completed.
-
-.. |image0| image:: https://lh6.googleusercontent.com/xuT9zJ04tMTU9a65R-ltZ3fS1NG4w418nrsU7fgVorBjmjElf_FQXeye9Q1XlckQq-nDNKs0dC66L0XoG3lLOKnU5t9LunxtEdWpo0cv_CPzmJHJYWkE6ArJK03hdWdDqDWWOAFS
-   :width: 177px
-   :height: 302px
-.. |image1| image:: https://lh5.googleusercontent.com/v-38SZEsJh39IZ9KctTUn_gGS1NAGa8KGliQJ3Dh-fuxENT0GceZnDVupqd6gMppYGI18AEvM06biCMdTxjqzo9OUmoPDDRgKMAuXFIpS8-y-7jHHq9gutOJ3d9oT-bIzca6ciQc
-   :width: 228px
-   :height: 311px
-.. |image2| image:: https://lh5.googleusercontent.com/poTZCM3QFESpeNR_H48xTK-bbjFHAMzFtsdDc59FeJ4ebW90sjgmrfrzo0hC_4Sg79g24bewfc6yEAD2t97-J-b_fdaZ5Xk7XLMyufAjSpUJLHXrZOOe9UUBvY9CBNXusZL3seIA
-   :width: 586px
-   :height: 200px
-.. |image3| image:: https://lh3.googleusercontent.com/fLAcVMOIHCscK3zZ0-vtDKzu06IFIAAz5qxo0YTPDTBPjkTfRgoEBilOJYKXwHD2qlo9HiQT6hJmm1_q4P_K8L0jm0BoK_nM9Ifd2ffjdbw7ovZXW8N7nkMxL705JW-Md8iJI4D6
-   :width: 624px
-   :height: 223px
-.. |image4| image:: https://lh6.googleusercontent.com/YQApExiN81oyKCPmFEX_rn-f6yX82Yr7lijfy5KG15nksErq5jcqFKVMu0DJJVpkgjRomfU8KkRvXzJcteTrVgWGqH3z1aBRuloRYwahzLrrzZ1gFok95POXIDl8o4lWvR5HouId
-   :width: 562px
-   :height: 39px
-.. |image5| image:: https://docs.google.com/a/intermodalics.eu/drawings/d/sNCbEVvZpUyVi9GDA6TiB9Q/image?w=624&h=56&rev=54&ac=1
-   :width: 624px
-   :height: 56px
-.. |image6| image:: https://lh5.googleusercontent.com/7wjh3UizXBy9_PVNG34RvO9vDzI1SIxu8tp-00VbJcxpgBCkiFUNKdAx0YZN5CsykQZAg1PNuDKj8xVdp45f7Jk-8xo7FFp1oa5ql834mPsW-0IsCPzI1M5aXgZvK2aZNdnZSUE0
-   :width: 216px
-   :height: 318px

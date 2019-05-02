@@ -192,21 +192,20 @@ As part of application monitoring, you can add a ``pickit_no_image_captured()`` 
 
 |image16|
 
-.. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5a5da4d02c7d3a194368425e/file-XFLCDAbnah.png
-.. |image1| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5a5cc2ac2c7d3a1943683bf0/file-AThI1ln3ki.png
-.. |image2| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5a55daa2042863193800c0e8/file-98cZf9KQww.png
-.. |image3| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5a55186c2c7d3a194367fe05/file-1GB7YYh8kK.png
-.. |asdasdasd| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5a551e3f2c7d3a194367fe44/file-0tTuYy5TaJ.png
-.. |image5| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5a5cc31f2c7d3a1943683bf4/file-UtI78OeP8A.png
-.. |image6| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5a5cc4552c7d3a1943683c05/file-DV4N8d2jCM.png
-.. |image7| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5a55e4772c7d3a1943680268/file-2gDhiogwdc.png
-.. |image8| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5a55ff5a2c7d3a194368032c/file-b9yt3uGKpR.png
-.. |image9| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5a576c30042863193800e3fb/file-3VEW22X5yS.png
-.. |image10| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5a5600e52c7d3a194368033b/file-2IyEx4LD0U.png
-.. |image11| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5a5dfd312c7d3a1943684483/file-pvvqxUpaYZ.png
-.. |image12| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5a5dfd712c7d3a1943684485/file-zzlPuvLZ3T.png
-.. |image13| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5a5cc65f2c7d3a1943683c14/file-K2NUVuswag.png
-.. |image14| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5a5cc8152c7d3a1943683c27/file-HgsOjwKI0v.png
-.. |image15| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5a5cc7752c7d3a1943683c1e/file-yXGnvAaBlb.png
-.. |image16| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5a72e3000428634376cfb408/file-XrBiSZegul.png
-
+.. |image0| image:: /assets/images/examples/urcap-program-step-1.png
+.. |image1| image:: /assets/images/examples/urcap-program-step-2.png
+.. |image2| image:: /assets/images/examples/urcap-program-step-3.png
+.. |image3| image:: /assets/images/examples/urcap-program-step-4.png
+.. |image4| image:: /assets/images/examples/urcap-program-step-5.png
+.. |image5| image:: /assets/images/examples/urcap-program-step-6.png
+.. |image6| image:: /assets/images/examples/urcap-program-step-7.png
+.. |image7| image:: /assets/images/examples/urcap-program-step-8.png
+.. |image8| image:: /assets/images/examples/urcap-program-step-9.png
+.. |image9| image:: /assets/images/examples/urcap-program-step-10.png
+.. |image10| image:: /assets/images/examples/urcap-program-step-11.png
+.. |image11| image:: /assets/images/examples/urcap-program-step-12.png
+.. |image12| image:: /assets/images/examples/urcap-program-step-13.png
+.. |image13| image:: /assets/images/examples/urcap-program-step-14.png
+.. |image14| image:: /assets/images/examples/urcap-program-step-15.png
+.. |image15| image:: /assets/images/examples/urcap-program-step-16.png
+.. |image16| image:: /assets/images/examples/urcap-program-step-17.png

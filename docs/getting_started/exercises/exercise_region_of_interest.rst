@@ -11,7 +11,7 @@ This exercise is focused on setting up the Region of Interest box (ROI box). 
 | **Duration** | < 15 min   |
 +--------------+------------+
 
-|image0|
+.. image:: /assets/images/getting-started/roi.png
 
 Requirements
 ------------
@@ -52,6 +52,3 @@ Follow the next steps to complete the exercise.
 #. Name your snapshot 'Solution\_RegionOfInterest\_1\_NameCompany'.
 #. Download the file from the snapshots folder.
 #. Send your solution to support@pickit3d.com to receive feedback.
-
-.. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5b0692ad0428635ba8b2aeac/file-RuNLIqhdqW.png
-

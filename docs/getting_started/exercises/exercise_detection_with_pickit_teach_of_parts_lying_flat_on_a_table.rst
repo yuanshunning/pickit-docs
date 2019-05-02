@@ -16,7 +16,7 @@ parts lying flat on a table are discussed.
 | **Duration** | < 15 min   |
 +--------------+------------+
 
-|image0|
+.. image:: /assets/images/getting-started/detection-teach-flat.png
 
 Requirement
 -----------
@@ -101,6 +101,3 @@ What to read next
   Flex <https://support.pickit3d.com/article/190-exercise-detection-with-pick-it-flex>`__
 | `Exercise detection with Pickit
   Pattern <https://support.pickit3d.com/article/191-exercise-detection-with-pick-it-pattern>`__
-
-.. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5b8fe6af0428631d7a8aba05/file-xJGzxZVzhv.png
-

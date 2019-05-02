@@ -12,7 +12,7 @@ different detection parameters will be shown in this scene.
 | **Duration** | < 15 min   |
 +--------------+------------+
 
-|image0|
+.. image:: /assets/images/getting-started/box-shaped-part-detection.png
 
 Requirements
 ------------
@@ -55,6 +55,3 @@ Follow the next steps to complete the exercise.
 #. Name your snapshot 'Solution\_Flex\_2\_CompanyName'.
 #. Download the file from the snapshots folder.
 #. Send your solution to support@pickit3d.com to receive feedback.
-
-.. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5b8fe0bc0428631d7a8ab98e/file-Gpgg74BYh9.png
-

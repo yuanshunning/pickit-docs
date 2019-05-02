@@ -204,7 +204,7 @@ program line **Robot Program** shall be highlighted, meaning that’s the
 point at which the program will start. Finally click on the play button
 to run the program.
 
-|image0|
+.. image:: /assets/images/examples/ur-teach-pendant.png
 
 The program execution can be stopped or paused by clicking in the stop
 and pause buttons respectively.
@@ -215,6 +215,3 @@ and pause buttons respectively.
    incorrect programming or wrong calibration) can be identified early
    enough to prevent the robot from colliding with surrounding objects or
    people.
-
-.. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/58579736c697912ffd6c26bd/file-VOU2nZXgnX.png
-
