@@ -174,9 +174,7 @@ application, happy picking!
 
 .. raw:: html
 
-  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-    <iframe src="https://r2---sn-5hnekn76.c.drive.google.com/videoplayback?expire=1556547615&ei=38_GXOPHJoPHuAXq7b2QCg&ip=194.78.201.251&cp=QVNKWEZfVlZPRlhOOnJMNzJDN2dSUHl5R1lqTkdwV2xpeGxaTllDcmY0Wk9sSWNzTUUtbWY5bjA&id=087bb34daffc9a44&itag=18&source=webdrive&requiressl=yes&ttl=transient&susc=dr&driveid=1seiw-MJk5h6fdsFnH9ERVj2buf2_i6vY&app=explorer&mime=video/mp4&dur=89.025&lmt=1524824043552759&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,dur,lmt&sig=ALgxI2wwRQIhAOkkqImrManYQZ3tvOpOWRP5qhVYHp-1XZCuKfFyjBOJAiBg45jYeTs0W9zpT6LrgQUgpkmeMMoc8j4hQOR441yT0A==&cpn=FTQPCgyI-b0rmyTo&c=WEB_EMBEDDED_PLAYER&cver=20190423&redirect_counter=1&cm2rm=sn-5hnes77l&req_id=9520525f3df236e2&cms_redirect=yes&mm=34&mn=sn-5hnekn76&ms=ltu&mt=1556533108&mv=m&pl=17&lsparams=mm,mn,ms,mv,pl&lsig=AHylml4wRAIgck7VUACLLBWHNxttsWSk3uBObCQdmgvnDCatUzQf3KACIGLkkAbdvpMcwovPNZWrMrmqx3NAVeI6wnLsc31BZxLl" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-  </div>
+  <iframe src="https://drive.google.com/file/d/1seiw-MJk5h6fdsFnH9ERVj2buf2_i6vY/preview" frameborder="0" allowfullscreen width="640" height="360"> </iframe>
   <br>
 
 If you need any help with one of the steps above, please contact 

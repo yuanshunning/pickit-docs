@@ -8,7 +8,7 @@ A video of the end result can be seen below.
 
 .. raw:: html
 
-  <iframe src="https://drive.google.com/file/d/1vNjDmVY_XQT_40sZ2ACFpNRChnClE7rb/preview" width="640" height="480"> </iframe>
+  <iframe src="https://drive.google.com/file/d/1vNjDmVY_XQT_40sZ2ACFpNRChnClE7rb/preview" frameborder="0" allowfullscreen width="640" height="480"> </iframe>
   <br>
 
 .. contents::

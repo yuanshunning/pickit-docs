@@ -36,7 +36,7 @@ See video below for the result of this approach. Further below everything is exp
 .. raw:: html
 
   <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-    <iframe src="https://drive.google.com/file/d/16-dCquo9aoAMa05FWR7iSi4byzlyHXTZ/preview" width="640" height="480"></iframe>
+    <iframe src="https://drive.google.com/file/d/16-dCquo9aoAMa05FWR7iSi4byzlyHXTZ/preview" frameborder="0" allowfullscreen width="640" height="480"></iframe>
   </div>
   <br>
 

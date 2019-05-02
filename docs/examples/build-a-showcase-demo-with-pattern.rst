@@ -152,9 +152,7 @@ product showcase using the Pattern detection engine. Happy picking!
 
 .. raw:: html
 
-  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-    <iframe src="https://r4---sn-5hnekn7k.c.drive.google.com/videoplayback?expire=1556550675&ei=09vGXMH9Ac2ruAWcobywBw&ip=194.78.201.251&cp=QVNKWEZfT1ZVRlhOOnJMODVDM2dSUHl5R1pjTk1wV2xpeGxBR1lJcmY0Wk9sSnZzU0UtbWY5bjE&id=db5abfa2acfc0494&itag=18&source=webdrive&requiressl=yes&mm=30&mn=sn-5hnekn7k&ms=nxu&mv=m&pl=17&ttl=transient&susc=dr&driveid=10b-IjeS_dyV19iv89WcnRObJlfhgguVw&app=explorer&mime=video/mp4&dur=89.977&lmt=1524127513710135&mt=1556536187&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,dur,lmt&sig=ALgxI2wwRQIgTto8gPA0jL-P11hjDahPs-IkgC9xCWAS0kJudFL6u1oCIQCGNi7RYi0Xqp7_wC30bRjjNudUPaGeDu3tBO3BZTSzVQ==&lsparams=mm,mn,ms,mv,pl&lsig=AHylml4wRAIfHUhzPMfyWcxEtroCoGsFjGLazgIZYVvhvGUEKP6EmwIhANWEqe6BCdIDC7V34MAiO3yBjmduDs9Y759zpBhYLcD3&cpn=GHgWGVIrkz4SSxmX&c=WEB_EMBEDDED_PLAYER&cver=20190423" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-  </div>
+  <iframe src="https://drive.google.com/file/d/10b-IjeS_dyV19iv89WcnRObJlfhgguVw/preview" frameborder="0" allowfullscreen width="640" height="360"> </iframe>
   <br>
 
 If you need any help with one of the steps above, please contact 

@@ -177,9 +177,7 @@ application, happy picking!
 
 .. raw:: html
 
-  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-    <iframe src="https://r4---sn-5hne6nsz.c.drive.google.com/videoplayback?expire=1556555668&ei=VO_GXJCtMceGxwPL0IjIAg&ip=194.78.201.251&cp=QVNKWEZfVFZUSVhOOnJMODBDMmpSUHl5R1poTkxzV2xpeGxBTFlIdWY0Wk9sSmFzUkgtbWY5bjE&id=0cb15bd41c59c059&itag=18&source=webdrive&requiressl=yes&mm=30&mn=sn-5hne6nsz&ms=nxu&mv=m&pl=17&ttl=transient&susc=dr&driveid=1BGHPB6mAy-fL-DTyI6c7pp1ExfsPErhY&app=explorer&mime=video/mp4&dur=131.703&lmt=1525785391474485&mt=1556541159&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,dur,lmt&sig=ALgxI2wwRQIgCjsynKVaCLNJL2QZPFYqiqiruJl_desDud1GVhzQ4KICIQCO3hKd7onNDVQw7UEy2s4ONXknx4lNoWGk8WVzOepu1g==&lsparams=mm,mn,ms,mv,pl&lsig=AHylml4wRAIgWOecO9HjxbE9oAoiil6BhoUqQCgq6wYLN7Yq3YjGpk4CIA0v9K3vp2EBTpzkjPicHyZj1TSVvM47yJcnEylRolcc&cpn=U8g9-klHRSRe2uqB&c=WEB_EMBEDDED_PLAYER&cver=20190423" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-  </div>
+  <iframe src="https://drive.google.com/file/d/1BGHPB6mAy-fL-DTyI6c7pp1ExfsPErhY/preview" frameborder="0" allowfullscreen width="640" height="360"> </iframe>
   <br>
 
 If you need any help with one of the steps above, please contact 
