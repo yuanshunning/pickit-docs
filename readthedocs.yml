@@ -1,2 +1,4 @@
 # Don't build any extra formats
-formats: []
+formats:
+    - htmlzip
+    - pdf
