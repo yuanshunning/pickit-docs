@@ -1,7 +1,7 @@
 .. _how-to-clustering-preset:
 
-How to chose the correct clustering preset
-------------------------------------------
+How to choose the correct clustering preset
+===========================================
 
 .. contents::
     :backlinks: top

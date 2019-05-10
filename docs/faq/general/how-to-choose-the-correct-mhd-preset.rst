@@ -1,7 +1,7 @@
 .. _how-to-mhd-preset:
 
-How to chose the correct M-HD preset
-====================================
+How to choose the correct M-HD preset
+=====================================
 
 The Pickit M-HD camera is a high end camera with many different options on how to capture a point cloud of the scene.
 For instance the camera can be optimized to better detect bright parts or to better detect dark parts. 
