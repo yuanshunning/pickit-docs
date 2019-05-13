@@ -2,7 +2,7 @@ Pickit Documentation
 ====================
 
 Pickit is a 3D vision application for picking a broad family of products in any
-location with any robot. Pickit can be used for lcoating objects during
+location with any robot. Pickit can be used for locating objects during
 palletizing, depalletizing, order picking, bin-picking, machine tending or
 assembly tasks with a robot or machine.
 
