@@ -263,9 +263,9 @@ Each field is explained below. All **int32** are expressed in Network Byte Form
 |                          |                |   #. KUKA → Euler Angles (z-y’-x”)                                                                                                                     |
 |                          |                |   #. COMAU → Euler Angles (z-y’-z”)                                                                                                                    |
 +--------------------------+----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **interface\_version**   | **int32**      | | The version of the robot-Pickit communication. The current version is 1.1.                                                                           |
+| **interface\_version**   | **int32**      | | The version of the robot-Pickit communication.                                                                                                       |
 |                          |                | | To get this number, all dots are removed from the actual version number.                                                                             |
-|                          |                | | Example: Version ``1.1`` -> ``11``                                                                                                                   |
+|                          |                | | The current version is ``1.1``, so the communicated value is ``11``.                                                                                 |
 +--------------------------+----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 To add support for a robot type not adhering to one of the above conventions, it's recommended to use the **GENERIC** (quaternions) convention above. The robot-side interface would then take the responsibility of converting back and forth between the representation used by Pickit and the robot.
