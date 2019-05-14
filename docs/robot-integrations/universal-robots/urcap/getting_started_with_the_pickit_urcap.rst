@@ -27,7 +27,7 @@ Verify that the installed **Pickit version is 1.8.2 or greater**. The software v
 Robot
 ~~~~~
 
-Verify that you have a supported **Polyscope version**. The Polyscope versions supported by the Pickit URCap plugin are listed on our \ `downloads <https://support.pickit3d.com/article/36-pick-it-robot-programs>`__ page. To check the Polyscope version currently installed in your robot, click the :guilabel:`About` button on the home screen.
+Verify that you have a supported **Polyscope version**. The Polyscope versions supported by the Pickit URCap plugin are listed on our :ref:`downloads page <downloads>`. To check the Polyscope version currently installed in your robot, click the :guilabel:`About` button on the home screen.
 
 .. image:: /assets/images/robot-integrations/ur/urcap-installation-2.png
 
@@ -36,7 +36,7 @@ Installing the Pickit URCap plugin
 
 To install the Pickit URCap plugin, follow these steps:
 
-#. `Download </downloads>`__ the Pickit URCap plugin archive containing the latest version of the URCap.
+#. :ref:`Download the Pickit URCap files <downloads:Universal Robots>` the Pickit URCap plugin archive containing the latest version of the URCap.
 #. Unzip the archive and copy its contents to an **empty** USB drive.
 #. Insert the drive into the USB port of either the robot controller or teach pendant while it is turned on.
 #. On the Polyscope home screen, press :guilabel:`Setup Robot` > :guilabel:`URCaps` to entery the **URCaps** section.

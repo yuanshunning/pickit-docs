@@ -155,8 +155,7 @@ used by the Karel program.
 Download the right files
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-`All program files available for Fanuc robots can be downloaded
-here <https://drive.google.com/uc?export-download&id-0BzZKo0Mfhw0RMDNULWxxY0dvcG8>`__.
+:ref:`Download the Pickit Fanuc files <downloads:fanuc>`
 
 The .zip folder contains the following ASCII files:
 

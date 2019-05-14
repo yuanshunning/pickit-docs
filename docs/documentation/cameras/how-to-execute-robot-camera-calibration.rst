@@ -179,9 +179,7 @@ At this point, a request for calibration should be sent.
 
 This request should be sent from the robot using the provided
 calibration program. This program can be found under the **Files** tab
-of the Pickit web interface or on `this page about all supported
-robot
-programs <http://support.pickit3d.com/article/36-pick-it-robot-programs>`__.
+of the Pickit web interface or on the :ref:`downloads page <downloads>`.
 
 Once Pickit receives the request for calibration from the robot the
 robot-camera calibration is calculated. 
