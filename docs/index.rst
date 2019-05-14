@@ -1,5 +1,5 @@
-Pickit Documentation
-====================
+Pickit 1.10 Documentation
+=========================
 
 Pickit is a 3D vision application for picking a broad family of products in any
 location with any robot. Pickit can be used for lcoating objects during
