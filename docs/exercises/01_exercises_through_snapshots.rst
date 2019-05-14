@@ -27,5 +27,4 @@ Advanced exercises
 ------------------
 
 -  :ref:`exercise_detection_empty_bin`
--  :ref:`exercise_detection_teach_flat_on_table`
 -  :ref:`exercise_detection_flex_boxes`
