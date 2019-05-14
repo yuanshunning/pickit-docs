@@ -1,7 +1,7 @@
 .. _universal-robots-urcap-installation:
 
-Installation and setup
-======================
+URCap installation and setup
+============================
 
 Pickit integrates seamlessly with Universal Robots by means of a URCap plugin. This plugin exposes a set of Pickit specific command blocks that make the creation of vision-guided programs simple and easy. This document explains how to install the Pickit URCap plugin and introduces the functionality it provides.
 
@@ -51,7 +51,7 @@ To install the Pickit URCap plugin, follow these steps:
 
    .. image:: /assets/images/robot-integrations/ur/urcap-installation-5.png
 
-#. Navigate to the USB drive, and select the **``pickit_urcap-[version].urcap``** file.
+#. Navigate to the USB drive, and select the ``pickit_urcap-[version].urcap`` file.
 #. Polyscope will indicate that a restart is needed to apply the changes. Press the restart button to continue.
 
    .. image:: /assets/images/robot-integrations/ur/urcap-installation-6.png
@@ -93,7 +93,7 @@ If you plan to run robot programs that don't use Pickit, you should disable (not
 Example programs
 ----------------
 
-The Pickit URCap plugin installation makes available a few example programs under ``/programs/pickit_samples`` folder of the robot. The can be also downloaded independently of the URCap \ `here <https://drive.google.com/open?id=1Gf63Y35NaVxbP4mwc5YUC5SU8u8RYvyO>`__. These programs are a great way to get familiar with the Pickit URCap plugin, and can serve as a template to build your own applications. The following articles provide detailed descriptions of example programs:
+The Pickit URCap plugin installation makes available a few example programs under ``/programs/pickit_samples`` folder of the robot. The can be also downloaded independently of the URCap \ `here <https://drive.google.com/uc?export=download&id=1Gf63Y35NaVxbP4mwc5YUC5SU8u8RYvyO>`__. These programs are a great way to get familiar with the Pickit URCap plugin, and can serve as a template to build your own applications. The following articles provide detailed descriptions of example programs:
 
 -  :ref:`universal-robots-urcap-example`
 

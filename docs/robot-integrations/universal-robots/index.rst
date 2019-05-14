@@ -7,5 +7,5 @@ Set up Pickit with a Universal Robots
   :glob:
   :maxdepth: 2
 
-  urscript/index.rst
   urcap/index.rst
+  urscript/index.rst

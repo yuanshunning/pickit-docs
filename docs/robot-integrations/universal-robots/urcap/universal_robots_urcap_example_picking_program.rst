@@ -1,7 +1,7 @@
 .. _universal-robots-urcap-example:
 
-Universal Robots URCap example picking program
-==============================================
+URCap example picking program
+=============================
 
 .. contents::
     :backlinks: top
@@ -20,7 +20,7 @@ The program explained
 
 The program implements a simple task where Pickit is used to continuously pick objects from a detection region and place them in a specified location. No assumptions are made on how objects are laid out in the detection region, so the program is a good starting point to build a wide range of applications. Objects can be stacked randomly, or in a pattern, touching or not.
 
-The program assumes a fixed camera mount for simplicity. Please refer to the  `robot mounted camera <#robot_mounted_camera>`__ advanced topic to learn how to adapt the example to robot mounted camera setups.
+The program assumes a fixed camera mount for simplicity. Please refer to the :ref:`urcap-robot-mounted-camera` advanced topic to learn how to adapt the example to robot mounted camera setups.
 
 |image0|
 
@@ -84,14 +84,14 @@ Note that ``home_pose`` can typically be the same as ``detect_pose``, but we nam
 *Gripping device*
 '''''''''''''''''
 
-Note that logic specific to the gripping device has been explicitly omitted. You should replace the object grasping and release comments with appropriate commands for controlling your hardware, as running the program as-is will only make the robot point to the object to pick. The  `gripping device <#gripping%20device>`__ advanced topic describes an example pick and place sequence for vacuum grippers.
+Note that logic specific to the gripping device has been explicitly omitted. You should replace the object grasping and release comments with appropriate commands for controlling your hardware, as running the program as-is will only make the robot point to the object to pick. The :ref:`urcap-gripping-devices` advanced topic describes an example pick and place sequence for vacuum grippers.
 
 *Cycle time optimization*
 '''''''''''''''''''''''''
 
 The time it takes for Pickit to detect objects is application-dependent and can vary from a fraction of a second to multiple seconds. To optimize cycle time, we perform object placing (step 3) in parallel to detection of the next object to pick, such that the wait time when calling ``Get Result`` is minimal (typically zero). This optimization is relevant in applications with long detection times and tight cycle time constraints. Its benefits are negligible in applications with fast detection times.
 
-The  `robot mounted camera <https://secure.helpscout.net/docs/583bfcdbc6979106d37373a0/article/5a54e77f2c7d3a194367fbd7/#robot_mounted_camera>`__ advanced topic presents an alternative pick and place sequence where no cycle time optimization is done.
+The :ref:`urcap-robot-mounted-camera` advanced topic presents an alternative pick and place sequence where no cycle time optimization is done.
 
 Object detected but unreachable
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -104,7 +104,7 @@ Running the program
 -------------------
 
 Program execution
-^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~
 
 .. caution::
    When running a program for the first time, it is advised to **set a low robot speed**. As such, non-expected behavior (for example due to incorrect programming or wrong calibration) can be identified early enough to prevent the robot from colliding with surrounding objects or people.
@@ -123,7 +123,7 @@ The program execution can be stopped or paused by clicking on the stop and pause
 |image9|
 
 Monitoring Pickit from Polyscope
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Pickit URCap plugin exposes the view of the Pickit camera highlighted with the region of interest and detected object markers (the same as the 2D view in the Pickit web interface). This is very convenient, as it allows to perform basic Pickit monitoring without having to connect a separate computer to the Pickit processor for opening the web interface.
 
@@ -139,6 +139,8 @@ Note that below the camera image there is an indicator of the connectivity with 
 
 Advanced topics
 ---------------
+
+.. _urcap-gripping-devices:
 
 Gripping devices
 ~~~~~~~~~~~~~~~~
@@ -159,18 +161,20 @@ Noteworthy points of this pick and place sequence:
 
 This pick and place sequence applies for the most part to other gripping devices where the pick action can be toggled with a digital output, and the pick success can be queried from a digital input. For instance, for a two-finger gripper the pick action would correspond to *closing the fingers*, and pick success could be \ *not reaching the end-of-stroke*. The only difference in the picking sequence would be that fingers close *after* reaching ``pickit_pose``, as opposed to vacuum, which is enabled during the approach from ``pickit_pre_pose``.
 
+.. _urcap-robot-mounted-camera:
+
 Robot mounted camera
 ~~~~~~~~~~~~~~~~~~~~
 
 The example program assumes a fixed camera mount, but can be extended to robot mounted camera setups with minimal changes.
 
-***Detection pose***
-''''''''''''''''''''
+Detection pose
+^^^^^^^^^^^^^^
 
 In a fixed camera setup ``detect_pose`` is such that the robot is not occluding the camera field of view. In a robot-mounted setup ``detect_pose`` must instead ensure that the camera is correctly pointing to the detection region.
 
-***Ensure image capture on a stationary robot***
-''''''''''''''''''''''''''''''''''''''''''''''''
+Ensure image capture on a stationary robot
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 When the camera is mounted on the robot, it must be ensured that image capture is done on a stationary robot. If a robot motion starts just after calling ``Find object(s)``, it is recommended to briefly wait to allow image capture to complete before starting to move. Image capture takes place only at the beginning of a Pickit detection. In the example program, this only occurs once, in the object detected and reachable case. 
 
@@ -178,8 +182,8 @@ When the camera is mounted on the robot, it must be ensured that image capture i
 
 When  ``Find object(s)`` is immediately followed by ``Get result``, an explicit ``Wait`` statement is not required.
 
-***Cycle time optimization***
-'''''''''''''''''''''''''''''
+Cycle time optimization
+^^^^^^^^^^^^^^^^^^^^^^^
 
 The optimization implemented in the pick sequence triggers the next object detection while the current object is being grasped. Depending on the camera fixture, the gripper and the object geometry; it might be the case that the grasped object occludes the camera field of view, making it impossible to trigger a detection with a grasped object. When this is the case and hardware modifications are not an option, the optimization cannot be done. The non-optimized pick and place sequence then becomes:
 
@@ -194,11 +198,13 @@ As part of application monitoring, you can add a ``pickit_no_image_captured()`` 
 
 .. |image0| image:: /assets/images/examples/urcap-program-step-1.png
 .. |image1| image:: /assets/images/examples/urcap-program-step-2.png
+            :scale: 50 %
 .. |image2| image:: /assets/images/examples/urcap-program-step-3.png
 .. |image3| image:: /assets/images/examples/urcap-program-step-4.png
 .. |image4| image:: /assets/images/examples/urcap-program-step-5.png
 .. |image5| image:: /assets/images/examples/urcap-program-step-6.png
 .. |image6| image:: /assets/images/examples/urcap-program-step-7.png
+            :scale: 50 %
 .. |image7| image:: /assets/images/examples/urcap-program-step-8.png
 .. |image8| image:: /assets/images/examples/urcap-program-step-9.png
 .. |image9| image:: /assets/images/examples/urcap-program-step-10.png
@@ -206,6 +212,7 @@ As part of application monitoring, you can add a ``pickit_no_image_captured()`` 
 .. |image11| image:: /assets/images/examples/urcap-program-step-12.png
 .. |image12| image:: /assets/images/examples/urcap-program-step-13.png
 .. |image13| image:: /assets/images/examples/urcap-program-step-14.png
+            :scale: 50 %
 .. |image14| image:: /assets/images/examples/urcap-program-step-15.png
 .. |image15| image:: /assets/images/examples/urcap-program-step-16.png
 .. |image16| image:: /assets/images/examples/urcap-program-step-17.png
