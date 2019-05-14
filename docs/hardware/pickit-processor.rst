@@ -10,47 +10,6 @@ Read \ `this
 article <https://support.pickit3d.com/article/74-setting-up-your-pick-it-system>`__
 to learn how to set up the processor in your picking application.
 
-Processor version
------------------
-
-There are currently two hardware versions of the Pickit processor: 1.0
-and 2.0. Both versions look very similar from the outside, but when
-taking a closer look, you'll notice that they are equipped with
-different hardware components on the inside.
-
-Since many technical specifications stay the same between processor
-versions 1.0 and 2.0, the section below only differentiates between the
-two processor versions if there is a difference.
-
-What is the version of my Pickit processor?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-There are two ways to look up the version of your Pickit processor:
-
-#. By looking at the back of the processor, you can see if a GTX
-   graphics card is installed. If this is the case, the Pickit
-   processor version is 2.0, otherwise, it's 1.0.
-#. By looking at the Pickit software version at the top left of the
-   Pickit interface in your browser. If the software version specifies
-   1.x, then your processor version is 1.0, otherwise, it's 2.0.
-
-What is the difference between Pickit version 1.0 and 2.0?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-These are the most important differences between Pickit versions 1.0
-and 2.0:
-
--  From a **hardware** perspective, Pickit processor 2.0 has a GTX
-   graphics card, more powerful CPU and power supply to work with
-   the \ `Pickit M-HD
-   camera <https://support.pickit3d.com/article/201-pick-it-m-hd>`__.
-   The Pickit processor 1.0 has no graphics card.
--  From a **software** perspective, Pickit processor 1.0 runs Pickit
-   software versions 1.x. Pickit processor 2.0 runs Pickit software
-   versions 2.x. Software version 2.x is the platform that will receive
-   the new product updates, while software version 1.x will only receive
-   bug fixes and security updates.
-
 Technical specifications
 ------------------------
 

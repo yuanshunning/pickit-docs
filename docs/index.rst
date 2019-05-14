@@ -51,7 +51,6 @@ assembly tasks with a robot or machine.
 
   Processor <hardware/pickit-processor>
   M camera <hardware/pickit-m-camera>
-  M-HD camera <hardware/pickit-m-hd-camera>
   L camera <hardware/pickit-l-camera>
 
 .. toctree::
