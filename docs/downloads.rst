@@ -30,7 +30,7 @@ KUKA
 
 Pickit requires software module **KUKA Connect KRC** for socket communication.
 
-The product number for this module is **91B300-020** and can be aquired through Pickit. Contact sales@pickit3d.com for more information and pricing.
+The product number for this module is **91B300-020** and can be purchased through Pickit. Contact sales@pickit3d.com for more information and pricing.
 
 - `Download the Pickit for KUKA KR C2 <https://drive.google.com/uc?export=download&id=1Cp7KWtVswRYPFZ_oy9tgLmQ-kRtohCB5>`__
 - `Download the Pickit for KUKA KR C4 <https://drive.google.com/uc?export=download&id=1Xi76sHuu_H-iAkkHhYvrXR1gYg2K-OlM>`__
