@@ -31,12 +31,12 @@ Pickit, while others relate to your hardware setup.
 
    .. image:: /assets/images/faq/Ordering-center-part.png
 
--  Enable :ref:`check-collision-with`
+-  Enable :ref:`checking collisions <check-collision-with>`
    between tool and bin, and between tool and other objects in the bin.
    
    .. image:: /assets/images/faq/Collision-prevention.png
 
--  Enforce :ref:`enforce-alignment-of-pick-frame-orientation`
+-  :ref:`enforce-alignment-of-pick-frame-orientation`
    to constrain the approach direction and orientation. When enforcing
    alignment constraints it's useful to enable the bin avoidance
    strategy to improve reachability of objects close to the bin borders.

@@ -83,8 +83,8 @@ unpickable and will not be sent to the robot.
     maximum-angle-between-pick-and-reference-frame-zaxis
     maximum-angle-between-pick-frame-zaxis-and-surface-normal
 
-Check collisions with
-~~~~~~~~~~~~~~~~~~~~~
+Check collisions with the robot tool
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Pickit also checks for possible collisions in the actual scene. For
 this, first a robot tool needs to be modeled. And second you have to define with what you want to check
