@@ -11,33 +11,25 @@ The Pickit functions cheat sheet
 Pickit provides many functions to script your Pickit application to a
 success. Underneath we provide an overview of the provided functions:
 
-`pickit\_is\_running() <#pickit_is_running>`__,
-`pickit\_can\_calibrate() <#pickit_can_calibrate>`__,
-`pickit\_save\_scene() <#pickit_save_scene>`__,
-`pickit\_find\_calib\_plate() <#pickit_find_calib_plate>`__,
-`pickit\_configure(setup,product) <#pickit_configure>`__,
-`pickit\_look\_for\_object() <#pickit_look_for_object>`__,
-`pickit\_next\_object() <#pickit_next_object>`__,
-`pickit\_has\_response() <#pickit_has_response>`__,
-`pickit\_object\_found() <#pickit_object_found>`__,
-`pickit\_no\_image\_captured() <#pickit_no_image_captured>`__,
-`pickit\_remaining\_objects() <#pickit_remaining_objects>`__,
-`pickit\_get\_pose() <#pickit_get_pose>`__
+`pickit\_is\_running() <pickit\_is\_running()_>`__,
+`pickit\_can\_calibrate() <pickit\_can\_calibrate()_>`__,
+`pickit\_save\_scene() <pickit\_save\_scene()_>`__,
+`pickit\_find\_calib\_plate() <pickit\_find\_calib\_plate()_>`__,
+`pickit\_configure(setup,product) <pickit\_configure(setup, product)_>`__,
+`pickit\_look\_for\_object() <pickit\_look\_for\_object()_>`__,
+`pickit\_next\_object() <pickit\_next\_object()_>`__,
+`pickit\_has\_response() <pickit\_has\_response()_>`__,
+`pickit\_object\_found() <pickit\_object\_found()_>`__,
+`pickit\_no\_image\_captured() <pickit\_no\_image\_captured()_>`__,
+`pickit\_remaining\_objects() <pickit\_remaining\_objects()_>`__,
+`pickit\_get\_pose() <pickit\_get\_pose()_>`__
 
 Intro
 -----
 
-.. raw:: html
-
-   <div>
-
 We differentiate two different kinds of functions:
 
-.. raw:: html
-
-   </div>
-
--  **Blocking functions: **\ These functions send a command to Pickit
+-  **Blocking functions:** These functions send a command to Pickit
    and waits until a response is received. 
 -  **Stopping functions:** These functions force the robot program to
    stop in case it returns false. Note that the return value is never

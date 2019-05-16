@@ -1,4 +1,4 @@
-.. _Stäubli:
+.. _staubli:
 
 Setting up Pickit with Stäubli
 ===============================
