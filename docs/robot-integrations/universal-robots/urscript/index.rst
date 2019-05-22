@@ -64,8 +64,7 @@ Loading the program files for a Universal Robots consists of the following steps
 Download the right files
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-`All program files available for Universal Robots can be downloaded
-here <https://drive.google.com/uc?export-download&id-1VedZYjVvlcyiE4iuqUuF67DsT8545ojU>`__.
+:ref:`Download the URScript files <downloads:Universal Robots>`
 
 Once unpacked, the UR_Pickit folder contains the following files:
 

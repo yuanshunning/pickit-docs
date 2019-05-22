@@ -71,7 +71,7 @@ Load the program files
 Download the right files
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-`All program files available for an ABB robot can be downloaded here <https://drive.google.com/uc?export-download&id-1-rLxMBKSnh-2JDbfjX3tPL-iYFBOLfoA>`__.
+:ref:`Download the Pickit ABB files <downloads:ABB>`
 
 Upload the files to the robot
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
