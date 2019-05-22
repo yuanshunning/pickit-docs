@@ -9,10 +9,10 @@ KUKA KRC example program
     `Running the example program <#run_program>`__
 
 This program is part of the KUKA package which you
-can download \ `here <https://drive.google.com/uc?export=download&id=0B6DoUWOcKeMHdWhqODEwVlF0M0E>`__.
+can download :ref:`here <downloads:KUKA>`.
 
 More details about setting up Pickit with a KUKA robot can be
-found \ `here <http://support.pickit3d.com/article/64-setting-up-pick-it-with-a-kuka-robot>`__.
+found :ref:`here <kuka>`.
 
 **Loading the example program**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

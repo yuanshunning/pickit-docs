@@ -7,7 +7,7 @@ This example program requires the **Pickit URCap** plugin to be installed in y
 
 Before following these URCap specific instructions in this article, make sure you first understand the process of executing a robot camera calibration as explained on :ref:`robot-camera-calibration`.
 
-`Download the URCap example calibration programs <https://drive.google.com/uc?export=download id=1d_mcLevOZXT94bPC0lga10F3cvCvLUAc>`__ and load them onto your UR controller.
+`Download the URCap example calibration programs <https://drive.google.com/uc?export=download&id=1d_mcLevOZXT94bPC0lga10F3cvCvLUAc>`__ and load them onto your UR controller.
 
 Multi poses calibration
 -----------------------

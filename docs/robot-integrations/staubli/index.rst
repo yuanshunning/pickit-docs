@@ -82,7 +82,7 @@ Loading the program files consists of 4 steps:
 Download the right files
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-`All program files available for Stäubli can be downloaded here <https://drive.google.com/uc?export-download&id-0BzZKo0Mfhw0RcmJnWWE4LXM4M1k>`__.
+:ref:`Download the Pickit Stäubli files <downloads:Stäubli>`
 
 Upload the files to the robot
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
