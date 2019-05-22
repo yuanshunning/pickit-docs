@@ -27,7 +27,7 @@ Verify that the installed **Pickit version is 1.8.2 or greater**. The software v
 Robot
 ~~~~~
 
-Verify that you have a supported **Polyscope version**. The Polyscope versions supported by the Pickit URCap plugin are listed on our :ref:`downloads page <downloads>`. To check the Polyscope version currently installed in your robot, click the :guilabel:`About` button on the home screen.
+Verify that you have a supported **Polyscope version**. The Polyscope versions supported by the Pickit URCap plugin are listed on our :ref:`downloads page <downloads:Universal Robots>`. To check the Polyscope version currently installed in your robot, click the :guilabel:`About` button on the home screen.
 
 .. image:: /assets/images/robot-integrations/ur/urcap-installation-2.png
 
