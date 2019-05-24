@@ -1,13 +1,11 @@
 .. _universal-robots-urcap-calibration:
 
-Robot camera calibration
-========================
+URCap robot camera calibration program 
+======================================
 
 This example program requires the **Pickit URCap** plugin to be installed in your robot.  For installation instructions of both the URCap plugin and the example programs please refer to the :ref:`universal-robots-urcap-installation` article.
 
 Before following these URCap specific instructions in this article, make sure you first understand the process of executing a robot camera calibration as explained on :ref:`robot-camera-calibration`.
-
-`Download the URCap example calibration programs <https://drive.google.com/uc?export=download&id=1d_mcLevOZXT94bPC0lga10F3cvCvLUAc>`__ and load them onto your UR controller.
 
 Multi poses calibration
 -----------------------
@@ -19,6 +17,7 @@ The program starts by opening a pop-up message, informing that multi-poses calib
 #. Moves the robot to a waypoint
 
    .. image:: /assets/images/robot-integrations/ur/urcap-calibration-2.png
+      :scale: 50 %
 
    All ``MoveJ`` commands are specified with respect to the **tool flange** (as opposed to the TCP).
 
@@ -29,7 +28,7 @@ The program starts by opening a pop-up message, informing that multi-poses calib
 #. Sends Pickit a calibration request, through the command `Find calibration plate`
 
    .. image:: /assets/images/robot-integrations/ur/urcap-calibration-3.png
-   
+      :scale: 50 %
 
 In the Calibration page, the user can follow the progress of calibration. 
 

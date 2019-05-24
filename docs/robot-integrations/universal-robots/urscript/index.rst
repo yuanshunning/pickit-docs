@@ -1,10 +1,10 @@
 .. _universal-robots-scripts:
 
-URScript
-========
+URScript legacy interface
+=========================
 
 .. note:: 
-   This article describes the legacy way of using Pickit with a Universal Robots. For new systems, please refer to the :ref:`universal-robots-urcap`.
+   This article describes the legacy way of using Pickit with a Universal Robots. For new systems, please use the :ref:`universal-robots-urcap` plugin instead.
 
 The setup of **Pickit** with a **Universal** **robot** consists of **3 steps**:
 

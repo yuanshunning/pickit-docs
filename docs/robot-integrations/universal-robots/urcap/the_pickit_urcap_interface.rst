@@ -1,7 +1,7 @@
 .. _universal-robots-urcap-commands:
 
-Commands
-========
+The Pickit URCap interface
+==========================
 
 Pickit integrates seamlessly with Universal Robots by means of a URCap plugin. This plugin exposes a set of Pickit specific command blocks that make the creation of vision-guided programs simple and easy. This article documents the interface of the Pickit URCap plugin. For installation instructions please refer to the :ref:`universal-robots-urcap-installation` article.
 
