@@ -64,8 +64,7 @@ Loading the program files for a Universal Robots consists of the following steps
 Download the right files
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-`All program files available for Universal Robots can be downloaded
-here <https://drive.google.com/uc?export-download&id-1VedZYjVvlcyiE4iuqUuF67DsT8545ojU>`__.
+:ref:`Download the URScript files <downloads:Universal Robots>`
 
 Once unpacked, the UR_Pickit folder contains the following files:
 
@@ -75,6 +74,13 @@ Once unpacked, the UR_Pickit folder contains the following files:
 - ``urmagic_upload_programs.sh``: This program takes care of the automatic uploading of all Pickit related files to the UR controller.
 
 The UR_Pickit folder also contains a few folders, each one corresponding to a different **Polyscope** software version, containing robot programs that use the mentioned ASCII files.
+A list of available functions can be found here:
+
+.. toctree::
+    :maxdepth: 1
+    :glob:
+
+    the_pickit_functions_cheat_sheet
 
 .. warning::
     Modifying **pickit\_communication**, **pickit\_functions** or **Pickit\_transformations** should only be considered after talking to a **Pickit support engineer**. 

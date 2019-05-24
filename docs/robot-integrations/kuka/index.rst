@@ -31,6 +31,7 @@ If an entry named **Connect** is listed, then the module is installed and you ca
 
 Module installation
 ~~~~~~~~~~~~~~~~~~~
+:ref:`Download the Pickit KUKA files here. <downloads:KUKA>`
 
 The **KUKA Connect KRC** module can be purchased directly from KUKA, and consists of: a set of files that you should copy to a NTFS formatted USB drive, and a 16-digit license key with the format **xxxx-xxxx-xxxx-xxxx** that depends on the robot’s serial number.
 
@@ -75,7 +76,7 @@ For the license key activation to take effect, another controller restart is req
 SPS file settings
 ~~~~~~~~~~~~~~~~~
 
-Apart from installing the **KUKA Connect KRC** module, it is necessary to add one command to the SPS file, which executes in the background of all robot programs. You need to be in **expert** mode to perform this operation. 
+Apart from installing the **KUKA Connect KRC** module, it is necessary to add one command to the SPS file, which executes in the background of all robot programs. You need to be in **expert** mode to perform this operation.
 
 To open the SPS file from the navigator, browse to :guilabel:`R1` > :guilabel:`System`, select the **sps** file and click :guilabel:`Open`, as shown in the figure below, left.
 
@@ -108,7 +109,7 @@ When communicating with KUKA robots, the Pickit server IP address cannot belong 
 - 192.168.0.0 to 192.168.0.255
 - 172.16.0.0 to 172.16.255.255
 - 172.17.0.0 to 172.17.255.255
-  
+
 The default Pickit server IP is **169.254.5.180**, which belongs to the first range, so it must be modified.
 
 Click on the :guilabel:`Save` button to store the settings.
@@ -131,7 +132,7 @@ relate to Pickit communication:
 
 -  **Pickit application files.**
    These are example programs that illustrate how to perform typical Pickit operations, like robot-camera calibration or object detection for pick and place.These are located in :guilabel:`R1` > :guilabel:`Progran` > :guilabel:`Pickit`.
--  **Pickit interface files.** 
+-  **Pickit interface files.**
    These are internal files that expose the high-level functions used by the application files, and manage low-level communication with the Pickit system. These files are not meant for editing and are located in :guilabel:`R1` > :guilabel:`TP` > :guilabel:`Connect` > :guilabel:`Pickit`.
 
 The Pickit application files can be loaded and executed as any other KUKA.KRL program. Please refer to the **KUKA KR-C4** user manual for further details.

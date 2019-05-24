@@ -94,10 +94,10 @@ ellipse). One can specify:
    internal and external contours.
 -  The **3D matching tolerance**, used to determine the points that
    confirm flat regions.
-.. image:: /assets/images/Documentation/3d-matching-tolerance.png
+   .. image:: /assets/images/Documentation/3d-matching-tolerance.png
 -  The **2D matching tolerance**, used to determine the points that
    confirm the object model.
-.. image:: /assets/images/Documentation/3d-matching-tolerance.png
+   .. image:: /assets/images/Documentation/3d-matching-tolerance.png
 
 
 Define dimensions and orientation of objects

@@ -12,6 +12,7 @@ assembly tasks with a robot or machine.
 
   quick-start/index
   installation/index
+  Downloads <downloads>
   
 .. toctree::
   :caption: Documentation

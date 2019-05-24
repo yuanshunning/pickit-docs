@@ -199,8 +199,8 @@ TF tree
 
 Pickit uses two fixed robot frame names that are important for you if you want to connect your robot’s tf tree with Pickit’s tf tree. A simplified version of the Pickit tf tree for both camera fixed and camera on the robot looks like the following:
 
-Camera fixed
-~~~~~~~~~~~~
+Camera fixed TF tree
+~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -211,8 +211,8 @@ Camera fixed
            +              robot-camera-calibration
     pickit/robot_base +------------------------------> camera/camera_link
 
-Camera on robot
-~~~~~~~~~~~~~~~
+Camera on robot TF tree
+~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 

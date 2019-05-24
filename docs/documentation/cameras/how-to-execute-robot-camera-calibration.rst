@@ -82,7 +82,7 @@ Now repeat the following cycle for every pose:  
 
 This request should be sent from the robot using the provided
 calibration program. This program can be found under the  **Files** tab
-of the Pickit web interface or under :ref:`robot-integrations`.
+of the Pickit web interface or shipped by the respective robot integration.
 
 After each successful collection of such a pair of transformations, the
 interface looks as follows:
@@ -109,7 +109,7 @@ Single pose calibration
 -----------------------
 
 Some restrictive conditions on using single pose calibration
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. Single pose calibration can only be executed when **the camera is not
    mounted on the robot**.
@@ -125,7 +125,7 @@ If one of these conditions can not be met, you will need to perform
 calibration with :ref:`calibration-multi-poses`.
 
 Step 1: Install calibration plate
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Go to the **Calibration** tab of the Pickit user interface and
 select **Single pose calibration**.
@@ -138,8 +138,8 @@ camera (the “Plate visible” indicator should be green).
 Preferably, the calibration plate is as much as possible in the
 center of the region where the actual picking will take place.
 
-.. rubric:: Step 2: Define helper transformation
-   :name: helper_transformation
+Step 2: Define helper transformation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The **helper transformation** is the transformation between the flange
 frame of the robot and the calibration plate frame. On the figure below
@@ -173,15 +173,13 @@ is mounted directly to the robot flange:
 -  **Yaskawa:** 0 \| -45°
 
 Step 3: Send a calibration request from the robot
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 At this point, a request for calibration should be sent.
 
 This request should be sent from the robot using the provided
 calibration program. This program can be found under the **Files** tab
-of the Pickit web interface or on `this page about all supported
-robot
-programs <http://support.pickit3d.com/article/36-pick-it-robot-programs>`__.
+of the Pickit web interface or on the :ref:`downloads page <downloads>`.
 
 Once Pickit receives the request for calibration from the robot the
 robot-camera calibration is calculated. 
@@ -221,7 +219,7 @@ Recalibration is only required when the camera is moved or rotated with
 respect to the robot. 
 
 Universal Robots
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 If you have a Universal Robots robot, you can additionally visualize a
 **virtual 3D robot**, which should make it easier to verify the
