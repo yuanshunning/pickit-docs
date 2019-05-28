@@ -5,7 +5,7 @@ Saving a snapshot in Pickit
 
 A snapshot is a powerful support tool of Pickit. In a snapshot both the
 camera images and detection parameters of the last detection are stored.
-This file can be downloaded and send to anybody with a Pickit system.
+This file can be downloaded and sent to anybody with a Pickit system.
 This tool allows anybody to give you remote support without a direct
 connection to your system.
 
